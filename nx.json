@@ -1,0 +1,39 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["test", "build:dev", "test:coverage", "test:ci", "prepublishOnly", "prebuild", "build"]
+      }
+    }
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "build:dev": {
+      "dependsOn": ["^build:dev"],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "test": {
+      "dependsOn": ["^test"]
+    },
+    "test:coverage": {
+      "dependsOn": ["^test:coverage"]
+    },
+    "test:ci": {
+      "dependsOn": ["^test:ci"],
+      "outputs": ["{projectRoot}/coverage"]
+    },
+    "prebuild": {
+      "dependsOn": ["^prebuild"]
+    },
+    "prepublishOnly": {
+      "dependsOn": ["^prepublishOnly"]
+    }
+  }
+}

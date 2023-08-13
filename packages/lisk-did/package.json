@@ -1,0 +1,61 @@
+{
+  "name": "lisk-did",
+  "version": "0.0.1",
+  "description": "Lisk DID/VC Development Kit",
+  "keywords": [
+    "did",
+    "vc",
+    "decentralized-identifier",
+    "verifiable-credentials",
+    "Lisk"
+  ],
+  "author": "Aldo Suhartono Putra <aldhosutra@gmail.com>",
+  "homepage": "https://github.com/aldhosutra/lisk-did",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldhosutra/lisk-did.git"
+  },
+  "scripts": {
+    "clean": "if test -d dist; then rm -r dist; fi; rm -rf node_modules; rm -f tsconfig.tsbuildinfo; rm -f npm-shrinkwrap.json",
+    "lint": "eslint --ext .ts .",
+    "lint:fix": "eslint --fix --ext .js,.ts .",
+    "format": "prettier --write '**/*'",
+    "build": "tsc",
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest --passWithNoTests --coverage=true --coverage-reporters=text",
+    "test:ci": "jest --config ./jest.config.js --collectCoverage --coverageDirectory=\"./coverage\" --ci --reporters=default --reporters=jest-junit --watchAll=false",
+    "prepublishOnly": "npm ci && npm run lint && npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/aldhosutra/lisk-did/issues"
+  },
+  "dependencies": {
+    "@lisk-did/lisk-decentralized-identifier": "*",
+    "@lisk-did/lisk-did-module": "*",
+    "@lisk-did/lisk-verifiable-credentials": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "eslint": "^8.46.0",
+    "eslint-config-standard-with-typescript": "^37.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.6.2",
+    "jest-extended": "^4.0.1",
+    "prettier": "3.0.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  }
+}

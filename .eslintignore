@@ -1,0 +1,12 @@
+docs/
+examples/
+**/*.d.ts
+jest.config.js
+**/test/_setup.js
+.eslintrc.js
+coverage
+benchmark
+dist
+tmp
+build
+scripts
