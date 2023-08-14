@@ -18,11 +18,10 @@ export interface DocumentLoaderParam {
 }
 
 export interface ClientOptions {
-  loader?: CustomLoader;
+  loader?: DocumentLoader;
+  resolver?: BaseResolver;
   context?: MethodContext;
   method?: DidMethod;
   ipc?: string;
   ws?: string;
 }
-
-export type CustomLoader = BaseResolver | DocumentLoader;

@@ -11,10 +11,14 @@ export declare interface DocumentLoaderResult {
 export interface BaseResolver {
   get: ({ did, url }: { did?: string; url?: string }) => Promise<DidDocument>;
 }
+
 export type DocumentLoader = (url: string) => Promise<DocumentLoaderResult>;
 
+export type BaseLoader = (url: string) => Promise<Record<string, any>>;
+
 export type CreateResolverParam = {
-  resolver?: BaseResolver | DocumentLoader;
+  loader?: BaseLoader | DocumentLoader;
+  resolver?: BaseResolver;
   ipc?: string;
   ws?: string;
   context?: MethodContext;

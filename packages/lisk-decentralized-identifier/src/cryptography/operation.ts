@@ -3,16 +3,20 @@ import { getEd25519SignatureSuite } from './suite';
 import { CreateResolverParam } from '../types';
 import { getDIDDocument, parseDIDComponent } from '../did';
 import { getVerificationMethod } from './verification';
-import { Cipher } from '@digitalcredentials/minimal-cipher/lib';
 import { createResolver } from '../resolver';
 import { JWEDocument, KeyAgreement } from '../types';
 import { encodePrivateKey, encodePublicKey } from './codec';
+// import { Cipher } from './minimal-cipher';
+
+// eslint-disable-next-line @typescript-eslint/no-implied-eval, no-new-func
+const dynamicImport = new Function('specifier', 'return import(specifier)');
 
 export async function encrypt(
   data: string,
   recipientKeyId: string[],
   options: CreateResolverParam,
 ): Promise<JWEDocument> {
+  const { Cipher } = await dynamicImport('@digitalcredentials/minimal-cipher');
   const cipher = new Cipher();
   const keyResolver = async (url: string) => await createResolver(options).get(url);
   const recipients = recipientKeyId
@@ -29,6 +33,7 @@ export async function decrypt(
   privateKey: Buffer,
   options: CreateResolverParam,
 ): Promise<string> {
+  const { Cipher } = await dynamicImport('@digitalcredentials/minimal-cipher');
   const cipher = new Cipher();
   const keyAgreementKey: KeyAgreement = await createResolver(options).get(recipientKeyId);
   keyAgreementKey.privateKeyMultibase = encodePrivateKey(privateKey);

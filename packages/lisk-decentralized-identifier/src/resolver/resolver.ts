@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import { CachedResolver as CachedResolverBuilder } from '@digitalcredentials/did-io';
 import * as didResolver from '.';
-import { CreateResolverParam } from '../types';
+import { BaseLoader, CreateResolverParam } from '../types';
 import { BaseResolver, DidMethod, DocumentLoader } from '../types';
 import { MethodContext } from 'lisk-sdk';
 
@@ -59,15 +59,17 @@ export function createChainResolver(context: MethodContext, method: DidMethod): 
 }
 
 export function createResolver(options: CreateResolverParam): ResolverAbstraction {
-  let resolver: BaseResolver | DocumentLoader | undefined;
+  let resolver: BaseResolver | undefined;
+  let loader: DocumentLoader | BaseLoader | undefined;
 
   if (options.resolver) resolver = options.resolver;
+  if (options.loader) loader = options.loader;
   if (options.ipc) resolver = createIPCResolver(options.ipc);
   if (options.ws) resolver = createWSResolver(options.ws);
   if (options.context && options.method) resolver = createChainResolver(options.context, options.method);
 
-  if (resolver === undefined) {
-    throw new Error('Unexpected Error: resolver is undefined');
+  if (resolver === undefined && loader === undefined) {
+    throw new Error('Unexpected Error: insufficient options!');
   }
 
   const ret: ResolverAbstraction = {
@@ -76,10 +78,16 @@ export function createResolver(options: CreateResolverParam): ResolverAbstractio
     },
   };
 
-  if ('get' in resolver) {
+  if (loader) {
+    ret.get = async (url: string) => {
+      const res = await (loader as DocumentLoader | BaseLoader)(url);
+      if ('document' in res) return res.document;
+      else return res;
+    };
+  }
+
+  if (resolver) {
     ret.get = async (url: string) => await (resolver as BaseResolver).get({ url });
-  } else {
-    ret.get = async (url: string) => await (resolver as DocumentLoader)(url);
   }
 
   return ret;

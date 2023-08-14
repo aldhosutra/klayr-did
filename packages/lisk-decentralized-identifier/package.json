@@ -35,9 +35,9 @@
     "lint:fix": "eslint --fix --ext .js,.ts .",
     "format": "prettier --write '**/*'",
     "build": "tsc",
-    "test": "jest --passWithNoTests",
-    "test:coverage": "jest --passWithNoTests --coverage=true --coverage-reporters=text",
-    "test:ci": "jest --config ./jest.config.js --collectCoverage --coverageDirectory=\"./coverage\" --ci --reporters=default --reporters=jest-junit --watchAll=false",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --passWithNoTests",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules npx jest --passWithNoTests --coverage=true --coverage-reporters=text",
+    "test:ci": "NODE_OPTIONS=--experimental-vm-modules npx jest --config ./jest.config.js --collectCoverage --coverageDirectory=\"./coverage\" --ci --reporters=default --reporters=jest-junit --watchAll=false",
     "prepublishOnly": "npm ci && npm run lint && npm run build"
   },
   "bugs": {
@@ -67,6 +67,7 @@
     "@digitalcredentials/ed25519-verification-key-2020": "^4.0.0",
     "@digitalcredentials/minimal-cipher": "^5.1.2",
     "@digitalcredentials/x25519-key-agreement-key-2020": "^3.0.0",
+    "base58-universal": "^2.0.0",
     "did-uri": "^0.6.0",
     "lisk-sdk": "^6.0.0-beta.5"
   }

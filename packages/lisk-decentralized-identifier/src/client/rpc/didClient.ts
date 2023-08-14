@@ -279,7 +279,7 @@ export class DIDClient {
     return auth.nonce;
   }
 
-  async _initChainspace() {
+  private async _initChainspace() {
     if (this.chainspace === undefined) {
       if (this.ipc !== undefined || this.ws !== undefined) {
         const didConfig = await this.apiClient?.invoke('did_getConfig');
