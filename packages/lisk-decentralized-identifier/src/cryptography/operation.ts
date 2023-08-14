@@ -6,7 +6,7 @@ import { getVerificationMethod } from './verification';
 import { Cipher } from '@digitalcredentials/minimal-cipher/lib';
 import { createResolver } from '../resolver';
 import { JWEDocument, KeyAgreement } from '../types';
-import { encodePrivateKey, encodePublicKey } from './convert';
+import { encodePrivateKey, encodePublicKey } from './codec';
 
 export async function encrypt(
   data: string,

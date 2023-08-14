@@ -27,8 +27,8 @@ export async function issueCredential(
     throw new Error('issuer DID not registered yet on the chain');
   }
 
-  const privateKeyMultibase = didCryptography.encodePrivateKey(privateKey);
-  const matchedKey = await didCryptography.getVerificationMethod(didDocument, {
+  const privateKeyMultibase = didCryptography.codec.encodePrivateKey(privateKey);
+  const matchedKey = await didCryptography.method.getVerificationMethod(didDocument, {
     relationship: ['assertionMethod'],
     privateKey,
   });
@@ -69,7 +69,7 @@ export async function verifyCredential(
     id: credential.proof.verificationMethod,
     type: utils.constant.ED25519_VERIFICATION_KEY_2020_TYPE,
     controller: issuer,
-    publicKeyMultibase: didCryptography.encodePublicKey(publicKey),
+    publicKeyMultibase: didCryptography.codec.encodePublicKey(publicKey),
   });
 
   const suite = new Ed25519Signature2020({ key });

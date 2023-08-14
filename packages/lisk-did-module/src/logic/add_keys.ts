@@ -18,10 +18,10 @@ export async function executeAddKeysCommand(
   for (const key of params.keys) {
     const keyPair = {
       controller: targetDIDDocument.id,
-      publicKeyMultibase: didCryptography.encodePublicKey(key.publicKey),
+      publicKeyMultibase: didCryptography.codec.encodePublicKey(key.publicKey),
     };
 
-    const { id, controller, type, publicKeyMultibase } = (await didCryptography.createEd25519KeyPair(
+    const { id, controller, type, publicKeyMultibase } = (await didCryptography.key.createEd25519KeyPair(
       keyPair,
     )) as VerificationMethod;
 
@@ -36,7 +36,7 @@ export async function executeAddKeysCommand(
 
     for (const relationship of key.relationship) {
       if (relationship === 'keyAgreement') {
-        const keyAgreement = await didCryptography.createX25519KeyPair(keyPair);
+        const keyAgreement = await didCryptography.key.createX25519KeyPair(keyPair);
         const keyIndex = targetDIDDocument.keyAgreement.findIndex(t => t.id === keyAgreement.id);
         if (keyIndex === -1) {
           targetDIDDocument.keyAgreement.push({

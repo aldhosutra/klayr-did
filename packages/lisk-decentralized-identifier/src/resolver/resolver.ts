@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { CachedResolver as CachedResolverBuilder } from '@digitalcredentials/did-io';
-import { createOffChainDriver, createOnChainDriver } from '.';
+import * as didResolver from '.';
 import { CreateResolverParam } from '../types';
 import { BaseResolver, DidMethod, DocumentLoader } from '../types';
 import { MethodContext } from 'lisk-sdk';
@@ -23,7 +23,7 @@ class CachedResolverSingleton {
 
   public static getIPCInstance(ipc: string) {
     if (this.ipcResolver === undefined || this.prevIpc !== ipc) {
-      const didLiskDriver = createOffChainDriver({ ipc });
+      const didLiskDriver = didResolver.driver.createOffChainDriver({ ipc });
       this.ipcResolver = new CachedResolverBuilder();
       this.ipcResolver.use(didLiskDriver);
     }
@@ -32,7 +32,7 @@ class CachedResolverSingleton {
 
   public static getWSInstance(ws: string) {
     if (this.wsResolver === undefined || this.prevWs !== ws) {
-      const didLiskDriver = createOffChainDriver({ ws });
+      const didLiskDriver = didResolver.driver.createOffChainDriver({ ws });
       this.wsResolver = new CachedResolverBuilder();
       this.wsResolver.use(didLiskDriver);
     }
@@ -49,7 +49,7 @@ export function createWSResolver(ws: string) {
 }
 
 export function createChainResolver(context: MethodContext, method: DidMethod): CachedResolver {
-  const driver = createOnChainDriver(context, method);
+  const driver = didResolver.driver.createOnChainDriver(context, method);
   const resolver: CachedResolver = {
     get: driver.get as CachedResolver['get'],
     // eslint-disable-next-line @typescript-eslint/no-empty-function

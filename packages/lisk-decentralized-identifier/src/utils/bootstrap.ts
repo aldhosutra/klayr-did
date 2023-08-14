@@ -1,4 +1,4 @@
-import { createLocalDriver } from '../resolver';
+import * as resolver from '../resolver';
 import { DidDocument } from '../types';
 
 export function bootstrapEmptyDidDocument(): DidDocument {
@@ -16,7 +16,7 @@ export function bootstrapEmptyDidDocument(): DidDocument {
 }
 
 export async function bootstrapAddressDidDocument(chainspace: string, publicKey?: Buffer) {
-  const didDriver = createLocalDriver(chainspace);
+  const didDriver = resolver.driver.createLocalDriver(chainspace);
   const document = publicKey != null ? await didDriver.publicKeyToDidDoc({ publicKey }) : await didDriver.generate();
   return document.didDocument;
 }

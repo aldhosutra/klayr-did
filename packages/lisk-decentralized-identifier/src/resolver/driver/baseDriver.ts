@@ -1,13 +1,6 @@
 import didIo from '@digitalcredentials/did-io';
 import { cryptography } from 'lisk-sdk';
 import { Ed25519VerificationKey2020 } from '@digitalcredentials/ed25519-verification-key-2020';
-import {
-  createEd25519KeyPair,
-  createX25519KeyPair,
-  decodePublicKey,
-  encodePrivateKey,
-  encodePublicKey,
-} from '../../cryptography';
 import { DidDocument, VerificationMethod } from '../../types';
 import {
   DID_CONTEXT_URL,
@@ -17,6 +10,8 @@ import {
 } from '../../utils/constant';
 import { LISK_DID_PREFIX } from '../../utils/constant';
 import { contextsBySuite } from '../../utils';
+import { decodePublicKey, encodePrivateKey, encodePublicKey } from '../../cryptography/codec';
+import { createEd25519KeyPair, createX25519KeyPair } from '../../cryptography/suite';
 
 export abstract class BaseDriver {
   public method = 'lisk';

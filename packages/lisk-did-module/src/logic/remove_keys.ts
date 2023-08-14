@@ -12,12 +12,12 @@ export async function executeRemoveKeysCommand(
   const targetDIDDocument = await documentSubstore.get(_context, documentStoreKey(params.target));
   for (const key of params.publicKeys) {
     const index = targetDIDDocument.verificationMethod.findIndex(
-      t => t.publicKeyMultibase === didCryptography.encodePublicKey(key),
+      t => t.publicKeyMultibase === didCryptography.codec.encodePublicKey(key),
     );
     if (index !== -1) {
       const keyId = targetDIDDocument.verificationMethod[index].id;
       const publicKeyMultibase = targetDIDDocument.verificationMethod[index].publicKeyMultibase;
-      const x25519Key = (await didCryptography.createX25519KeyPair({ publicKeyMultibase })).publicKeyMultibase;
+      const x25519Key = (await didCryptography.key.createX25519KeyPair({ publicKeyMultibase })).publicKeyMultibase;
       targetDIDDocument.verificationMethod.splice(index, 1);
       targetDIDDocument.authentication = targetDIDDocument.authentication.filter(t => t !== keyId);
       targetDIDDocument.assertionMethod = targetDIDDocument.assertionMethod.filter(t => t !== keyId);

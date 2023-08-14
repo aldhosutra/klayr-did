@@ -20,7 +20,7 @@ import {
   TransactionPayload,
   TransactionPayloadWithoutSignature,
 } from '../utils/types';
-import { getVerificationRelationship } from '../../cryptography';
+import { getVerificationRelationship } from '../../cryptography/verification';
 import { createSignatureChallenge, createTransactionSignature } from '../utils';
 import { getAddressDIDFromPublicKey } from '../../did';
 

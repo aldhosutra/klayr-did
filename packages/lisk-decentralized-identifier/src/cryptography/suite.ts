@@ -3,7 +3,7 @@ import { Ed25519VerificationKey2020 as Ed25519Key } from '@digitalcredentials/ed
 import { SerializedKeyPair } from '@digitalcredentials/keypair';
 import { Ed25519Signature2020 } from '../types/cryptography';
 import { Ed25519Signature2020 as Ed25519Signature } from '@digitalcredentials/ed25519-signature-2020';
-import { encodePrivateKey, encodePublicKey } from './convert';
+import { encodePrivateKey, encodePublicKey } from './codec';
 import { X25519KeyAgreementKey2020 } from '@digitalcredentials/x25519-key-agreement-key-2020';
 import { ED25519_VERIFICATION_KEY_2020_TYPE } from '../utils/constant';
 

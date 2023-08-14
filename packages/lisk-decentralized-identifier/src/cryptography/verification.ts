@@ -5,16 +5,11 @@ import {
 } from '../utils/constant';
 import { DidDocument } from '../types';
 import { asyncFilter, findIntersection } from '../utils/array';
-import {
-  convertEd25519ToX25519PublicKey,
-  decodePrivateKey,
-  decodePublicKey,
-  encodePrivateKey,
-  encodePublicKey,
-} from './convert';
+import { decodePrivateKey, decodePublicKey, encodePrivateKey, encodePublicKey } from './codec';
 import { verifyLocal } from './operation';
 import { VerificationMethod, VerificationRelationship } from '../types/cryptography';
 import { cryptography } from 'lisk-sdk';
+import { ed25519ToX25519PublicKey } from './convert';
 
 interface VerificationFilterOptions {
   publicKey?: Buffer;
@@ -107,7 +102,7 @@ export async function getVerificationMethod(
     if (options.relationship.includes('keyAgreement') && matchedKey.length > 0) {
       const keyAgreementPublicKeyMultibase = didDocument.keyAgreement.map(key => key.publicKeyMultibase);
       const matchedKeyPublicKeyMultibase = matchedKey.map(key =>
-        encodePublicKey(convertEd25519ToX25519PublicKey(decodePublicKey(key.publicKeyMultibase))),
+        encodePublicKey(ed25519ToX25519PublicKey(decodePublicKey(key.publicKeyMultibase))),
       );
       const intersection = findIntersection([keyAgreementPublicKeyMultibase, matchedKeyPublicKeyMultibase]).map(
         key => didDocument.keyAgreement.find(t => t.publicKeyMultibase === key)!,

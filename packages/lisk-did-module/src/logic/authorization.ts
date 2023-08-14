@@ -1,4 +1,4 @@
-import { getVerificationRelationship } from '@lisk-did/lisk-decentralized-identifier/dist/cryptography';
+import { cryptography as didCryptography } from '@lisk-did/lisk-decentralized-identifier';
 import { BaseCommand, CommandVerifyContext, VerifyStatus, utils } from 'lisk-sdk';
 import { DocumentStore, documentStoreKey } from '../stores/document';
 import {
@@ -102,7 +102,7 @@ async function isSignerHaveCapabilityInvocation(
   data: PayloadWithSignature,
   challenge: string,
 ) {
-  const signerRelationshipWithTarget = await getVerificationRelationship(targetDIDDocument, {
+  const signerRelationshipWithTarget = await didCryptography.method.getVerificationRelationship(targetDIDDocument, {
     signature: data.params.signature,
     challenge,
     relationship: ['capabilityInvocation'],
@@ -120,7 +120,7 @@ async function isSignerTheTargetDIDController(
   challenge: string,
 ) {
   if (targetDIDDocument.controller.includes(data.params.signer)) {
-    const signerRelationshipWithSigner = await getVerificationRelationship(signerDIDDocument, {
+    const signerRelationshipWithSigner = await didCryptography.method.getVerificationRelationship(signerDIDDocument, {
       signature: data.params.signature,
       challenge,
       relationship: ['authentication'],
@@ -133,7 +133,7 @@ async function isSignerTheTargetDIDController(
 }
 
 async function isSenderHaveCapabilityInvocation(targetDIDDocument: DidDocument, senderPublicKey: Buffer) {
-  const senderRelationshipWithTarget = await getVerificationRelationship(targetDIDDocument, {
+  const senderRelationshipWithTarget = await didCryptography.method.getVerificationRelationship(targetDIDDocument, {
     publicKey: senderPublicKey,
     relationship: ['capabilityInvocation'],
   });
@@ -149,7 +149,7 @@ async function isSenderTheSignerThatControlsDID(
   senderPublicKey: Buffer,
 ) {
   if (targetDIDDocument.controller.includes(signerDIDDocument.id)) {
-    const senderRelationshipWithSigner = await getVerificationRelationship(signerDIDDocument, {
+    const senderRelationshipWithSigner = await didCryptography.method.getVerificationRelationship(signerDIDDocument, {
       publicKey: senderPublicKey,
       relationship: ['authentication'],
     });
@@ -172,10 +172,13 @@ async function isSenderHaveDefaultAddressDIDThatControlsTargetDID(
   if (targetDIDDocument.controller.includes(privateKeyAddressDID)) {
     const senderDIDDocument = await documentStore.getOrUndefined(context, documentStoreKey(privateKeyAddressDID));
     if (senderDIDDocument === undefined) throw new Error("sender DID doesn't exist");
-    const senderRelationshipWithTargetController = await getVerificationRelationship(senderDIDDocument, {
-      publicKey: senderPublicKey,
-      relationship: ['authentication'],
-    });
+    const senderRelationshipWithTargetController = await didCryptography.method.getVerificationRelationship(
+      senderDIDDocument,
+      {
+        publicKey: senderPublicKey,
+        relationship: ['authentication'],
+      },
+    );
     if (senderRelationshipWithTargetController.length > 0) {
       return true;
     }
