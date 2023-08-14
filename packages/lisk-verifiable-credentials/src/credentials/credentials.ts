@@ -16,7 +16,7 @@ export async function issueCredential(
   const documentLoader = (options != null && options.loader) ?? createRemoteDocumentLoader(options);
   const issuer = typeof credential.issuer === 'string' ? credential.issuer : credential.issuer.id;
   const didDocument = await getDIDDocument(issuer, {
-    resolver: options?.loader,
+    loader: options?.loader,
     ipc: options?.ipc,
     ws: options?.ws,
   });

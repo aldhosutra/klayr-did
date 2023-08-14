@@ -18,7 +18,7 @@ export async function issuePresentation(
 
   const documentLoader = (options != null && options.loader) ?? createRemoteDocumentLoader(options);
   const didDocument = await getDIDDocument(holderDid, {
-    resolver: options?.loader,
+    loader: options?.loader,
     ipc: options?.ipc,
     ws: options?.ws,
   });
