@@ -12,8 +12,9 @@
   "author": "Aldo Suhartono Putra <aldhosutra@gmail.com>",
   "homepage": "https://github.com/aldhosutra/lisk-did",
   "license": "Apache-2.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
   "directories": {
     "src": "src",
     "test": "test"
