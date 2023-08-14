@@ -1,6 +1,4 @@
 import * as vc from '@digitalcredentials/vc';
-import { Ed25519VerificationKey2020 } from '@digitalcredentials/ed25519-verification-key-2020';
-import { Ed25519Signature2020 } from '@digitalcredentials/ed25519-signature-2020';
 import { VCVerificationResult, VerifiableCredential } from '../types';
 import { createRemoteDocumentLoader } from '../documentLoader';
 import { preprocessCredentials } from '../util';
@@ -36,8 +34,8 @@ export async function issueCredential(
     throw new Error("specified private key doesn't have neccessary permission to act as issuer");
   }
 
-  const key = await Ed25519VerificationKey2020.from({ ...matchedKey[0], privateKeyMultibase });
-  const suite = new Ed25519Signature2020({ key });
+  const key = didCryptography.key.createEd25519KeyPair({ ...matchedKey[0], privateKeyMultibase });
+  const suite = didCryptography.key.getEd25519SignatureSuite(key);
 
   const issuedCredential: VerifiableCredential = { ...credential };
   preprocessCredentials(issuedCredential);
@@ -65,14 +63,14 @@ export async function verifyCredential(
   const documentLoader = (options != null && options.loader) ?? createRemoteDocumentLoader(options);
   const issuer = typeof credential.issuer === 'string' ? credential.issuer : credential.issuer.id;
 
-  const key = await Ed25519VerificationKey2020.from({
+  const key = didCryptography.key.createEd25519KeyPair({
     id: credential.proof.verificationMethod,
     type: utils.constant.ED25519_VERIFICATION_KEY_2020_TYPE,
     controller: issuer,
     publicKeyMultibase: didCryptography.codec.encodePublicKey(publicKey),
   });
 
-  const suite = new Ed25519Signature2020({ key });
+  const suite = didCryptography.key.getEd25519SignatureSuite(key);
   const result: VCVerificationResult = await vc.verifyCredential({
     credential,
     suite,

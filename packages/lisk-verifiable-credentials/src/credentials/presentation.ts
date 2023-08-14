@@ -1,7 +1,5 @@
 import { VPVerificationResult, VerifiableCredential, VerifiablePresentation } from '../types';
 import * as vc from '@digitalcredentials/vc';
-import { Ed25519VerificationKey2020 } from '@digitalcredentials/ed25519-verification-key-2020';
-import { Ed25519Signature2020 } from '@digitalcredentials/ed25519-signature-2020';
 import { createRemoteDocumentLoader } from '../documentLoader';
 import { preprocessPresentation } from '../util';
 import { ClientOptions } from '../documentLoader/type';
@@ -38,8 +36,8 @@ export async function issuePresentation(
     throw new Error("specified private key doesn't have neccessary permission to authenticate a presentation");
   }
 
-  const key = await Ed25519VerificationKey2020.from({ ...matchedKey[0], privateKeyMultibase });
-  const suite = new Ed25519Signature2020({ key });
+  const key = didCryptography.key.createEd25519KeyPair({ ...matchedKey[0], privateKeyMultibase });
+  const suite = didCryptography.key.getEd25519SignatureSuite(key);
 
   const presentation: VerifiablePresentation = vc.createPresentation({
     verifiableCredential: verifiableCredentialsList,
@@ -69,14 +67,14 @@ export async function verifyPresentation(
 
   const documentLoader = (options != null && options.loader) ?? createRemoteDocumentLoader(options);
 
-  const key = await Ed25519VerificationKey2020.from({
+  const key = didCryptography.key.createEd25519KeyPair({
     id: presentation.proof.verificationMethod,
     type: utils.constant.ED25519_VERIFICATION_KEY_2020_TYPE,
     controller: presentation.holder,
     publicKeyMultibase: await didCryptography.codec.encodePublicKey(publicKey),
   });
 
-  const suite = new Ed25519Signature2020({ key });
+  const suite = didCryptography.key.getEd25519SignatureSuite(key);
 
   const verificationResult = await vc.verify({
     presentation,

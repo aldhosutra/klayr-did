@@ -16,17 +16,24 @@ interface GetSuiteParam {
   privateKeyMultibase?: string;
 }
 
-export const createEd25519KeyPair = Ed25519Key.from;
+export const createEd25519KeyPair = Ed25519Key.from as unknown as (options: SerializedKeyPair) => Ed25519Key;
 
-export const createX25519KeyPair = async (keyPair: SerializedKeyPair): Promise<Ed25519Key> =>
-  await X25519KeyAgreementKey2020.fromEd25519VerificationKey2020({ keyPair });
+export const createX25519KeyPair = (keyPair: SerializedKeyPair): Ed25519Key =>
+  X25519KeyAgreementKey2020.fromEd25519VerificationKey2020({ keyPair });
 
-export async function getEd25519SignatureSuite(param: GetSuiteParam): Promise<Ed25519Signature2020> {
+export const generateEd25519KeyPair = Ed25519Key.generate;
+
+export const generateX25519KeyPair = async (): Promise<Ed25519Key> => {
+  const keyPair = await generateEd25519KeyPair();
+  return createX25519KeyPair(keyPair);
+};
+
+export function getEd25519SignatureSuite(param: GetSuiteParam): Ed25519Signature2020 {
   const publicKeyMultibase =
     param.publicKeyMultibase ?? (param.publicKey ? encodePublicKey(param.publicKey) : undefined);
   const privateKeyMultibase =
     param.privateKeyMultibase ?? (param.privateKey ? encodePrivateKey(param.privateKey) : undefined);
-  const keyPair = await createEd25519KeyPair({
+  const keyPair = createEd25519KeyPair({
     id: param.id ?? `did:key:${publicKeyMultibase}#${publicKeyMultibase}`,
     controller: param.controller ?? `did:key:${publicKeyMultibase}`,
     type: ED25519_VERIFICATION_KEY_2020_TYPE,

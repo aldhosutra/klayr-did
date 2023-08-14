@@ -11,7 +11,7 @@ import {
 import { LISK_DID_PREFIX } from '../../utils/constant';
 import { contextsBySuite } from '../../utils';
 import { decodePublicKey, encodePrivateKey, encodePublicKey } from '../../cryptography/codec';
-import { createEd25519KeyPair, createX25519KeyPair } from '../../cryptography/suite';
+import { createEd25519KeyPair, createX25519KeyPair, generateEd25519KeyPair } from '../../cryptography/suite';
 
 export abstract class BaseDriver {
   public method = 'lisk';
@@ -41,7 +41,7 @@ export abstract class BaseDriver {
 
     const verificationKeyPair =
       options != null && options.privateKey
-        ? await Ed25519VerificationKey2020.from({
+        ? await createEd25519KeyPair({
             id: undefined,
             controller: undefined,
             revoked: undefined,
@@ -49,7 +49,7 @@ export abstract class BaseDriver {
             publicKeyMultibase: await encodePublicKey(cryptography.ed.getPublicKeyFromPrivateKey(options.privateKey)),
             privateKeyMultibase: await encodePrivateKey(options.privateKey),
           })
-        : await Ed25519VerificationKey2020.generate();
+        : await generateEd25519KeyPair();
 
     const { didDocument, keyPairs } = await this._keyPairToDidDocument(verificationKeyPair, this.chainspace);
 

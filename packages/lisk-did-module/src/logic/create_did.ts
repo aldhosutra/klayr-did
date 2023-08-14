@@ -42,9 +42,9 @@ export async function executeCreateCommand(
       publicKeyMultibase: didCryptography.codec.encodePublicKey(key.publicKey),
     };
 
-    const { id, controller, type, publicKeyMultibase } = (await didCryptography.key.createEd25519KeyPair(
+    const { id, controller, type, publicKeyMultibase } = didCryptography.key.createEd25519KeyPair(
       keyPair,
-    )) as VerificationMethod;
+    ) as VerificationMethod;
 
     didDocument.verificationMethod.push({ id, controller, type, publicKeyMultibase });
     const contextIndex = didDocument['@context'].findIndex(
@@ -54,7 +54,7 @@ export async function executeCreateCommand(
 
     for (const relationship of key.relationship) {
       if (relationship === 'keyAgreement') {
-        const keyAgreement = await didCryptography.key.createX25519KeyPair(keyPair);
+        const keyAgreement = didCryptography.key.createX25519KeyPair(keyPair);
         didDocument.keyAgreement.push({
           id: keyAgreement.id!,
           controller: keyAgreement.controller!,
