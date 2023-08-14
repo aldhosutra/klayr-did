@@ -1,3 +1,6 @@
+const { pathsToModuleNameMapper } = require('ts-jest');
+const { compilerOptions } = require('./tsconfig.json');
+
 /**
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
@@ -5,6 +8,7 @@
 
 /** @type {import('jest').Config} */
 const config = {
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
   automock: false,
   testMatch: ['<rootDir>/test/**/?(*.)+(spec|test).+(ts|tsx|js)'],
   setupFilesAfterEnv: ['<rootDir>/test/_setup.js'],
