@@ -19,3 +19,8 @@ export const signature = Buffer.from(
   '5f59c3f2e10e54d112b36efa7f9d07da7f80c7185bcd72e264267171db6ceb71aa19e0e8dd19233b02caffb50d91cebf852051c34a1badbe2ee96a681ae60b0c',
   'hex',
 );
+
+export const signaturePayload = Buffer.from(
+  '3f196ef773bbf56e655020cb27338bfd4aa5341acb14609459fee7f65b8139685a8ead92a747749c9a31c71f76a447ca7f4a7e61374db0b5e5680a7140847d0f',
+  'hex',
+);

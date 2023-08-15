@@ -5,7 +5,7 @@
     "outDir": "./dist",
     "baseUrl": ".",
     "paths": {
-      "@dist/*": ["src/*"] // TODO: change later to dist folder
+      "@dist/*": ["src/*"]
     }
   },
   "include": ["./src/**/*.ts", "./src/*.ts"]
