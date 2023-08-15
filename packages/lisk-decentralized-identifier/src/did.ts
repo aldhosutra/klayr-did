@@ -19,7 +19,9 @@ export function parseDIDComponent(did: string) {
     throw new Error('must be consist of scheme, method, chainspace, and unique-id; or with optional namespace');
   }
   if (parsedIdentifier.length === 2) {
-    if (!cryptography.address.validateLisk32Address(parsedIdentifier[1], parsedIdentifier[1].substring(0, 3))) {
+    try {
+      cryptography.address.validateLisk32Address(parsedIdentifier[1], parsedIdentifier[1].substring(0, 3));
+    } catch {
       throw new Error('unique-id needs to be a valid lisk address if namespace is absent');
     }
     uniqueId = parsedIdentifier[1];
@@ -66,8 +68,17 @@ export async function getDIDDocument(did: string, options: CreateResolverParam):
   if (!did.startsWith(`${LISK_DID_PREFIX}:`)) {
     throw new Error(`did need to start with "${LISK_DID_PREFIX}:"`);
   }
-  if (options.ipc === undefined && options.ws === undefined && options.resolver === undefined) {
-    throw new Error('either ipc or ws or resolver options is needed');
+
+  if (options !== undefined && (options.context || options.method) && !(options.context && options.method))
+    throw new Error('both context and method are required for on-chain retrieval');
+
+  if (
+    options === undefined ||
+    !Object.values(options)
+      .map(t => !!t)
+      .includes(true)
+  ) {
+    throw new Error('one of the options is needed');
   }
 
   const document = await createResolver(options).get(parseDIDComponent(did).did);

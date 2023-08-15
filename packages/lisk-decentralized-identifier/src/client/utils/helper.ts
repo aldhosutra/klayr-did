@@ -17,11 +17,11 @@ function removeSignatureAndAddNonce(schema: Omit<Schema, '$schema'>) {
   const removedSignatureSchema: WriteableSchema = utils.objects.cloneDeep(schema);
 
   removedSignatureSchema.$id += '/no_signature';
-  const requiredIndex = removedSignatureSchema.required?.findIndex(t => t === 'signature');
+  const requiredIndex = removedSignatureSchema.required!.findIndex(t => t === 'signature');
   if (requiredIndex !== undefined && requiredIndex > -1) {
-    removedSignatureSchema.required?.splice(requiredIndex, 1);
+    removedSignatureSchema.required!.splice(requiredIndex, 1);
   }
-  removedSignatureSchema.required?.push('nonce');
+  removedSignatureSchema.required!.push('nonce');
 
   const { signature, ...rest } = removedSignatureSchema.properties;
   removedSignatureSchema.properties = rest;
