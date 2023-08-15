@@ -3,8 +3,8 @@ import { PayloadWithSignature } from './types';
 import { signatureMessageBuilder, signatureSchemaBuilder } from './helper';
 
 export function createSignatureChallenge(payload: PayloadWithSignature) {
-  const payloadBuffer = codec.encode(signatureSchemaBuilder(payload.command), signatureMessageBuilder(payload.params));
-  return payloadBuffer.toString('hex');
+  const payloadBuffer = codec.encode(signatureSchemaBuilder(payload), signatureMessageBuilder(payload));
+  return cryptography.ed.digestMessage(payloadBuffer.toString('hex')).toString('hex');
 }
 
 export function createTransactionSignature(payload: PayloadWithSignature, privateKey: Buffer) {

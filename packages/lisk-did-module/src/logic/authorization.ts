@@ -10,6 +10,9 @@ import {
 import { PayloadWithSignature } from '@lisk-did/lisk-decentralized-identifier/dist/client/utils/types';
 import { NonceStore, nonceStoreKey } from '../stores/nonce';
 
+// TODO: we should create specific authorization for deactivation, since it has huge impact to the identity
+// TODO: we also need to add specific authorization to methods
+
 export async function verifyAuthorization(this: BaseCommand, context: CommandVerifyContext<any>) {
   const documentSubstore = this.stores.get(DocumentStore);
   const nonceSubstore = this.stores.get(NonceStore);

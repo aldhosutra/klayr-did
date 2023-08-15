@@ -29,6 +29,8 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
   private chainspace: string = '';
   private autoCreateAddressDID: boolean = false;
 
+  // TODO: add authorize method
+
   init(config: DidModuleConfig) {
     this.chainspace = config.chainspace;
     this.autoCreateAddressDID = config.autoCreateAddressDID;

@@ -28,6 +28,16 @@ type RemoveServiceEndpointSignaturePayload = SignaturePayload<'removeServiceEndp
 
 type Writeable<T> = { -readonly [P in keyof T]: T[P] };
 
+export type DIDTransactionParam =
+  | AddControllersParam
+  | AddKeysParam
+  | AddServiceEndpointParam
+  | CreateParam
+  | DeactivateParam
+  | RemoveControllersParam
+  | RemoveKeysParam
+  | RemoveServiceEndpointParam;
+
 export type WriteableSchema = Writeable<Schema>;
 
 export type DIDCommands =

@@ -22,7 +22,7 @@ export async function executeRemoveControllersCommand(
         if (targetDIDDocument.verificationMethod[i].controller === controller) {
           const removedKeyId = targetDIDDocument.verificationMethod[i].id;
           const publicKeyMultibase = targetDIDDocument.verificationMethod[i].publicKeyMultibase;
-          const x25519Key = didCryptography.key.createX25519KeyPair({ publicKeyMultibase }).publicKeyMultibase;
+          const x25519Key = (await didCryptography.key.createX25519KeyPair({ publicKeyMultibase })).publicKeyMultibase;
 
           targetDIDDocument.verificationMethod.splice(i, 1);
           targetDIDDocument.authentication = targetDIDDocument.authentication.filter(t => t !== removedKeyId);

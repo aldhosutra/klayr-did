@@ -17,7 +17,7 @@ export async function executeRemoveKeysCommand(
     if (index !== -1) {
       const keyId = targetDIDDocument.verificationMethod[index].id;
       const publicKeyMultibase = targetDIDDocument.verificationMethod[index].publicKeyMultibase;
-      const x25519Key = didCryptography.key.createX25519KeyPair({ publicKeyMultibase }).publicKeyMultibase;
+      const x25519Key = (await didCryptography.key.createX25519KeyPair({ publicKeyMultibase })).publicKeyMultibase;
       targetDIDDocument.verificationMethod.splice(index, 1);
       targetDIDDocument.authentication = targetDIDDocument.authentication.filter(t => t !== keyId);
       targetDIDDocument.assertionMethod = targetDIDDocument.assertionMethod.filter(t => t !== keyId);

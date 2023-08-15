@@ -2,6 +2,7 @@ import { MethodContext } from 'lisk-sdk';
 import { DidModuleConfig } from './config';
 import { DidDocument } from './did';
 import { NonceStoreData } from './stores';
+import { AuthorizationResult } from './cryptography';
 
 type Keys = { publicKey: Buffer; relationship: string[] };
 
@@ -10,6 +11,7 @@ export interface DidMethod {
   getConfig(): DidModuleConfig;
   read(methodContext: MethodContext, did: string): Promise<DidDocument>;
   getNonce(methodContext: MethodContext, did: string): Promise<NonceStoreData>;
+  authorize(methodContext: MethodContext, did: string, publicKey: Buffer): Promise<AuthorizationResult[]>;
   create(
     methodContext: MethodContext,
     senderPublicKey: Buffer,

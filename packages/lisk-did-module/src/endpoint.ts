@@ -13,6 +13,8 @@ export class DidEndpoint extends BaseEndpoint implements DidEndpointInterface {
   private chainspace: string = '';
   private autoCreateAddressDID: boolean = false;
 
+  // TODO: add authorize endpoint
+
   public init(config: DidModuleConfig) {
     this.chainspace = config.chainspace;
     this.autoCreateAddressDID = config.autoCreateAddressDID;

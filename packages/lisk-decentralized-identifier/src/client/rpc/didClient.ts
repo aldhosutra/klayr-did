@@ -1,4 +1,5 @@
-import { JSONObject, apiClient, cryptography } from 'lisk-sdk';
+import { JSONObject, apiClient, cryptography, utils } from 'lisk-sdk';
+import * as isUri from 'is-uri';
 import {
   AddControllersParam,
   AddKeysParam,
@@ -19,10 +20,12 @@ import {
   PayloadWithSignature,
   TransactionPayload,
   TransactionPayloadWithoutSignature,
+  DIDTransactionParam,
 } from '../utils/types';
 import { getVerificationRelationship } from '../../cryptography/verification';
 import { createSignatureChallenge, createTransactionSignature } from '../utils';
-import { getAddressDIDFromPublicKey } from '../../did';
+import { getAddressDIDFromPublicKey, parseDIDComponent } from '../../did';
+import { LISK_PUBLIC_KEY_LENGTH, SIGNATURE_BYTES_LENGTH } from '../../utils/constant';
 
 export class DIDClient {
   private apiClient: apiClient.APIClient | undefined;
@@ -59,7 +62,7 @@ export class DIDClient {
     await this._closeClient();
   }
 
-  async removeController(param: TransactionPayload<RemoveControllersParam>, senderPrivateKey: Buffer) {
+  async removeControllers(param: TransactionPayload<RemoveControllersParam>, senderPrivateKey: Buffer) {
     await this._initClient();
     await this._postTransaction('removeControllers', param, senderPrivateKey);
     await this._closeClient();
@@ -85,8 +88,8 @@ export class DIDClient {
 
   async read(did: string): Promise<DidDocument | undefined> {
     if (this.apiClient === undefined) await this._initClient();
-    const nonce = await this.apiClient!.invoke<DidDocument | undefined>('did_read', { did });
-    return nonce;
+    const didDocument = await this.apiClient!.invoke<DidDocument | undefined>('did_read', { did });
+    return didDocument;
   }
 
   async getNonce(did: string): Promise<JSONObject<NonceStoreData>> {
@@ -111,8 +114,59 @@ export class DIDClient {
     return signature;
   }
 
+  // eslint-disable-next-line @typescript-eslint/require-await
+  private async _validateParams(command: DIDCommands, param: TransactionPayload<any>): Promise<void> {
+    let params: DIDTransactionParam;
+    let didComponent;
+    if (command === 'create') {
+      params = param.params as CreateParam;
+      didComponent = parseDIDComponent(params.did);
+      if (params.controllers.length < 1) throw new Error('at least one controller needed');
+      params.controllers.forEach(did => parseDIDComponent(did));
+      if (didComponent.chainspace !== this.chainspace)
+        throw new Error(
+          `this chainspace ${this.chainspace} can't create did document for namespace "${didComponent.chainspace}`,
+        );
+    }
+    if (['create', 'addKeys'].includes(command)) {
+      params = param.params as AddKeysParam | CreateParam;
+      for (const key of (params as AddKeysParam).keys) {
+        if (key.publicKey.length !== LISK_PUBLIC_KEY_LENGTH) throw new Error('invalid public key length');
+        if (key.relationship.length === 0) throw new Error('at least one relationship needed');
+      }
+    }
+    if (['addControllers', 'removeControllers'].includes(command)) {
+      params = param.params as AddControllersParam | RemoveControllersParam;
+      (params as AddControllersParam | RemoveControllersParam).controllers.forEach(did => parseDIDComponent(did));
+    }
+    if (command === 'addServiceEndpoint') {
+      params = param.params as AddServiceEndpointParam;
+      if (!isUri((params as AddServiceEndpointParam).endpoint.id)) throw new Error('endpoint.id is not a valid URI');
+    }
+    if (command === 'removeKeys') {
+      params = param.params as RemoveKeysParam;
+      for (const key of (params as RemoveKeysParam).publicKeys) {
+        if (key.length !== LISK_PUBLIC_KEY_LENGTH) throw new Error('invalid public key length');
+      }
+    }
+    if (command === 'removeServiceEndpoint') {
+      params = param.params as RemoveServiceEndpointParam;
+      if (!isUri((params as RemoveServiceEndpointParam).endpointId)) throw new Error('endpointId is not a valid URI');
+    }
+    if (command !== 'create') {
+      params = param.params as Exclude<DIDTransactionParam, CreateParam>;
+      if (params.target) parseDIDComponent(params.target);
+      if (params.signer) parseDIDComponent(params.signer);
+      if (params.signature && params.signature.length !== SIGNATURE_BYTES_LENGTH)
+        throw new Error('invalid signature length');
+    }
+  }
+
   private async _postTransaction(command: DIDCommands, param: TransactionPayload<any>, senderPrivateKey: Buffer) {
     if (this.apiClient === undefined) throw new Error('apiClient is not initialized');
+
+    await this._initChainspace();
+    await this._validateParams(command, param);
 
     const params = await this._signatureParamsBuilder(
       { command: command, params: param.params as any },
@@ -123,6 +177,7 @@ export class DIDClient {
       param.nonce ?? (await this._getSenderNonce(cryptography.ed.getPublicKeyFromPrivateKey(senderPrivateKey)));
 
     const payload = { module: 'did', command: command, params, nonce };
+
     let transaction = await this.apiClient.transaction.create(
       { ...payload, fee: BigInt(0) },
       senderPrivateKey.toString('hex'),
@@ -135,14 +190,16 @@ export class DIDClient {
   }
 
   private async _signatureParamsBuilder(payload: CommandPayload, privateKey: Buffer): Promise<Record<string, unknown>> {
-    if (!Object.keys(payload.params).includes('signer')) return payload.params;
-    const data = payload as PayloadWithSignature;
+    if (!Object.keys(payload.params).includes('signer')) return { ...payload.params };
+    const data = utils.objects.cloneDeep(payload) as PayloadWithSignature;
 
     const targetDIDDocument = await this.read(data.params.target);
     if (targetDIDDocument === undefined) throw new Error("target DID doesn't exist");
 
     if (data.params.signature) {
-      const challenge = data.params.signature ? createSignatureChallenge(data) : undefined;
+      const didNonce = await this.getNonce(data.params.signer);
+      data.params.nonce = BigInt(didNonce.nonce);
+      const challenge = createSignatureChallenge(data);
 
       /**
        * (#case-1)
@@ -225,7 +282,6 @@ export class DIDClient {
      * we don't need any signer or signature data
      * because its indicate that privateKey have valid addressDID that controles the targetDID
      */
-    await this._initChainspace();
     const privateKeyAddressDID = getAddressDIDFromPublicKey(
       this.chainspace!,
       cryptography.ed.getPublicKeyFromPrivateKey(privateKey),
@@ -282,10 +338,12 @@ export class DIDClient {
   private async _initChainspace() {
     if (this.chainspace === undefined) {
       if (this.ipc !== undefined || this.ws !== undefined) {
-        const didConfig = await this.apiClient?.invoke('did_getConfig');
-        this.chainspace = didConfig?.chainspace as string;
+        if (this.apiClient === undefined) await this._initClient();
+        const didConfig = await this.apiClient!.invoke('did_getConfig');
+        this.chainspace = didConfig.chainspace as string;
+      } else {
+        throw new Error('client need to be configured with either ipc/ws for automatic chainspace resolvance');
       }
-      throw new Error('client need to be configured with either ipc/ws for automatic chainspace resolvance');
     }
   }
 
@@ -301,6 +359,8 @@ export class DIDClient {
   }
 
   private async _closeClient() {
-    await this.apiClient?.disconnect();
+    if (this.apiClient !== undefined) {
+      await this.apiClient.disconnect();
+    }
   }
 }

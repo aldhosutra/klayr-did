@@ -1,5 +1,5 @@
 import { utils, Schema } from 'lisk-sdk';
-import { DIDCommands, WriteableSchema } from './types';
+import { DIDCommands, PayloadWithSignature, WriteableSchema } from './types';
 import { schema } from '../../utils';
 
 const schemaMaps: Record<DIDCommands, Omit<Schema, '$schema'>> = {
@@ -28,22 +28,22 @@ function removeSignatureAndAddNonce(schema: Omit<Schema, '$schema'>) {
 
   if (signature !== undefined) {
     removedSignatureSchema.properties.nonce = {
-      signature: {
-        dataType: 'uint64',
-        fieldNumber: Object.keys(removedSignatureSchema.properties).length + 1,
-      },
+      dataType: 'uint64',
+      fieldNumber: Object.keys(removedSignatureSchema.properties).length + 1,
     };
   }
 
   return removedSignatureSchema;
 }
 
-export function signatureSchemaBuilder(command: DIDCommands): Schema {
-  return removeSignatureAndAddNonce(schemaMaps[command]);
+export function signatureSchemaBuilder(payload: PayloadWithSignature): Schema {
+  if ((payload.command as any) === 'create')
+    throw new Error("signatureSchemaBuilder can't be created for 'create' command");
+  return removeSignatureAndAddNonce(schemaMaps[payload.command]);
 }
 
-export function signatureMessageBuilder(message: Record<string, unknown | unknown[]>) {
-  if (message.nonce === undefined) throw new Error('nonce is required to build signature');
-  const { signature, ...payload } = message;
+export function signatureMessageBuilder(message: { params: { nonce?: bigint; signature?: Buffer } }) {
+  if (message.params.nonce === undefined) throw new Error('nonce is required to build signature message');
+  const { signature, ...payload } = message.params;
   return payload;
 }

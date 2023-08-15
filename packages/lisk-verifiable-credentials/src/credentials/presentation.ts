@@ -36,8 +36,8 @@ export async function issuePresentation(
     throw new Error("specified private key doesn't have neccessary permission to authenticate a presentation");
   }
 
-  const key = didCryptography.key.createEd25519KeyPair({ ...matchedKey[0], privateKeyMultibase });
-  const suite = didCryptography.key.getEd25519SignatureSuite(key);
+  const key = await didCryptography.key.createEd25519KeyPair({ ...matchedKey[0], privateKeyMultibase });
+  const suite = await didCryptography.key.getEd25519SignatureSuite(key);
 
   const presentation: VerifiablePresentation = vc.createPresentation({
     verifiableCredential: verifiableCredentialsList,
@@ -67,14 +67,14 @@ export async function verifyPresentation(
 
   const documentLoader = (options != null && options.loader) ?? createRemoteDocumentLoader(options);
 
-  const key = didCryptography.key.createEd25519KeyPair({
+  const key = await didCryptography.key.createEd25519KeyPair({
     id: presentation.proof.verificationMethod,
     type: utils.constant.ED25519_VERIFICATION_KEY_2020_TYPE,
     controller: presentation.holder,
     publicKeyMultibase: await didCryptography.codec.encodePublicKey(publicKey),
   });
 
-  const suite = didCryptography.key.getEd25519SignatureSuite(key);
+  const suite = await didCryptography.key.getEd25519SignatureSuite(key);
 
   const verificationResult = await vc.verify({
     presentation,

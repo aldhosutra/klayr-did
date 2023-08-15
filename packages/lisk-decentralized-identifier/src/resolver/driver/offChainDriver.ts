@@ -21,8 +21,11 @@ export class LiskOffChainDidDriver extends BaseDriver {
         const didConfig = await this.apiClient?.invoke('did_getConfig');
         this.chainspace = didConfig?.chainspace as string;
         await this._closeClient();
+      } else {
+        throw new Error(
+          'off chain driver needs to be configured with either ipc/ws for automatic chainspace resolvance',
+        );
       }
-      throw new Error('off chain driver needs to be configured with either ipc/ws for automatic chainspace resolvance');
     }
   }
 

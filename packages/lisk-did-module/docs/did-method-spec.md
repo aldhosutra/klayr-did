@@ -3,12 +3,12 @@
 ```
 Title: did:lisk Method Specification
 Author: Aldo Suhartono Putra <aldhosutra@gmail.com>
-Version: 2023.08.14
+Version: 2023.08.15
 
 Version History:
-- 2023.08.14: Initial release.
+- 2023.08.15: Initial release.
 
-Last Modified: August 14, 2023
+Last Modified: August 15, 2023
 ```
 
 This document defines the syntax, data model, and operations for the `did:lisk` Decentralized Identifier (DID) method, specifically for the Lisk Sidechain.
@@ -331,7 +331,7 @@ Note: The Ed25519 verification method does not include `publicKeyJwk`. For furth
 
 1. **`id`**: A string representing the ID of the service. The value of the `id` property for a Service MUST be a URI conforming to RFC3986 [[7]](#ref7). A conforming producer MUST NOT produce multiple service entries with the same ID. Likewise, a conforming consumer MUST produce an error if it detects multiple service entries with the same ID. The ID can be in one of the following formats: `<did-document-id>#<service-alias>` or `#<service-alias>`.
 2. **`type`**: A string indicating the service type. The service type and its associated properties SHOULD be registered in the DID Specification Registries [[8]](#ref8)
-3. **`serviceEndpoint`**: A string that adheres to the rules of RFC3986 [[7]](#ref7) for URIs. Alternatively, it can be a map or a set comprising one or more strings that conform to the rules of RFC3986 for URIs and/or maps.
+3. **`serviceEndpoint`**: A string that adheres to the rules of RFC3986 [[7]](#ref7) for URIs.
 
 ## DID Operations
 
@@ -373,6 +373,33 @@ However, if the public key of the actual transaction `sender` aligns with the `s
 3. `sender` sends valid transaction with privateKey that have `capabilityInvocation` relationship with target's DID. In this case both `signer` and `signature` field becomes unnecessary.
 4. `sender` sends valid transaction with `signer` field which present in target's DID controller, that have `authentication` relationship with signer's DID. In this case `signature` field becomes unnecessary.
 5. target's DID controller is `sender` DID with `address` namespace that have `authentication` relationship available. In this case both `signer` and `signature` field becomes unnecessary.
+
+Nonetheless, there exists a distinct scenario for authorized `deactivate` operations, where the authorized `sender` or `signer` must be the final controller of the designated target DID. Additionally, the target DID must have all its available keys removed.
+
+### `authorize` Method and Endpoint
+
+Lisk sidechain modules and external tools can examine the specified `publicKey` verification relationship through the provided `authorize` method and/or endpoint. This flexibility empowers sidechain developers to craft custom solutions leveraging DID authorization for their specific use cases.
+
+The result of this method and/or endpoint, is an array of objects that cointains specific properties. Result with at least one item indicate successful authorization. The properties are as follows:
+
+1. `type`: A string that shows relationship between publicKey's controller and the DID document. The value can be `"subject"`, or `"controller"`.
+2. `relationship`: A list of string that shows verification relationship between provided keys, and the DID document with above `type`. The value can be `"authentication"`, `"assertionMethod"`, `"capabilityInvocation"`, or `"keyAgreement"`;
+
+Following is provided `authorize` method, tailored for on-chain usage:
+
+```typescript
+didMethod.authorize(
+    context: MethodContext,
+    did: string,
+    publicKey: bytes,
+) => AuthorizationResult[]
+```
+
+Furthermore, following is provided `did_authorize` endpoint, that serves off-chain purposes:
+
+```typescript
+did_authorize(did: string, publicKey: bytes) => AuthorizationResult[]
+```
 
 ### Create DID (Register)
 
@@ -687,6 +714,8 @@ didMethod.removeControllers(
     signature: bytes,
 ) => void
 ```
+
+Please be aware that if the specified `controllers` set for removal represents the sole and final controllers, this command or method will result in an invalid transaction. This is because removing all controllers equates to deactivating the DID. In such cases, the executor can instead utilize the `deactivate` command or method.
 
 #### 5. `addServiceEndpoint` Command and Method
 
