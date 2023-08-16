@@ -1,13 +1,12 @@
 import { cryptography } from 'lisk-sdk';
-import { createEd25519KeyPair, getEd25519SignatureSuite } from './suite';
+import { getEd25519SignatureSuite } from './suite';
 import { CreateResolverParam } from '../types';
 import { getDIDDocument, parseDIDComponent } from '../did';
 import { getVerificationMethod } from './verification';
 import { createResolver } from '../resolver';
 import { JWEDocument, KeyAgreement } from '../types';
-import { encodePublicKey } from './codec';
 import { createCipher } from './cipher';
-import { ed25519ToX25519PrivateKeyMultibase } from './convert';
+import { ed25519ToX25519PrivateKeyMultibase, ed25519ToX25519PublicKeyMultibase } from './convert';
 
 export async function encrypt(
   data: string,
@@ -32,11 +31,11 @@ export async function decrypt(
 ): Promise<string> {
   const cipher = await createCipher();
   const publicKey = cryptography.ed.getPublicKeyFromPrivateKey(privateKey);
-  const ed25519KeyPair = createEd25519KeyPair({ publicKeyMultibase: encodePublicKey(publicKey) });
+  const ed25519PublicKeyMultibase = ed25519ToX25519PublicKeyMultibase(publicKey);
   const keyAgreementKey: KeyAgreement | undefined = await createResolver(options).get(recipientKeyId);
   if (keyAgreementKey === undefined) throw new Error('specified keyId doesnt exists on-chain');
   keyAgreementKey.privateKeyMultibase = ed25519ToX25519PrivateKeyMultibase(privateKey);
-  if ((await ed25519KeyPair).publicKeyMultibase !== keyAgreementKey.publicKeyMultibase) {
+  if (ed25519PublicKeyMultibase !== keyAgreementKey.publicKeyMultibase) {
     throw new Error('provided privateKey and recipientKeyId does not match');
   }
   const object = await cipher.decrypt({ jwe, keyAgreementKey });

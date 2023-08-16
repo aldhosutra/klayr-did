@@ -1,62 +1,124 @@
-/* eslint-disable @typescript-eslint/require-await */
-// import { decrypt, encrypt } from '@dist/cryptography/operation';
-import { encrypt } from '@dist/cryptography/operation';
-import { senderDID, senderKAKey } from '../../setup/constant';
-// import { createX25519KeyPair } from '@dist/cryptography/suite';
+import { decrypt, encrypt, sign, signLocal, verify, verifyLocal } from '@dist/cryptography/operation';
+import { cryptography } from 'lisk-sdk';
+import {
+  encryptedJwe,
+  ipc,
+  jwePlainText,
+  privateKey,
+  publicKey,
+  senderDID,
+  senderKAKey,
+  signData,
+  signatureForSignData,
+} from '../../setup/constant';
+import { mockedCreateIPCClient, mockedDecrypt, mockedEncrypt, mockedKeyResolver } from '../../setup/mocks';
 
-describe('test', () => {
-  it('should test', async () => {
-    // console.log(await utils.bootstrapAddressDidDocument(chainspace, publicKey));
-    const publicKeyNode = {
-      id: senderKAKey,
-      type: 'X25519KeyAgreementKey2020',
-      controller: senderDID,
-      publicKeyMultibase: 'z6LSgewxKK6vPH1NGjp5UpGFqU1x94VEtvQfGx4W1THZWSxe',
+describe('encrypt', () => {
+  afterEach(jest.clearAllMocks);
+
+  it('should encrypt data to a valid jwe document', async () => {
+    const encrypted = await encrypt(jwePlainText, [senderKAKey], { resolver: mockedKeyResolver });
+    expect(encrypted).toStrictEqual(encryptedJwe);
+    expect(mockedEncrypt).toHaveBeenCalled();
+    expect(mockedKeyResolver.get).toHaveBeenCalled();
+  });
+});
+
+describe('decrypt', () => {
+  afterEach(jest.clearAllMocks);
+
+  it('should decrypt data to a valid plain text', async () => {
+    const decrypted = await decrypt(encryptedJwe, senderKAKey, privateKey, { ipc });
+    expect(decrypted).toStrictEqual(jwePlainText);
+    expect(mockedDecrypt).toHaveBeenCalled();
+    expect(mockedCreateIPCClient).toHaveBeenCalled();
+  });
+
+  it('should throw an error if provided senderKAKey and privateKey doesnt match', async () => {
+    const func = async () => {
+      await decrypt(encryptedJwe, senderKAKey, Buffer.alloc(64), { ipc });
     };
-    const keyResolver = async () => {
-      return publicKeyNode;
+    await expect(func()).rejects.toThrow();
+  });
+
+  it('should throw an error if keyid is not exists on chain', async () => {
+    const func = async () => {
+      await decrypt(encryptedJwe, 'did:lisk:notexist:on:chain', Buffer.alloc(64), { ipc });
     };
+    await expect(func()).rejects.toThrow();
+  });
+});
 
-    // const encrypted = {
-    //   protected: 'eyJlbmMiOiJYQzIwUCJ9',
-    //   recipients: [
-    //     {
-    //       header: {
-    //         kid: 'did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4tundefined#z6LSgewxKK6vPH1NGjp5UpGFqU1x94VEtvQfGx4W1THZWSxe',
-    //         alg: 'ECDH-ES+A256KW',
-    //         epk: {
-    //           kty: 'OKP',
-    //           crv: 'X25519',
-    //           x: '4QYRl-ZGAGIQf8VnEMgDkOLpvUkUWDXg4aRK9uDMmB8',
-    //         },
-    //         apu: '4QYRl-ZGAGIQf8VnEMgDkOLpvUkUWDXg4aRK9uDMmB8',
-    //         apv: 'ZGlkOmxpc2s6dGVzdDphZGRyZXNzOmxza205dHp5emNwNDhicTM5NHhmenQyeHBhbjZqaGJ1b3NzaDdrajR0I3o2TFNnZXd4S0s2dlBIMU5HanA1VXBHRnFVMXg5NFZFdHZRZkd4NFcxVEhaV1N4ZQ',
-    //       },
-    //       encrypted_key: '2NKhqgOjBTSqz21FXYKoGRMYEJfLQMDXkggOpyeruoXgdkGn3QBXMQ',
-    //     },
-    //   ],
-    //   iv: 'CIlcF38NRuzna96X9M8vBMQGLvPqMzJh',
-    //   ciphertext: 'rQ1xqUhBOsZQ5AeTrTJI',
-    //   tag: 'Y0jylsIsv6yNM_oSAUPUtQ',
-    // };
+describe('sign', () => {
+  it('should sign message successfully', async () => {
+    const signed = await sign(signData, senderDID, privateKey, { ipc });
+    expect(mockedCreateIPCClient).toHaveBeenCalled();
+    expect(signed).toStrictEqual(signatureForSignData);
+  });
 
-    // const recipient = {
-    //   header: {
-    //     kid: 'anjay#z6LSqc7Q3MgFLWD39rLg3ZmrWcyN2SyEyVrTFVhNjERyDFkE',
-    //     alg: 'ECDH-ES+A256KW',
-    //   },
-    // };
+  it('should throw an error if provided privateKey doesnt have correct permission', async () => {
+    const func = async () => {
+      await sign(signData, senderDID, Buffer.alloc(64), { ipc });
+    };
+    await expect(func()).rejects.toThrow();
+  });
 
-    const obj = { key: 'value' };
-    await encrypt(JSON.stringify(obj), [senderKAKey], {
-      loader: keyResolver,
-    });
-    // jweDoc.recipients[0].header.kid = publicKeyNode.id;
-    // console.log(JSON.stringify(jweDoc, null, 2));
+  it('should throw an error if provided senderDID doesnt exists', async () => {
+    const func = async () => {
+      await sign(signData, 'did:lisk:notexist:on:chain', Buffer.alloc(64), { ipc });
+    };
+    await expect(func()).rejects.toThrow();
+  });
+});
 
-    // const object = await decrypt(encrypted, senderKAKey, privateKey, { ipc });
+describe('verify', () => {
+  it('should verify message successfully', async () => {
+    const ver = await verify(signData, senderDID, signatureForSignData, publicKey, { ipc });
+    expect(mockedCreateIPCClient).toHaveBeenCalled();
+    expect(ver).toBe(true);
+  });
 
-    // console.log(object);
-    expect(true).toBe(true);
+  it('should verify message using lisk cryptography if digest is turned on', async () => {
+    const signatureLisk = cryptography.ed.signMessageWithPrivateKey(signData, privateKey);
+    const ver = await verify(signData, senderDID, signatureLisk.signature, publicKey, { ipc, withDigest: true });
+    expect(mockedCreateIPCClient).toHaveBeenCalled();
+    expect(ver).toBe(true);
+  });
+
+  it('should throw an error if provided privateKey doesnt have correct permission', async () => {
+    const func = async () => {
+      await verify(signData, senderDID, signatureForSignData, Buffer.alloc(32), { ipc });
+    };
+    await expect(func()).rejects.toThrow();
+  });
+
+  it('should throw an error if provided senderDID doesnt exists', async () => {
+    const func = async () => {
+      await verify(signData, 'did:lisk:notexist:on:chain', signatureForSignData, Buffer.alloc(32), { ipc });
+    };
+    await expect(func()).rejects.toThrow();
+  });
+});
+
+describe('signLocal', () => {
+  it('should sign message successfully and no call to client IPC', async () => {
+    const signed = await signLocal(signData, privateKey);
+    expect(mockedCreateIPCClient).toHaveBeenCalledTimes(0);
+    expect(signed).toStrictEqual(signatureForSignData);
+  });
+});
+
+describe('verifyLocal', () => {
+  it('should verify message successfully and no call to ipc client', async () => {
+    const ver = await verifyLocal(signData, signatureForSignData, publicKey);
+    expect(mockedCreateIPCClient).toHaveBeenCalledTimes(0);
+    expect(ver).toBe(true);
+  });
+
+  it('should verify message using lisk cryptography if digest is turned on', async () => {
+    const signatureLisk = cryptography.ed.signMessageWithPrivateKey(signData, privateKey);
+    const ver = await verifyLocal(signData, signatureLisk.signature, publicKey, true);
+    expect(mockedCreateIPCClient).toHaveBeenCalledTimes(0);
+    expect(ver).toBe(true);
   });
 });
