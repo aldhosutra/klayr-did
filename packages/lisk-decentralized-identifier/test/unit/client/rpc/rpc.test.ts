@@ -24,7 +24,7 @@ import {
   mockedTransactionComputeMinFee,
   mockedTransactionCreate,
   mockedTransactionSend,
-} from '../../../setup/@liskhq/lisk-api-client';
+} from '../../../setup/mocks';
 import { ipc, ws, privateKey, publicKey, senderDID, signature, chainspace } from '../../../setup/constant';
 
 describe('DIDClient', () => {

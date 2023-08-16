@@ -3,7 +3,7 @@
 import { getAddressDIDFromPublicKey, getDIDDocument, parseDIDComponent } from '@dist/did';
 import { cryptography } from 'lisk-sdk';
 import { LISK_DID_PREFIX } from '@dist/utils/constant';
-import { mockedReadDID } from '../setup/@liskhq/lisk-api-client';
+import { mockedReadDID } from '../setup/mocks';
 import { chainspace, ipc, publicKey, senderDID, ws } from '../setup/constant';
 
 describe('parseDIDComponent', () => {

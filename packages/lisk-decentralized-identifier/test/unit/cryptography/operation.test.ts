@@ -1,21 +1,21 @@
 /* eslint-disable @typescript-eslint/require-await */
 // import { decrypt, encrypt } from '@dist/cryptography/operation';
-// import { encrypt } from '@dist/cryptography/operation';
-// import { senderDID, senderKAKey } from '../../setup/constant';
+import { encrypt } from '@dist/cryptography/operation';
+import { senderDID, senderKAKey } from '../../setup/constant';
 // import { createX25519KeyPair } from '@dist/cryptography/suite';
 
 describe('test', () => {
   it('should test', async () => {
     // console.log(await utils.bootstrapAddressDidDocument(chainspace, publicKey));
-    // const publicKeyNode = {
-    //   id: senderKAKey,
-    //   type: 'X25519KeyAgreementKey2020',
-    //   controller: senderDID,
-    //   publicKeyMultibase: 'z6LSgewxKK6vPH1NGjp5UpGFqU1x94VEtvQfGx4W1THZWSxe',
-    // };
-    // const keyResolver = async () => {
-    //   return publicKeyNode;
-    // };
+    const publicKeyNode = {
+      id: senderKAKey,
+      type: 'X25519KeyAgreementKey2020',
+      controller: senderDID,
+      publicKeyMultibase: 'z6LSgewxKK6vPH1NGjp5UpGFqU1x94VEtvQfGx4W1THZWSxe',
+    };
+    const keyResolver = async () => {
+      return publicKeyNode;
+    };
 
     // const encrypted = {
     //   protected: 'eyJlbmMiOiJYQzIwUCJ9',
@@ -47,12 +47,12 @@ describe('test', () => {
     //   },
     // };
 
-    // const obj = { key: 'value' };
-    // const jweDoc = await encrypt(JSON.stringify(obj), [senderKAKey], {
-    //   loader: keyResolver,
-    // });
+    const obj = { key: 'value' };
+    const jweDoc = await encrypt(JSON.stringify(obj), [senderKAKey], {
+      loader: keyResolver,
+    });
     // jweDoc.recipients[0].header.kid = publicKeyNode.id;
-    // console.log(JSON.stringify(jweDoc, null, 2));
+    console.log(JSON.stringify(jweDoc, null, 2));
 
     // const object = await decrypt(encrypted, senderKAKey, privateKey, { ipc });
 

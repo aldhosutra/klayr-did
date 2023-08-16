@@ -11,7 +11,7 @@ const config = {
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
   automock: false,
   testMatch: ['<rootDir>/test/**/?(*.)+(spec|test).+(ts|tsx|js)'],
-  setupFiles: ['<rootDir>/test/setup/@liskhq/lisk-api-client.ts'],
+  setupFiles: ['<rootDir>/test/setup/mocks.ts'],
   setupFilesAfterEnv: ['<rootDir>/test/_setup.js'],
   transform: {
     '^.+\\.(ts|tsx)$': [

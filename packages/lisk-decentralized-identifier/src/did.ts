@@ -31,7 +31,7 @@ export function parseDIDComponent(did: string) {
     uniqueId = parsedDID.identifier.split(`${parsedIdentifier[0]}:${parsedIdentifier[1]}:`)[1];
   }
 
-  let suffix;
+  let suffix = '';
   if (parsedDID.path) {
     suffix += parsedDID.path;
   }

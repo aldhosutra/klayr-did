@@ -1,5 +1,5 @@
-import { utils } from '@dist/index';
-import { chainspace, publicKey, senderDID } from '../constant';
+import { CipherInterface, utils } from '@dist/index';
+import { chainspace, encryptedJwe, jwePlainText, publicKey, senderDID, senderKAKey } from './constant';
 
 export const mockedDisconnect = jest.fn();
 export const mockedTransactionCreate = jest.fn();
@@ -67,5 +67,33 @@ jest.mock('@liskhq/lisk-api-client', () => {
       mockedCreateWSClient();
       return Promise.resolve(clientMock);
     },
+  };
+});
+
+const plainText = JSON.stringify(jwePlainText);
+export const mockedEncrypt = jest.fn();
+export const mockedDecrypt = jest.fn();
+
+jest.mock('@dist/cryptography/cipher', () => {
+  return {
+    createCipher: async () =>
+      Promise.resolve<CipherInterface>({
+        // eslint-disable-next-line @typescript-eslint/require-await
+        encrypt: async ({ data, recipients, keyResolver }) => {
+          mockedEncrypt(data, recipients, keyResolver);
+          if (data === plainText && recipients[0].header.kid === senderKAKey) {
+            return encryptedJwe;
+          }
+          throw new Error('encrypt failed');
+        },
+        // eslint-disable-next-line @typescript-eslint/require-await
+        decrypt: async ({ jwe, keyAgreementKey }) => {
+          mockedDecrypt(jwe, keyAgreementKey);
+          if (jwe === encryptedJwe) {
+            return plainText;
+          }
+          throw new Error('decrypt failed');
+        },
+      }),
   };
 });

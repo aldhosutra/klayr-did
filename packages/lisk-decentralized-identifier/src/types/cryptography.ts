@@ -65,3 +65,16 @@ export interface JWEDocument {
   ciphertext: string;
   tag: string;
 }
+
+export interface CipherInterface {
+  encrypt: ({
+    data,
+    recipients,
+    keyResolver,
+  }: {
+    data: string;
+    recipients: { header: { kid: string; alg: string | 'ECDH-ES+A256KW' } }[];
+    keyResolver: (url: string) => Promise<any>;
+  }) => Promise<JWEDocument>;
+  decrypt: ({ jwe, keyAgreementKey }: { jwe: JWEDocument; keyAgreementKey: KeyAgreement }) => Promise<string>;
+}

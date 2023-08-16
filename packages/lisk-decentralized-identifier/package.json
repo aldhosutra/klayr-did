@@ -35,9 +35,9 @@
     "lint:fix": "eslint --fix --ext .js,.ts .",
     "format": "prettier --write '**/*'",
     "build": "tsc",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --passWithNoTests",
-    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules npx jest --passWithNoTests --coverage=true --coverage-reporters=text",
-    "test:ci": "NODE_OPTIONS=--experimental-vm-modules npx jest --config ./jest.config.js --collectCoverage --coverageDirectory=\"./coverage\" --ci --reporters=default --reporters=jest-junit --watchAll=false",
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest --passWithNoTests --coverage=true --coverage-reporters=text",
+    "test:ci": "jest --config ./jest.config.js --collectCoverage --coverageDirectory=\"./coverage\" --ci --reporters=default --reporters=jest-junit --watchAll=false",
     "prepublishOnly": "npm ci && npm run lint && npm run build"
   },
   "bugs": {
