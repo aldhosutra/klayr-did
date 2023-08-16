@@ -49,13 +49,10 @@ export function createWSResolver(ws: string) {
 }
 
 export function createChainResolver(context: MethodContext, method: DidMethod): CachedResolver {
-  const driver = didResolver.driver.createOnChainDriver(context, method);
-  const resolver: CachedResolver = {
-    get: driver.get as CachedResolver['get'],
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
-    use: () => {},
-  };
-  return resolver;
+  const driver = didResolver.driver.createOnChainDriver(context, method) as unknown as CachedResolver;
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  driver.use = () => {};
+  return driver;
 }
 
 export function createResolver(options: CreateResolverParam): ResolverAbstraction {
@@ -72,23 +69,19 @@ export function createResolver(options: CreateResolverParam): ResolverAbstractio
     throw new Error('Unexpected Error: insufficient options!');
   }
 
-  const ret: ResolverAbstraction = {
-    get: () => {
-      throw new Error('resolver not implemented correctly');
-    },
-  };
+  const ret: ResolverAbstraction | object = {};
 
   if (loader) {
-    ret.get = async (url: string) => {
+    (ret as ResolverAbstraction).get = async (url: string) => {
       const res = await (loader as DocumentLoader | BaseLoader)(url);
-      if ('document' in res) return res.document;
+      if (res !== undefined && 'document' in res) return res.document;
       else return res;
     };
   }
 
   if (resolver) {
-    ret.get = async (url: string) => await (resolver as BaseResolver).get({ url });
+    (ret as ResolverAbstraction).get = async (url: string) => await (resolver as BaseResolver).get({ url });
   }
 
-  return ret;
+  return ret as ResolverAbstraction;
 }

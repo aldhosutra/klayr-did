@@ -21,7 +21,7 @@ export class LiskOnChainDidDriver extends BaseDriver {
     }
   }
 
-  async get(params: { did: string; url: string }) {
+  async get(params: { did?: string; url?: string }) {
     let { did, url } = params;
     did = did || url;
     if (!did) throw new TypeError('"did" or "url" must be a string.');

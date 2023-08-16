@@ -1,5 +1,5 @@
 import { CipherInterface, utils } from '@dist/index';
-import { chainspace, encryptedJwe, jwePlain, publicKey, senderDID, senderKAKey } from './constant';
+import { chainspace, encryptedJwe, jwePlain, publicKey, senderDID, senderDIDDoc, senderKAKey } from './constant';
 
 export const mockedDisconnect = jest.fn();
 export const mockedTransactionCreate = jest.fn();
@@ -98,3 +98,25 @@ jest.mock('@dist/cryptography/cipher', () => {
       }),
   };
 });
+
+export const mockedContext = jest.fn();
+export const mockedMethodGetConfig = jest.fn();
+export const mockedMethodRead = jest.fn();
+export const mockedMethod = {
+  read: (_context: any, did: string) => {
+    mockedMethodRead();
+    if (did === senderDID) return senderDIDDoc;
+    if (did === senderDIDDoc.verificationMethod[0].id) return senderDIDDoc.verificationMethod[0];
+    return undefined;
+  },
+  getConfig: () => {
+    mockedMethodGetConfig();
+    return { chainspace };
+  },
+};
+export const mockedLoader = jest.fn();
+export const mockedDocumentLoader = jest.fn();
+export const documentLoader = async () => {
+  mockedDocumentLoader();
+  return Promise.resolve({ document: 'document' });
+};

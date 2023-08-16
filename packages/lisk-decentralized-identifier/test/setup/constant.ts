@@ -10,6 +10,7 @@ export const publicKey = cryptography.ed.getPublicKeyFromPrivateKey(privateKey);
 export const senderDID = `${LISK_DID_PREFIX}:${chainspace}:address:${cryptography.address.getLisk32AddressFromPublicKey(
   publicKey,
 )}`;
+export const fingerprint = 'z6LSgewxKK6vPH1NGjp5UpGFqU1x94VEtvQfGx4W1THZWSxe';
 export const senderKAKey =
   'did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4t#z6LSgewxKK6vPH1NGjp5UpGFqU1x94VEtvQfGx4W1THZWSxe';
 export const senderVMKey =

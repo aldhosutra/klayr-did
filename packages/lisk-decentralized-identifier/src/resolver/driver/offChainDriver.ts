@@ -10,16 +10,18 @@ export class LiskOffChainDidDriver extends BaseDriver {
 
   constructor(param?: { ipc?: string; ws?: string }) {
     super(Ed25519VerificationKey2020);
-    this.ipc = param?.ipc;
-    this.ws = param?.ws;
+    if (param) {
+      this.ipc = param.ipc;
+      this.ws = param.ws;
+    }
   }
 
   async initChainspace() {
     if (this.chainspace === undefined) {
       if (this.ipc !== undefined || this.ws !== undefined) {
         await this._initClient();
-        const didConfig = await this.apiClient?.invoke('did_getConfig');
-        this.chainspace = didConfig?.chainspace as string;
+        const didConfig = await this.apiClient!.invoke('did_getConfig');
+        this.chainspace = didConfig.chainspace as string;
         await this._closeClient();
       } else {
         throw new Error(
@@ -29,14 +31,14 @@ export class LiskOffChainDidDriver extends BaseDriver {
     }
   }
 
-  async get(params: { did: string; url: string }) {
+  async get(params: { did?: string; url?: string }) {
     let { did, url } = params;
     did = did || url;
     if (!did) throw new TypeError('"did" or "url" must be a string.');
 
     await this._initClient();
     const [didAuthority, keyIdFragment] = did.split('#');
-    const didDocument = await this.apiClient?.invoke<DidDocument>('did_read', { did: didAuthority });
+    const didDocument = await this.apiClient!.invoke<DidDocument>('did_read', { did: didAuthority });
     await this._closeClient();
 
     if (didDocument == null || (didDocument as unknown as string) === '{}' || Object.keys(didDocument).length === 0) {
@@ -59,6 +61,8 @@ export class LiskOffChainDidDriver extends BaseDriver {
   }
 
   private async _closeClient() {
-    await this.apiClient?.disconnect();
+    if (this.apiClient) {
+      await this.apiClient.disconnect();
+    }
   }
 }

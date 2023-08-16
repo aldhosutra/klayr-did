@@ -4,7 +4,9 @@ import { BaseDriver } from './baseDriver';
 export class LiskLocalDidDriver extends BaseDriver {
   constructor(param?: { chainspace?: string }) {
     super(Ed25519VerificationKey2020);
-    this.chainspace = param?.chainspace;
+    if (param) {
+      this.chainspace = param.chainspace;
+    }
   }
 
   // eslint-disable-next-line @typescript-eslint/require-await
@@ -15,7 +17,7 @@ export class LiskLocalDidDriver extends BaseDriver {
   }
 
   // eslint-disable-next-line @typescript-eslint/require-await
-  async get(_params: { did: string; url: string }) {
+  async get(_params: { did?: string; url?: string }) {
     throw new Error('get() method is not available in local driver');
   }
 }

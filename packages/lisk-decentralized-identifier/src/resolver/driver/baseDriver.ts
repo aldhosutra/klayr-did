@@ -1,4 +1,4 @@
-import didIo from '@digitalcredentials/did-io';
+import * as didIo from '@digitalcredentials/did-io';
 import { cryptography } from 'lisk-sdk';
 import { Ed25519VerificationKey2020 } from '@digitalcredentials/ed25519-verification-key-2020';
 import { DidDocument, VerificationMethod } from '../../types';
@@ -28,14 +28,14 @@ export abstract class BaseDriver {
   }
 
   // eslint-disable-next-line @typescript-eslint/require-await
-  async get(_params: { did: string; url: string }) {
+  async get(_params: { did?: string; url?: string }) {
     throw new Error("Method 'get()' must be implemented.");
   }
 
   async generate(options?: { privateKey: Buffer }): Promise<{
     didDocument: DidDocument;
     keyPairs: Map<string, any>;
-    methodFor: ({ purpose }: { purpose: string }) => void;
+    methodFor: ({ purpose }: { purpose: string }) => Ed25519VerificationKey2020;
   }> {
     await this.initChainspace();
 
@@ -106,6 +106,7 @@ export abstract class BaseDriver {
     const lisk32 = cryptography.address.getLisk32AddressFromPublicKey(
       await decodePublicKey(keyPair.publicKeyMultibase),
     );
+
     const verificationKeyPair = await createEd25519KeyPair({ ...keyPair });
     const did = `${LISK_DID_PREFIX}:${chainspace}:address:${lisk32}`;
     verificationKeyPair.controller = did;
