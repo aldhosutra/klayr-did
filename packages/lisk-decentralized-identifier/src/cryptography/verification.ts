@@ -32,6 +32,13 @@ export async function getVerificationMethod(
   didDocument: DidDocument,
   options: VerificationFilterOptions,
 ): Promise<VerificationMethod[]> {
+  if (
+    options === undefined ||
+    !Object.values(options)
+      .map(t => !!t)
+      .includes(true)
+  )
+    return [];
   let matchedKey = didDocument.verificationMethod.concat(didDocument.keyAgreement);
 
   if (options.privateKey !== undefined) {

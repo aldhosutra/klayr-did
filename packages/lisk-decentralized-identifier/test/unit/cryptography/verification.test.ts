@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { getVerificationMethod, getVerificationRelationship } from '@dist/cryptography/verification';
 import { encodePrivateKey, encodePublicKey } from '@dist/cryptography/codec';
 import { ed25519ToX25519PublicKeyMultibase } from '@dist/cryptography/convert';
@@ -5,6 +6,16 @@ import { signLocal } from '@dist/cryptography/operation';
 import { privateKey, publicKey, senderDID, senderDIDDoc } from '../../setup/constant';
 
 describe('getVerificationMethod', () => {
+  it('should return empty array if no options provided', async () => {
+    const method = await getVerificationMethod(senderDIDDoc, undefined as any);
+    expect(method).toHaveLength(0);
+  });
+
+  it('should return empty array if options is an empty object', async () => {
+    const method = await getVerificationMethod(senderDIDDoc, {});
+    expect(method).toHaveLength(0);
+  });
+
   it('should return correct verification method based on privateKey', async () => {
     const method = await getVerificationMethod(senderDIDDoc, { privateKey });
     expect(method).toHaveLength(2);
