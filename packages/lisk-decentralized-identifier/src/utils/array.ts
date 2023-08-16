@@ -1,4 +1,5 @@
 export function findIntersection<T>(arr: T[][]): T[] {
+  if (arr.length === 0) return [];
   return arr.reduce((a, b) => a.filter(c => b.includes(c)));
 }
 

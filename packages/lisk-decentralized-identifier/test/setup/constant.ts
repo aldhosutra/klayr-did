@@ -70,3 +70,39 @@ export const signatureForSignData = Buffer.from(
   'b4db62fefb0409fd1811523d2d08d8119af6424fe239aa9c6a81b65bc03ca44bbc058c1aeeed96bad190bce850b662c8a3a8e0337f1e8b0bf230aff19509370c',
   'hex',
 );
+
+export const senderDIDDoc = {
+  '@context': [
+    'https://www.w3.org/ns/did/v1',
+    'https://w3id.org/security/suites/ed25519-2020/v1',
+    'https://w3id.org/security/suites/x25519-2020/v1',
+  ],
+  id: 'did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4t',
+  controller: ['did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4t'],
+  verificationMethod: [
+    {
+      id: 'did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4t#z6MkhtSAfygeA8WYBjfPxS5eatUj6URxGfBSYRuHEbFywza5',
+      type: 'Ed25519VerificationKey2020',
+      controller: 'did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4t',
+      publicKeyMultibase: 'z6MkhtSAfygeA8WYBjfPxS5eatUj6URxGfBSYRuHEbFywza5',
+    },
+  ],
+  authentication: [
+    'did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4t#z6MkhtSAfygeA8WYBjfPxS5eatUj6URxGfBSYRuHEbFywza5',
+  ],
+  assertionMethod: [
+    'did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4t#z6MkhtSAfygeA8WYBjfPxS5eatUj6URxGfBSYRuHEbFywza5',
+  ],
+  capabilityInvocation: [
+    'did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4t#z6MkhtSAfygeA8WYBjfPxS5eatUj6URxGfBSYRuHEbFywza5',
+  ],
+  keyAgreement: [
+    {
+      id: 'did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4t#z6LSgewxKK6vPH1NGjp5UpGFqU1x94VEtvQfGx4W1THZWSxe',
+      type: 'X25519KeyAgreementKey2020',
+      controller: 'did:lisk:test:address:lskm9tzyzcp48bq394xfzt2xpan6jhbuossh7kj4t',
+      publicKeyMultibase: 'z6LSgewxKK6vPH1NGjp5UpGFqU1x94VEtvQfGx4W1THZWSxe',
+    },
+  ],
+  service: [],
+};

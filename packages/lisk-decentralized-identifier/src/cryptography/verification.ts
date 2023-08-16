@@ -22,11 +22,17 @@ interface VerificationFilterOptions {
   relationship?: VerificationRelationship[];
 }
 
+const predicatePublicKeyMultibase = (ed25519Key, x25519Key) => (key: VerificationMethod) => {
+  const ed25519Match = key.type === ED25519_VERIFICATION_KEY_2020_TYPE ? key.publicKeyMultibase === ed25519Key : false;
+  const x25519Match = key.type === X25519_KEY_AGREEMENT_KEY_2020_TYPE ? key.publicKeyMultibase === x25519Key : false;
+  return ed25519Match || x25519Match;
+};
+
 export async function getVerificationMethod(
   didDocument: DidDocument,
   options: VerificationFilterOptions,
 ): Promise<VerificationMethod[]> {
-  let matchedKey = didDocument.verificationMethod;
+  let matchedKey = didDocument.verificationMethod.concat(didDocument.keyAgreement);
 
   if (options.privateKey !== undefined) {
     const publicKey = cryptography.ed.getPublicKeyFromPrivateKey(options.privateKey);
@@ -45,7 +51,9 @@ export async function getVerificationMethod(
       throw new Error('provided privateKey and privateKeyMultibase does not match');
     }
 
-    matchedKey = matchedKey.filter(key => key.publicKeyMultibase === publicKeyMultibase);
+    matchedKey = matchedKey.filter(
+      predicatePublicKeyMultibase(publicKeyMultibase, ed25519ToX25519PublicKeyMultibase(publicKey)),
+    );
   }
 
   if (options.privateKeyMultibase !== undefined) {
@@ -59,20 +67,24 @@ export async function getVerificationMethod(
     if (options.publicKeyMultibase !== undefined && options.publicKeyMultibase !== publicKeyMultibase) {
       throw new Error('provided privateKey and publicKeyMultibase does not match');
     }
-    if (options.privateKey !== undefined && Buffer.compare(options.privateKey, privateKey) !== 0) {
-      throw new Error('provided privateKey and privateKeyMultibase does not match');
-    }
 
-    matchedKey = matchedKey.filter(key => key.publicKeyMultibase === publicKeyMultibase);
+    matchedKey = matchedKey.filter(
+      predicatePublicKeyMultibase(publicKeyMultibase, ed25519ToX25519PublicKeyMultibase(publicKey)),
+    );
   }
 
   if (options.publicKey != undefined) {
     const publicKeyMultibase = encodePublicKey(options.publicKey);
-    matchedKey = matchedKey.filter(key => key.publicKeyMultibase === publicKeyMultibase);
+    matchedKey = matchedKey.filter(
+      predicatePublicKeyMultibase(publicKeyMultibase, ed25519ToX25519PublicKeyMultibase(options.publicKey)),
+    );
   }
 
   if (options.publicKeyMultibase !== undefined) {
-    matchedKey = matchedKey.filter(key => key.publicKeyMultibase === options.publicKeyMultibase);
+    const publicKey = decodePublicKey(options.publicKeyMultibase);
+    matchedKey = matchedKey.filter(
+      predicatePublicKeyMultibase(options.publicKeyMultibase, ed25519ToX25519PublicKeyMultibase(publicKey)),
+    );
   }
 
   if (options.controller !== undefined) {
@@ -99,9 +111,10 @@ export async function getVerificationMethod(
 
     matchedKey = matchedKey.filter(key => keyIntersectionWithoutKeyAgreement.map(t => t.id).includes(key.id));
 
-    if (options.relationship.includes('keyAgreement') && matchedKey.length > 0) {
+    if (options.relationship.includes('keyAgreement')) {
+      const keyList = matchedKey.length > 0 ? matchedKey : didDocument.verificationMethod;
       const keyAgreementPublicKeyMultibase = didDocument.keyAgreement.map(key => key.publicKeyMultibase);
-      const matchedKeyPublicKeyMultibase = matchedKey.map(key =>
+      const matchedKeyPublicKeyMultibase = keyList.map(key =>
         ed25519ToX25519PublicKeyMultibase(decodePublicKey(key.publicKeyMultibase)),
       );
       const intersection = findIntersection([keyAgreementPublicKeyMultibase, matchedKeyPublicKeyMultibase]).map(
