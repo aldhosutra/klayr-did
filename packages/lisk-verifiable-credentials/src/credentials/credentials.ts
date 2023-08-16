@@ -15,11 +15,7 @@ export async function issueCredential(
   }
   const documentLoader = (options != null && options.loader) ?? createRemoteDocumentLoader(options);
   const issuer = typeof credential.issuer === 'string' ? credential.issuer : credential.issuer.id;
-  const didDocument = await getDIDDocument(issuer, {
-    loader: options?.loader,
-    ipc: options?.ipc,
-    ws: options?.ws,
-  });
+  const didDocument = await getDIDDocument(issuer, options!);
 
   if (didDocument == null) {
     throw new Error('issuer DID not registered yet on the chain');

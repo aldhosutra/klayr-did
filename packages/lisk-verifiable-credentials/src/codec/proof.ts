@@ -1,5 +1,6 @@
 import { codec } from '@liskhq/lisk-codec';
 import { Proof } from '../types';
+import { validator } from 'lisk-sdk';
 
 const proofSchema = {
   $id: 'lisk-verifiable-credentials/proofSchema',
@@ -30,9 +31,12 @@ const proofSchema = {
 };
 
 export function encodeProof(proof: Proof): Buffer {
+  validator.validator.validate(proofSchema, proof);
   return codec.encode(proofSchema, proof);
 }
 
 export function decodeProof(proofBuffer: Buffer): Proof {
-  return codec.decode(proofSchema, proofBuffer);
+  const decoded = codec.decode(proofSchema, proofBuffer);
+  validator.validator.validate(proofSchema, decoded);
+  return decoded as unknown as Proof;
 }
