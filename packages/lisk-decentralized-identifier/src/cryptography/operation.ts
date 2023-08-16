@@ -1,23 +1,20 @@
 import { cryptography } from 'lisk-sdk';
-import { getEd25519SignatureSuite } from './suite';
+import { createEd25519KeyPair, getEd25519SignatureSuite } from './suite';
 import { CreateResolverParam } from '../types';
 import { getDIDDocument, parseDIDComponent } from '../did';
 import { getVerificationMethod } from './verification';
 import { createResolver } from '../resolver';
 import { JWEDocument, KeyAgreement } from '../types';
-import { encodePrivateKey, encodePublicKey } from './codec';
-// import { Cipher } from './minimal-cipher';
-
-// eslint-disable-next-line @typescript-eslint/no-implied-eval, no-new-func
-const dynamicImport = new Function('specifier', 'return import(specifier)');
+import { encodePublicKey } from './codec';
+import { createCipher } from './cipher';
+import { ed25519ToX25519PrivateKeyMultibase } from './convert';
 
 export async function encrypt(
   data: string,
   recipientKeyId: string[],
   options: CreateResolverParam,
 ): Promise<JWEDocument> {
-  const { Cipher } = await dynamicImport('@digitalcredentials/minimal-cipher');
-  const cipher = new Cipher();
+  const cipher = await createCipher();
   const keyResolver = async (url: string) => await createResolver(options).get(url);
   const recipients = recipientKeyId
     .map(kid => parseDIDComponent(kid).uri)
@@ -33,11 +30,13 @@ export async function decrypt(
   privateKey: Buffer,
   options: CreateResolverParam,
 ): Promise<string> {
-  const { Cipher } = await dynamicImport('@digitalcredentials/minimal-cipher');
-  const cipher = new Cipher();
-  const keyAgreementKey: KeyAgreement = await createResolver(options).get(recipientKeyId);
-  keyAgreementKey.privateKeyMultibase = encodePrivateKey(privateKey);
-  if (encodePublicKey(cryptography.ed.getPublicKeyFromPrivateKey(privateKey)) !== keyAgreementKey.publicKeyMultibase) {
+  const cipher = await createCipher();
+  const publicKey = cryptography.ed.getPublicKeyFromPrivateKey(privateKey);
+  const ed25519KeyPair = createEd25519KeyPair({ publicKeyMultibase: encodePublicKey(publicKey) });
+  const keyAgreementKey: KeyAgreement | undefined = await createResolver(options).get(recipientKeyId);
+  if (keyAgreementKey === undefined) throw new Error('specified keyId doesnt exists on-chain');
+  keyAgreementKey.privateKeyMultibase = ed25519ToX25519PrivateKeyMultibase(privateKey);
+  if ((await ed25519KeyPair).publicKeyMultibase !== keyAgreementKey.publicKeyMultibase) {
     throw new Error('provided privateKey and recipientKeyId does not match');
   }
   const object = await cipher.decrypt({ jwe, keyAgreementKey });

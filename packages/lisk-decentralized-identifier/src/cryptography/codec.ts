@@ -52,10 +52,10 @@ export function decodePrivateKey(multibasePrivateKey: string): Buffer {
   return decodeMbKey(MULTICODEC_ED25519_PRIV_HEADER, multibasePrivateKey);
 }
 
-export function encodeEncryptionResult(jwe: JWEDocument): Buffer {
+export function encodeJWEDocument(jwe: JWEDocument): Buffer {
   return codec.encode(jweDocumentSchema, jwe);
 }
 
-export function decodeEncryptionResult(buf: Buffer): JWEDocument {
+export function decodeJWEDocument(buf: Buffer): JWEDocument {
   return codec.decode(jweDocumentSchema, buf);
 }

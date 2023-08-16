@@ -88,6 +88,8 @@ describe('getAddressDIDFromPublicKey', () => {
 });
 
 describe('getDIDDocument', () => {
+  afterEach(jest.clearAllMocks);
+
   it('should invoke did_read if supplied with ipc options', async () => {
     await getDIDDocument(senderDID, { ipc });
     expect(mockedReadDID).toHaveBeenCalledTimes(1);
