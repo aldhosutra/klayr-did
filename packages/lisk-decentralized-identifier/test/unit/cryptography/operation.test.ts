@@ -48,11 +48,11 @@ describe('test', () => {
     // };
 
     const obj = { key: 'value' };
-    const jweDoc = await encrypt(JSON.stringify(obj), [senderKAKey], {
+    await encrypt(JSON.stringify(obj), [senderKAKey], {
       loader: keyResolver,
     });
     // jweDoc.recipients[0].header.kid = publicKeyNode.id;
-    console.log(JSON.stringify(jweDoc, null, 2));
+    // console.log(JSON.stringify(jweDoc, null, 2));
 
     // const object = await decrypt(encrypted, senderKAKey, privateKey, { ipc });
 

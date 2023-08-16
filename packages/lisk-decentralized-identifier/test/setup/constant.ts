@@ -19,6 +19,9 @@ export const publicKeyMultiBase = 'z6MkhtSAfygeA8WYBjfPxS5eatUj6URxGfBSYRuHEbFyw
 export const privateKeyMultiBase =
   'zrv3dzvgBDRdciUVEX3XYbPvB9yM9pwC5a15kV9W3xJ5nxWvxpzQWK8Hvp9pzmih5NLQifMNEy6PAyLwzopbRsX8pLH';
 
+export const x25519PublicKeyMultibase = 'z6LSgewxKK6vPH1NGjp5UpGFqU1x94VEtvQfGx4W1THZWSxe';
+export const x25519PrivateKeyMultibase = 'z3weoVSXQALiHEz2mqVSF5yzBCShMEM8hP1Vos71nn6QArXP';
+
 export const ipc = '~/.lisk/lisk-did';
 export const ws = 'ws://localhost:7887/rpc-ws';
 
