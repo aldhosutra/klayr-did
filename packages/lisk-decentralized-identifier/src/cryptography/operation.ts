@@ -14,7 +14,7 @@ export async function encrypt(
   options: CreateResolverParam,
 ): Promise<JWEDocument> {
   const cipher = await createCipher();
-  const keyResolver = async (url: string) => await createResolver(options).get(url);
+  const keyResolver = async (url: string) => await createResolver(options).get({ url });
   const recipients = recipientKeyId
     .map(kid => parseDIDComponent(kid).uri)
     .map(kid => ({ header: { kid, alg: 'ECDH-ES+A256KW' } }));
@@ -32,7 +32,7 @@ export async function decrypt(
   const cipher = await createCipher();
   const publicKey = cryptography.ed.getPublicKeyFromPrivateKey(privateKey);
   const ed25519PublicKeyMultibase = ed25519ToX25519PublicKeyMultibase(publicKey);
-  const keyAgreementKey: KeyAgreement | undefined = await createResolver(options).get(recipientKeyId);
+  const keyAgreementKey: KeyAgreement | undefined = await createResolver(options).get({ url: recipientKeyId });
   if (keyAgreementKey === undefined) throw new Error('specified keyId doesnt exists on-chain');
   keyAgreementKey.privateKeyMultibase = ed25519ToX25519PrivateKeyMultibase(privateKey);
   if (ed25519PublicKeyMultibase !== keyAgreementKey.publicKeyMultibase) {

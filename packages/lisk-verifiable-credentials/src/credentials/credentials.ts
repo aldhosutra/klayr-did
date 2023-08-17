@@ -1,6 +1,6 @@
 import * as vc from '@digitalcredentials/vc';
 import { VCVerificationResult, VerifiableCredential } from '../types';
-import { createRemoteDocumentLoader } from '../documentLoader';
+import { buildOffChainDocumentLoader } from '../documentLoader';
 import { preprocessCredentials } from '../util';
 import { ClientOptions } from '../documentLoader/type';
 import { utils, getDIDDocument, cryptography as didCryptography } from '@lisk-did/lisk-decentralized-identifier';
@@ -8,14 +8,14 @@ import { utils, getDIDDocument, cryptography as didCryptography } from '@lisk-di
 export async function issueCredential(
   credential: VerifiableCredential,
   privateKey: Buffer,
-  options?: ClientOptions,
+  options: ClientOptions,
 ): Promise<VerifiableCredential> {
   if (credential.issuer === undefined) {
     throw new Error('credential.issuer must be defined');
   }
-  const documentLoader = (options != null && options.loader) ?? createRemoteDocumentLoader(options);
+  const documentLoader = buildOffChainDocumentLoader(options);
   const issuer = typeof credential.issuer === 'string' ? credential.issuer : credential.issuer.id;
-  const didDocument = await getDIDDocument(issuer, options!);
+  const didDocument = await getDIDDocument(issuer, options);
 
   if (didDocument == null) {
     throw new Error('issuer DID not registered yet on the chain');
@@ -47,7 +47,7 @@ export async function issueCredential(
 export async function verifyCredential(
   credential: VerifiableCredential,
   publicKey: Buffer,
-  options?: ClientOptions,
+  options: ClientOptions,
 ): Promise<VCVerificationResult> {
   if (credential.proof === undefined) {
     throw new Error('credential.proof must be defined');
@@ -56,7 +56,7 @@ export async function verifyCredential(
     throw new Error('credential.issuer must be defined');
   }
 
-  const documentLoader = (options != null && options.loader) ?? createRemoteDocumentLoader(options);
+  const documentLoader = buildOffChainDocumentLoader(options);
   const issuer = typeof credential.issuer === 'string' ? credential.issuer : credential.issuer.id;
 
   const key = await didCryptography.key.createEd25519KeyPair({

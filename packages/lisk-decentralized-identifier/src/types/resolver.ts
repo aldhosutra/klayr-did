@@ -3,9 +3,10 @@ import { DidDocument } from './did';
 import { DidMethod } from './method';
 
 export declare interface DocumentLoaderResult {
-  contextUrl?: string;
-  documentUrl?: string;
-  document: any;
+  contextUrl: string | null;
+  document: Record<string, any>;
+  documentUrl: string;
+  tag?: string;
 }
 
 export interface BaseResolver {

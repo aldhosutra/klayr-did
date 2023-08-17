@@ -62,6 +62,8 @@ export const presentationBytes = Buffer.from(
   'hex',
 );
 
+export const presentationChallenge = 'challenge';
+
 export const issuerDIDDoc = {
   '@context': [
     'https://www.w3.org/ns/did/v1',

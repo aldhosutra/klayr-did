@@ -70,6 +70,17 @@ jest.mock('@liskhq/lisk-api-client', () => {
   };
 });
 
+const response = issuerDIDDoc;
+export const mockedFetch = jest.fn();
+
+globalThis.fetch = async (...arg) => {
+  mockedFetch(...arg);
+  if (arg[0] === 'https://throw.error') throw new Error('error thrown');
+  return Promise.resolve({
+    text: async () => Promise.resolve(JSON.stringify(response, null, 2)),
+  } as any);
+};
+
 export const mockedContext = jest.fn();
 export const mockedMethodGetConfig = jest.fn();
 export const mockedMethodRead = jest.fn();
@@ -89,5 +100,7 @@ export const mockedLoader = jest.fn();
 export const mockedDocumentLoader = jest.fn();
 export const documentLoader = async () => {
   mockedDocumentLoader();
-  return Promise.resolve({ document: 'document' });
+  return Promise.resolve({ contextUrl: 'test', documentUrl: 'test', document: { key: 'document' } });
 };
+
+export const mockedResolver = { get: jest.fn() };

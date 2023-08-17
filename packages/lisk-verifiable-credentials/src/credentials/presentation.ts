@@ -1,6 +1,6 @@
 import { VPVerificationResult, VerifiableCredential, VerifiablePresentation } from '../types';
 import * as vc from '@digitalcredentials/vc';
-import { createRemoteDocumentLoader } from '../documentLoader';
+import { buildOffChainDocumentLoader } from '../documentLoader';
 import { preprocessPresentation } from '../util';
 import { ClientOptions } from '../documentLoader/type';
 import { utils, getDIDDocument, cryptography as didCryptography } from '@lisk-did/lisk-decentralized-identifier';
@@ -10,18 +10,14 @@ export async function issuePresentation(
   holderDid: string,
   privateKey: Buffer,
   challenge: string,
-  options?: ClientOptions,
+  options: ClientOptions,
 ): Promise<VerifiablePresentation> {
   if (verifiableCredentialsList.map(t => t.proof !== undefined).includes(false)) {
     throw new Error('all verifiable credentials needs to have a proof');
   }
 
-  const documentLoader = (options != null && options.loader) ?? createRemoteDocumentLoader(options);
-  const didDocument = await getDIDDocument(holderDid, {
-    loader: options?.loader,
-    ipc: options?.ipc,
-    ws: options?.ws,
-  });
+  const documentLoader = buildOffChainDocumentLoader(options);
+  const didDocument = await getDIDDocument(holderDid, options);
 
   if (didDocument == null) {
     throw new Error('holder DID not registered yet on the chain');
@@ -56,7 +52,7 @@ export async function issuePresentation(
 export async function verifyPresentation(
   presentation: VerifiablePresentation,
   publicKey: Buffer,
-  options?: ClientOptions,
+  options: ClientOptions,
 ): Promise<VPVerificationResult> {
   if (presentation.proof === undefined) {
     throw new Error('presentation.proof must be defined');
@@ -65,7 +61,7 @@ export async function verifyPresentation(
     throw new Error('presentation.holder must be defined');
   }
 
-  const documentLoader = (options != null && options.loader) ?? createRemoteDocumentLoader(options);
+  const documentLoader = buildOffChainDocumentLoader(options);
 
   const key = await didCryptography.key.createEd25519KeyPair({
     id: presentation.proof.verificationMethod,

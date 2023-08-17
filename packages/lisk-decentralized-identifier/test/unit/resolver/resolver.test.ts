@@ -47,31 +47,31 @@ describe('createResolver', () => {
 
   it('should return ipc resolver if supplied with ipc argument', async () => {
     const resolver = createResolver({ ipc });
-    await resolver.get(senderDID);
+    await resolver.get({ did: senderDID });
     expect(mockedCreateIPCClient).toHaveBeenCalled();
   });
 
   it('should return ws resolver if supplied with ws argument', async () => {
     const resolver = createResolver({ ws });
-    await resolver.get(senderDID);
+    await resolver.get({ did: senderDID });
     expect(mockedCreateWSClient).toHaveBeenCalled();
   });
 
   it('should return chain resolver if supplied with context and method argument', async () => {
     const resolver = createResolver({ context: mockedContext as any, method: mockedMethod as any });
-    await resolver.get(senderDID);
+    await resolver.get({ did: senderDID });
     expect(mockedMethodRead).toHaveBeenCalled();
   });
 
   it('should return loader resolver if supplied with loader', async () => {
     const resolver = createResolver({ loader: mockedLoader });
-    await resolver.get(senderDID);
+    await resolver.get({ did: senderDID });
     expect(mockedLoader).toHaveBeenCalled();
   });
 
   it('should return loader resolver if supplied with a VC document loader', async () => {
     const resolver = createResolver({ loader: documentLoader });
-    await resolver.get(senderDID);
+    await resolver.get({ did: senderDID });
     expect(mockedDocumentLoader).toHaveBeenCalled();
   });
 

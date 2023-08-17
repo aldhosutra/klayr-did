@@ -1,8 +1,17 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { issueCredential, verifyCredential } from '@dist/credentials';
 import { utils } from 'lisk-sdk';
-import { credential, credentialProof, ipc, privateKey, publicKey } from '../../setup/constant';
-import { documentLoader, mockedDocumentLoader, mockedReadDID } from '../../setup/mocks';
+import { credential, credentialProof, ipc, privateKey, publicKey, ws } from '../../setup/constant';
+import {
+  documentLoader,
+  mockedContext,
+  mockedCreateIPCClient,
+  mockedCreateWSClient,
+  mockedDocumentLoader,
+  mockedMethod,
+  mockedMethodRead,
+  mockedReadDID,
+} from '../../setup/mocks';
 
 describe('issueCredential', () => {
   afterEach(jest.clearAllMocks);
@@ -50,6 +59,33 @@ describe('issueCredential', () => {
     };
     await expect(func()).rejects.toThrow();
     expect(mockedDocumentLoader).toHaveBeenCalled();
+  });
+
+  it('should use provided ipc', async () => {
+    const func = async () => {
+      const newCredential = utils.objects.cloneDeep(credential);
+      await issueCredential(newCredential, privateKey, { ipc });
+    };
+    await expect(func()).resolves.not.toThrow();
+    expect(mockedCreateIPCClient).toHaveBeenCalled();
+  });
+
+  it('should use provided ws', async () => {
+    const func = async () => {
+      const newCredential = utils.objects.cloneDeep(credential);
+      await issueCredential(newCredential, privateKey, { ws });
+    };
+    await expect(func()).resolves.not.toThrow();
+    expect(mockedCreateWSClient).toHaveBeenCalled();
+  });
+
+  it('should use provided chain loader', async () => {
+    const func = async () => {
+      const newCredential = utils.objects.cloneDeep(credential);
+      await issueCredential(newCredential, privateKey, { context: mockedContext as any, method: mockedMethod as any });
+    };
+    await expect(func()).resolves.not.toThrow();
+    expect(mockedMethodRead).toHaveBeenCalled();
   });
 
   it('should retrieve issuer id in case its provided that way', async () => {
@@ -102,6 +138,42 @@ describe('verifyCredential', () => {
     };
     await expect(func()).resolves.not.toThrow();
     expect(mockedDocumentLoader).toHaveBeenCalled();
+  });
+
+  it('should use provided ipc', async () => {
+    const func = async () => {
+      const signedVC = await issueCredential(credential, privateKey, { ipc });
+      const signedCredential = utils.objects.cloneDeep(signedVC);
+      signedCredential.proof = credentialProof;
+      await verifyCredential(signedCredential, publicKey, { ipc });
+    };
+    await expect(func()).resolves.not.toThrow();
+    expect(mockedCreateIPCClient).toHaveBeenCalled();
+  });
+
+  it('should use provided ws', async () => {
+    const func = async () => {
+      const signedVC = await issueCredential(credential, privateKey, { ipc });
+      const signedCredential = utils.objects.cloneDeep(signedVC);
+      signedCredential.proof = credentialProof;
+      await verifyCredential(signedCredential, publicKey, { ws });
+    };
+    await expect(func()).resolves.not.toThrow();
+    expect(mockedCreateWSClient).toHaveBeenCalled();
+  });
+
+  it('should use provided chain loader', async () => {
+    const func = async () => {
+      const signedVC = await issueCredential(credential, privateKey, { ipc });
+      const signedCredential = utils.objects.cloneDeep(signedVC);
+      signedCredential.proof = credentialProof;
+      await verifyCredential(signedCredential, publicKey, {
+        context: mockedContext as any,
+        method: mockedMethod as any,
+      });
+    };
+    await expect(func()).resolves.not.toThrow();
+    expect(mockedMethodRead).toHaveBeenCalled();
   });
 
   it('should retrieve issuer id in case its provided that way', async () => {

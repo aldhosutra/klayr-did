@@ -11,7 +11,7 @@ class DummyBaseDriver extends BaseDriver {}
 
 describe('_getKey', () => {
   it('should return specified key fragment', async () => {
-    const did = await createResolver({ ipc }).get(senderDIDDoc.assertionMethod[0]);
+    const did = await createResolver({ ipc }).get({ did: senderDIDDoc.assertionMethod[0] });
     delete did['@context'];
     expect(did).toStrictEqual(senderDIDDoc.verificationMethod[0]);
   });

@@ -20,6 +20,7 @@ const config = {
         tsconfig: '<rootDir>/tsconfig.json',
       },
     ],
+    '^.+\\.[t|j]sx?$': 'babel-jest',
     'node_modules/key-did-provider-ed25519/.+\\.(j|t)s?$': 'ts-jest',
   },
   transformIgnorePatterns: ['node_modules/(?!key-did-provider-ed25519/.*)'],

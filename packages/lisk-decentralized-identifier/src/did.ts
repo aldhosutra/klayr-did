@@ -72,15 +72,10 @@ export async function getDIDDocument(did: string, options: CreateResolverParam):
   if (options !== undefined && (options.context || options.method) && !(options.context && options.method))
     throw new Error('both context and method are required for on-chain retrieval');
 
-  if (
-    options === undefined ||
-    !Object.values(options)
-      .map(t => !!t)
-      .includes(true)
-  ) {
+  if (options === undefined || !Object.values(options).some(v => v !== undefined)) {
     throw new Error('one of the options is needed');
   }
 
-  const document = await createResolver(options).get(parseDIDComponent(did).did);
+  const document = await createResolver(options).get({ did: parseDIDComponent(did).did });
   return document;
 }

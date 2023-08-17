@@ -9,9 +9,9 @@ function arrayMoveMutable(array, fromIndex, toIndex): void {
   }
 }
 
-export function preprocessRequired(properties: string[] | string | undefined, required: string): string[] | string {
+export function preprocessRequired(properties: string[] | string | undefined, required: string): string[] {
   let tmpArray = properties;
-  if (tmpArray === undefined) return required;
+  if (tmpArray === undefined) return [required];
   if (Array.isArray(properties)) {
     const findIndex = tmpArray.indexOf(required);
     tmpArray = (tmpArray as string[]).filter((v, i, self) => {
@@ -25,7 +25,7 @@ export function preprocessRequired(properties: string[] | string | undefined, re
     }
   }
   if (typeof tmpArray === 'string' && tmpArray !== required) {
-    tmpArray = required;
+    tmpArray = [required];
   }
-  return tmpArray;
+  return tmpArray as string[];
 }

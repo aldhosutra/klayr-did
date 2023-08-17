@@ -4,13 +4,11 @@ import * as didResolver from '.';
 import { BaseLoader, CreateResolverParam } from '../types';
 import { BaseResolver, DidMethod, DocumentLoader } from '../types';
 import { MethodContext } from 'lisk-sdk';
-
-export interface ResolverAbstraction {
-  get: (url: string) => Promise<any>;
-}
+import { LISK_DID_METHOD_NAME } from '../utils/constant';
 
 export interface CachedResolver {
-  use: (driver: any) => void;
+  method?: typeof LISK_DID_METHOD_NAME;
+  use?: (driver: any) => void;
   get: ({ did, url }: { did?: string; url?: string }) => Promise<any>;
 }
 
@@ -21,11 +19,15 @@ class CachedResolverSingleton {
   private static wsResolver: CachedResolver;
   private static prevWs;
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  private constructor() {}
+
   public static getIPCInstance(ipc: string) {
     if (this.ipcResolver === undefined || this.prevIpc !== ipc) {
       const didLiskDriver = didResolver.driver.createOffChainDriver({ ipc });
       this.ipcResolver = new CachedResolverBuilder();
-      this.ipcResolver.use(didLiskDriver);
+      this.ipcResolver.use!(didLiskDriver);
+      this.ipcResolver.method = LISK_DID_METHOD_NAME;
     }
     return this.ipcResolver;
   }
@@ -34,7 +36,8 @@ class CachedResolverSingleton {
     if (this.wsResolver === undefined || this.prevWs !== ws) {
       const didLiskDriver = didResolver.driver.createOffChainDriver({ ws });
       this.wsResolver = new CachedResolverBuilder();
-      this.wsResolver.use(didLiskDriver);
+      this.wsResolver.use!(didLiskDriver);
+      this.wsResolver.method = LISK_DID_METHOD_NAME;
     }
     return this.wsResolver;
   }
@@ -55,7 +58,7 @@ export function createChainResolver(context: MethodContext, method: DidMethod): 
   return driver;
 }
 
-export function createResolver(options: CreateResolverParam): ResolverAbstraction {
+export function createResolver(options: CreateResolverParam): CachedResolver {
   let resolver: BaseResolver | undefined;
   let loader: DocumentLoader | BaseLoader | undefined;
 
@@ -69,19 +72,20 @@ export function createResolver(options: CreateResolverParam): ResolverAbstractio
     throw new Error('Unexpected Error: insufficient options!');
   }
 
-  const ret: ResolverAbstraction | object = {};
+  const ret: CachedResolver | object = { method: LISK_DID_METHOD_NAME };
 
   if (loader) {
-    (ret as ResolverAbstraction).get = async (url: string) => {
-      const res = await (loader as DocumentLoader | BaseLoader)(url);
+    (ret as CachedResolver).get = async ({ did, url }) => {
+      const didOrUrl = did || url;
+      const res = await (loader as DocumentLoader | BaseLoader)(didOrUrl!);
       if (res !== undefined && 'document' in res) return res.document;
       else return res;
     };
   }
 
   if (resolver) {
-    (ret as ResolverAbstraction).get = async (url: string) => await (resolver as BaseResolver).get({ url });
+    (ret as CachedResolver).get = async ({ did, url }) => await (resolver as BaseResolver).get({ did, url });
   }
 
-  return ret as ResolverAbstraction;
+  return ret as CachedResolver;
 }
