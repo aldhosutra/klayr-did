@@ -286,7 +286,7 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
       this.config,
       { command: 'deactivate', params: param },
       senderPublicKey,
-      false,
+      true,
     );
 
     if (verification.status === VerifyStatus.FAIL) throw verification.error;
