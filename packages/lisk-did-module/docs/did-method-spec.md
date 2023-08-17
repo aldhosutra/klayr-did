@@ -3,12 +3,12 @@
 ```
 Title: did:lisk Method Specification
 Author: Aldo Suhartono Putra <aldhosutra@gmail.com>
-Version: 2023.08.15
+Version: 2023.08.18
 
 Version History:
-- 2023.08.15: Initial release.
+- 2023.08.18: Initial release.
 
-Last Modified: August 15, 2023
+Last Modified: August 18, 2023
 ```
 
 This document defines the syntax, data model, and operations for the `did:lisk` Decentralized Identifier (DID) method, specifically for the Lisk Sidechain.
@@ -380,10 +380,11 @@ Nonetheless, there exists a distinct scenario for authorized `deactivate` operat
 
 Lisk sidechain modules and external tools can examine the specified `publicKey` verification relationship through the provided `authorize` method and/or endpoint. This flexibility empowers sidechain developers to craft custom solutions leveraging DID authorization for their specific use cases.
 
-The result of this method and/or endpoint, is an array of objects that cointains specific properties. Result with at least one item indicate successful authorization. The properties are as follows:
+The result of this method and/or endpoint, is an array of `AuthorizationResult` that cointains specific properties. Result with at least one item indicate successful authorization. The properties are as follows:
 
 1. `type`: A string that shows relationship between publicKey's controller and the DID document. The value can be `"subject"`, or `"controller"`.
-2. `relationship`: A list of string that shows verification relationship between provided keys, and the DID document with above `type`. The value can be `"authentication"`, `"assertionMethod"`, `"capabilityInvocation"`, or `"keyAgreement"`;
+2. `did`: A string representing DID that have relationship with provided authorized keys.
+3. `relationship`: A list of string that shows verification relationship between provided keys, and the DID document with above `type`. The value can be `"authentication"`, `"assertionMethod"`, `"capabilityInvocation"`, or `"keyAgreement"`;
 
 Following is provided `authorize` method, tailored for on-chain usage:
 
@@ -561,6 +562,7 @@ Similarly, `addKeys` method can be invoked using above parameters:
 ```typescript
 didMethod.addkeys(
     context: MethodContext,
+    senderPublicKey: bytes,
     target: string,
     keys: { publicKey: bytes; relationship: string[] }[],
     signer: string,
@@ -610,6 +612,7 @@ Similarly, `removeKeys` method can be invoked using above parameters:
 ```typescript
 didMethod.removeKeys(
     context: MethodContext,
+    senderPublicKey: bytes,
     target: string,
     publicKeys: Buffer[],
     signer: string,
@@ -659,6 +662,7 @@ Similarly, `addControllers` method can be invoked using above parameters:
 ```typescript
 didMethod.addControllers(
     context: MethodContext,
+    senderPublicKey: bytes,
     target: string,
     controllers: string[],
     signer: string,
@@ -708,6 +712,7 @@ Similarly, `removeControllers` method can be invoked using above parameters:
 ```typescript
 didMethod.removeControllers(
     context: MethodContext,
+    senderPublicKey: bytes,
     target: string,
     controllers: string[],
     signer: string,
@@ -771,6 +776,7 @@ Similarly, `addServiceEndpoint` method can be invoked using above parameters:
 ```typescript
 didMethod.addServiceEndpoint(
     context: MethodContext,
+    senderPublicKey: bytes,
     target: string,
     endpoint: {
         id: string;
@@ -821,6 +827,7 @@ Similarly, `removeServiceEndpoint` method can be invoked using above parameters:
 ```typescript
 didMethod.removeServiceEndpoint(
     context: MethodContext,
+    senderPublicKey: bytes,
     target: string,
     endpointId: string,
     signer: string,
@@ -866,6 +873,7 @@ Similarly, `deactivate` method can be invoked using above parameters:
 ```typescript
 didMethod.deactivate(
     context: MethodContext,
+    senderPublicKey: bytes,
     target: string,
     signer: string,
     signature: bytes,

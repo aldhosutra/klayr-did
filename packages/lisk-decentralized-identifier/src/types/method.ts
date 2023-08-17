@@ -21,6 +21,7 @@ export interface DidMethod {
   ): Promise<void>;
   addKeys(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     keys: Keys[],
     signer: string,
@@ -28,6 +29,7 @@ export interface DidMethod {
   ): Promise<void>;
   removeKeys(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     publicKeys: Buffer[],
     signer: string,
@@ -35,6 +37,7 @@ export interface DidMethod {
   ): Promise<void>;
   addControllers(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     controllers: string[],
     signer: string,
@@ -42,6 +45,7 @@ export interface DidMethod {
   ): Promise<void>;
   removeControllers(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     controllers: string[],
     signer: string,
@@ -49,6 +53,7 @@ export interface DidMethod {
   ): Promise<void>;
   addServiceEndpoint(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     endpoint: {
       id: string;
@@ -60,10 +65,17 @@ export interface DidMethod {
   ): Promise<void>;
   removeServiceEndpoint(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     endpointId: string,
     signer: string,
     signature?: Buffer,
   ): Promise<void>;
-  deactivate(methodContext: MethodContext, target: string, signer: string, signature?: Buffer): Promise<void>;
+  deactivate(
+    methodContext: MethodContext,
+    senderPublicKey: Buffer,
+    target: string,
+    signer: string,
+    signature?: Buffer,
+  ): Promise<void>;
 }

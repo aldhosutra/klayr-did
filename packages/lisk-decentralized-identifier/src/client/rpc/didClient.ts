@@ -21,7 +21,7 @@ import {
   TransactionPayload,
   TransactionPayloadWithoutSignature,
   DIDTransactionParam,
-} from '../utils/types';
+} from '../../types';
 import { getVerificationRelationship } from '../../cryptography/verification';
 import { createSignatureChallenge, createTransactionSignature } from '../utils';
 import { getAddressDIDFromPublicKey, parseDIDComponent } from '../../did';

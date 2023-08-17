@@ -1,5 +1,6 @@
-import { BaseMethod, MethodContext } from 'lisk-sdk';
+import { BaseMethod, MethodContext, VerifyStatus } from 'lisk-sdk';
 import {
+  AuthorizationResult,
   DidDocument,
   DidMethod as DidMethodInterface,
   DidModuleConfig,
@@ -24,23 +25,18 @@ import { executeRemoveServiceEndpointCommand } from './logic/remove_service_endp
 import { RemoveServiceEndpointEvent } from './events/remove_service_endpoint_event';
 import { executeDeactivateCommand } from './logic/deactivate_did';
 import { DeactivateEvent } from './events/deactivate_event';
+import { authorizePublicKey, verifyOperation } from './logic/authorization';
 
 export class DidMethod extends BaseMethod implements DidMethodInterface {
-  private chainspace: string = '';
-  private autoCreateAddressDID: boolean = false;
-
-  // TODO: add authorize method
+  public config: DidModuleConfig = { chainspace: '', autoCreateAddressDID: false };
 
   init(config: DidModuleConfig) {
-    this.chainspace = config.chainspace;
-    this.autoCreateAddressDID = config.autoCreateAddressDID;
+    this.config.chainspace = config.chainspace;
+    this.config.autoCreateAddressDID = config.autoCreateAddressDID;
   }
 
   getConfig(): DidModuleConfig {
-    return {
-      chainspace: this.chainspace,
-      autoCreateAddressDID: this.autoCreateAddressDID,
-    };
+    return this.config;
   }
 
   async read(methodContext: MethodContext, did: string): Promise<DidDocument> {
@@ -51,6 +47,11 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
   async getNonce(methodContext: MethodContext, did: string): Promise<NonceStoreData> {
     const nonceSubstore = this.stores.get(NonceStore);
     return await nonceSubstore.get(methodContext, nonceStoreKey(did));
+  }
+
+  async authorize(methodContext: MethodContext, did: string, publicKey: Buffer): Promise<AuthorizationResult[]> {
+    const documentSubstore = this.stores.get(DocumentStore);
+    return await authorizePublicKey(methodContext, documentSubstore, did, publicKey);
   }
 
   async create(
@@ -71,6 +72,7 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
 
   async addKeys(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     keys: KeysCommand[],
     signer: string,
@@ -79,7 +81,21 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
     const documentSubstore = this.stores.get(DocumentStore);
     const nonceSubstore = this.stores.get(NonceStore);
     const param = { target, keys, signer, signature: signature ?? Buffer.alloc(0) };
-    if (await executeAddKeysCommand(methodContext, documentSubstore, nonceSubstore, param)) {
+
+    const verification = await verifyOperation(
+      methodContext,
+      documentSubstore,
+      nonceSubstore,
+      this.config,
+      { command: 'addKeys', params: param },
+      senderPublicKey,
+      false,
+    );
+
+    if (
+      verification.status === VerifyStatus.OK &&
+      (await executeAddKeysCommand(methodContext, documentSubstore, nonceSubstore, param))
+    ) {
       const addKeysEvent = this.events.get(AddKeysEvent);
       addKeysEvent.add(methodContext, { ...param });
     }
@@ -87,6 +103,7 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
 
   async removeKeys(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     publicKeys: Buffer[],
     signer: string,
@@ -96,7 +113,20 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
     const nonceSubstore = this.stores.get(NonceStore);
     const param = { target, publicKeys, signer, signature: signature ?? Buffer.alloc(0) };
 
-    if (await executeRemoveKeysCommand(methodContext, documentSubstore, nonceSubstore, param)) {
+    const verification = await verifyOperation(
+      methodContext,
+      documentSubstore,
+      nonceSubstore,
+      this.config,
+      { command: 'removeKeys', params: param },
+      senderPublicKey,
+      false,
+    );
+
+    if (
+      verification.status === VerifyStatus.OK &&
+      (await executeRemoveKeysCommand(methodContext, documentSubstore, nonceSubstore, param))
+    ) {
       const removeKeysEvent = this.events.get(RemoveKeysEvent);
       removeKeysEvent.add(methodContext, { ...param });
     }
@@ -104,6 +134,7 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
 
   async addControllers(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     controllers: string[],
     signer: string,
@@ -113,7 +144,20 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
     const nonceSubstore = this.stores.get(NonceStore);
     const param = { target, controllers, signer, signature: signature ?? Buffer.alloc(0) };
 
-    if (await executeAddControllersCommand(methodContext, documentSubstore, nonceSubstore, param)) {
+    const verification = await verifyOperation(
+      methodContext,
+      documentSubstore,
+      nonceSubstore,
+      this.config,
+      { command: 'addControllers', params: param },
+      senderPublicKey,
+      false,
+    );
+
+    if (
+      verification.status === VerifyStatus.OK &&
+      (await executeAddControllersCommand(methodContext, documentSubstore, nonceSubstore, param))
+    ) {
       const addControllersEvent = this.events.get(AddControllersEvent);
       addControllersEvent.add(methodContext, { ...param });
     }
@@ -121,6 +165,7 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
 
   async removeControllers(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     controllers: string[],
     signer: string,
@@ -130,7 +175,20 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
     const nonceSubstore = this.stores.get(NonceStore);
     const param = { target, controllers, signer, signature: signature ?? Buffer.alloc(0) };
 
-    if (await executeRemoveControllersCommand(methodContext, documentSubstore, nonceSubstore, param)) {
+    const verification = await verifyOperation(
+      methodContext,
+      documentSubstore,
+      nonceSubstore,
+      this.config,
+      { command: 'removeControllers', params: param },
+      senderPublicKey,
+      false,
+    );
+
+    if (
+      verification.status === VerifyStatus.OK &&
+      (await executeRemoveControllersCommand(methodContext, documentSubstore, nonceSubstore, param))
+    ) {
       const removeControllersEvent = this.events.get(RemoveControllersEvent);
       removeControllersEvent.add(methodContext, { ...param });
     }
@@ -138,6 +196,7 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
 
   async addServiceEndpoint(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     endpoint: { id: string; type: string; serviceEndpoint: string },
     signer: string,
@@ -147,7 +206,20 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
     const nonceSubstore = this.stores.get(NonceStore);
     const param = { target, endpoint, signer, signature: signature ?? Buffer.alloc(0) };
 
-    if (await executeAddServiceEndpointCommand(methodContext, documentSubstore, nonceSubstore, param)) {
+    const verification = await verifyOperation(
+      methodContext,
+      documentSubstore,
+      nonceSubstore,
+      this.config,
+      { command: 'addServiceEndpoint', params: param },
+      senderPublicKey,
+      false,
+    );
+
+    if (
+      verification.status === VerifyStatus.OK &&
+      (await executeAddServiceEndpointCommand(methodContext, documentSubstore, nonceSubstore, param))
+    ) {
       const addServiceEndpointEvent = this.events.get(AddServiceEndpointEvent);
       addServiceEndpointEvent.add(methodContext, { ...param });
     }
@@ -155,6 +227,7 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
 
   async removeServiceEndpoint(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     endpointId: string,
     signer: string,
@@ -164,7 +237,20 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
     const nonceSubstore = this.stores.get(NonceStore);
     const param = { target, endpointId, signer, signature: signature ?? Buffer.alloc(0) };
 
-    if (await executeRemoveServiceEndpointCommand(methodContext, documentSubstore, nonceSubstore, param)) {
+    const verification = await verifyOperation(
+      methodContext,
+      documentSubstore,
+      nonceSubstore,
+      this.config,
+      { command: 'removeServiceEndpoint', params: param },
+      senderPublicKey,
+      false,
+    );
+
+    if (
+      verification.status === VerifyStatus.OK &&
+      (await executeRemoveServiceEndpointCommand(methodContext, documentSubstore, nonceSubstore, param))
+    ) {
       const removeServiceEndpointEvent = this.events.get(RemoveServiceEndpointEvent);
       removeServiceEndpointEvent.add(methodContext, { ...param });
     }
@@ -172,6 +258,7 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
 
   async deactivate(
     methodContext: MethodContext,
+    senderPublicKey: Buffer,
     target: string,
     signer: string,
     signature?: Buffer | undefined,
@@ -180,7 +267,20 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
     const nonceSubstore = this.stores.get(NonceStore);
     const param = { target, signer, signature: signature ?? Buffer.alloc(0) };
 
-    if (await executeDeactivateCommand(methodContext, documentSubstore, nonceSubstore, param)) {
+    const verification = await verifyOperation(
+      methodContext,
+      documentSubstore,
+      nonceSubstore,
+      this.config,
+      { command: 'deactivate', params: param },
+      senderPublicKey,
+      false,
+    );
+
+    if (
+      verification.status === VerifyStatus.OK &&
+      (await executeDeactivateCommand(methodContext, documentSubstore, nonceSubstore, param))
+    ) {
       const deactivateEvent = this.events.get(DeactivateEvent);
       deactivateEvent.add(methodContext, { ...param });
     }

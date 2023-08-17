@@ -1,5 +1,5 @@
 import { utils, Schema } from 'lisk-sdk';
-import { DIDCommands, PayloadWithSignature, WriteableSchema } from './types';
+import { DIDCommands, PayloadWithSignature, WriteableSchema } from '../../types';
 import { schema } from '../../utils';
 
 const schemaMaps: Record<DIDCommands, Omit<Schema, '$schema'>> = {

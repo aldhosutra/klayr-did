@@ -7,7 +7,7 @@ import {
   type RemoveControllersParam,
   type RemoveKeysParam,
   type RemoveServiceEndpointParam,
-} from '../../types';
+} from '.';
 import { Schema, TransactionJSON } from 'lisk-sdk';
 
 type SignatureMessage<T> = Omit<T, 'signature'> & { nonce?: bigint; signature?: Buffer };

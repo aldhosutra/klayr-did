@@ -20,7 +20,7 @@ export class DeactivateCommand extends BaseCommand {
 
   // eslint-disable-next-line @typescript-eslint/require-await
   public async verify(_context: CommandVerifyContext<DeactivateParam>): Promise<VerificationResult> {
-    return await verifyAuthorization.bind(this)(_context);
+    return await verifyAuthorization.bind(this)(_context, true);
   }
 
   public async execute(_context: CommandExecuteContext<DeactivateParam>): Promise<void> {

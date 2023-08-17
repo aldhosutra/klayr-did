@@ -7,3 +7,4 @@ export * from './resolver';
 export * from './cryptography';
 export * from './method';
 export * from './endpoint';
+export * from './client';

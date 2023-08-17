@@ -1,5 +1,5 @@
 import { codec, cryptography } from 'lisk-sdk';
-import { PayloadWithSignature } from './types';
+import { PayloadWithSignature } from '../../types';
 import { signatureMessageBuilder, signatureSchemaBuilder } from './helper';
 
 export function createSignatureChallenge(payload: PayloadWithSignature) {

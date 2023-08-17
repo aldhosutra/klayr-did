@@ -2,8 +2,9 @@ import { ED25519_VERIFICATION_KEY_2020_TYPE } from '../utils/constant';
 
 export type AuthorizationResult = {
   type: 'subject' | 'controller';
+  did: string;
   relationship: VerificationRelationship[];
-}[];
+};
 
 export type VerificationRelationship = 'authentication' | 'assertionMethod' | 'capabilityInvocation' | 'keyAgreement';
 
