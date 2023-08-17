@@ -92,6 +92,8 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
       false,
     );
 
+    if (verification.status === VerifyStatus.FAIL) throw verification.error;
+
     if (
       verification.status === VerifyStatus.OK &&
       (await executeAddKeysCommand(methodContext, documentSubstore, nonceSubstore, param))
@@ -122,6 +124,8 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
       senderPublicKey,
       false,
     );
+
+    if (verification.status === VerifyStatus.FAIL) throw verification.error;
 
     if (
       verification.status === VerifyStatus.OK &&
@@ -154,6 +158,8 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
       false,
     );
 
+    if (verification.status === VerifyStatus.FAIL) throw verification.error;
+
     if (
       verification.status === VerifyStatus.OK &&
       (await executeAddControllersCommand(methodContext, documentSubstore, nonceSubstore, param))
@@ -184,6 +190,8 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
       senderPublicKey,
       false,
     );
+
+    if (verification.status === VerifyStatus.FAIL) throw verification.error;
 
     if (
       verification.status === VerifyStatus.OK &&
@@ -216,6 +224,8 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
       false,
     );
 
+    if (verification.status === VerifyStatus.FAIL) throw verification.error;
+
     if (
       verification.status === VerifyStatus.OK &&
       (await executeAddServiceEndpointCommand(methodContext, documentSubstore, nonceSubstore, param))
@@ -247,6 +257,8 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
       false,
     );
 
+    if (verification.status === VerifyStatus.FAIL) throw verification.error;
+
     if (
       verification.status === VerifyStatus.OK &&
       (await executeRemoveServiceEndpointCommand(methodContext, documentSubstore, nonceSubstore, param))
@@ -276,6 +288,8 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
       senderPublicKey,
       false,
     );
+
+    if (verification.status === VerifyStatus.FAIL) throw verification.error;
 
     if (
       verification.status === VerifyStatus.OK &&
