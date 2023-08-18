@@ -7,12 +7,13 @@ import {
 import { CommandVerifyContext, MethodContext, ModuleEndpointContext, utils } from 'lisk-sdk';
 import { DocumentStore, documentStoreKey } from '../../../stores/document';
 import { NonceStore, nonceStoreKey } from '../../../stores/nonce';
-import { isSenderHaveCapabilityInvocation } from './is_sender_have_capability_invocation';
-import { isSenderHaveDefaultAddressDIDThatControlsTargetDID } from './is_sender_have_default_address_did_that_controls_target_did';
-import { isSenderTheSignerThatControlsDID } from './is_sender_the_signer_that_controls_did';
-import { isSignerHaveCapabilityInvocation } from './is_signer_have_capability_invocation';
-import { isSignerTheTargetDIDController } from './is_signer_the_target_did_controller';
-import { isTheLastControllerAndNoKeysRemains } from './is_the_last_controller_and_no_key_remains';
+import {
+  isSenderHaveCapabilityInvocation,
+  isSenderHaveDefaultAddressDIDThatControlsTargetDID,
+  isSenderTheSignerThatControlsDID,
+} from './sender';
+import { isSignerHaveCapabilityInvocation, isSignerTheTargetDIDController } from './signer';
+import { isTheLastControllerAndNoKeysRemains } from './controller';
 
 export async function isAuthorized(
   context: CommandVerifyContext<any> | MethodContext | ModuleEndpointContext,

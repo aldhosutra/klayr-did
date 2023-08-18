@@ -4,7 +4,7 @@ import {
   getAddressDIDFromPublicKey,
 } from '@lisk-did/lisk-decentralized-identifier';
 import { CommandVerifyContext, MethodContext, ModuleEndpointContext } from 'lisk-sdk';
-import { DocumentStore, documentStoreKey } from '../../../stores/document';
+import { DocumentStore, documentStoreKey } from '../../../../stores/document';
 
 export async function isSenderHaveDefaultAddressDIDThatControlsTargetDID(
   context: CommandVerifyContext<any> | MethodContext | ModuleEndpointContext,

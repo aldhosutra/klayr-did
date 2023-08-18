@@ -2,7 +2,7 @@ import { DidModuleConfig, PayloadWithSignature } from '@lisk-did/lisk-decentrali
 import { MethodContext, CommandVerifyContext, VerifyStatus } from 'lisk-sdk';
 import { DocumentStore, documentStoreKey } from '../../stores/document';
 import { NonceStore } from '../../stores/nonce';
-import { isAuthorized } from './is-authorized';
+import { isAuthorized } from './is_authorized';
 
 export async function verifyOperation(
   context: MethodContext | CommandVerifyContext<any>,
