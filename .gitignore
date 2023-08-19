@@ -43,3 +43,8 @@ config.local.json
 
 # Build Directory
 dist
+packages/lisk-did-docs/build/
+
+# Generated files
+.docusaurus
+.cache-loader

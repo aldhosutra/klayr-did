@@ -5,6 +5,8 @@
     "packages/*"
   ],
   "scripts": {
+    "docs:start": "lerna run start --scope=lisk-did-docs",
+    "docs:build": "if test -d docs; then rm -r docs; fi; lerna run clear --scope=lisk-did-docs --skip-nx-cache && lerna run build --scope=lisk-did-docs --skip-nx-cache && cp -r packages/lisk-did-docs/build docs && shx echo -n \"lisk-did.js.org\" > docs/CNAME",
     "clean": "lerna run clean",
     "clean:node_modules": "lerna clean --yes",
     "clean:full": "nx run-many --target=clean && npm run clean:node_modules && rm -rf node_modules && npm install && npm run build",
@@ -41,6 +43,7 @@
     "lint-staged": "^13.2.3",
     "nx": "16.6.0",
     "prettier": "3.0.1",
+    "shx": "^0.3.4",
     "typescript": "^5.1.6"
   }
 }
