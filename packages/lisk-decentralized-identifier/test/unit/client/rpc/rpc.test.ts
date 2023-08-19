@@ -247,26 +247,21 @@ describe('DIDClient', () => {
         target: senderDID,
         signer: senderDID,
         nonce: BigInt(1),
-        signature: Buffer.from(
-          '3f196ef773bbf56e655020cb27338bfd4aa5341acb14609459fee7f65b8139685a8ead92a747749c9a31c71f76a447ca7f4a7e61374db0b5e5680a7140847d0f',
-          'hex',
-        ),
+        signature: Buffer.alloc(0),
         keys: [{ publicKey, relationship: ['assertionMethod'] }],
       },
     };
     let param: TransactionPayload<AddKeysParam> = utils.objects.cloneDeep(validAddKeysParam);
 
     it('should verify for case where signer is the DID subject', async () => {
+      param.params.signature = createTransactionSignature({ command: 'addKeys', params: param.params }, privateKey);
       await didClient.addKeys(param, privateKey);
       expect(mockedTransactionSend).toHaveBeenCalled();
     });
 
     it('should verify for case where signer is the DID controller', async () => {
       param.params.target = `did:lisk:${chainspace}:test:signeriscontroller`;
-      param.params.signature = Buffer.from(
-        '9034d41e5f8bc835d97420bd6194223822234784b694352b3e89d8371c95671e8e38fa8ab9aa8805bff31c916cfcd3626bb5bf3401e9075fa8f76748f759b601',
-        'hex',
-      );
+      param.params.signature = createTransactionSignature({ command: 'addKeys', params: param.params }, privateKey);
       await didClient.addKeys(param, privateKey);
       expect(mockedTransactionSend).toHaveBeenCalled();
     });

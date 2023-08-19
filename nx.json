@@ -3,7 +3,7 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["test", "build:dev", "test:coverage", "test:ci", "prepublishOnly", "prebuild", "build"]
+        "cacheableOperations": ["lint", "lint:fix", "format", "build", "test", "test:coverage", "test:ci"]
       }
     }
   },
@@ -13,10 +13,6 @@
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["{projectRoot}/dist"]
-    },
-    "build:dev": {
-      "dependsOn": ["^build:dev"],
       "outputs": ["{projectRoot}/dist"]
     },
     "test": {

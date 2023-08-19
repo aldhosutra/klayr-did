@@ -20,7 +20,7 @@ const addKeysParam: PayloadWithSignature = {
 describe('createSignatureChallenge', () => {
   it('should return valid challenge for a payload', () => {
     const challenge = createSignatureChallenge(addKeysParam);
-    expect(challenge).toBe('c64c0b771a273a31409ba5312a7f857e68cc5ce8ec18e77ce7eb2d5b0e5a375e');
+    expect(challenge).toBe('7fee4eb25ba5c0de166838eb711e134edbe82d45d7c9da84cc23e751e2e0a8df');
   });
 
   it('should throw an error if command type is create, since no signature can be applied for it', async () => {

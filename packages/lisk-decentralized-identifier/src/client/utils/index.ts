@@ -4,7 +4,7 @@ import { signatureMessageBuilder, signatureSchemaBuilder } from './helper';
 
 export function createSignatureChallenge(payload: PayloadWithSignature) {
   const payloadBuffer = codec.encode(signatureSchemaBuilder(payload), signatureMessageBuilder(payload));
-  return cryptography.ed.digestMessage(payloadBuffer.toString('hex')).toString('hex');
+  return cryptography.utils.hash(payloadBuffer).toString('hex');
 }
 
 export function createTransactionSignature(payload: PayloadWithSignature, privateKey: Buffer) {
