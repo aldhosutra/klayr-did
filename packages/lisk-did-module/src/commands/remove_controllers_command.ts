@@ -1,13 +1,7 @@
 /* eslint-disable class-methods-use-this */
 
 import { DidModuleConfig, RemoveControllersParam, utils } from '@lisk-did/lisk-decentralized-identifier';
-import {
-  BaseCommand,
-  type CommandVerifyContext,
-  type CommandExecuteContext,
-  type VerificationResult,
-  VerifyStatus,
-} from 'lisk-sdk';
+import { BaseCommand, type CommandVerifyContext, type CommandExecuteContext, type VerificationResult } from 'lisk-sdk';
 import { verifyAuthorization } from '../logic/authorization';
 import { DocumentStore } from '../stores/document';
 import { NonceStore } from '../stores/nonce';
@@ -26,12 +20,6 @@ export class RemoveControllersCommand extends BaseCommand {
 
   // eslint-disable-next-line @typescript-eslint/require-await
   public async verify(_context: CommandVerifyContext<RemoveControllersParam>): Promise<VerificationResult> {
-    if (_context.params.controllers.length === 0) {
-      return {
-        status: VerifyStatus.FAIL,
-        error: new Error(`at least one controller needed`),
-      };
-    }
     return await verifyAuthorization.bind(this)(_context);
   }
 

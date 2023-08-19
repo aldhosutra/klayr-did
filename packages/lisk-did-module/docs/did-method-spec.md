@@ -3,12 +3,12 @@
 ```
 Title: did:lisk Method Specification
 Author: Aldo Suhartono Putra <aldhosutra@gmail.com>
-Version: 2023.08.18
+Version: 2023.08.19
 
 Version History:
-- 2023.08.18: Initial release.
+- 2023.08.19: Initial release.
 
-Last Modified: August 18, 2023
+Last Modified: August 19, 2023
 ```
 
 This document defines the syntax, data model, and operations for the `did:lisk` Decentralized Identifier (DID) method, specifically for the Lisk Sidechain.
@@ -374,7 +374,7 @@ However, if the public key of the actual transaction `sender` aligns with the `s
 4. `sender` sends valid transaction with `signer` field which present in target's DID controller, that have `authentication` relationship with signer's DID. In this case `signature` field becomes unnecessary.
 5. target's DID controller is `sender` DID with `address` namespace that have `authentication` relationship available. In this case both `signer` and `signature` field becomes unnecessary.
 
-Nonetheless, there exists a distinct scenario for authorized `deactivate` operations, where the authorized `sender` or `signer` must be the final controller of the designated target DID. Additionally, the target DID must have all its available keys removed.
+Nonetheless, there exists a distinct scenario for authorized `deactivate` operations, where the authorized `sender` or `signer` must be the final controller of the designated target DID. Additionally, `sender` or `signer` must control the last key, if not, the target DID must have all its available keys removed.
 
 ### `authorize` Method and Endpoint
 

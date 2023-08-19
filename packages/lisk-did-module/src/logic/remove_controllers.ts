@@ -14,10 +14,13 @@ export async function executeRemoveControllersCommand(
   params: RemoveControllersParam,
 ): Promise<boolean> {
   const targetDIDDocument = await documentSubstore.get(_context, documentStoreKey(params.target));
-
   for (const controller of params.controllers) {
     const index = targetDIDDocument.controller.findIndex(t => t === controller);
     if (index > -1) {
+      if (targetDIDDocument.controller.length === 1) {
+        throw new Error("removing all controller will deactivate the DID, please use 'deactivate' command instead");
+      }
+      targetDIDDocument.controller.splice(index, 1);
       for (let i = targetDIDDocument.verificationMethod.length - 1; i >= 0; i--) {
         if (targetDIDDocument.verificationMethod[i].controller === controller) {
           const removedKeyId = targetDIDDocument.verificationMethod[i].id;

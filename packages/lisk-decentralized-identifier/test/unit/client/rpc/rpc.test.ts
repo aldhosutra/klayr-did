@@ -1,6 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { DIDClient } from '@dist/client/rpc/didClient';
-import { TransactionPayload } from '@dist/client/utils/types';
 import {
   AddControllersParam,
   AddKeysParam,
@@ -10,9 +9,11 @@ import {
   RemoveControllersParam,
   RemoveKeysParam,
   RemoveServiceEndpointParam,
+  TransactionPayload,
 } from '@dist/types';
 import { utils } from 'lisk-sdk';
 import { bootstrapEmptyDidDocument } from '@dist/utils';
+import { createTransactionSignature } from '@dist/client/utils';
 import {
   mockedCreateWSClient,
   mockedDisconnect,
@@ -25,7 +26,7 @@ import {
   mockedTransactionCreate,
   mockedTransactionSend,
 } from '../../../setup/mocks';
-import { ipc, ws, privateKey, publicKey, senderDID, signature, chainspace } from '../../../setup/constant';
+import { ipc, ws, privateKey, publicKey, senderDID, chainspace, signature } from '../../../setup/constant';
 
 describe('DIDClient', () => {
   let didClient: DIDClient;
@@ -108,7 +109,7 @@ describe('DIDClient', () => {
       params: {
         target: senderDID,
         signer: senderDID,
-        signature,
+        signature: Buffer.alloc(0),
         keys: [{ publicKey, relationship: ['assertionMethod'] }],
       },
     };
@@ -145,7 +146,7 @@ describe('DIDClient', () => {
       params: {
         target: senderDID,
         signer: senderDID,
-        signature,
+        signature: Buffer.alloc(0),
         keys: [{ publicKey, relationship: ['assertionMethod'] }],
       },
     };
@@ -208,7 +209,7 @@ describe('DIDClient', () => {
       params: {
         target: senderDID,
         signer: senderDID,
-        signature,
+        signature: Buffer.alloc(0),
         keys: [{ publicKey, relationship: ['assertionMethod'] }],
       },
     };
@@ -289,6 +290,27 @@ describe('DIDClient', () => {
       param.params.target = `did:lisk:${chainspace}:test:signeriscontroller`;
       await didClient.addKeys(param, privateKey);
       expect(mockedTransactionSend).toHaveBeenCalled();
+    });
+
+    it('should throw an error if signature is provided but signer is falsy', async () => {
+      const func = async () => {
+        param.params.target = `did:lisk:${chainspace}:test:signeriscontroller`;
+        param.params.signer = '';
+        param.params.signature = Buffer.from(
+          '9034d41e5f8bc835d97420bd6194223822234784b694352b3e89d8371c95671e8e38fa8ab9aa8805bff31c916cfcd3626bb5bf3401e9075fa8f76748f759b601',
+          'hex',
+        );
+        await didClient.addKeys(param, privateKey);
+      };
+      await expect(func()).rejects.toThrow();
+    });
+
+    it('should throw an error if signature is provided but its invalid', async () => {
+      const func = async () => {
+        param.params.signature = signature;
+        await didClient.addKeys(param, privateKey);
+      };
+      await expect(func()).rejects.toThrow();
     });
 
     it('should throw an error if none of above scenario matched', async () => {
@@ -466,7 +488,7 @@ describe('DIDClient', () => {
       params: {
         target: senderDID,
         signer: senderDID,
-        signature,
+        signature: Buffer.alloc(0),
         keys: [{ publicKey, relationship: ['assertionMethod'] }],
       },
     };
@@ -512,8 +534,12 @@ describe('DIDClient', () => {
       expect(mockedReadDID).toHaveBeenCalled();
     });
 
-    it('should invoke the did_getNonce endpoint', async () => {
-      await didClient.addKeys(validAddKeysParam, privateKey);
+    it('should invoke the did_getNonce endpoint if signature is provided', async () => {
+      invalidAddKeysParam.params.signature = createTransactionSignature(
+        { command: 'addKeys', params: { ...validAddKeysParam.params, nonce: BigInt(1) } },
+        privateKey,
+      );
+      await didClient.addKeys(invalidAddKeysParam, privateKey);
       expect(mockedGetDIDNonce).toHaveBeenCalled();
     });
 
@@ -543,7 +569,7 @@ describe('DIDClient', () => {
 
     it('should throw an error if param.signature is not valid', async () => {
       const func = async () => {
-        invalidAddKeysParam.params.signature = Buffer.alloc(0);
+        invalidAddKeysParam.params.signature = 'invalid' as any;
         await didClient.addKeys(invalidAddKeysParam, privateKey);
       };
       await expect(func()).rejects.toThrow();
@@ -562,7 +588,7 @@ describe('DIDClient', () => {
       params: {
         target: senderDID,
         signer: senderDID,
-        signature,
+        signature: Buffer.alloc(0),
         publicKeys: [publicKey],
       },
     };
@@ -608,8 +634,12 @@ describe('DIDClient', () => {
       expect(mockedReadDID).toHaveBeenCalled();
     });
 
-    it('should invoke the did_getNonce endpoint', async () => {
-      await didClient.removeKeys(validRemoveKeysParam, privateKey);
+    it('should invoke the did_getNonce endpoint if signature is provided', async () => {
+      invalidRemoveKeysParam.params.signature = createTransactionSignature(
+        { command: 'removeKeys', params: { ...validRemoveKeysParam.params, nonce: BigInt(1) } },
+        privateKey,
+      );
+      await didClient.removeKeys(invalidRemoveKeysParam, privateKey);
       expect(mockedGetDIDNonce).toHaveBeenCalled();
     });
 
@@ -639,7 +669,7 @@ describe('DIDClient', () => {
 
     it('should throw an error if param.signature is not valid', async () => {
       const func = async () => {
-        invalidRemoveKeysParam.params.signature = Buffer.alloc(0);
+        invalidRemoveKeysParam.params.signature = 'invalid' as any;
         await didClient.removeKeys(invalidRemoveKeysParam, privateKey);
       };
       await expect(func()).rejects.toThrow();
@@ -658,7 +688,7 @@ describe('DIDClient', () => {
       params: {
         target: senderDID,
         signer: senderDID,
-        signature,
+        signature: Buffer.alloc(0),
         controllers: [senderDID],
       },
     };
@@ -705,8 +735,12 @@ describe('DIDClient', () => {
       expect(mockedReadDID).toHaveBeenCalled();
     });
 
-    it('should invoke the did_getNonce endpoint', async () => {
-      await didClient.addControllers(validAddControllersParam, privateKey);
+    it('should invoke the did_getNonce endpoint if signature is provided', async () => {
+      invalidAddControllersParam.params.signature = createTransactionSignature(
+        { command: 'addControllers', params: { ...validAddControllersParam.params, nonce: BigInt(1) } },
+        privateKey,
+      );
+      await didClient.addControllers(invalidAddControllersParam, privateKey);
       expect(mockedGetDIDNonce).toHaveBeenCalled();
     });
 
@@ -736,7 +770,7 @@ describe('DIDClient', () => {
 
     it('should throw an error if param.signature is not valid', async () => {
       const func = async () => {
-        invalidAddControllersParam.params.signature = Buffer.alloc(0);
+        invalidAddControllersParam.params.signature = 'invalid' as any;
         await didClient.addControllers(invalidAddControllersParam, privateKey);
       };
       await expect(func()).rejects.toThrow();
@@ -755,7 +789,7 @@ describe('DIDClient', () => {
       params: {
         target: senderDID,
         signer: senderDID,
-        signature,
+        signature: Buffer.alloc(0),
         controllers: [senderDID],
       },
     };
@@ -802,8 +836,12 @@ describe('DIDClient', () => {
       expect(mockedReadDID).toHaveBeenCalled();
     });
 
-    it('should invoke the did_getNonce endpoint', async () => {
-      await didClient.removeControllers(validRemoveControllersParam, privateKey);
+    it('should invoke the did_getNonce endpoint if signature is provided', async () => {
+      invalidRemoveControllersParam.params.signature = createTransactionSignature(
+        { command: 'removeControllers', params: { ...invalidRemoveControllersParam.params, nonce: BigInt(1) } },
+        privateKey,
+      );
+      await didClient.removeControllers(invalidRemoveControllersParam, privateKey);
       expect(mockedGetDIDNonce).toHaveBeenCalled();
     });
 
@@ -833,7 +871,7 @@ describe('DIDClient', () => {
 
     it('should throw an error if param.signature is not valid', async () => {
       const func = async () => {
-        invalidRemoveControllersParam.params.signature = Buffer.alloc(0);
+        invalidRemoveControllersParam.params.signature = 'invalid' as any;
         await didClient.removeControllers(invalidRemoveControllersParam, privateKey);
       };
       await expect(func()).rejects.toThrow();
@@ -852,7 +890,7 @@ describe('DIDClient', () => {
       params: {
         target: senderDID,
         signer: senderDID,
-        signature,
+        signature: Buffer.alloc(0),
         endpoint: {
           id: 'urn:sha256:be5c8e26a60b911370b30dcef6a9f497de0805efc30827c51fb354f766be2261',
           serviceEndpoint: 'https://instagram.com/lisk_blockchain',
@@ -903,8 +941,12 @@ describe('DIDClient', () => {
       expect(mockedReadDID).toHaveBeenCalled();
     });
 
-    it('should invoke the did_getNonce endpoint', async () => {
-      await didClient.addServiceEndpoint(validAddServiceEndpointParam, privateKey);
+    it('should invoke the did_getNonce endpoint if signature is provided', async () => {
+      invalidAddServiceEndpointParam.params.signature = createTransactionSignature(
+        { command: 'addServiceEndpoint', params: { ...invalidAddServiceEndpointParam.params, nonce: BigInt(1) } },
+        privateKey,
+      );
+      await didClient.addServiceEndpoint(invalidAddServiceEndpointParam, privateKey);
       expect(mockedGetDIDNonce).toHaveBeenCalled();
     });
 
@@ -934,7 +976,7 @@ describe('DIDClient', () => {
 
     it('should throw an error if param.signature is not valid', async () => {
       const func = async () => {
-        invalidAddServiceEndpointParam.params.signature = Buffer.alloc(0);
+        invalidAddServiceEndpointParam.params.signature = 'invalid' as any;
         await didClient.addServiceEndpoint(invalidAddServiceEndpointParam, privateKey);
       };
       await expect(func()).rejects.toThrow();
@@ -953,7 +995,7 @@ describe('DIDClient', () => {
       params: {
         target: senderDID,
         signer: senderDID,
-        signature,
+        signature: Buffer.alloc(0),
         endpointId: 'urn:sha256:be5c8e26a60b911370b30dcef6a9f497de0805efc30827c51fb354f766be2261',
       },
     };
@@ -1001,8 +1043,12 @@ describe('DIDClient', () => {
       expect(mockedReadDID).toHaveBeenCalled();
     });
 
-    it('should invoke the did_getNonce endpoint', async () => {
-      await didClient.removeServiceEndpoint(validRemoveServiceEndpointParam, privateKey);
+    it('should invoke the did_getNonce endpoint if signature is provided', async () => {
+      invalidRemoveServiceEndpointParam.params.signature = createTransactionSignature(
+        { command: 'removeServiceEndpoint', params: { ...invalidRemoveServiceEndpointParam.params, nonce: BigInt(1) } },
+        privateKey,
+      );
+      await didClient.removeServiceEndpoint(invalidRemoveServiceEndpointParam, privateKey);
       expect(mockedGetDIDNonce).toHaveBeenCalled();
     });
 
@@ -1032,7 +1078,7 @@ describe('DIDClient', () => {
 
     it('should throw an error if param.signature is not valid', async () => {
       const func = async () => {
-        invalidRemoveServiceEndpointParam.params.signature = Buffer.alloc(0);
+        invalidRemoveServiceEndpointParam.params.signature = 'invalid' as any;
         await didClient.removeServiceEndpoint(invalidRemoveServiceEndpointParam, privateKey);
       };
       await expect(func()).rejects.toThrow();
@@ -1051,7 +1097,7 @@ describe('DIDClient', () => {
       params: {
         target: senderDID,
         signer: senderDID,
-        signature,
+        signature: Buffer.alloc(0),
       },
     };
     let invalidDeactivateParam: TransactionPayload<DeactivateParam> = utils.objects.cloneDeep(validDeactivateParam);
@@ -1096,8 +1142,12 @@ describe('DIDClient', () => {
       expect(mockedReadDID).toHaveBeenCalled();
     });
 
-    it('should invoke the did_getNonce endpoint', async () => {
-      await didClient.deactivateDID(validDeactivateParam, privateKey);
+    it('should invoke the did_getNonce endpoint if signature is provided', async () => {
+      invalidDeactivateParam.params.signature = createTransactionSignature(
+        { command: 'deactivate', params: { ...invalidDeactivateParam.params, nonce: BigInt(1) } },
+        privateKey,
+      );
+      await didClient.deactivateDID(invalidDeactivateParam, privateKey);
       expect(mockedGetDIDNonce).toHaveBeenCalled();
     });
 
@@ -1119,7 +1169,7 @@ describe('DIDClient', () => {
 
     it('should throw an error if param.signature is not valid', async () => {
       const func = async () => {
-        invalidDeactivateParam.params.signature = Buffer.alloc(0);
+        invalidDeactivateParam.params.signature = 'invalid' as any;
         await didClient.deactivateDID(invalidDeactivateParam, privateKey);
       };
       await expect(func()).rejects.toThrow();

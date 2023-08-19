@@ -12,6 +12,8 @@ export async function executeAddControllersCommand(
   const targetDIDDocument = await documentSubstore.get(_context, documentStoreKey(params.target));
 
   for (const controller of params.controllers) {
+    const controllerDIDExist = await documentSubstore.has(_context, documentStoreKey(controller));
+    if (!controllerDIDExist) throw new Error(`${controller} don't have any DID document record`);
     const index = targetDIDDocument.controller.findIndex(t => t === controller);
     if (index === -1) targetDIDDocument.controller.push(controller);
   }

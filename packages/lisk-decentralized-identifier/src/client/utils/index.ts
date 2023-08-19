@@ -20,3 +20,5 @@ export function verifyTransactionSignature(payload: PayloadWithSignature, signat
   });
   return verificationResult;
 }
+
+export * from './validator';

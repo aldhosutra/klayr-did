@@ -24,7 +24,7 @@ export async function executeCreateCommand(
     didComponent.uniqueId === cryptography.address.getLisk32AddressFromPublicKey(senderPublicKey)
   ) {
     await initializeAddressDID(_context, documentSubstore, config.chainspace, senderPublicKey);
-    return false;
+    return true;
   }
 
   if (await documentSubstore.has(_context, documentStoreKey(params.did))) {

@@ -1,4 +1,4 @@
-import { MethodContext } from 'lisk-sdk';
+import { JSONObject, MethodContext } from 'lisk-sdk';
 import { DidModuleConfig } from './config';
 import { DidDocument } from './did';
 import { NonceStoreData } from './stores';
@@ -10,7 +10,7 @@ export interface DidMethod {
   init(config: DidModuleConfig): void;
   getConfig(): DidModuleConfig;
   read(methodContext: MethodContext, did: string): Promise<DidDocument>;
-  getNonce(methodContext: MethodContext, did: string): Promise<NonceStoreData>;
+  getNonce(methodContext: MethodContext, did: string): Promise<JSONObject<NonceStoreData>>;
   authorize(methodContext: MethodContext, did: string, publicKey: Buffer): Promise<AuthorizationResult[]>;
   create(
     methodContext: MethodContext,

@@ -26,9 +26,7 @@ export async function authorizePublicKey(
     const controllerDidDocument = await documentSubstore.get(context, documentStoreKey(controller));
     const publicKeyRelationshipWithControllerDID = await cryptography.method.getVerificationRelationship(
       controllerDidDocument,
-      {
-        publicKey,
-      },
+      { publicKey },
     );
     if (publicKeyRelationshipWithControllerDID.length > 0) {
       result.push({

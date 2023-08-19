@@ -1,18 +1,15 @@
 export const removeServiceEndpointEventSchema = {
   $id: '/did/events/remove_service_endpoint',
   type: 'object',
-  required: ['target', 'endpointIds', 'signer', 'signature'],
+  required: ['target', 'endpointId', 'signer', 'signature'],
   properties: {
     target: {
       dataType: 'string',
       fieldNumber: 1,
     },
-    endpointIds: {
+    endpointId: {
+      dataType: 'string',
       fieldNumber: 2,
-      type: 'array',
-      items: {
-        dataType: 'string',
-      },
     },
     signer: {
       dataType: 'string',

@@ -1,4 +1,4 @@
-import { BaseMethod, MethodContext, VerifyStatus } from 'lisk-sdk';
+import { BaseMethod, JSONObject, MethodContext, VerifyStatus } from 'lisk-sdk';
 import {
   AuthorizationResult,
   DidDocument,
@@ -6,6 +6,7 @@ import {
   DidModuleConfig,
   KeysCommand,
   NonceStoreData,
+  utils,
 } from '@lisk-did/lisk-decentralized-identifier';
 import { DocumentStore, documentStoreKey } from './stores/document';
 import { executeCreateCommand } from './logic/create_did';
@@ -44,9 +45,10 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
     return await documentSubstore.get(methodContext, documentStoreKey(did));
   }
 
-  async getNonce(methodContext: MethodContext, did: string): Promise<NonceStoreData> {
+  async getNonce(methodContext: MethodContext, did: string): Promise<JSONObject<NonceStoreData>> {
     const nonceSubstore = this.stores.get(NonceStore);
-    return await nonceSubstore.get(methodContext, nonceStoreKey(did));
+    const nonce = await nonceSubstore.get(methodContext, nonceStoreKey(did));
+    return utils.object.serializer(nonce) as JSONObject<NonceStoreData>;
   }
 
   async authorize(methodContext: MethodContext, did: string, publicKey: Buffer): Promise<AuthorizationResult[]> {

@@ -4,7 +4,7 @@ export const nonceStoreSchema = {
   required: ['nonce'],
   properties: {
     nonce: {
-      datatype: 'uint64',
+      dataType: 'uint64',
       fieldNumber: 1,
     },
   },

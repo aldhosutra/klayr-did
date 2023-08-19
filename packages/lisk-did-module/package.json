@@ -58,7 +58,7 @@
     "access": "public"
   },
   "dependencies": {
-    "lisk-sdk": "^6.0.0-beta.5",
-    "@lisk-did/lisk-decentralized-identifier": "*"
+    "@lisk-did/lisk-decentralized-identifier": "*",
+    "lisk-sdk": "^6.0.0-beta.5"
   }
 }

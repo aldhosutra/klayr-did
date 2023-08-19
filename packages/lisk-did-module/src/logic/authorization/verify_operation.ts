@@ -1,4 +1,4 @@
-import { DidModuleConfig, PayloadWithSignature } from '@lisk-did/lisk-decentralized-identifier';
+import { DidModuleConfig, PayloadWithSignature, client } from '@lisk-did/lisk-decentralized-identifier';
 import { MethodContext, CommandVerifyContext, VerifyStatus } from 'lisk-sdk';
 import { DocumentStore, documentStoreKey } from '../../stores/document';
 import { NonceStore } from '../../stores/nonce';
@@ -13,7 +13,7 @@ export async function verifyOperation(
   senderPublicKey: Buffer,
   withLastController = false,
 ) {
-  if (!documentSubstore.has(context, documentStoreKey(payload.params.target))) {
+  if (!(await documentSubstore.has(context, documentStoreKey(payload.params.target)))) {
     return {
       status: VerifyStatus.FAIL,
       error: new Error(`target DID doesn't exists`),
@@ -21,6 +21,11 @@ export async function verifyOperation(
   }
 
   try {
+    const verifyParam = await client.utils.validateParams(
+      payload.command,
+      { params: payload.params },
+      config.chainspace,
+    );
     const authorized = await isAuthorized(
       context,
       documentSubstore,
@@ -30,7 +35,7 @@ export async function verifyOperation(
       senderPublicKey,
       withLastController,
     );
-    if (!authorized) {
+    if (!authorized.status || !verifyParam) {
       return {
         status: VerifyStatus.FAIL,
         error: new Error(`DID operation authorization failed`),

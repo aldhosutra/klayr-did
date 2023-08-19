@@ -1,5 +1,6 @@
 import { DidModule } from './module';
 import { DidMethod } from './method';
+import { DidEndpoint } from './endpoint';
 import { AddControllersCommand } from './commands/add_controllers_command';
 import { AddKeysCommand } from './commands/add_keys_command';
 import { AddServiceEndpointCommand } from './commands/add_service_endpoints_command';
@@ -11,6 +12,7 @@ import { RemoveServiceEndpointCommand } from './commands/remove_service_endpoint
 
 export { DidModule } from './module';
 export { DidMethod } from './method';
+export { DidEndpoint } from './endpoint';
 export { AddControllersCommand } from './commands/add_controllers_command';
 export { AddKeysCommand } from './commands/add_keys_command';
 export { AddServiceEndpointCommand } from './commands/add_service_endpoints_command';
@@ -23,6 +25,7 @@ export { RemoveServiceEndpointCommand } from './commands/remove_service_endpoint
 export default {
   DidModule,
   DidMethod,
+  DidEndpoint,
   AddControllersCommand,
   AddKeysCommand,
   AddServiceEndpointCommand,

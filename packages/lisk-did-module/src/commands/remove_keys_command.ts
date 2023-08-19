@@ -1,13 +1,7 @@
 /* eslint-disable class-methods-use-this */
 
 import { DidModuleConfig, RemoveKeysParam, utils } from '@lisk-did/lisk-decentralized-identifier';
-import {
-  BaseCommand,
-  type CommandVerifyContext,
-  type CommandExecuteContext,
-  type VerificationResult,
-  VerifyStatus,
-} from 'lisk-sdk';
+import { BaseCommand, type CommandVerifyContext, type CommandExecuteContext, type VerificationResult } from 'lisk-sdk';
 import { verifyAuthorization } from '../logic/authorization';
 import { DocumentStore } from '../stores/document';
 import { NonceStore } from '../stores/nonce';
@@ -26,12 +20,6 @@ export class RemoveKeysCommand extends BaseCommand {
 
   // eslint-disable-next-line @typescript-eslint/require-await
   public async verify(_context: CommandVerifyContext<RemoveKeysParam>): Promise<VerificationResult> {
-    if (_context.params.publicKeys.length === 0) {
-      return {
-        status: VerifyStatus.FAIL,
-        error: new Error(`at least one public keys needed`),
-      };
-    }
     return await verifyAuthorization.bind(this)(_context);
   }
 

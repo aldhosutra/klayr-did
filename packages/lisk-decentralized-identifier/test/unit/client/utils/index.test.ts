@@ -1,5 +1,5 @@
 import { createSignatureChallenge, createTransactionSignature, verifyTransactionSignature } from '@dist/client/utils';
-import { PayloadWithSignature } from '@dist/client/utils/types';
+import { PayloadWithSignature } from '@dist/types';
 import { privateKey, publicKey, senderDID } from '../../../setup/constant';
 
 const createPayload = {

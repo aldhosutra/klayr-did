@@ -1,5 +1,4 @@
 import { JSONObject, apiClient, cryptography, utils } from 'lisk-sdk';
-import * as isUri from 'is-uri';
 import {
   AddControllersParam,
   AddKeysParam,
@@ -20,12 +19,10 @@ import {
   PayloadWithSignature,
   TransactionPayload,
   TransactionPayloadWithoutSignature,
-  DIDTransactionParam,
 } from '../../types';
 import { getVerificationRelationship } from '../../cryptography/verification';
-import { createSignatureChallenge, createTransactionSignature } from '../utils';
-import { getAddressDIDFromPublicKey, parseDIDComponent } from '../../did';
-import { LISK_PUBLIC_KEY_LENGTH, SIGNATURE_BYTES_LENGTH } from '../../utils/constant';
+import { createSignatureChallenge, createTransactionSignature, validateParams } from '../utils';
+import { getAddressDIDFromPublicKey } from '../../did';
 
 export class DIDClient {
   private apiClient: apiClient.APIClient | undefined;
@@ -115,51 +112,8 @@ export class DIDClient {
   }
 
   // eslint-disable-next-line @typescript-eslint/require-await
-  private async _validateParams(command: DIDCommands, param: TransactionPayload<any>): Promise<void> {
-    let params: DIDTransactionParam;
-    let didComponent;
-    if (command === 'create') {
-      params = param.params as CreateParam;
-      didComponent = parseDIDComponent(params.did);
-      if (params.controllers.length < 1) throw new Error('at least one controller needed');
-      params.controllers.forEach(did => parseDIDComponent(did));
-      if (didComponent.chainspace !== this.chainspace)
-        throw new Error(
-          `this chainspace ${this.chainspace} can't create did document for namespace "${didComponent.chainspace}`,
-        );
-    }
-    if (['create', 'addKeys'].includes(command)) {
-      params = param.params as AddKeysParam | CreateParam;
-      for (const key of (params as AddKeysParam).keys) {
-        if (key.publicKey.length !== LISK_PUBLIC_KEY_LENGTH) throw new Error('invalid public key length');
-        if (key.relationship.length === 0) throw new Error('at least one relationship needed');
-      }
-    }
-    if (['addControllers', 'removeControllers'].includes(command)) {
-      params = param.params as AddControllersParam | RemoveControllersParam;
-      (params as AddControllersParam | RemoveControllersParam).controllers.forEach(did => parseDIDComponent(did));
-    }
-    if (command === 'addServiceEndpoint') {
-      params = param.params as AddServiceEndpointParam;
-      if (!isUri((params as AddServiceEndpointParam).endpoint.id)) throw new Error('endpoint.id is not a valid URI');
-    }
-    if (command === 'removeKeys') {
-      params = param.params as RemoveKeysParam;
-      for (const key of (params as RemoveKeysParam).publicKeys) {
-        if (key.length !== LISK_PUBLIC_KEY_LENGTH) throw new Error('invalid public key length');
-      }
-    }
-    if (command === 'removeServiceEndpoint') {
-      params = param.params as RemoveServiceEndpointParam;
-      if (!isUri((params as RemoveServiceEndpointParam).endpointId)) throw new Error('endpointId is not a valid URI');
-    }
-    if (command !== 'create') {
-      params = param.params as Exclude<DIDTransactionParam, CreateParam>;
-      if (params.target) parseDIDComponent(params.target);
-      if (params.signer) parseDIDComponent(params.signer);
-      if (params.signature && params.signature.length !== SIGNATURE_BYTES_LENGTH)
-        throw new Error('invalid signature length');
-    }
+  private async _validateParams(command: DIDCommands, param: TransactionPayload<any>): Promise<boolean> {
+    return await validateParams(command, param, this.chainspace!);
   }
 
   private async _postTransaction(command: DIDCommands, param: TransactionPayload<any>, senderPrivateKey: Buffer) {
@@ -196,7 +150,9 @@ export class DIDClient {
     const targetDIDDocument = await this.read(data.params.target);
     if (targetDIDDocument === undefined) throw new Error("target DID doesn't exist");
 
-    if (data.params.signature) {
+    if (data.params.signature !== undefined && data.params.signature.length > 0) {
+      if (!data.params.signer) throw new Error('signer cant be undefined if custom did signature is provided');
+
       const didNonce = await this.getNonce(data.params.signer);
       data.params.nonce = BigInt(didNonce.nonce);
       const challenge = createSignatureChallenge(data);
@@ -236,6 +192,8 @@ export class DIDClient {
           return rest;
         }
       }
+
+      throw new Error("did signature can't be verified");
     }
 
     /**

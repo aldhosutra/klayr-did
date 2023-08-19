@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 
-import { CreateParam, DidModuleConfig, parseDIDComponent, utils } from '@lisk-did/lisk-decentralized-identifier';
+import { CreateParam, DidModuleConfig, client, utils } from '@lisk-did/lisk-decentralized-identifier';
 import {
   BaseCommand,
   type CommandVerifyContext,
@@ -25,25 +25,11 @@ export class CreateCommand extends BaseCommand {
   // eslint-disable-next-line @typescript-eslint/require-await
   public async verify(_context: CommandVerifyContext<CreateParam>): Promise<VerificationResult> {
     try {
-      const didComponent = parseDIDComponent(_context.params.did);
-      if (this.config.chainspace !== didComponent.chainspace) {
-        return {
-          status: VerifyStatus.FAIL,
-          error: new Error(
-            `this chainspace ${this.config.chainspace} can't create did document for namespace "${didComponent.chainspace}"`,
-          ),
-        };
-      }
+      await client.utils.validateParams('create', { params: _context.params }, this.config.chainspace);
     } catch (err: any) {
       return {
         status: VerifyStatus.FAIL,
         error: new Error(err),
-      };
-    }
-    if (_context.params.controllers.length === 0) {
-      return {
-        status: VerifyStatus.FAIL,
-        error: new Error(`at least one controller needed`),
       };
     }
     return { status: VerifyStatus.OK };

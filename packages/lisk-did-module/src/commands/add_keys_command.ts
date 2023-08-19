@@ -1,12 +1,6 @@
 /* eslint-disable class-methods-use-this */
 
-import {
-  BaseCommand,
-  type CommandVerifyContext,
-  type CommandExecuteContext,
-  type VerificationResult,
-  VerifyStatus,
-} from 'lisk-sdk';
+import { BaseCommand, type CommandVerifyContext, type CommandExecuteContext, type VerificationResult } from 'lisk-sdk';
 import { AddKeysParam, DidModuleConfig, utils } from '@lisk-did/lisk-decentralized-identifier';
 import { verifyAuthorization } from '../logic/authorization';
 import { DocumentStore } from '../stores/document';
@@ -26,12 +20,6 @@ export class AddKeysCommand extends BaseCommand {
 
   // eslint-disable-next-line @typescript-eslint/require-await
   public async verify(_context: CommandVerifyContext<AddKeysParam>): Promise<VerificationResult> {
-    if (_context.params.keys.length === 0) {
-      return {
-        status: VerifyStatus.FAIL,
-        error: new Error(`at least one keys needed`),
-      };
-    }
     return await verifyAuthorization.bind(this)(_context);
   }
 
