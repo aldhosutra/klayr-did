@@ -9,6 +9,7 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
+    "clean": "npm run clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
@@ -26,6 +27,7 @@
     "@docusaurus/module-type-aliases": "2.4.1",
     "docusaurus-plugin-typedoc": "^0.19.2",
     "typedoc": "^0.24.8",
+    "typedoc-plugin-external-link": "^2.1.0",
     "typedoc-plugin-markdown": "^3.15.4"
   },
   "browserslist": {

@@ -5,8 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "docs:start": "lerna run start --scope=lisk-did-docs",
-    "docs:build": "if test -d docs; then rm -r docs; fi; lerna run clear --scope=lisk-did-docs --skip-nx-cache && lerna run build --scope=lisk-did-docs --skip-nx-cache && cp -r packages/lisk-did-docs/build docs && shx echo -n \"lisk-did.js.org\" > docs/CNAME",
+    "docs:start": "npm run build && lerna run start --scope=lisk-did-docs",
+    "docs:build": "npm run build && if test -d docs; then rm -r docs; fi; lerna run clean --scope=lisk-did-docs --skip-nx-cache && lerna run build --scope=lisk-did-docs --skip-nx-cache && cp -r packages/lisk-did-docs/build docs && shx echo -n \"lisk-did.js.org\" > docs/CNAME",
     "clean": "lerna run clean",
     "clean:node_modules": "lerna clean --yes",
     "clean:full": "nx run-many --target=clean && npm run clean:node_modules && rm -rf node_modules && npm install && npm run build",
@@ -15,19 +15,20 @@
     "lint": "nx run-many --target=lint",
     "lint:since": "nx affected --target=lint",
     "lint:fix": "nx run-many --target=lint:fix",
-    "test": "nx run-many --target=test",
-    "test:ci": "nx run-many --target=test:ci",
-    "test:since": "nx affected --target=test",
+    "test": "nx run-many --target=test --exclude=lisk-did-docs",
+    "test:ci": "nx run-many --target=test:ci --exclude=lisk-did-docs",
+    "test:since": "nx affected --target=test --exclude=lisk-did-docs",
     "test:module": "lerna run test:coverage --scope=@lisk-did/lisk-did-module",
     "test:did": "lerna run test:coverage --scope=@lisk-did/lisk-decentralized-identifier",
     "test:vc": "lerna run test:coverage --scope=@lisk-did/lisk-verifiable-credentials",
-    "build": "nx run-many --target=build",
-    "build:since": "nx affected --target=build",
+    "build": "nx run-many --target=build --exclude=lisk-did-docs",
+    "build:since": "nx affected --target=build --exclude=lisk-did-docs",
     "build:module": "lerna run build --scope=@lisk-did/lisk-did-module",
     "build:did": "lerna run build --scope=@lisk-did/lisk-decentralized-identifier",
     "build:vc": "lerna run build --scope=@lisk-did/lisk-verifiable-credentials",
     "prepare": "husky install",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "version": "lerna version --no-private"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.62.0",

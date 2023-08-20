@@ -10,3 +10,4 @@ dist
 tmp
 build
 scripts
+externalConfig.js

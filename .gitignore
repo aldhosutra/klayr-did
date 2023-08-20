@@ -18,6 +18,7 @@ node_modules/
 
 # Docs
 docs/jsdoc/
+typedoc
 
 # Logs
 logs/*

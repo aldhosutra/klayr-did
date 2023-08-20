@@ -69,34 +69,39 @@ const config = {
         },
         items: [
           {
-            to: 'docs/api/',
+            to: 'docs/lisk-did',
             activeBasePath: 'docs',
-            label: 'API',
+            label: 'Documentation',
             position: 'left',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/aldhosutra/lisk-did',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
-            title: 'Docs',
+            title: 'npm',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'lisk-did',
+                href: 'https://www.npmjs.com/package/lisk-did',
+              },
+              {
+                label: '@lisk-did/lisk-did-module',
+                href: 'https://www.npmjs.com/package/lisk-did-module',
+              },
+              {
+                label: '@lisk-did/lisk-decentralized-identifier',
+                href: 'https://www.npmjs.com/package/lisk-decentralized-identifier',
+              },
+              {
+                label: '@lisk-did/lisk-verifiable-credentials',
+                href: 'https://www.npmjs.com/package/lisk-verifiable-credentials',
               },
             ],
           },
@@ -104,16 +109,20 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Lisk Discord',
+                href: 'https://lisk.chat',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Lisk Twitter / X',
+                href: 'https://twitter.com/LiskHQ',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Lisk Telegram',
+                href: 'https://t.me/Lisk_HQ',
+              },
+              {
+                label: 'Lisk Reddit',
+                href: 'https://www.reddit.com/r/Lisk',
               },
             ],
           },
@@ -121,17 +130,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Lisk Official Website',
+                href: 'https://lisk.com',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Lisk GitHub',
+                href: 'https://github.com/LiskHQ',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="mailto:aldhosutra@gmail.com">Aldo Suhartono Putra</a>. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -143,15 +152,60 @@ const config = {
     [
       'docusaurus-plugin-typedoc',
       {
-        entryPoints: [
-          '../lisk-decentralized-identifier',
-          '../lisk-did',
-          '../lisk-did-module',
-          '../lisk-verifiable-credentials',
-        ],
-        entryPointStrategy: 'packages',
+        id: 'lisk-did',
+        entryPoints: ['../lisk-did/src/index.ts'],
+        tsconfig: '../lisk-did/tsconfig.json',
+        out: 'lisk-did',
         sidebar: {
           fullNames: true,
+          categoryLabel: 'lisk-did',
+          position: 0,
+          collapsed: false,
+        },
+      },
+    ],
+    [
+      'docusaurus-plugin-typedoc',
+      {
+        id: 'lisk-did-module',
+        entryPoints: ['../lisk-did-module/src/index.ts'],
+        tsconfig: '../lisk-did-module/tsconfig.json',
+        out: 'lisk-did-module',
+        sidebar: {
+          fullNames: true,
+          categoryLabel: '@lisk-did/lisk-did-module',
+          position: 1,
+          collapsed: false,
+        },
+      },
+    ],
+    [
+      'docusaurus-plugin-typedoc',
+      {
+        id: 'lisk-decentralized-identifier',
+        entryPoints: ['../lisk-decentralized-identifier/src/index.ts'],
+        tsconfig: '../lisk-decentralized-identifier/tsconfig.json',
+        out: 'lisk-decentralized-identifier',
+        sidebar: {
+          fullNames: true,
+          categoryLabel: '@lisk-did/lisk-decentralized-identifier',
+          position: 2,
+          collapsed: false,
+        },
+      },
+    ],
+    [
+      'docusaurus-plugin-typedoc',
+      {
+        id: 'lisk-verifiable-credentials',
+        entryPoints: ['../lisk-verifiable-credentials/src/index.ts'],
+        tsconfig: '../lisk-verifiable-credentials/tsconfig.json',
+        out: 'lisk-verifiable-credentials',
+        sidebar: {
+          fullNames: true,
+          categoryLabel: '@lisk-did/lisk-verifiable-credentials',
+          position: 3,
+          collapsed: false,
         },
       },
     ],
