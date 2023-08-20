@@ -69,6 +69,12 @@ const config = {
         },
         items: [
           {
+            to: 'docs/api/',
+            activeBasePath: 'docs',
+            label: 'API',
+            position: 'left',
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
@@ -132,6 +138,24 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  plugins: [
+    [
+      'docusaurus-plugin-typedoc',
+      {
+        entryPoints: [
+          '../lisk-decentralized-identifier',
+          '../lisk-did',
+          '../lisk-did-module',
+          '../lisk-verifiable-credentials',
+        ],
+        entryPointStrategy: 'packages',
+        sidebar: {
+          fullNames: true,
+        },
+      },
+    ],
+  ],
 };
 
 module.exports = config;
