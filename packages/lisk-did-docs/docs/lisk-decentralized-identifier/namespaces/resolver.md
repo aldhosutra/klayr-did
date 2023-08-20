@@ -26,7 +26,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/resolver/index.ts:16](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/resolver/index.ts#L16)
+[packages/lisk-decentralized-identifier/src/resolver/index.ts:16](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/resolver/index.ts#L16)
 
 ## Functions
 
@@ -47,7 +47,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:54](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L54)
+[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:54](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L54)
 
 ---
 
@@ -67,7 +67,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:46](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L46)
+[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:46](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L46)
 
 ---
 
@@ -87,7 +87,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:61](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L61)
+[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:61](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L61)
 
 ---
 
@@ -107,4 +107,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:50](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L50)
+[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:50](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L50)

@@ -58,4 +58,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-did/src/index.ts:9](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-did/src/index.ts#L9)
+[packages/lisk-did/src/index.ts:9](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-did/src/index.ts#L9)

@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts:3](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts#L3)
+[packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts:3](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts#L3)
 
 ---
 
@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts:5](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts#L5)
+[packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts:5](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts#L5)
 
 ---
 
@@ -34,7 +34,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts:4](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts#L4)
+[packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts:4](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts#L4)
 
 ---
 
@@ -44,4 +44,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts:2](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts#L2)
+[packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts:2](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/types/commands/add_controllers_command.ts#L2)

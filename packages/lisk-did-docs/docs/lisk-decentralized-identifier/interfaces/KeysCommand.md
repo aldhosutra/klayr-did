@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/commands/keys.ts:4](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/types/commands/keys.ts#L4)
+[packages/lisk-decentralized-identifier/src/types/commands/keys.ts:4](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/types/commands/keys.ts#L4)
 
 ---
 
@@ -24,4 +24,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/commands/keys.ts:5](https://github.com/aldhosutra/lisk-did/blob/f053e54/packages/lisk-decentralized-identifier/src/types/commands/keys.ts#L5)
+[packages/lisk-decentralized-identifier/src/types/commands/keys.ts:5](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/types/commands/keys.ts#L5)
