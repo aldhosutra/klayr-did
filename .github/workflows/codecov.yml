@@ -30,6 +30,7 @@ jobs:
           cache-dependency-path: 'package-lock.json'
 
       - run: npm ci
+      - run: npm run build
       - run: npm run test:ci
       - run: |
           curl -Os https://uploader.codecov.io/latest/linux/codecov && chmod +x codecov
