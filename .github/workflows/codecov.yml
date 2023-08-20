@@ -1,0 +1,40 @@
+name: Codecov
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  codecov-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: formsort/action-check-codecov-config@v1
+
+  codecov:
+    needs:
+      - codecov-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          cache: 'npm'
+          cache-dependency-path: 'packages/**/package-lock.json'
+
+      - run: npm ci
+      - run: npm run test:ci
+      - run: |
+          curl -Os https://uploader.codecov.io/latest/linux/codecov && chmod +x codecov
+          for dir in packages/*; do
+            ./codecov --dir "${dir}" --flags "$(basename "${dir}")" --token "${CODECOV_TOKEN}" --verbose
+          done
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
