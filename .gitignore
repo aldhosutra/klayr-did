@@ -38,6 +38,7 @@ sftp-config.json
 
 # Coverage directory used by tools like istanbul
 .coverage/
+junit.xml
 
 # Local config file useful for development
 config.local.json

@@ -25,17 +25,38 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: lts/*
+          node-version: 18.x
           cache: 'npm'
           cache-dependency-path: 'package-lock.json'
 
       - run: npm ci
       - run: npm run build
       - run: npm run test:ci
-      - run: |
-          curl -Os https://uploader.codecov.io/latest/linux/codecov && chmod +x codecov
-          for dir in packages/*; do
-            ./codecov --dir "${dir}" --flags "$(basename "${dir}")" --token "${CODECOV_TOKEN}" --verbose
-          done
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Upload lisk-did coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./packages/lisk-did/coverage/coverage-final.json
+          flags: lisk-did
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Upload lisk-decentralized-identifier coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./packages/lisk-decentralized-identifier/coverage/coverage-final.json
+          flags: lisk-decentralized-identifier
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Upload lisk-did-module coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./packages/lisk-did-module/coverage/coverage-final.json
+          flags: lisk-did-module
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Upload lisk-verifiable-credentials coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./packages/lisk-verifiable-credentials/coverage/coverage-final.json
+          flags: lisk-verifiable-credentials
+          token: ${{ secrets.CODECOV_TOKEN }}
