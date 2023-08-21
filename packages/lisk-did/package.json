@@ -1,6 +1,6 @@
 {
   "name": "lisk-did",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Lisk DID/VC Development Kit",
   "keywords": [
     "did",
@@ -41,9 +41,9 @@
     "url": "https://github.com/aldhosutra/lisk-did/issues"
   },
   "dependencies": {
-    "@lisk-did/lisk-decentralized-identifier": "*",
-    "@lisk-did/lisk-did-module": "*",
-    "@lisk-did/lisk-verifiable-credentials": "*"
+    "@lisk-did/lisk-decentralized-identifier": "^0.1.0",
+    "@lisk-did/lisk-did-module": "^0.1.0",
+    "@lisk-did/lisk-verifiable-credentials": "^0.1.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.3",
