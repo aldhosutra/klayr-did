@@ -15,15 +15,15 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/lisk-did">
+          <Link className={clsx('button button--secondary button--lg', styles.button)} to="/docs/lisk-did">
             Get Started
           </Link>
-          <div style={{ width: '1%' }} />
+          <div style={{ width: '20px' }} />
           <Link
-            className="button button--secondary button--lg"
+            className={clsx('button button--secondary button--lg', styles.button)}
             to="https://github.com/aldhosutra/lisk-did/blob/main/packages/lisk-did-module/docs/did-method-spec.md"
           >
-            Read DID Method Specs
+            DID Method Specs
           </Link>
         </div>
       </div>

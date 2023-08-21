@@ -55,21 +55,21 @@ Under your blockchain config folder, please specify required configurations for 
 
 ```json
 {
-    ...other_config,
-    "modules": {
-		"did": {
-			"chainspace": "enevti", // Required
-			"autoCreateAddressDID": true // Default to true
-		},
-        ...other_modules
-	},
+  "<...other_config>": "",
+  "modules": {
+    "did": {
+      "chainspace": "enevti",
+      "autoCreateAddressDID": true
+    },
+    "<...other_modules>": ""
+  }
 }
 ```
 
 Those configuration can be explained as follows:
 
-1. **chainspace**: chainspace to be used by your chain's DID. `did:lisk` require a chainspace to be defined, as it's format is as follows: `did:lisk:{chainspace}:{namespace}:{unique-id}`
-2. **autoCreateAddressDID**: whether you want to enable auto address DID creation. If this option is enabled, an address DID will be automatically created when the address sends any transaction.
+1. **chainspace**: (REQUIRED) chainspace to be used by your chain's DID. `did:lisk` require a chainspace to be defined, as it's format is as follows: `did:lisk:{chainspace}:{namespace}:{unique-id}`
+2. **autoCreateAddressDID**: (default to true) whether you want to enable auto address DID creation. If this option is enabled, an address DID will be automatically created when the address sends any transaction.
 
 ### Register Module
 
@@ -86,7 +86,7 @@ export const registerModules = (app: Application, method: LiskMethod): void => {
 
 ## Documentation
 
-For further explanations, please refer to [lisk-did documentation](https://aldhosutra.github.io/lisk-did) website.
+For further explanations, please refer to [lisk-did documentation](https://lisk-did.js.org) website.
 
 ## License
 

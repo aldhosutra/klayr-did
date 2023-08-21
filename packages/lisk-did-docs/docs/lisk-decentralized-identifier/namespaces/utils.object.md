@@ -31,4 +31,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/object.ts:3](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/utils/object.ts#L3)
+[packages/lisk-decentralized-identifier/src/utils/object.ts:3](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/utils/object.ts#L3)

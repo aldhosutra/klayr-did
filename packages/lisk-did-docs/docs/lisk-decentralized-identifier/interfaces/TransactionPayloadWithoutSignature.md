@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/client.ts:71](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/client.ts#L71)
+[packages/lisk-decentralized-identifier/src/types/client.ts:71](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/client.ts#L71)
 
 ---
 
@@ -30,7 +30,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/client.ts:72](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/client.ts#L72)
+[packages/lisk-decentralized-identifier/src/types/client.ts:72](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/client.ts#L72)
 
 ---
 
@@ -40,4 +40,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/client.ts:73](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/client.ts#L73)
+[packages/lisk-decentralized-identifier/src/types/client.ts:73](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/client.ts#L73)

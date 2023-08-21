@@ -10,7 +10,7 @@
     "Lisk"
   ],
   "author": "Aldo Suhartono Putra <aldhosutra@gmail.com>",
-  "homepage": "https://github.com/aldhosutra/lisk-did",
+  "homepage": "https://lisk-did.js.org",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

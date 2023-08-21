@@ -36,7 +36,7 @@ This monorepo consist of 5 packages, as follows:
 | [@lisk-did/lisk-did-module](https://npmjs.com/package/@lisk-did/lisk-did-module)                             | Lisk module which implements on-chain logic for Lisk decentralized identifiers (DIDs)                                                                                            |
 | [@lisk-did/lisk-decentralized-identifier](https://npmjs.com/package/@lisk-did/lisk-decentralized-identifier) | A library to work with W3C Decentralized Identifier (DID) for Lisk sidechains with the Lisk DID module                                                                           |
 | [@lisk-did/lisk-verifiable-credentials](https://npmjs.com/package/@lisk-did/lisk-verifiable-credentials)     | A library for working with W3C verifiable credentials (VC) and verifiable presentations (VP) using Lisk DID                                                                      |
-| [lisk-did-docs](https://aldhosutra.github.io/lisk-did)                                                       | Documentation website for Lisk DID packages                                                                                                                                      |
+| [lisk-did-docs](https://lisk-did.js.org)                                                                     | Documentation website for Lisk DID packages                                                                                                                                      |
 
 ## License
 

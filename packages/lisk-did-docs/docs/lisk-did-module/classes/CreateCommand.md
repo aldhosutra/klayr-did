@@ -41,7 +41,7 @@ node_modules/lisk-framework/dist-node/modules/base_command.d.ts:9
 
 #### Defined in
 
-[packages/lisk-did-module/src/commands/create_command.ts:17](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-did-module/src/commands/create_command.ts#L17)
+[packages/lisk-did-module/src/commands/create_command.ts:17](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-did-module/src/commands/create_command.ts#L17)
 
 ---
 
@@ -101,7 +101,7 @@ BaseCommand.schema
 
 #### Defined in
 
-[packages/lisk-did-module/src/commands/create_command.ts:16](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-did-module/src/commands/create_command.ts#L16)
+[packages/lisk-did-module/src/commands/create_command.ts:16](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-did-module/src/commands/create_command.ts#L16)
 
 ---
 
@@ -157,7 +157,7 @@ BaseCommand.execute
 
 #### Defined in
 
-[packages/lisk-did-module/src/commands/create_command.ts:38](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-did-module/src/commands/create_command.ts#L38)
+[packages/lisk-did-module/src/commands/create_command.ts:38](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-did-module/src/commands/create_command.ts#L38)
 
 ---
 
@@ -177,7 +177,7 @@ BaseCommand.execute
 
 #### Defined in
 
-[packages/lisk-did-module/src/commands/create_command.ts:20](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-did-module/src/commands/create_command.ts#L20)
+[packages/lisk-did-module/src/commands/create_command.ts:20](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-did-module/src/commands/create_command.ts#L20)
 
 ---
 
@@ -201,4 +201,4 @@ BaseCommand.verify
 
 #### Defined in
 
-[packages/lisk-did-module/src/commands/create_command.ts:26](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-did-module/src/commands/create_command.ts#L26)
+[packages/lisk-did-module/src/commands/create_command.ts:26](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-did-module/src/commands/create_command.ts#L26)

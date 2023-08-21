@@ -16,6 +16,16 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .button {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+}
+
 .buttons {
   display: flex;
   align-items: center;

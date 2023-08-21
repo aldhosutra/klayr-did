@@ -78,7 +78,7 @@ export const registerModules = (app: Application, method: LiskMethod): void => {
 
 ## Documentation
 
-For further explanations, please refer to [lisk-did documentation](https://aldhosutra.github.io/lisk-did) website.
+For further explanations, please refer to [lisk-did documentation](https://lisk-did.js.org) website.
 
 ## License
 

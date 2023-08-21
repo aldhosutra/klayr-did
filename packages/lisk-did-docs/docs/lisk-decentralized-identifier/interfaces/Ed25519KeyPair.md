@@ -24,7 +24,7 @@ Partial.controller
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/cryptography.ts:14](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L14)
+[packages/lisk-decentralized-identifier/src/types/cryptography.ts:14](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L14)
 
 ---
 
@@ -42,7 +42,7 @@ Partial.controller
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/cryptography.ts:22](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L22)
+[packages/lisk-decentralized-identifier/src/types/cryptography.ts:22](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L22)
 
 ---
 
@@ -56,7 +56,7 @@ Partial.id
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/cryptography.ts:12](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L12)
+[packages/lisk-decentralized-identifier/src/types/cryptography.ts:12](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L12)
 
 ---
 
@@ -70,7 +70,7 @@ Partial.privateKeyMultibase
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/cryptography.ts:18](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L18)
+[packages/lisk-decentralized-identifier/src/types/cryptography.ts:18](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L18)
 
 ---
 
@@ -84,7 +84,7 @@ Partial.publicKeyMultibase
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/cryptography.ts:15](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L15)
+[packages/lisk-decentralized-identifier/src/types/cryptography.ts:15](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L15)
 
 ---
 
@@ -98,4 +98,4 @@ Partial.type
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/cryptography.ts:21](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L21)
+[packages/lisk-decentralized-identifier/src/types/cryptography.ts:21](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L21)
