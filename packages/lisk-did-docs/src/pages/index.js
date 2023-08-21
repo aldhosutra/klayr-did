@@ -16,7 +16,14 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/lisk-did">
-            Docusaurus Tutorial - 5min ⏱️
+            Get Started
+          </Link>
+          <div style={{ width: '1%' }} />
+          <Link
+            className="button button--secondary button--lg"
+            to="https://github.com/aldhosutra/lisk-did/blob/main/packages/lisk-did-module/docs/did-method-spec.md"
+          >
+            Read DID Method Specs
           </Link>
         </div>
       </div>
@@ -27,7 +34,7 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`Hello from ${siteConfig.title}`} description="Description will go into a meta tag in <head />">
+    <Layout title={`DID/VC For Lisk Sidechain`} description="lisk-did Documentation">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

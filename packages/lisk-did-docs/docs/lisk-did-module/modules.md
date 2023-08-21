@@ -44,4 +44,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-did-module/src/index.ts:25](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-did-module/src/index.ts#L25)
+[packages/lisk-did-module/src/index.ts:25](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-did-module/src/index.ts#L25)

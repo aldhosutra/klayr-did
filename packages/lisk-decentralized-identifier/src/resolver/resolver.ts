@@ -19,9 +19,6 @@ class CachedResolverSingleton {
   private static wsResolver: CachedResolver;
   private static prevWs;
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  private constructor() {}
-
   public static getIPCInstance(ipc: string) {
     if (this.ipcResolver === undefined || this.prevIpc !== ipc) {
       const didLiskDriver = didResolver.driver.createOffChainDriver({ ipc });

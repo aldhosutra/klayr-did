@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'lisk-did',
   tagline: 'W3C Decentralized Identifier (DID) and Verifiable Credentials (VC) for Lisk Sidechain',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/lisk-did.ico',
 
   // Set the production url of your site here
   url: 'https://lisk-did.js.org',
@@ -54,12 +54,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/lisk-did-monorepo-header.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'lisk-did',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'lisk-did',
+          src: 'img/lisk-did-logo.jpg',
         },
         items: [
           {
@@ -87,15 +87,15 @@ const config = {
               },
               {
                 label: '@lisk-did/lisk-did-module',
-                href: 'https://www.npmjs.com/package/lisk-did-module',
+                href: 'https://www.npmjs.com/package/@lisk-did/lisk-did-module',
               },
               {
                 label: '@lisk-did/lisk-decentralized-identifier',
-                href: 'https://www.npmjs.com/package/lisk-decentralized-identifier',
+                href: 'https://www.npmjs.com/package/@lisk-did/lisk-decentralized-identifier',
               },
               {
                 label: '@lisk-did/lisk-verifiable-credentials',
-                href: 'https://www.npmjs.com/package/lisk-verifiable-credentials',
+                href: 'https://www.npmjs.com/package/@lisk-did/lisk-verifiable-credentials',
               },
             ],
           },

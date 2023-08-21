@@ -38,7 +38,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/commands/add_controllers_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/commands/add_controllers_command.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/commands/add_controllers_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/commands/add_controllers_command.ts#L1)
 
 ---
 
@@ -71,7 +71,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/events/add_controllers_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/events/add_controllers_event.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/events/add_controllers_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/events/add_controllers_event.ts#L1)
 
 ---
 
@@ -114,7 +114,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/commands/add_keys_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/commands/add_keys_command.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/commands/add_keys_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/commands/add_keys_command.ts#L1)
 
 ---
 
@@ -157,7 +157,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/events/add_keys_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/events/add_keys_event.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/events/add_keys_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/events/add_keys_event.ts#L1)
 
 ---
 
@@ -199,7 +199,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/commands/add_service_endpoint_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/commands/add_service_endpoint_command.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/commands/add_service_endpoint_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/commands/add_service_endpoint_command.ts#L1)
 
 ---
 
@@ -241,7 +241,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/events/add_service_endpoint_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/events/add_service_endpoint_event.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/events/add_service_endpoint_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/events/add_service_endpoint_event.ts#L1)
 
 ---
 
@@ -283,7 +283,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/commands/create_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/commands/create_command.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/commands/create_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/commands/create_command.ts#L1)
 
 ---
 
@@ -325,7 +325,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/events/create_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/events/create_event.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/events/create_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/events/create_event.ts#L1)
 
 ---
 
@@ -353,7 +353,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/commands/deactivate_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/commands/deactivate_command.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/commands/deactivate_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/commands/deactivate_command.ts#L1)
 
 ---
 
@@ -381,7 +381,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/events/deactivate_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/events/deactivate_event.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/events/deactivate_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/events/deactivate_event.ts#L1)
 
 ---
 
@@ -482,7 +482,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/stores/document.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/stores/document.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/stores/document.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/stores/document.ts#L1)
 
 ---
 
@@ -554,7 +554,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/jwe.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/jwe.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/jwe.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/jwe.ts#L1)
 
 ---
 
@@ -576,7 +576,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/stores/nonce.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/stores/nonce.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/stores/nonce.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/stores/nonce.ts#L1)
 
 ---
 
@@ -609,7 +609,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_controllers_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_controllers_command.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_controllers_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_controllers_command.ts#L1)
 
 ---
 
@@ -642,7 +642,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/events/remove_controllers_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/events/remove_controllers_event.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/events/remove_controllers_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/events/remove_controllers_event.ts#L1)
 
 ---
 
@@ -675,7 +675,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_keys_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_keys_command.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_keys_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_keys_command.ts#L1)
 
 ---
 
@@ -708,7 +708,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/events/remove_keys_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/events/remove_keys_event.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/events/remove_keys_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/events/remove_keys_event.ts#L1)
 
 ---
 
@@ -739,7 +739,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_service_endpoint_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_service_endpoint_command.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_service_endpoint_command.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/commands/remove_service_endpoint_command.ts#L1)
 
 ---
 
@@ -770,4 +770,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/schema/events/remove_service_endpoint_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/schema/events/remove_service_endpoint_event.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/schema/events/remove_service_endpoint_event.ts:1](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/utils/schema/events/remove_service_endpoint_event.ts#L1)

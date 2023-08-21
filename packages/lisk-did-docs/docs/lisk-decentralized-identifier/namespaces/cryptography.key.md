@@ -60,7 +60,7 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/suite.ts:22](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/cryptography/suite.ts#L22)
+[packages/lisk-decentralized-identifier/src/cryptography/suite.ts:22](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/cryptography/suite.ts#L22)
 
 ---
 
@@ -99,7 +99,7 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/suite.ts:27](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/cryptography/suite.ts#L27)
+[packages/lisk-decentralized-identifier/src/cryptography/suite.ts:27](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/cryptography/suite.ts#L27)
 
 ---
 
@@ -119,4 +119,4 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/suite.ts:32](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/cryptography/suite.ts#L32)
+[packages/lisk-decentralized-identifier/src/cryptography/suite.ts:32](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/cryptography/suite.ts#L32)

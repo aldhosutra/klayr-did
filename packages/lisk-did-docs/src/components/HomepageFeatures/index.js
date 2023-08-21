@@ -4,42 +4,36 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'lisk-did',
+    src: require('@site/static/img/lisk-did-sdk.png').default,
+    description: <>Lisk DID/VC Development Kit, which bundles other Lisk DID packages into one single package.</>,
+  },
+  {
+    title: '@lisk-did/lisk-did-module',
+    src: require('@site/static/img/lisk-did-module.png').default,
+    description: <>Lisk module which implements on-chain logic for Lisk decentralized identifiers (DIDs)</>,
+  },
+  {
+    title: '@lisk-did/lisk-decentralized-identifier',
+    src: require('@site/static/img/did.png').default,
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and used to get your website up and running
-        quickly.
-      </>
+      <>A library to work with W3C Decentralized Identifier (DID) for Lisk sidechains with the Lisk DID module.</>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '@lisk-did/lisk-verifiable-credentials',
+    src: require('@site/static/img/vc.png').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the{' '}
-        <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same
-        header and footer.
-      </>
+      <>A library for working with W3C verifiable credentials (VC) and verifiable presentations (VP) using Lisk DID.</>
     ),
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ src, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--3')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={src} className={styles.featureSvg} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
