@@ -6,7 +6,7 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-![Header](./docs/assets/lisk-verifiable-credentials-header.jpg)
+![Header](./static/lisk-verifiable-credentials-header.jpg)
 
 # @lisk-did/lisk-verifiable-credentials
 

@@ -6,7 +6,7 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-![Header](./docs/assets/lisk-did-header.jpg)
+![Header](./static/lisk-did-header.jpg)
 
 # lisk-did
 

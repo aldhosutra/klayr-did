@@ -1,4 +1,4 @@
-![Header](./docs/assets/lisk-decentralized-identifier-header.jpg)
+![Header](./static/lisk-decentralized-identifier-header.jpg)
 
 # @lisk-did/lisk-decentralized-identifier
 

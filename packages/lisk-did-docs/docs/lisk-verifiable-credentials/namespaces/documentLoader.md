@@ -28,7 +28,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/documentLoader/offChain.ts:5](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-verifiable-credentials/src/documentLoader/offChain.ts#L5)
+[lisk-verifiable-credentials/src/documentLoader/offChain.ts:5](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-verifiable-credentials/src/documentLoader/offChain.ts#L5)
 
 ---
 
@@ -48,4 +48,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/documentLoader/onChain.ts:5](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-verifiable-credentials/src/documentLoader/onChain.ts#L5)
+[lisk-verifiable-credentials/src/documentLoader/onChain.ts:5](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-verifiable-credentials/src/documentLoader/onChain.ts#L5)

@@ -1,4 +1,4 @@
-![Header](./docs/assets/lisk-verifiable-credentials-header.jpg)
+![Header](./static/lisk-verifiable-credentials-header.jpg)
 
 # @lisk-did/lisk-verifiable-credentials
 

@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/types.ts:40](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-verifiable-credentials/src/types.ts#L40)
+[lisk-verifiable-credentials/src/types.ts:40](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-verifiable-credentials/src/types.ts#L40)
 
 ---
 
@@ -24,4 +24,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/types.ts:39](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-verifiable-credentials/src/types.ts#L39)
+[lisk-verifiable-credentials/src/types.ts:39](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-verifiable-credentials/src/types.ts#L39)

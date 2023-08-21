@@ -1,4 +1,4 @@
-![Header](./docs/assets/lisk-did-module-header.jpg)
+![Header](./static/lisk-did-module-header.jpg)
 
 # @lisk-did/lisk-did-module
 
@@ -27,7 +27,7 @@ Please refer to the [did:lisk method spec](https://github.com/aldhosutra/lisk-di
 
 ## Module Architecture
 
-![Module Architecture](./docs//assets//did-module.jpg)
+![Module Architecture](./static/did-module.jpg)
 
 ## Getting Started
 

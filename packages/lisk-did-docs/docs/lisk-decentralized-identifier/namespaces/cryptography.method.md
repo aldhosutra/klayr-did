@@ -26,7 +26,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/verification.ts:31](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/cryptography/verification.ts#L31)
+[packages/lisk-decentralized-identifier/src/cryptography/verification.ts:31](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/cryptography/verification.ts#L31)
 
 ---
 
@@ -47,4 +47,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/verification.ts:131](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/cryptography/verification.ts#L131)
+[packages/lisk-decentralized-identifier/src/cryptography/verification.ts:131](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/cryptography/verification.ts#L131)

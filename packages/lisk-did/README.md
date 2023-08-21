@@ -1,4 +1,4 @@
-![Header](./docs/assets/lisk-did-header.jpg)
+![Header](./static/lisk-did-header.jpg)
 
 # lisk-did
 

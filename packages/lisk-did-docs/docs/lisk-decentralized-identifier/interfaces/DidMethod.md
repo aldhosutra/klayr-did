@@ -29,7 +29,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:38](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L38)
+[packages/lisk-decentralized-identifier/src/types/method.ts:38](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L38)
 
 ---
 
@@ -54,7 +54,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:22](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L22)
+[packages/lisk-decentralized-identifier/src/types/method.ts:22](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L22)
 
 ---
 
@@ -82,7 +82,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:54](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L54)
+[packages/lisk-decentralized-identifier/src/types/method.ts:54](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L54)
 
 ---
 
@@ -104,7 +104,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:14](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L14)
+[packages/lisk-decentralized-identifier/src/types/method.ts:14](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L14)
 
 ---
 
@@ -128,7 +128,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:15](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L15)
+[packages/lisk-decentralized-identifier/src/types/method.ts:15](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L15)
 
 ---
 
@@ -152,7 +152,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:74](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L74)
+[packages/lisk-decentralized-identifier/src/types/method.ts:74](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L74)
 
 ---
 
@@ -166,7 +166,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:11](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L11)
+[packages/lisk-decentralized-identifier/src/types/method.ts:11](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L11)
 
 ---
 
@@ -187,7 +187,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:13](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L13)
+[packages/lisk-decentralized-identifier/src/types/method.ts:13](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L13)
 
 ---
 
@@ -207,7 +207,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:10](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L10)
+[packages/lisk-decentralized-identifier/src/types/method.ts:10](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L10)
 
 ---
 
@@ -228,7 +228,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:12](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L12)
+[packages/lisk-decentralized-identifier/src/types/method.ts:12](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L12)
 
 ---
 
@@ -253,7 +253,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:46](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L46)
+[packages/lisk-decentralized-identifier/src/types/method.ts:46](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L46)
 
 ---
 
@@ -278,7 +278,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:30](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L30)
+[packages/lisk-decentralized-identifier/src/types/method.ts:30](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L30)
 
 ---
 
@@ -303,4 +303,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/method.ts:66](https://github.com/aldhosutra/lisk-did/blob/6db44d1/packages/lisk-decentralized-identifier/src/types/method.ts#L66)
+[packages/lisk-decentralized-identifier/src/types/method.ts:66](https://github.com/aldhosutra/lisk-did/blob/dbe4f6c/packages/lisk-decentralized-identifier/src/types/method.ts#L66)
