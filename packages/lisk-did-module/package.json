@@ -61,6 +61,7 @@
     "lint-staged": "^14.0.0",
     "prettier": "3.0.1",
     "ts-jest": "^29.1.1",
+    "tslib": "^2.6.2",
     "typescript": "^5.1.6"
   },
   "publishConfig": {
@@ -70,5 +71,5 @@
     "@lisk-did/lisk-decentralized-identifier": "^0.1.0",
     "lisk-sdk": "^6.0.0-beta.7"
   },
-  "gitHead": "fd3d7ba30c6758d98a79fb6a721b831d0bde4d14"
+  "gitHead": "d66060e09156cf1955ea317cd81cf10a8a0daa77"
 }
