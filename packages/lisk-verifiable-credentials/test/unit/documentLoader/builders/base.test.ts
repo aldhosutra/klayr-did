@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/require-await */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-var-requires */
-import { createBaseLoader } from '@dist/documentLoader/builders';
+import { createBaseLoader, httpResolver } from '@dist/documentLoader/builders';
 import {
   mockedContext,
   mockedCreateIPCClient,
@@ -12,8 +12,6 @@ import {
   mockedResolver,
 } from '../../../setup/mocks';
 import { ipc, issuerDID } from '../../../setup/constant';
-
-const httpClientHandler = require('../../../../dist/documentLoader/builders/base.js').__get__('httpClientHandler');
 
 describe('createBaseLoader', () => {
   afterEach(jest.clearAllMocks);
@@ -72,6 +70,12 @@ describe('createBaseLoader', () => {
     expect(mockedFetch).toHaveBeenCalled();
   });
 
+  it('should initialized with enableFetch mode if no options provided', async () => {
+    const loader = createBaseLoader().build();
+    await loader('https://example.com');
+    expect(mockedFetch).toHaveBeenCalled();
+  });
+
   it('should call the provided chain method', async () => {
     const loader = createBaseLoader({ context: mockedContext as any, method: mockedMethod as any }).build();
     await loader(issuerDID);
@@ -79,17 +83,17 @@ describe('createBaseLoader', () => {
   });
 });
 
-describe('httpClientHandler', () => {
+describe('httpResolver', () => {
   it('should throw an error if http client is supplied with invalid url protocol', async () => {
     const func = async () => {
-      await httpClientHandler.get({ url: 'invalid://url' });
+      await httpResolver.get({ url: 'invalid://url' });
     };
     await expect(func()).rejects.toThrow();
   });
 
   it('should throw an error in case fetch is failed', async () => {
     const func = async () => {
-      await httpClientHandler.get({ url: 'https://throw.error' });
+      await httpResolver.get({ url: 'https://throw.error' });
     };
     await expect(func()).rejects.toThrow();
     expect(mockedFetch).toHaveBeenCalled();

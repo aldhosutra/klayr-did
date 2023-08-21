@@ -1,7 +1,7 @@
 {
   "name": "@lisk-did/lisk-verifiable-credentials",
   "version": "0.0.1",
-  "description": "A community library for working with W3C verifiable credentials and verifiable presentations using Lisk DID",
+  "description": "A library for working with W3C verifiable credentials (VC) and verifiable presentations (VP) using Lisk DID",
   "keywords": [
     "vc",
     "verifiable-credentials",

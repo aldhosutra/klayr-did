@@ -763,6 +763,14 @@ describe('DIDClient', () => {
       await expect(func()).rejects.toThrow();
     });
 
+    it('should throw an error if param.controllers is empty', async () => {
+      const func = async () => {
+        invalidAddControllersParam.params.controllers = [];
+        await didClient.addControllers(invalidAddControllersParam, privateKey);
+      };
+      await expect(func()).rejects.toThrow();
+    });
+
     it('should throw an error if param.signature is not valid', async () => {
       const func = async () => {
         invalidAddControllersParam.params.signature = 'invalid' as any;

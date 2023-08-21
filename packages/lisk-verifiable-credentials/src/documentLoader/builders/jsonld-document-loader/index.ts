@@ -1,6 +1,5 @@
+import { BaseDocumentResolver } from '../../type';
 import { DocumentLoader } from '@lisk-did/lisk-decentralized-identifier';
-
-type BaseDocumentResolver = { get: ({ did, url }: { did?: string; url?: string }) => Promise<Record<string, any>> };
 
 interface JsonLdDocument {
   contextUrl: string | null;

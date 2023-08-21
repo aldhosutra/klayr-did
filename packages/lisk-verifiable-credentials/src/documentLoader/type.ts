@@ -17,3 +17,7 @@ export type DocumentLoaderParam = ClientOptions & {
 export type OnChainLoaderOptions = Exclude<ClientOptions, 'ipc' | 'ws'>;
 
 export type OffChainLoaderOptions = Exclude<ClientOptions, 'context' | 'method'>;
+
+export type BaseDocumentResolver = {
+  get: ({ did, url }: { did?: string; url?: string }) => Promise<Record<string, any>>;
+};

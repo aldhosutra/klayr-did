@@ -11,7 +11,7 @@ import * as vcStatusListContext from '@digitalbazaar/vc-status-list-context';
 import * as obContext from '@digitalcredentials/open-badges-context';
 import { JsonLdDocumentLoader } from './jsonld-document-loader';
 import * as HtmlEntities from 'html-entities';
-import { DocumentLoaderParam } from '../type';
+import { BaseDocumentResolver, DocumentLoaderParam } from '../type';
 import { resolver } from '@lisk-did/lisk-decentralized-identifier';
 
 export function createBaseLoader(param: DocumentLoaderParam = {}): JsonLdDocumentLoader {
@@ -41,8 +41,8 @@ export function createBaseLoader(param: DocumentLoaderParam = {}): JsonLdDocumen
   }
 
   if (enableFetch) {
-    loader.setProtocolHandler({ protocol: 'http', handler: httpClientHandler });
-    loader.setProtocolHandler({ protocol: 'https', handler: httpClientHandler });
+    loader.setProtocolHandler({ protocol: 'http', handler: httpResolver });
+    loader.setProtocolHandler({ protocol: 'https', handler: httpResolver });
   }
 
   if (param.loader) {
@@ -56,7 +56,7 @@ export function createBaseLoader(param: DocumentLoaderParam = {}): JsonLdDocumen
   return loader;
 }
 
-const httpClientHandler = {
+export const httpResolver: BaseDocumentResolver = {
   async get(params: Record<string, string>): Promise<Record<string, any>> {
     if (!params.url.startsWith('http')) {
       throw new Error('NotFoundError');
