@@ -30,8 +30,7 @@
     "prepare": "husky install",
     "postinstall": "husky install",
     "version": "lerna version --no-private",
-    "prepack": "lerna run test",
-    "publish": "lerna publish --no-private"
+    "prepack": "lerna run test"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.62.0",
