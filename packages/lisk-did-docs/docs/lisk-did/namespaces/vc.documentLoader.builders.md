@@ -7,6 +7,16 @@ custom_edit_url: null
 
 [vc](vc.md).[documentLoader](vc.documentLoader.md).builders
 
+## Variables
+
+### httpResolver
+
+• `Const` **httpResolver**: `BaseDocumentResolver`
+
+#### Defined in
+
+packages/lisk-verifiable-credentials/dist/documentLoader/builders/base.d.ts:4
+
 ## Functions
 
 ### createBaseLoader

@@ -7,6 +7,16 @@ custom_edit_url: null
 
 [documentLoader](documentLoader.md).builders
 
+## Variables
+
+### httpResolver
+
+• `Const` **httpResolver**: `BaseDocumentResolver`
+
+#### Defined in
+
+[lisk-verifiable-credentials/src/documentLoader/builders/base.ts:59](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-verifiable-credentials/src/documentLoader/builders/base.ts#L59)
+
 ## Functions
 
 ### createBaseLoader
@@ -25,4 +35,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/documentLoader/builders/base.ts:17](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-verifiable-credentials/src/documentLoader/builders/base.ts#L17)
+[lisk-verifiable-credentials/src/documentLoader/builders/base.ts:17](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-verifiable-credentials/src/documentLoader/builders/base.ts#L17)

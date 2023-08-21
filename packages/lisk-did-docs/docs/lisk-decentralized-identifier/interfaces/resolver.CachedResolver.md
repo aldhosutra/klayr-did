@@ -31,7 +31,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:12](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L12)
+[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:12](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L12)
 
 ---
 
@@ -41,7 +41,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:10](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L10)
+[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:10](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L10)
 
 ---
 
@@ -65,4 +65,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:11](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L11)
+[packages/lisk-decentralized-identifier/src/resolver/resolver.ts:11](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/resolver/resolver.ts#L11)

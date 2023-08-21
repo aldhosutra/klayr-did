@@ -28,7 +28,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/client/creator.ts:3](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/client/creator.ts#L3)
+[packages/lisk-decentralized-identifier/src/client/creator.ts:3](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/client/creator.ts#L3)
 
 ---
 
@@ -48,4 +48,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/client/creator.ts:7](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/client/creator.ts#L7)
+[packages/lisk-decentralized-identifier/src/client/creator.ts:7](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/client/creator.ts#L7)

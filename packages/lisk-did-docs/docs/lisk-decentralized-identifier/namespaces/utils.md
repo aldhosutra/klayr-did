@@ -21,7 +21,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/context.ts:10](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/utils/context.ts#L10)
+[packages/lisk-decentralized-identifier/src/utils/context.ts:10](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/context.ts#L10)
 
 ## Functions
 
@@ -42,7 +42,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/bootstrap.ts:18](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/utils/bootstrap.ts#L18)
+[packages/lisk-decentralized-identifier/src/utils/bootstrap.ts:18](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/bootstrap.ts#L18)
 
 ---
 
@@ -56,7 +56,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/bootstrap.ts:4](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/utils/bootstrap.ts#L4)
+[packages/lisk-decentralized-identifier/src/utils/bootstrap.ts:4](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/bootstrap.ts#L4)
 
 ---
 
@@ -76,4 +76,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/validator.ts:5](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/utils/validator.ts#L5)
+[packages/lisk-decentralized-identifier/src/utils/validator.ts:5](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/utils/validator.ts#L5)

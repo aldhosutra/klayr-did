@@ -30,4 +30,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/resolver.ts:13](https://github.com/aldhosutra/lisk-did/blob/0afbaf5/packages/lisk-decentralized-identifier/src/types/resolver.ts#L13)
+[packages/lisk-decentralized-identifier/src/types/resolver.ts:13](https://github.com/aldhosutra/lisk-did/blob/2b84b93/packages/lisk-decentralized-identifier/src/types/resolver.ts#L13)
