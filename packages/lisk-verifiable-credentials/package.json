@@ -30,7 +30,7 @@
     "url": "git+https://github.com/aldhosutra/lisk-did.git"
   },
   "scripts": {
-    "clean": "if test -d dist; then rm -r dist; fi; if test -d typedoc; then rm -r typedoc; fi; if test -d coverage; then rm -r coverage; fi; rm -rf node_modules; rm -f tsconfig.tsbuildinfo; rm -f npm-shrinkwrap.json",
+    "clean": "if test junit.xml; then rm junit.xml; fi; if test -d dist; then rm -r dist; fi; if test -d typedoc; then rm -r typedoc; fi; if test -d coverage; then rm -r coverage; fi; rm -rf node_modules; rm -f tsconfig.tsbuildinfo; rm -f npm-shrinkwrap.json",
     "lint": "eslint --ext .ts .",
     "lint:fix": "eslint --fix --ext .js,.ts .",
     "format": "prettier --write '**/*'",
