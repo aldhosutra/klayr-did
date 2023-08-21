@@ -20,7 +20,11 @@
     "test": "test"
   },
   "files": [
-    "dist"
+    "dist",
+    "docs",
+    "LICENSE",
+    "README.md",
+    "package.json"
   ],
   "repository": {
     "type": "git",
@@ -53,11 +57,14 @@
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
     "jest": "^29.6.2",
     "jest-extended": "^4.0.1",
     "jest-junit": "^16.0.0",
+    "lint-staged": "^14.0.0",
     "prettier": "3.0.1",
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
-  }
+  },
+  "gitHead": "3160486d346116e64d3fa4fc179eeb73a836b56e"
 }
