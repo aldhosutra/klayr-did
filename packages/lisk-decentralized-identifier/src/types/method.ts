@@ -2,7 +2,7 @@ import { JSONObject, MethodContext } from 'lisk-sdk';
 import { DidModuleConfig } from './config';
 import { DidDocument } from './did';
 import { NonceStoreData } from './stores';
-import { AuthorizationResult } from './cryptography';
+import { AuthorizationFactors, AuthorizationResult } from './cryptography';
 
 type Keys = { publicKey: Buffer; relationship: string[] };
 
@@ -11,7 +11,7 @@ export interface DidMethod {
   getConfig(): DidModuleConfig;
   read(methodContext: MethodContext, did: string): Promise<DidDocument>;
   getNonce(methodContext: MethodContext, did: string): Promise<JSONObject<NonceStoreData>>;
-  authorize(methodContext: MethodContext, did: string, publicKey: Buffer): Promise<AuthorizationResult[]>;
+  authorize(methodContext: MethodContext, did: string, factors: AuthorizationFactors): Promise<AuthorizationResult[]>;
   create(
     methodContext: MethodContext,
     senderPublicKey: Buffer,

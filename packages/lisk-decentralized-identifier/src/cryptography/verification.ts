@@ -7,20 +7,9 @@ import { DidDocument } from '../types';
 import { asyncFilter, findIntersection } from '../utils/array';
 import { decodePrivateKey, decodePublicKey, encodePrivateKey, encodePublicKey } from './codec';
 import { verifyLocal } from './operation';
-import { VerificationMethod, VerificationRelationship } from '../types/cryptography';
+import { AuthorizationFactors, VerificationMethod, VerificationRelationship } from '../types/cryptography';
 import { cryptography } from 'lisk-sdk';
 import { ed25519ToX25519PublicKeyMultibase } from './convert';
-
-interface VerificationFilterOptions {
-  publicKey?: Buffer;
-  publicKeyMultibase?: string;
-  privateKey?: Buffer;
-  privateKeyMultibase?: string;
-  challenge?: string;
-  signature?: Buffer;
-  controller?: string;
-  relationship?: VerificationRelationship[];
-}
 
 const predicatePublicKeyMultibase = (ed25519Key, x25519Key) => (key: VerificationMethod) => {
   const ed25519Match = key.type === ED25519_VERIFICATION_KEY_2020_TYPE ? key.publicKeyMultibase === ed25519Key : false;
@@ -30,7 +19,7 @@ const predicatePublicKeyMultibase = (ed25519Key, x25519Key) => (key: Verificatio
 
 export async function getVerificationMethod(
   didDocument: DidDocument,
-  options: VerificationFilterOptions,
+  options: AuthorizationFactors,
 ): Promise<VerificationMethod[]> {
   if (options === undefined || !Object.values(options).some(v => v !== undefined)) return [];
   let matchedKey = didDocument.verificationMethod.concat(didDocument.keyAgreement);
@@ -130,7 +119,7 @@ export async function getVerificationMethod(
 
 export async function getVerificationRelationship(
   didDocument: DidDocument,
-  options: VerificationFilterOptions,
+  options: AuthorizationFactors,
 ): Promise<VerificationRelationship[]> {
   const matchedRelationship = new Set<VerificationRelationship>();
   const matchedKey = await getVerificationMethod(didDocument, options);

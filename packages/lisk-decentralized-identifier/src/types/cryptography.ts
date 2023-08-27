@@ -79,3 +79,14 @@ export interface CipherInterface {
   }) => Promise<JWEDocument>;
   decrypt: ({ jwe, keyAgreementKey }: { jwe: JWEDocument; keyAgreementKey: KeyAgreement }) => Promise<string>;
 }
+
+export interface AuthorizationFactors {
+  publicKey?: Buffer;
+  publicKeyMultibase?: string;
+  privateKey?: Buffer;
+  privateKeyMultibase?: string;
+  challenge?: string;
+  signature?: Buffer;
+  controller?: string;
+  relationship?: VerificationRelationship[];
+}

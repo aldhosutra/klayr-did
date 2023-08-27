@@ -3,12 +3,13 @@
 ```
 Title: did:lisk Method Specification
 Author: Aldo Suhartono Putra <aldhosutra@gmail.com>
-Version: 2023.08.19
+Version: 2023.08.27
 
 Version History:
+- 2023.08.27: Add Authorization Factors
 - 2023.08.19: Initial release.
 
-Last Modified: August 19, 2023
+Last Modified: August 27, 2023
 ```
 
 This document defines the syntax, data model, and operations for the `did:lisk` Decentralized Identifier (DID) method, specifically for the Lisk Sidechain.
@@ -121,7 +122,7 @@ Lisk DID extends support to multiple controllers and/or keys with diverse Verifi
 
 #### Lisk DID JSON Schema
 
-```json
+```java
 didDocumentSchema = {
   "type": "object",
   "required": [
@@ -378,7 +379,9 @@ Nonetheless, there exists a distinct scenario for authorized `deactivate` operat
 
 ### `authorize` Method and Endpoint
 
-Lisk sidechain modules and external tools can examine the specified `publicKey` verification relationship through the provided `authorize` method and/or endpoint. This flexibility empowers sidechain developers to craft custom solutions leveraging DID authorization for their specific use cases.
+Lisk sidechain modules and external tools can examine the specified `AuthorizationFactors`'s verification relationship through the provided `authorize` method and/or endpoint. This flexibility empowers sidechain developers to craft custom solutions leveraging DID authorization for their specific use cases.
+
+In this case, `AuthorizationFactors` can be one of following: `publicKey`, `publicKeyMultibase`, `privateKey`, `privateKeyMultibase`, or the combination of `challenge` and `signature`.
 
 The result of this method and/or endpoint, is an array of `AuthorizationResult` that cointains specific properties. Result with at least one item indicate successful authorization. The properties are as follows:
 
@@ -388,20 +391,18 @@ The result of this method and/or endpoint, is an array of `AuthorizationResult` 
 
 Following is provided `authorize` method, tailored for on-chain usage:
 
-// TODO: add authorization factor to method and endpoint
-
 ```typescript
 didMethod.authorize(
     context: MethodContext,
     did: string,
-    publicKey: bytes,
+    factors: AuthorizationFactors,
 ) => AuthorizationResult[]
 ```
 
 Furthermore, following is provided `did_authorize` endpoint, that serves off-chain purposes:
 
 ```typescript
-did_authorize(did: string, publicKey: bytes) => AuthorizationResult[]
+did_authorize(did: string, factors: AuthorizationFactors) => AuthorizationResult[]
 ```
 
 ### Create DID (Register)
@@ -412,7 +413,7 @@ In order to create a Lisk DID, users must have the capability to initiate a tran
 
 The first scenario involves creating a DID with any `<namespace>`. To achieve this, users are required to submit a transaction [[11]](#ref11) utilizing the `did` as module name, and specify `create` as the command name, incorporating the asset with the following schema:
 
-```json
+```java
 createDIDSchema = {
     "type": "object",
     "required": [
@@ -512,7 +513,7 @@ Lisk DID Modules provides several commands and methods to facilitate Update DID 
 
 This operation offers a mechanism to append a new keypair to the designated target DID, along with the specified verification relationships. Newly added keys will be controlled by target DID subject. Assets command schema can be defined as follows:
 
-```json
+```java
 addKeysSchema = {
     "type": "object",
     "required": [
@@ -576,7 +577,7 @@ didMethod.addkeys(
 
 This operation offers a mechanism to remove a keypair from the designated target DID, all verification methods associated with the key will also be removed. Assets command schema can be defined as follows:
 
-```json
+```java
 removeKeysSchema = {
     "type": "object",
     "required": [
@@ -626,7 +627,7 @@ didMethod.removeKeys(
 
 This operation offers a mechanism to add a new controller to the designated target DID. Assets command schema can be defined as follows:
 
-```json
+```java
 addControllersSchema = {
     "type": "object",
     "required": [
@@ -676,7 +677,7 @@ didMethod.addControllers(
 
 This operation offers a mechanism to remove a controller from the designated target DID. All keys and verification methods associated with the controllers will also be removed. Assets command schema can be defined as follows:
 
-```json
+```java
 removeControllersSchema = {
     "type": "object",
     "required": [
@@ -728,7 +729,7 @@ Please be aware that if the specified `controllers` set for removal represents t
 
 This operation offers a mechanism to add a new service endpoint entries to the designated target DID. Assets command schema can be defined as follows:
 
-```json
+```java
 addServiceEndpointSchema = {
     "type": "object",
     "required": [
@@ -794,7 +795,7 @@ didMethod.addServiceEndpoint(
 
 This operation offers a mechanism to remove a service endpoint from the designated target DID. Assets command schema can be defined as follows:
 
-```json
+```java
 removeServiceEndpointSchema = {
     "type": "object",
     "required": [
@@ -845,7 +846,7 @@ Furthermore, it is essential to understand that deactivating or deleting a Lisk 
 
 To deactivate a DID, transaction with as module name and `deactivate` as the command name needs to be submitted, incorporating the asset with the following schema:
 
-```json
+```java
 deactivateDIDSchema = {
     "type": "object",
     "required": [

@@ -1,19 +1,20 @@
-import { AuthorizationResult, cryptography } from '@lisk-did/lisk-decentralized-identifier';
+import { AuthorizationFactors, AuthorizationResult, cryptography } from '@lisk-did/lisk-decentralized-identifier';
 import { MethodContext, ModuleEndpointContext } from 'lisk-sdk';
 import { DocumentStore, documentStoreKey } from '../../stores/document';
 
-export async function authorizePublicKey(
+export async function authorizeFactors(
   context: ModuleEndpointContext | MethodContext,
   documentSubstore: DocumentStore,
   did: string,
-  publicKey: Buffer,
+  factors: AuthorizationFactors,
 ): Promise<AuthorizationResult[]> {
   const result: AuthorizationResult[] = [];
   const didDocument = await documentSubstore.get(context, documentStoreKey(did));
 
-  const publicKeyRelationshipWithTargetDID = await cryptography.method.getVerificationRelationship(didDocument, {
-    publicKey,
-  });
+  const publicKeyRelationshipWithTargetDID = await cryptography.method.getVerificationRelationship(
+    didDocument,
+    factors,
+  );
   if (publicKeyRelationshipWithTargetDID.length > 0) {
     result.push({
       type: 'subject',
@@ -26,7 +27,7 @@ export async function authorizePublicKey(
     const controllerDidDocument = await documentSubstore.get(context, documentStoreKey(controller));
     const publicKeyRelationshipWithControllerDID = await cryptography.method.getVerificationRelationship(
       controllerDidDocument,
-      { publicKey },
+      factors,
     );
     if (publicKeyRelationshipWithControllerDID.length > 0) {
       result.push({

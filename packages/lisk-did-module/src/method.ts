@@ -1,5 +1,6 @@
 import { BaseMethod, JSONObject, MethodContext, VerifyStatus } from 'lisk-sdk';
 import {
+  AuthorizationFactors,
   AuthorizationResult,
   DidDocument,
   DidMethod as DidMethodInterface,
@@ -26,7 +27,7 @@ import { executeRemoveServiceEndpointCommand } from './logic/remove_service_endp
 import { RemoveServiceEndpointEvent } from './events/remove_service_endpoint_event';
 import { executeDeactivateCommand } from './logic/deactivate_did';
 import { DeactivateEvent } from './events/deactivate_event';
-import { authorizePublicKey, verifyOperation } from './logic/authorization';
+import { authorizeFactors, verifyOperation } from './logic/authorization';
 
 export class DidMethod extends BaseMethod implements DidMethodInterface {
   public config: DidModuleConfig = { chainspace: '', autoCreateAddressDID: false };
@@ -51,10 +52,13 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
     return utils.object.serializer(nonce) as JSONObject<NonceStoreData>;
   }
 
-  // TODO: change third param to all available authorization factors
-  async authorize(methodContext: MethodContext, did: string, publicKey: Buffer): Promise<AuthorizationResult[]> {
+  async authorize(
+    methodContext: MethodContext,
+    did: string,
+    factors: AuthorizationFactors,
+  ): Promise<AuthorizationResult[]> {
     const documentSubstore = this.stores.get(DocumentStore);
-    return await authorizePublicKey(methodContext, documentSubstore, did, publicKey);
+    return await authorizeFactors(methodContext, documentSubstore, did, factors);
   }
 
   async create(

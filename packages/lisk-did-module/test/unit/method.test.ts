@@ -111,7 +111,7 @@ describe('DidMethod', () => {
 
   describe('authorize', () => {
     it('should authorize valid public key', async () => {
-      const authorization = await method.authorize(context, senderDID, publicKey);
+      const authorization = await method.authorize(context, senderDID, { publicKey });
       expect(authorization).toHaveLength(2);
 
       expect(authorization[0].type).toBe('subject');
@@ -130,20 +130,20 @@ describe('DidMethod', () => {
     });
 
     it('should not authorize invalid public key', async () => {
-      const authorization = await method.authorize(context, senderDID, Buffer.alloc(32));
+      const authorization = await method.authorize(context, senderDID, { publicKey: Buffer.alloc(32) });
       expect(authorization).toHaveLength(0);
     });
 
     it('should throw an error if did is not a string', async () => {
       const func = async () => {
-        await method.authorize(context, 1 as any, publicKey);
+        await method.authorize(context, 1 as any, { publicKey });
       };
       await expect(func()).rejects.toThrow();
     });
 
     it('should throw an error if publicKey is not a string', async () => {
       const func = async () => {
-        await method.authorize(context, senderDID, 1 as any);
+        await method.authorize(context, senderDID, { publicKey: 1 } as any);
       };
       await expect(func()).rejects.toThrow();
     });
