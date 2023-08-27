@@ -388,6 +388,8 @@ The result of this method and/or endpoint, is an array of `AuthorizationResult` 
 
 Following is provided `authorize` method, tailored for on-chain usage:
 
+// TODO: add authorization factor to method and endpoint
+
 ```typescript
 didMethod.authorize(
     context: MethodContext,

@@ -1,4 +1,4 @@
-![Header](./static/lisk-verifiable-credentials-header.jpg)
+![Header](https://raw.githubusercontent.com/aldhosutra/lisk-did/HEAD/static/lisk-verifiable-credentials-header.jpg)
 
 # @lisk-did/lisk-verifiable-credentials
 

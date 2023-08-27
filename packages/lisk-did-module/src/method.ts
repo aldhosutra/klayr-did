@@ -51,6 +51,7 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
     return utils.object.serializer(nonce) as JSONObject<NonceStoreData>;
   }
 
+  // TODO: change third param to all available authorization factors
   async authorize(methodContext: MethodContext, did: string, publicKey: Buffer): Promise<AuthorizationResult[]> {
     const documentSubstore = this.stores.get(DocumentStore);
     return await authorizePublicKey(methodContext, documentSubstore, did, publicKey);

@@ -24,6 +24,8 @@ import { getVerificationRelationship } from '../../cryptography/verification';
 import { createSignatureChallenge, createTransactionSignature, validateParams } from '../utils';
 import { getAddressDIDFromPublicKey } from '../../did';
 
+// TODO: add authorize function
+
 export class DIDClient {
   private apiClient: apiClient.APIClient | undefined;
   private ipc: string | undefined;

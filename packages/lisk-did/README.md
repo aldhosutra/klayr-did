@@ -1,4 +1,4 @@
-![Header](./static/lisk-did-header.jpg)
+![Header](https://raw.githubusercontent.com/aldhosutra/lisk-did/HEAD/static/lisk-did-header.jpg)
 
 # lisk-did
 

@@ -1,6 +1,7 @@
 import * as vc from '@digitalcredentials/vc';
 import { VerifiablePresentation } from '../types';
 
+// TODO: implement jsonpack and LZMA
 export function encodePresentation(unserializedVP: VerifiablePresentation): Buffer {
   const presentation = { ...unserializedVP };
   vc._checkPresentation(presentation);

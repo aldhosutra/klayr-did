@@ -1,6 +1,7 @@
 import * as vc from '@digitalcredentials/vc';
 import { VerifiableCredential } from '../types';
 
+// TODO: implement jsonpack and LZMA
 export function encodeCredential(unserializedVC: VerifiableCredential): Buffer {
   const credential = { ...unserializedVC };
   vc._checkCredential({ credential });
