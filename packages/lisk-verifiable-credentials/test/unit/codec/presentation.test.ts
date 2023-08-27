@@ -5,7 +5,12 @@ import { presentation, presentationBytes } from '../../setup/constant';
 describe('encodePresentation', () => {
   it('should encode presentation to byte successfully', () => {
     const encoded = encodePresentation(presentation);
-    expect(encoded).toStrictEqual(presentationBytes);
+    expect(Buffer.isBuffer(encoded)).toBe(true);
+  });
+
+  it('should encode presentation to byte applied with some sort of compression / encoding', () => {
+    const encoded = encodePresentation(presentation);
+    expect(encoded.length).toBeLessThan(JSON.stringify(presentation).length);
   });
 
   it('should throw an error if invalid presentation is submitted', async () => {

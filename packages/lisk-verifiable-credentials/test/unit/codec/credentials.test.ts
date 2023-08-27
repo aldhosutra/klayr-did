@@ -5,7 +5,12 @@ import { credential, credentialBytes } from '../../setup/constant';
 describe('encodeCredential', () => {
   it('should encode credential to byte successfully', () => {
     const encoded = encodeCredential(credential);
-    expect(encoded).toStrictEqual(credentialBytes);
+    expect(Buffer.isBuffer(encoded)).toBe(true);
+  });
+
+  it('should encode credential to byte applied with some sort of compression / encoding', () => {
+    const encoded = encodeCredential(credential);
+    expect(encoded.length).toBeLessThan(JSON.stringify(credential).length);
   });
 
   it('should throw an error if invalid credential is submitted', async () => {

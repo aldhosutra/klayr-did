@@ -1,15 +1,17 @@
 import * as vc from '@digitalcredentials/vc';
 import { VerifiableCredential } from '../types';
+import * as jsonpack from 'jsonpack';
+import * as lzma from 'lzma';
+import { utils } from 'lisk-sdk';
 
-// TODO: implement jsonpack and LZMA
 export function encodeCredential(unserializedVC: VerifiableCredential): Buffer {
-  const credential = { ...unserializedVC };
+  const credential = utils.objects.cloneDeep(unserializedVC);
   vc._checkCredential({ credential });
-  return Buffer.from(JSON.stringify(credential, null, 0), 'utf8');
+  return Buffer.from(lzma.compress(jsonpack.pack(credential), 9));
 }
 
 export function decodeCredential(serializedVC: Buffer): VerifiableCredential {
-  const credential = JSON.parse(serializedVC.toString('utf8'));
+  const credential = jsonpack.unpack<VerifiableCredential>(lzma.decompress(serializedVC));
   vc._checkCredential({ credential });
   return credential;
 }

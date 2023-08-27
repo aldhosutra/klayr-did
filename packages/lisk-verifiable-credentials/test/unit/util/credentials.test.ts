@@ -67,6 +67,6 @@ describe('preprocessCredentials', () => {
     copyCredential.id = undefined as any;
     preprocessCredentials(copyCredential);
     expect(copyCredential.id).toBeDefined();
-    expect(copyCredential.id).toBe('urn:sha256:6942fe721345488d4d17a3764937d0c4aebdef5dddb271c2c3475e224423cfdd');
+    expect(copyCredential.id).toBe('urn:sha256:19ab6edb3d75c8e01e831dcafe466d901124e9c4203eec69cc3196a4e7c6e352');
   });
 });

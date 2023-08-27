@@ -1,15 +1,17 @@
 import * as vc from '@digitalcredentials/vc';
 import { VerifiablePresentation } from '../types';
+import * as jsonpack from 'jsonpack';
+import * as lzma from 'lzma';
+import { utils } from 'lisk-sdk';
 
-// TODO: implement jsonpack and LZMA
 export function encodePresentation(unserializedVP: VerifiablePresentation): Buffer {
-  const presentation = { ...unserializedVP };
+  const presentation = utils.objects.cloneDeep(unserializedVP);
   vc._checkPresentation(presentation);
-  return Buffer.from(JSON.stringify(presentation, null, 0), 'utf8');
+  return Buffer.from(lzma.compress(jsonpack.pack(presentation), 9));
 }
 
 export function decodePresentation(serializedVP: Buffer): VerifiablePresentation {
-  const presentation = JSON.parse(serializedVP.toString('utf8'));
+  const presentation = jsonpack.unpack<VerifiablePresentation>(lzma.decompress(serializedVP));
   vc._checkPresentation(presentation);
   return presentation;
 }

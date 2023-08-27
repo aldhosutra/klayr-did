@@ -56,6 +56,6 @@ describe('preprocessPresentation', () => {
     copyPresentation.id = undefined as any;
     preprocessPresentation(copyPresentation);
     expect(copyPresentation.id).toBeDefined();
-    expect(copyPresentation.id).toBe('urn:sha256:7b32bf81c05e3c569d0a124aa94690f6e0b311459292283ebc1005d479cbfc84');
+    expect(copyPresentation.id).toBe('urn:sha256:ac905f52bb3e5d89062db7045d65512e1742a26815901a294da9633a137bc2fd');
   });
 });

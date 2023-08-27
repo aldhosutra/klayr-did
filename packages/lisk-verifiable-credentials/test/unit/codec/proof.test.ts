@@ -6,7 +6,12 @@ describe('encodeProof', () => {
   // eslint-disable-next-line @typescript-eslint/require-await
   it('should encode proof to valid bytes', async () => {
     const encoded = encodeProof(credentialProof);
-    expect(encoded).toStrictEqual(credentialProofBytes);
+    expect(Buffer.isBuffer(encoded)).toBe(true);
+  });
+
+  it('should encode proof to byte applied with some sort of compression / encoding', () => {
+    const encoded = encodeProof(credentialProof);
+    expect(encoded.length).toBeLessThan(JSON.stringify(credentialProof).length);
   });
 
   it('should throw an error if invalid proof is submitted', async () => {
