@@ -1,5 +1,4 @@
 ![Header](https://raw.githubusercontent.com/aldhosutra/lisk-did/HEAD/static/lisk-decentralized-identifier-header.jpg)
-// TODO: delete all static folder in package
 // TODO: delete static folder in docs foder docusaurus
 
 # @lisk-did/lisk-decentralized-identifier
