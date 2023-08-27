@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/did.ts:16](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/types/did.ts#L16)
+[packages/lisk-decentralized-identifier/src/types/did.ts:16](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-decentralized-identifier/src/types/did.ts#L16)
 
 ---
 
@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/did.ts:18](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/types/did.ts#L18)
+[packages/lisk-decentralized-identifier/src/types/did.ts:18](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-decentralized-identifier/src/types/did.ts#L18)
 
 ---
 
@@ -34,4 +34,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/did.ts:17](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/types/did.ts#L17)
+[packages/lisk-decentralized-identifier/src/types/did.ts:17](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-decentralized-identifier/src/types/did.ts#L17)

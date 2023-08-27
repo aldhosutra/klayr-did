@@ -45,7 +45,7 @@ node_modules/lisk-framework/dist-node/modules/base_endpoint.d.ts:6
 
 #### Defined in
 
-[packages/lisk-did-module/src/endpoint.ts:17](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/endpoint.ts#L17)
+[packages/lisk-did-module/src/endpoint.ts:17](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/endpoint.ts#L17)
 
 ---
 
@@ -55,7 +55,7 @@ node_modules/lisk-framework/dist-node/modules/base_endpoint.d.ts:6
 
 #### Defined in
 
-[packages/lisk-did-module/src/endpoint.ts:16](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/endpoint.ts#L16)
+[packages/lisk-did-module/src/endpoint.ts:16](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/endpoint.ts#L16)
 
 ---
 
@@ -107,7 +107,7 @@ DidEndpointInterface.authorize
 
 #### Defined in
 
-[packages/lisk-did-module/src/endpoint.ts:24](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/endpoint.ts#L24)
+[packages/lisk-did-module/src/endpoint.ts:24](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/endpoint.ts#L24)
 
 ---
 
@@ -131,7 +131,7 @@ DidEndpointInterface.getConfig
 
 #### Defined in
 
-[packages/lisk-did-module/src/endpoint.ts:90](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/endpoint.ts#L90)
+[packages/lisk-did-module/src/endpoint.ts:90](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/endpoint.ts#L90)
 
 ---
 
@@ -155,7 +155,7 @@ DidEndpointInterface.getNonce
 
 #### Defined in
 
-[packages/lisk-did-module/src/endpoint.ts:80](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/endpoint.ts#L80)
+[packages/lisk-did-module/src/endpoint.ts:80](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/endpoint.ts#L80)
 
 ---
 
@@ -179,7 +179,7 @@ DidEndpointInterface.init
 
 #### Defined in
 
-[packages/lisk-did-module/src/endpoint.ts:19](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/endpoint.ts#L19)
+[packages/lisk-did-module/src/endpoint.ts:19](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/endpoint.ts#L19)
 
 ---
 
@@ -203,4 +203,4 @@ DidEndpointInterface.read
 
 #### Defined in
 
-[packages/lisk-did-module/src/endpoint.ts:71](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/endpoint.ts#L71)
+[packages/lisk-did-module/src/endpoint.ts:71](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/endpoint.ts#L71)

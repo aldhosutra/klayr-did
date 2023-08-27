@@ -15,7 +15,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/documentLoader/builders/base.ts:59](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-verifiable-credentials/src/documentLoader/builders/base.ts#L59)
+[lisk-verifiable-credentials/src/documentLoader/builders/base.ts:59](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-verifiable-credentials/src/documentLoader/builders/base.ts#L59)
 
 ## Functions
 
@@ -35,4 +35,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/documentLoader/builders/base.ts:17](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-verifiable-credentials/src/documentLoader/builders/base.ts#L17)
+[lisk-verifiable-credentials/src/documentLoader/builders/base.ts:17](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-verifiable-credentials/src/documentLoader/builders/base.ts#L17)

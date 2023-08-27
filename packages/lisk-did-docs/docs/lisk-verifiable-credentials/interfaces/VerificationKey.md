@@ -48,7 +48,7 @@ lisk-decentralized-identifier/dist/types/cryptography.d.ts:10
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/types.ts:17](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-verifiable-credentials/src/types.ts#L17)
+[lisk-verifiable-credentials/src/types.ts:17](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-verifiable-credentials/src/types.ts#L17)
 
 ---
 
@@ -72,7 +72,7 @@ lisk-decentralized-identifier/dist/types/cryptography.d.ts:13
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/types.ts:16](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-verifiable-credentials/src/types.ts#L16)
+[lisk-verifiable-credentials/src/types.ts:16](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-verifiable-credentials/src/types.ts#L16)
 
 ---
 

@@ -45,7 +45,7 @@ node_modules/lisk-framework/dist-node/modules/base_method.d.ts:5
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:33](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L33)
+[packages/lisk-did-module/src/method.ts:33](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L33)
 
 ---
 
@@ -102,7 +102,7 @@ DidMethodInterface.addControllers
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:146](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L146)
+[packages/lisk-did-module/src/method.ts:146](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L146)
 
 ---
 
@@ -131,7 +131,7 @@ DidMethodInterface.addKeys
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:80](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L80)
+[packages/lisk-did-module/src/method.ts:80](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L80)
 
 ---
 
@@ -163,7 +163,7 @@ DidMethodInterface.addServiceEndpoint
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:212](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L212)
+[packages/lisk-did-module/src/method.ts:212](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L212)
 
 ---
 
@@ -189,7 +189,7 @@ DidMethodInterface.authorize
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:55](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L55)
+[packages/lisk-did-module/src/method.ts:55](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L55)
 
 ---
 
@@ -217,7 +217,7 @@ DidMethodInterface.create
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:64](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L64)
+[packages/lisk-did-module/src/method.ts:64](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L64)
 
 ---
 
@@ -245,7 +245,7 @@ DidMethodInterface.deactivate
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:278](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L278)
+[packages/lisk-did-module/src/method.ts:278](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L278)
 
 ---
 
@@ -263,7 +263,7 @@ DidMethodInterface.getConfig
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:40](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L40)
+[packages/lisk-did-module/src/method.ts:40](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L40)
 
 ---
 
@@ -288,7 +288,7 @@ DidMethodInterface.getNonce
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:49](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L49)
+[packages/lisk-did-module/src/method.ts:49](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L49)
 
 ---
 
@@ -312,7 +312,7 @@ DidMethodInterface.init
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:35](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L35)
+[packages/lisk-did-module/src/method.ts:35](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L35)
 
 ---
 
@@ -337,7 +337,7 @@ DidMethodInterface.read
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:44](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L44)
+[packages/lisk-did-module/src/method.ts:44](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L44)
 
 ---
 
@@ -366,7 +366,7 @@ DidMethodInterface.removeControllers
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:179](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L179)
+[packages/lisk-did-module/src/method.ts:179](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L179)
 
 ---
 
@@ -395,7 +395,7 @@ DidMethodInterface.removeKeys
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:113](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L113)
+[packages/lisk-did-module/src/method.ts:113](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L113)
 
 ---
 
@@ -424,4 +424,4 @@ DidMethodInterface.removeServiceEndpoint
 
 #### Defined in
 
-[packages/lisk-did-module/src/method.ts:245](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-did-module/src/method.ts#L245)
+[packages/lisk-did-module/src/method.ts:245](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/method.ts#L245)
