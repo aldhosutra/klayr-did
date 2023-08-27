@@ -6,7 +6,7 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-![Header](./static/lisk-decentralized-identifier-header.jpg)
+![Header](https://raw.githubusercontent.com/aldhosutra/lisk-did/HEAD/static/lisk-decentralized-identifier-header.jpg)
 
 # @lisk-did/lisk-decentralized-identifier
 

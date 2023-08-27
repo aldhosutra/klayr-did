@@ -93,15 +93,15 @@ packages/lisk-decentralized-identifier/dist/types/method.d.ts:22
 
 ### authorize
 
-▸ **authorize**(`methodContext`, `did`, `publicKey`): `Promise`<[`AuthorizationResult`](../namespaces/did.md#authorizationresult)[]\>
+▸ **authorize**(`methodContext`, `did`, `factors`): `Promise`<[`AuthorizationResult`](../namespaces/did.md#authorizationresult)[]\>
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
-| `methodContext` | `MethodContext` |
-| `did`           | `string`        |
-| `publicKey`     | `Buffer`        |
+| Name            | Type                                                  |
+| :-------------- | :---------------------------------------------------- |
+| `methodContext` | `MethodContext`                                       |
+| `did`           | `string`                                              |
+| `factors`       | [`AuthorizationFactors`](did.AuthorizationFactors.md) |
 
 #### Returns
 

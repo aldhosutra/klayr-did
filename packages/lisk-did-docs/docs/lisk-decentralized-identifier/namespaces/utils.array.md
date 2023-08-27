@@ -32,7 +32,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/array.ts:6](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/utils/array.ts#L6)
+[packages/lisk-decentralized-identifier/src/utils/array.ts:6](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/utils/array.ts#L6)
 
 ---
 
@@ -58,4 +58,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/utils/array.ts:1](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/utils/array.ts#L1)
+[packages/lisk-decentralized-identifier/src/utils/array.ts:1](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/utils/array.ts#L1)

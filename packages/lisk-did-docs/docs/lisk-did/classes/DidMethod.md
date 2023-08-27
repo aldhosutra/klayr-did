@@ -169,15 +169,15 @@ packages/lisk-did-module/dist/method.d.ts:16
 
 ### authorize
 
-▸ **authorize**(`methodContext`, `did`, `publicKey`): `Promise`<[`AuthorizationResult`](../namespaces/did.md#authorizationresult)[]\>
+▸ **authorize**(`methodContext`, `did`, `factors`): `Promise`<[`AuthorizationResult`](../namespaces/did.md#authorizationresult)[]\>
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
-| `methodContext` | `MethodContext` |
-| `did`           | `string`        |
-| `publicKey`     | `Buffer`        |
+| Name            | Type                                                                |
+| :-------------- | :------------------------------------------------------------------ |
+| `methodContext` | `MethodContext`                                                     |
+| `did`           | `string`                                                            |
+| `factors`       | [`AuthorizationFactors`](../interfaces/did.AuthorizationFactors.md) |
 
 #### Returns
 

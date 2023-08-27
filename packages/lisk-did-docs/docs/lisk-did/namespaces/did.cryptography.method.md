@@ -15,10 +15,10 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name          | Type                                              |
-| :------------ | :------------------------------------------------ |
-| `didDocument` | [`DidDocument`](../interfaces/did.DidDocument.md) |
-| `options`     | `VerificationFilterOptions`                       |
+| Name          | Type                                                                |
+| :------------ | :------------------------------------------------------------------ |
+| `didDocument` | [`DidDocument`](../interfaces/did.DidDocument.md)                   |
+| `options`     | [`AuthorizationFactors`](../interfaces/did.AuthorizationFactors.md) |
 
 #### Returns
 
@@ -26,7 +26,7 @@ custom_edit_url: null
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/cryptography/verification.d.ts:14
+packages/lisk-decentralized-identifier/dist/cryptography/verification.d.ts:3
 
 ---
 
@@ -36,10 +36,10 @@ packages/lisk-decentralized-identifier/dist/cryptography/verification.d.ts:14
 
 #### Parameters
 
-| Name          | Type                                              |
-| :------------ | :------------------------------------------------ |
-| `didDocument` | [`DidDocument`](../interfaces/did.DidDocument.md) |
-| `options`     | `VerificationFilterOptions`                       |
+| Name          | Type                                                                |
+| :------------ | :------------------------------------------------------------------ |
+| `didDocument` | [`DidDocument`](../interfaces/did.DidDocument.md)                   |
+| `options`     | [`AuthorizationFactors`](../interfaces/did.AuthorizationFactors.md) |
 
 #### Returns
 
@@ -47,4 +47,4 @@ packages/lisk-decentralized-identifier/dist/cryptography/verification.d.ts:14
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/cryptography/verification.d.ts:15
+packages/lisk-decentralized-identifier/dist/cryptography/verification.d.ts:4

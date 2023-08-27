@@ -18,6 +18,7 @@ custom_edit_url: null
 - [AddControllersParam](../interfaces/did.AddControllersParam.md)
 - [AddKeysParam](../interfaces/did.AddKeysParam.md)
 - [AddServiceEndpointParam](../interfaces/did.AddServiceEndpointParam.md)
+- [AuthorizationFactors](../interfaces/did.AuthorizationFactors.md)
 - [BaseResolver](../interfaces/did.BaseResolver.md)
 - [CipherInterface](../interfaces/did.CipherInterface.md)
 - [CreateParam](../interfaces/did.CreateParam.md)

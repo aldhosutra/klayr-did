@@ -14,4 +14,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/stores/nonce.ts:2](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/stores/nonce.ts#L2)
+[packages/lisk-decentralized-identifier/src/types/stores/nonce.ts:2](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/types/stores/nonce.ts#L2)

@@ -28,7 +28,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:26](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L26)
+[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:26](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L26)
 
 ---
 
@@ -50,7 +50,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:11](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L11)
+[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:11](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L11)
 
 ---
 
@@ -73,7 +73,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:45](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L45)
+[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:45](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L45)
 
 ---
 
@@ -94,7 +94,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:93](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L93)
+[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:93](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L93)
 
 ---
 
@@ -118,7 +118,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:63](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L63)
+[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:63](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L63)
 
 ---
 
@@ -141,4 +141,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:99](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L99)
+[packages/lisk-decentralized-identifier/src/cryptography/operation.ts:99](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/cryptography/operation.ts#L99)

@@ -15,10 +15,10 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name          | Type                                          |
-| :------------ | :-------------------------------------------- |
-| `didDocument` | [`DidDocument`](../interfaces/DidDocument.md) |
-| `options`     | `VerificationFilterOptions`                   |
+| Name          | Type                                                            |
+| :------------ | :-------------------------------------------------------------- |
+| `didDocument` | [`DidDocument`](../interfaces/DidDocument.md)                   |
+| `options`     | [`AuthorizationFactors`](../interfaces/AuthorizationFactors.md) |
 
 #### Returns
 
@@ -26,7 +26,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/verification.ts:31](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/cryptography/verification.ts#L31)
+[packages/lisk-decentralized-identifier/src/cryptography/verification.ts:20](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/cryptography/verification.ts#L20)
 
 ---
 
@@ -36,10 +36,10 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name          | Type                                          |
-| :------------ | :-------------------------------------------- |
-| `didDocument` | [`DidDocument`](../interfaces/DidDocument.md) |
-| `options`     | `VerificationFilterOptions`                   |
+| Name          | Type                                                            |
+| :------------ | :-------------------------------------------------------------- |
+| `didDocument` | [`DidDocument`](../interfaces/DidDocument.md)                   |
+| `options`     | [`AuthorizationFactors`](../interfaces/AuthorizationFactors.md) |
 
 #### Returns
 
@@ -47,4 +47,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/cryptography/verification.ts:131](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/cryptography/verification.ts#L131)
+[packages/lisk-decentralized-identifier/src/cryptography/verification.ts:120](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/cryptography/verification.ts#L120)

@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/endpoint.ts:11](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/endpoint.ts#L11)
+[packages/lisk-decentralized-identifier/src/types/endpoint.ts:11](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/types/endpoint.ts#L11)
 
 ---
 
@@ -44,7 +44,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/endpoint.ts:8](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/endpoint.ts#L8)
+[packages/lisk-decentralized-identifier/src/types/endpoint.ts:8](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/types/endpoint.ts#L8)
 
 ---
 
@@ -64,7 +64,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/endpoint.ts:10](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/endpoint.ts#L10)
+[packages/lisk-decentralized-identifier/src/types/endpoint.ts:10](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/types/endpoint.ts#L10)
 
 ---
 
@@ -84,7 +84,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/endpoint.ts:7](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/endpoint.ts#L7)
+[packages/lisk-decentralized-identifier/src/types/endpoint.ts:7](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/types/endpoint.ts#L7)
 
 ---
 
@@ -104,4 +104,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/endpoint.ts:9](https://github.com/aldhosutra/lisk-did/blob/e2098a6/packages/lisk-decentralized-identifier/src/types/endpoint.ts#L9)
+[packages/lisk-decentralized-identifier/src/types/endpoint.ts:9](https://github.com/aldhosutra/lisk-did/blob/37c055c/packages/lisk-decentralized-identifier/src/types/endpoint.ts#L9)
