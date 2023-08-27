@@ -336,7 +336,7 @@ Note: The Ed25519 verification method does not include `publicKeyJwk`. For furth
 
 ## DID Operations
 
-![Module Architecture](../static/did-module.jpg)
+![Module Architecture](https://raw.githubusercontent.com/aldhosutra/lisk-did/HEAD/static/did-module.jpg)
 
 The operation of `did:lisk` DID and their associated DID documents is facilitated through a dedicated Lisk SDK module, encompassing essential components according to [LIP 0069](https://github.com/LiskHQ/lips/blob/main/proposals/lip-0069.md) [[9]](#ref9) specification, such as configuration settings, transaction handling, method integration, hooks, and endpoints. A comprehensive reference implementation of the [Lisk DID Module](https://github.com/aldhosutra/lisk-did/blob/main/packages/lisk-did-module) is available for further examination and utilization.
 
