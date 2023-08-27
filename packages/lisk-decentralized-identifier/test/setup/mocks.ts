@@ -9,6 +9,7 @@ export const mockedInvoke = jest.fn();
 export const mockedGetAuthAccount = jest.fn();
 export const mockedGetDIDNonce = jest.fn();
 export const mockedGetConfig = jest.fn();
+export const mockedAuthorize = jest.fn();
 export const mockedReadDID = jest.fn();
 export const mockedCreateIPCClient = jest.fn();
 export const mockedCreateWSClient = jest.fn();
@@ -33,6 +34,10 @@ export const clientMock = {
     if (arg1 === 'did_getConfig') {
       mockedGetConfig();
       return { chainspace };
+    }
+    if (arg1 === 'did_authorize') {
+      mockedAuthorize();
+      return [];
     }
     if (arg1 === 'did_read') {
       mockedReadDID();

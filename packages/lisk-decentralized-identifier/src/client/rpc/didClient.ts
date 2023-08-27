@@ -3,6 +3,7 @@ import {
   AddControllersParam,
   AddKeysParam,
   AddServiceEndpointParam,
+  AuthorizationFactors,
   CreateParam,
   DeactivateParam,
   DidDocument,
@@ -23,8 +24,6 @@ import {
 import { getVerificationRelationship } from '../../cryptography/verification';
 import { createSignatureChallenge, createTransactionSignature, validateParams } from '../utils';
 import { getAddressDIDFromPublicKey } from '../../did';
-
-// TODO: add authorize function
 
 export class DIDClient {
   private apiClient: apiClient.APIClient | undefined;
@@ -88,6 +87,12 @@ export class DIDClient {
   async read(did: string): Promise<DidDocument | undefined> {
     if (this.apiClient === undefined) await this._initClient();
     const didDocument = await this.apiClient!.invoke<DidDocument | undefined>('did_read', { did });
+    return didDocument;
+  }
+
+  async authorize(did: string, factors: AuthorizationFactors): Promise<DidDocument | undefined> {
+    if (this.apiClient === undefined) await this._initClient();
+    const didDocument = await this.apiClient!.invoke<DidDocument | undefined>('did_authorize', { did, ...factors });
     return didDocument;
   }
 

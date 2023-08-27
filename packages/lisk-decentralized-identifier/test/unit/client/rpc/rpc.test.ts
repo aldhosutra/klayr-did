@@ -15,6 +15,7 @@ import { utils } from 'lisk-sdk';
 import { bootstrapEmptyDidDocument } from '@dist/utils';
 import { createTransactionSignature } from '@dist/client/utils';
 import {
+  mockedAuthorize,
   mockedCreateWSClient,
   mockedDisconnect,
   mockedGetAuthAccount,
@@ -194,6 +195,24 @@ describe('DIDClient', () => {
     it('should invoke the did_getConfig endpoint', async () => {
       await didClient.getConfig();
       expect(mockedGetConfig).toHaveBeenCalled();
+    });
+  });
+
+  describe('authorize', () => {
+    beforeEach(() => {
+      didClient = new DIDClient({ ipc });
+    });
+
+    afterEach(jest.clearAllMocks);
+
+    it('should invoke some endpoint', async () => {
+      await didClient.authorize(senderDID, { publicKey });
+      expect(mockedInvoke).toHaveBeenCalled();
+    });
+
+    it('should invoke the did_authorize endpoint', async () => {
+      await didClient.authorize(senderDID, { publicKey });
+      expect(mockedAuthorize).toHaveBeenCalled();
     });
   });
 
