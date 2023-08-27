@@ -1,6 +1,6 @@
 {
   "name": "@lisk-did/lisk-decentralized-identifier",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A library to work with W3C Decentralized Identifier (DID) for Lisk sidechains with the Lisk DID module",
   "keywords": [
     "did",
