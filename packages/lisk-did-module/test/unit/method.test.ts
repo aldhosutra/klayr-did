@@ -177,6 +177,15 @@ describe('DidMethod', () => {
     });
   });
 
+  describe('incrementNonce', () => {
+    it('should increment nonce', async () => {
+      await method.incrementNonce(context, senderDID);
+      const senderNonce = await nonceSubstore.get(context, nonceStoreKey(senderDID));
+      expect(senderNonce).toBeDefined();
+      expect(Number(senderNonce.nonce)).toBe(2);
+    });
+  });
+
   describe('getConfig', () => {
     it('should return currently set config.chainspace', () => {
       method.init(config);

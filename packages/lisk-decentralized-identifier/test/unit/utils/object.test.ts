@@ -33,3 +33,19 @@ describe('serializer', () => {
     expect(obj.value).toStrictEqual([Buffer.from('text', 'utf8').toString('hex')]);
   });
 });
+
+describe('encodeJSON', () => {
+  it('should encode a json to a bytes', () => {
+    const obj = { any: 'any' };
+    const encoded = utils.object.encodeJSON(obj);
+    expect(Buffer.isBuffer(encoded)).toBe(true);
+  });
+});
+
+describe('decodeJSON', () => {
+  it('should decode a bytes to json', () => {
+    const buf = Buffer.from('5d000000020b0000000000000000309b8b9864d95a8f14df9b2a8e5affffdc8b0000', 'hex');
+    const decoded = utils.object.decodeJSON(buf);
+    expect(decoded).toStrictEqual({ any: 'any' });
+  });
+});
