@@ -3,13 +3,14 @@
 ```
 Title: did:lisk Method Specification
 Author: Aldo Suhartono Putra <aldhosutra@gmail.com>
-Version: 2023.08.27
+Version: 2023.08.29
 
 Version History:
+- 2023.08.29: Add incrementNonce
 - 2023.08.27: Add Authorization Factors
 - 2023.08.19: Initial release.
 
-Last Modified: August 27, 2023
+Last Modified: August 29, 2023
 ```
 
 This document defines the syntax, data model, and operations for the `did:lisk` Decentralized Identifier (DID) method, specifically for the Lisk Sidechain.
@@ -403,6 +404,15 @@ Furthermore, following is provided `did_authorize` endpoint, that serves off-cha
 
 ```typescript
 did_authorize(did: string, factors: AuthorizationFactors) => AuthorizationResult[]
+```
+
+In addition, developers have the option to utilize the `incrementNonce` method, allowing them to increase the nonce associated with the designated DID subject. This functionality is valuable in scenarios such as changing the nonce value following successful on-chain authorization, thereby mitigating the risk of replay attacks and enhance overall security.
+
+```typescript
+didMethod.incrementNonce(
+    context: MethodContext,
+    did: string,
+) => void
 ```
 
 ### Create DID (Register)
