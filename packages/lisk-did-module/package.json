@@ -1,6 +1,6 @@
 {
   "name": "@lisk-did/lisk-did-module",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Lisk module which implements on-chain logic for Lisk decentralized identifiers (DIDs)",
   "keywords": [
     "did",
@@ -67,7 +67,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@lisk-did/lisk-decentralized-identifier": "^0.2.0",
+    "@lisk-did/lisk-decentralized-identifier": "^0.2.1",
     "lisk-sdk": "^6.0.0-beta.7"
   },
   "gitHead": "9c9446c84ec6444acbb6c4d1a371ad41f1c07fa5"
