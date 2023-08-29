@@ -30,7 +30,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/cryptography.ts:80](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L80)
+[packages/lisk-decentralized-identifier/src/types/cryptography.ts:80](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L80)
 
 ---
 
@@ -57,4 +57,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/lisk-decentralized-identifier/src/types/cryptography.ts:71](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L71)
+[packages/lisk-decentralized-identifier/src/types/cryptography.ts:71](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-decentralized-identifier/src/types/cryptography.ts#L71)

@@ -34,7 +34,7 @@ custom_edit_url: null
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/types/method.d.ts:20
+packages/lisk-decentralized-identifier/dist/types/method.d.ts:21
 
 ---
 
@@ -59,7 +59,7 @@ packages/lisk-decentralized-identifier/dist/types/method.d.ts:20
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/types/method.d.ts:18
+packages/lisk-decentralized-identifier/dist/types/method.d.ts:19
 
 ---
 
@@ -87,7 +87,7 @@ packages/lisk-decentralized-identifier/dist/types/method.d.ts:18
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/types/method.d.ts:22
+packages/lisk-decentralized-identifier/dist/types/method.d.ts:23
 
 ---
 
@@ -109,7 +109,7 @@ packages/lisk-decentralized-identifier/dist/types/method.d.ts:22
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/types/method.d.ts:16
+packages/lisk-decentralized-identifier/dist/types/method.d.ts:17
 
 ---
 
@@ -133,7 +133,7 @@ packages/lisk-decentralized-identifier/dist/types/method.d.ts:16
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/types/method.d.ts:17
+packages/lisk-decentralized-identifier/dist/types/method.d.ts:18
 
 ---
 
@@ -157,7 +157,7 @@ packages/lisk-decentralized-identifier/dist/types/method.d.ts:17
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/types/method.d.ts:28
+packages/lisk-decentralized-identifier/dist/types/method.d.ts:29
 
 ---
 
@@ -193,6 +193,27 @@ packages/lisk-decentralized-identifier/dist/types/method.d.ts:13
 #### Defined in
 
 packages/lisk-decentralized-identifier/dist/types/method.d.ts:15
+
+---
+
+### incrementNonce
+
+▸ **incrementNonce**(`methodContext`, `did`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name            | Type            |
+| :-------------- | :-------------- |
+| `methodContext` | `MethodContext` |
+| `did`           | `string`        |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+packages/lisk-decentralized-identifier/dist/types/method.d.ts:16
 
 ---
 
@@ -258,7 +279,7 @@ packages/lisk-decentralized-identifier/dist/types/method.d.ts:14
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/types/method.d.ts:21
+packages/lisk-decentralized-identifier/dist/types/method.d.ts:22
 
 ---
 
@@ -283,7 +304,7 @@ packages/lisk-decentralized-identifier/dist/types/method.d.ts:21
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/types/method.d.ts:19
+packages/lisk-decentralized-identifier/dist/types/method.d.ts:20
 
 ---
 
@@ -308,4 +329,4 @@ packages/lisk-decentralized-identifier/dist/types/method.d.ts:19
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/types/method.d.ts:27
+packages/lisk-decentralized-identifier/dist/types/method.d.ts:28

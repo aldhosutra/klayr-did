@@ -9,6 +9,52 @@ custom_edit_url: null
 
 ## Functions
 
+### decodeJSON
+
+▸ **decodeJSON**<`T`\>(`jsonByte`): `T`
+
+#### Type parameters
+
+| Name |
+| :--- |
+| `T`  |
+
+#### Parameters
+
+| Name       | Type     |
+| :--------- | :------- |
+| `jsonByte` | `Buffer` |
+
+#### Returns
+
+`T`
+
+#### Defined in
+
+packages/lisk-decentralized-identifier/dist/utils/object.d.ts:4
+
+---
+
+### encodeJSON
+
+▸ **encodeJSON**(`json`): `Buffer`
+
+#### Parameters
+
+| Name   | Type                       |
+| :----- | :------------------------- |
+| `json` | `Record`<`string`, `any`\> |
+
+#### Returns
+
+`Buffer`
+
+#### Defined in
+
+packages/lisk-decentralized-identifier/dist/utils/object.d.ts:3
+
+---
+
 ### serializer
 
 ▸ **serializer**<`T`\>(`data`): `JSONObject`<`T`\>
@@ -31,4 +77,4 @@ custom_edit_url: null
 
 #### Defined in
 
-packages/lisk-decentralized-identifier/dist/utils/object.d.ts:2
+packages/lisk-decentralized-identifier/dist/utils/object.d.ts:5

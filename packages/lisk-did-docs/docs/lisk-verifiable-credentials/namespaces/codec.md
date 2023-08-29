@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/codec/credentials.ts:13](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-verifiable-credentials/src/codec/credentials.ts#L13)
+[lisk-verifiable-credentials/src/codec/credentials.ts:12](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-verifiable-credentials/src/codec/credentials.ts#L12)
 
 ---
 
@@ -44,7 +44,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/codec/presentation.ts:13](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-verifiable-credentials/src/codec/presentation.ts#L13)
+[lisk-verifiable-credentials/src/codec/presentation.ts:12](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-verifiable-credentials/src/codec/presentation.ts#L12)
 
 ---
 
@@ -64,7 +64,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/codec/proof.ts:38](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-verifiable-credentials/src/codec/proof.ts#L38)
+[lisk-verifiable-credentials/src/codec/proof.ts:38](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-verifiable-credentials/src/codec/proof.ts#L38)
 
 ---
 
@@ -84,7 +84,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/codec/credentials.ts:7](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-verifiable-credentials/src/codec/credentials.ts#L7)
+[lisk-verifiable-credentials/src/codec/credentials.ts:6](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-verifiable-credentials/src/codec/credentials.ts#L6)
 
 ---
 
@@ -104,7 +104,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/codec/presentation.ts:7](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-verifiable-credentials/src/codec/presentation.ts#L7)
+[lisk-verifiable-credentials/src/codec/presentation.ts:6](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-verifiable-credentials/src/codec/presentation.ts#L6)
 
 ---
 
@@ -124,4 +124,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[lisk-verifiable-credentials/src/codec/proof.ts:33](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-verifiable-credentials/src/codec/proof.ts#L33)
+[lisk-verifiable-credentials/src/codec/proof.ts:33](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-verifiable-credentials/src/codec/proof.ts#L33)

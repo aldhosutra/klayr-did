@@ -102,7 +102,7 @@ node_modules/lisk-framework/dist-node/modules/base_method.d.ts:3
 
 #### Defined in
 
-packages/lisk-did-module/dist/method.d.ts:14
+packages/lisk-did-module/dist/method.d.ts:15
 
 ---
 
@@ -131,7 +131,7 @@ packages/lisk-did-module/dist/method.d.ts:14
 
 #### Defined in
 
-packages/lisk-did-module/dist/method.d.ts:12
+packages/lisk-did-module/dist/method.d.ts:13
 
 ---
 
@@ -163,7 +163,7 @@ packages/lisk-did-module/dist/method.d.ts:12
 
 #### Defined in
 
-packages/lisk-did-module/dist/method.d.ts:16
+packages/lisk-did-module/dist/method.d.ts:17
 
 ---
 
@@ -189,7 +189,7 @@ packages/lisk-did-module/dist/method.d.ts:16
 
 #### Defined in
 
-packages/lisk-did-module/dist/method.d.ts:10
+packages/lisk-did-module/dist/method.d.ts:11
 
 ---
 
@@ -217,7 +217,7 @@ packages/lisk-did-module/dist/method.d.ts:10
 
 #### Defined in
 
-packages/lisk-did-module/dist/method.d.ts:11
+packages/lisk-did-module/dist/method.d.ts:12
 
 ---
 
@@ -245,7 +245,7 @@ packages/lisk-did-module/dist/method.d.ts:11
 
 #### Defined in
 
-packages/lisk-did-module/dist/method.d.ts:22
+packages/lisk-did-module/dist/method.d.ts:23
 
 ---
 
@@ -289,6 +289,31 @@ packages/lisk-did-module/dist/method.d.ts:7
 #### Defined in
 
 packages/lisk-did-module/dist/method.d.ts:9
+
+---
+
+### incrementNonce
+
+▸ **incrementNonce**(`methodContext`, `did`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name            | Type            |
+| :-------------- | :-------------- |
+| `methodContext` | `MethodContext` |
+| `did`           | `string`        |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Implementation of
+
+[DidMethod](../interfaces/did.DidMethod.md).[incrementNonce](../interfaces/did.DidMethod.md#incrementnonce)
+
+#### Defined in
+
+packages/lisk-did-module/dist/method.d.ts:10
 
 ---
 
@@ -366,7 +391,7 @@ packages/lisk-did-module/dist/method.d.ts:8
 
 #### Defined in
 
-packages/lisk-did-module/dist/method.d.ts:15
+packages/lisk-did-module/dist/method.d.ts:16
 
 ---
 
@@ -395,7 +420,7 @@ packages/lisk-did-module/dist/method.d.ts:15
 
 #### Defined in
 
-packages/lisk-did-module/dist/method.d.ts:13
+packages/lisk-did-module/dist/method.d.ts:14
 
 ---
 
@@ -424,4 +449,4 @@ packages/lisk-did-module/dist/method.d.ts:13
 
 #### Defined in
 
-packages/lisk-did-module/dist/method.d.ts:21
+packages/lisk-did-module/dist/method.d.ts:22

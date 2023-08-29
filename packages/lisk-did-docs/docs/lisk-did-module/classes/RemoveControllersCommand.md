@@ -41,7 +41,7 @@ node_modules/lisk-framework/dist-node/modules/base_command.d.ts:9
 
 #### Defined in
 
-[packages/lisk-did-module/src/commands/remove_controllers_command.ts:13](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/commands/remove_controllers_command.ts#L13)
+[packages/lisk-did-module/src/commands/remove_controllers_command.ts:13](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/commands/remove_controllers_command.ts#L13)
 
 ---
 
@@ -92,7 +92,7 @@ BaseCommand.schema
 
 #### Defined in
 
-[packages/lisk-did-module/src/commands/remove_controllers_command.ts:12](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/commands/remove_controllers_command.ts#L12)
+[packages/lisk-did-module/src/commands/remove_controllers_command.ts:12](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/commands/remove_controllers_command.ts#L12)
 
 ---
 
@@ -148,7 +148,7 @@ BaseCommand.execute
 
 #### Defined in
 
-[packages/lisk-did-module/src/commands/remove_controllers_command.ts:26](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/commands/remove_controllers_command.ts#L26)
+[packages/lisk-did-module/src/commands/remove_controllers_command.ts:26](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/commands/remove_controllers_command.ts#L26)
 
 ---
 
@@ -168,7 +168,7 @@ BaseCommand.execute
 
 #### Defined in
 
-[packages/lisk-did-module/src/commands/remove_controllers_command.ts:16](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/commands/remove_controllers_command.ts#L16)
+[packages/lisk-did-module/src/commands/remove_controllers_command.ts:16](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/commands/remove_controllers_command.ts#L16)
 
 ---
 
@@ -192,4 +192,4 @@ BaseCommand.verify
 
 #### Defined in
 
-[packages/lisk-did-module/src/commands/remove_controllers_command.ts:22](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/commands/remove_controllers_command.ts#L22)
+[packages/lisk-did-module/src/commands/remove_controllers_command.ts:22](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/commands/remove_controllers_command.ts#L22)

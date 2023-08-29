@@ -24,7 +24,7 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:49](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L49)
+[packages/lisk-did-module/src/module.ts:49](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L49)
 
 ## Properties
 
@@ -34,7 +34,7 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:32](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L32)
+[packages/lisk-did-module/src/module.ts:32](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L32)
 
 ---
 
@@ -44,7 +44,7 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:33](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L33)
+[packages/lisk-did-module/src/module.ts:33](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L33)
 
 ---
 
@@ -54,7 +54,7 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:30](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L30)
+[packages/lisk-did-module/src/module.ts:30](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L30)
 
 ---
 
@@ -64,7 +64,7 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:29](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L29)
+[packages/lisk-did-module/src/module.ts:29](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L29)
 
 ---
 
@@ -78,7 +78,7 @@ BaseModule.commands
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:38](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L38)
+[packages/lisk-did-module/src/module.ts:38](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L38)
 
 ---
 
@@ -92,7 +92,7 @@ BaseModule.endpoint
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:35](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L35)
+[packages/lisk-did-module/src/module.ts:35](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L35)
 
 ---
 
@@ -120,7 +120,7 @@ BaseModule.method
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:36](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L36)
+[packages/lisk-did-module/src/module.ts:36](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L36)
 
 ---
 
@@ -264,7 +264,7 @@ BaseModule.beforeCommandExecute
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:90](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L90)
+[packages/lisk-did-module/src/module.ts:90](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L90)
 
 ---
 
@@ -336,7 +336,7 @@ BaseModule.init
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:75](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L75)
+[packages/lisk-did-module/src/module.ts:75](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L75)
 
 ---
 
@@ -402,7 +402,7 @@ BaseModule.metadata
 
 #### Defined in
 
-[packages/lisk-did-module/src/module.ts:66](https://github.com/aldhosutra/lisk-did/blob/dd73109/packages/lisk-did-module/src/module.ts#L66)
+[packages/lisk-did-module/src/module.ts:66](https://github.com/aldhosutra/lisk-did/blob/e1cde64/packages/lisk-did-module/src/module.ts#L66)
 
 ---
 
