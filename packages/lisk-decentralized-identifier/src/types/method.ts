@@ -11,6 +11,7 @@ export interface DidMethod {
   getConfig(): DidModuleConfig;
   read(methodContext: MethodContext, did: string): Promise<DidDocument>;
   getNonce(methodContext: MethodContext, did: string): Promise<JSONObject<NonceStoreData>>;
+  incrementNonce(methodContext: MethodContext, did: string): Promise<void>;
   authorize(methodContext: MethodContext, did: string, factors: AuthorizationFactors): Promise<AuthorizationResult[]>;
   create(
     methodContext: MethodContext,

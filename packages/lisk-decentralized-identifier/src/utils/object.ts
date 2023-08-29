@@ -1,4 +1,14 @@
 import { JSONObject } from 'lisk-sdk';
+import * as jsonpack from 'jsonpack';
+import * as lzma from 'lzma';
+
+export function encodeJSON(json: Record<string, any>): Buffer {
+  return Buffer.from(lzma.compress(jsonpack.pack(json), 9));
+}
+
+export function decodeJSON<T>(jsonByte: Buffer): T {
+  return jsonpack.unpack<T>(lzma.decompress(jsonByte));
+}
 
 export function serializer<T>(data: Record<any, any>): JSONObject<T> {
   if (data === undefined) return data;
