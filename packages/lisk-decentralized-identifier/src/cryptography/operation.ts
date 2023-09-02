@@ -1,8 +1,8 @@
 import { cryptography } from 'lisk-sdk';
-import { getEd25519SignatureSuite } from './suite';
+import { getEd25519SignatureSuite } from './key';
 import { CreateResolverParam } from '../types';
 import { getDIDDocument, parseDIDComponent } from '../did';
-import { getVerificationMethod } from './verification';
+import { getVerificationMethod } from './method';
 import { createResolver } from '../resolver';
 import { JWEDocument, KeyAgreement } from '../types';
 import { createCipher } from './cipher';

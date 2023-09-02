@@ -11,7 +11,7 @@ import {
 import { LISK_DID_PREFIX } from '../../utils/constant';
 import { contextsBySuite } from '../../utils';
 import { decodePublicKey, encodePrivateKey, encodePublicKey } from '../../cryptography/codec';
-import { createEd25519KeyPair, createX25519KeyPair, generateEd25519KeyPair } from '../../cryptography/suite';
+import { createEd25519KeyPair, createX25519KeyPair, generateEd25519KeyPair } from '../../cryptography/key';
 
 export abstract class BaseDriver {
   public method = 'lisk';

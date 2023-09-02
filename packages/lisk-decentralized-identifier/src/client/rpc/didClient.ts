@@ -21,7 +21,7 @@ import {
   TransactionPayload,
   TransactionPayloadWithoutSignature,
 } from '../../types';
-import { getVerificationRelationship } from '../../cryptography/verification';
+import { getVerificationRelationship } from '../../cryptography/method';
 import { createSignatureChallenge, createTransactionSignature, validateParams } from '../utils';
 import { getAddressDIDFromPublicKey } from '../../did';
 
