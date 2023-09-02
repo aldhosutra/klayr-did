@@ -16,9 +16,11 @@ export async function authorizeFactors(
     factors,
   );
   if (publicKeyRelationshipWithTargetDID.length > 0) {
+    const method = await cryptography.method.getVerificationMethod(didDocument, factors);
     result.push({
       type: 'subject',
       did: didDocument.id,
+      method,
       relationship: publicKeyRelationshipWithTargetDID,
     });
   }
@@ -30,9 +32,11 @@ export async function authorizeFactors(
       factors,
     );
     if (publicKeyRelationshipWithControllerDID.length > 0) {
+      const method = await cryptography.method.getVerificationMethod(controllerDidDocument, factors);
       result.push({
         type: 'controller',
         did: controllerDidDocument.id,
+        method,
         relationship: publicKeyRelationshipWithControllerDID,
       });
     }
