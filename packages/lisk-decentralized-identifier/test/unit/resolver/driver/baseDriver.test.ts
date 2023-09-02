@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { createResolver, driver } from '@dist/resolver';
 import { encodePublicKey } from '@dist/cryptography/codec';
-import * as suite from '@dist/cryptography/suite';
+import * as suite from '@dist/cryptography/key';
 import { validateDIDDocument } from '@dist/utils';
 import { BaseDriver } from '@dist/resolver/driver/baseDriver';
 import { chainspace, fingerprint, ipc, privateKey, publicKey, senderDID, senderDIDDoc } from '../../../setup/constant';

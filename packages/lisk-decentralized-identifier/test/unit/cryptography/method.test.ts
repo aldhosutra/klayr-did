@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
-import { getVerificationMethod, getVerificationRelationship } from '@dist/cryptography/verification';
+import { getVerificationMethod, getVerificationRelationship } from '@dist/cryptography/method';
 import { encodePrivateKey, encodePublicKey } from '@dist/cryptography/codec';
 import { ed25519ToX25519PublicKeyMultibase } from '@dist/cryptography/convert';
 import { signLocal } from '@dist/cryptography/operation';

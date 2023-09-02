@@ -5,7 +5,7 @@ import {
   generateEd25519KeyPair,
   generateX25519KeyPair,
   getEd25519SignatureSuite,
-} from '@dist/cryptography/suite';
+} from '@dist/cryptography/key';
 import { ed25519ToX25519PublicKeyMultibase } from '@dist/cryptography/convert';
 import { ED25519_VERIFICATION_KEY_2020_CONTEXT } from '@dist/utils/constant';
 import { privateKey, publicKey } from '../../setup/constant';

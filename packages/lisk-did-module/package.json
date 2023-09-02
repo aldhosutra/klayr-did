@@ -70,5 +70,5 @@
     "@lisk-did/lisk-decentralized-identifier": "^0.2.2",
     "lisk-sdk": "^6.0.0-beta.7"
   },
-  "gitHead": "9c9446c84ec6444acbb6c4d1a371ad41f1c07fa5"
+  "gitHead": "b92cf96b674cba1ea8426186664d6728b59e3248"
 }
