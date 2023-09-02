@@ -1,6 +1,6 @@
 {
   "name": "@lisk-did/lisk-verifiable-credentials",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A library for working with W3C verifiable credentials (VC) and verifiable presentations (VP) using Lisk DID",
   "keywords": [
     "vc",
@@ -74,7 +74,7 @@
     "@digitalcredentials/dcc-context": "^1.0.0",
     "@digitalcredentials/vc": "^6.0.0",
     "@digitalcredentials/vc-data-model": "^1.1.1",
-    "@lisk-did/lisk-decentralized-identifier": "^0.2.1",
+    "@lisk-did/lisk-decentralized-identifier": "^0.2.2",
     "did-context": "^3.1.1",
     "html-entities": "^2.4.0",
     "lisk-sdk": "^6.0.0-beta.7",
