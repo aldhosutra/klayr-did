@@ -169,11 +169,11 @@ describe('DidMethod', () => {
       expect(didNonce).toStrictEqual(utils.object.serializer(nonce));
     });
 
-    it('should throw an error for a non existent nonce', async () => {
+    it('should not throw an error for a non existent nonce', async () => {
       const func = async () => {
         await method.getNonce(context, noDocumentDID);
       };
-      await expect(func()).rejects.toThrow();
+      await expect(func()).resolves.not.toThrow();
     });
   });
 

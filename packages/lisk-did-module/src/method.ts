@@ -48,7 +48,7 @@ export class DidMethod extends BaseMethod implements DidMethodInterface {
 
   async getNonce(methodContext: MethodContext, did: string): Promise<JSONObject<NonceStoreData>> {
     const nonceSubstore = this.stores.get(NonceStore);
-    const nonce = await nonceSubstore.get(methodContext, nonceStoreKey(did));
+    const nonce = await nonceSubstore.getOrDefault(methodContext, nonceStoreKey(did));
     return utils.object.serializer(nonce) as JSONObject<NonceStoreData>;
   }
 
