@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
-import { BaseModule, testing } from 'lisk-sdk';
+import { BaseModule, Transaction, testing } from 'lisk-sdk';
 import { DidModule, DidMethod, DidEndpoint } from '@dist/index';
 import { DocumentStore, documentStoreKey } from '@dist/stores/document';
 import { chainID, chainspace, publicKey, senderDID, senderDIDDoc } from '../setup/constant';
@@ -80,7 +80,15 @@ describe('DidModule', () => {
 
   describe('beforeCommandExecute', () => {
     let context;
-    const transaction = { senderPublicKey: publicKey } as any;
+    const transaction = new Transaction({
+      module: 'did',
+      command: 'create',
+      senderPublicKey: publicKey,
+      nonce: BigInt(0),
+      fee: BigInt(1000000000),
+      signatures: [publicKey],
+      params: Buffer.alloc(0),
+    });
 
     beforeEach(async () => {
       await didModule.init({
@@ -88,7 +96,12 @@ describe('DidModule', () => {
         genesisConfig: undefined as any,
       });
       context = testing
-        .createTransactionContext({ chainID, transaction, stateStore })
+        .createBlockContext({
+          chainID,
+          stateStore,
+          transactions: [transaction],
+        })
+        .getTransactionContext(transaction)
         .createTransactionExecuteContext();
     });
 

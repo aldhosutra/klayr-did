@@ -34,7 +34,7 @@ export async function validateParams(
   }
   if (['create', 'addKeys'].includes(command)) {
     params = param.params as AddKeysParam | CreateParam;
-    if ((params as AddKeysParam).keys.length < 1) throw new Error('at least one keys needed');
+    if (command === 'addKeys' && (params as AddKeysParam).keys.length < 1) throw new Error('at least one keys needed');
     for (const key of (params as AddKeysParam).keys) {
       if (key.publicKey.length !== LISK_PUBLIC_KEY_LENGTH) throw new Error('invalid public key length');
       if (key.relationship.length === 0) throw new Error('at least one relationship needed');

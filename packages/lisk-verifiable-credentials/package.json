@@ -77,7 +77,7 @@
     "@lisk-did/lisk-decentralized-identifier": "^0.2.3",
     "did-context": "^3.1.1",
     "html-entities": "^2.4.0",
-    "lisk-sdk": "^6.0.0-beta.7",
+    "lisk-sdk": "^6.1.0",
     "x25519-key-agreement-2020-context": "^1.0.0"
   },
   "gitHead": "b92cf96b674cba1ea8426186664d6728b59e3248"
