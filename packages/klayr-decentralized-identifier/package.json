@@ -1,6 +1,6 @@
 {
   "name": "@klayr-did/klayr-decentralized-identifier",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A library to work with W3C Decentralized Identifier (DID) for Klayr sidechains with the Klayr DID module",
   "keywords": [
     "did",

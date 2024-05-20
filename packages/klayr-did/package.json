@@ -1,6 +1,6 @@
 {
   "name": "klayr-did",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Klayr DID/VC Development Kit",
   "keywords": [
     "did",
@@ -44,9 +44,9 @@
     "url": "https://github.com/aldhosutra/klayr-did/issues"
   },
   "dependencies": {
-    "@klayr-did/klayr-decentralized-identifier": "^0.2.4",
-    "@klayr-did/klayr-did-module": "^0.2.4",
-    "@klayr-did/klayr-verifiable-credentials": "^0.2.4"
+    "@klayr-did/klayr-decentralized-identifier": "^0.2.5",
+    "@klayr-did/klayr-did-module": "^0.2.5",
+    "@klayr-did/klayr-verifiable-credentials": "^0.2.5"
   },
   "devDependencies": {
     "@types/jest": "^29.5.3",

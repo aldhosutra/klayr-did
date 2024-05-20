@@ -1,6 +1,6 @@
 {
   "name": "@klayr-did/klayr-verifiable-credentials",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A library for working with W3C verifiable credentials (VC) and verifiable presentations (VP) using Klayr DID",
   "keywords": [
     "vc",
@@ -74,7 +74,7 @@
     "@digitalcredentials/dcc-context": "^1.0.0",
     "@digitalcredentials/vc": "^6.0.0",
     "@digitalcredentials/vc-data-model": "^1.1.1",
-    "@klayr-did/klayr-decentralized-identifier": "^0.2.4",
+    "@klayr-did/klayr-decentralized-identifier": "^0.2.5",
     "did-context": "^3.1.1",
     "html-entities": "^2.4.0",
     "klayr-sdk": "^6.0.4",
