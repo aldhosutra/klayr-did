@@ -45,7 +45,7 @@ config.local.json
 
 # Build Directory
 dist
-packages/lisk-did-docs/build/
+packages/klayr-did-docs/build/
 
 # Generated files
 .docusaurus

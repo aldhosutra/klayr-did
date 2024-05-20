@@ -27,6 +27,7 @@ logs/
 
 # project specific paths
 dist/
+docs/
 bin
 tmp/
 
