@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import { KLAYR_DID_PREFIX, LISK_PUBLIC_KEY_LENGTH } from './utils/constant';
+import { KLAYR_DID_PREFIX, KLAYR_PUBLIC_KEY_LENGTH } from './utils/constant';
 import { createResolver } from './resolver';
 import { DidDocument } from './types';
 import { cryptography } from 'klayr-sdk';
@@ -10,7 +10,7 @@ export function parseDIDComponent(did: string) {
   if (!did.startsWith('did:')) throw new Error('did string must starts with "did:"');
 
   const parsedDID = didParser.parse(did);
-  if (parsedDID.method !== 'klayr') throw new Error('method must be "lisk"');
+  if (parsedDID.method !== 'klayr') throw new Error('method must be "klayr"');
 
   const parsedIdentifier = parsedDID.identifier.split(':');
   let uniqueId: string = parsedDID.uniqueId;
@@ -22,7 +22,7 @@ export function parseDIDComponent(did: string) {
     try {
       cryptography.address.validateKlayr32Address(parsedIdentifier[1], parsedIdentifier[1].substring(0, 3));
     } catch {
-      throw new Error('unique-id needs to be a valid lisk address if namespace is absent');
+      throw new Error('unique-id needs to be a valid klayr address if namespace is absent');
     }
     uniqueId = parsedIdentifier[1];
   }
@@ -57,7 +57,7 @@ export function parseDIDComponent(did: string) {
 }
 
 export function getAddressDIDFromPublicKey(chainspace: string, publicKey: Buffer) {
-  if (publicKey.length !== LISK_PUBLIC_KEY_LENGTH) {
+  if (publicKey.length !== KLAYR_PUBLIC_KEY_LENGTH) {
     throw Error('unexpected public key length');
   }
   const Klayr32 = cryptography.address.getKlayr32AddressFromPublicKey(publicKey);

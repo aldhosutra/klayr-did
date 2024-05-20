@@ -1,7 +1,7 @@
 ---
-id: 'did'
-title: 'Namespace: did'
-sidebar_label: 'did'
+id: "did"
+title: "Namespace: did"
+sidebar_label: "did"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -51,7 +51,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/events/add_controllers_event.d.ts:2
 
----
+___
 
 ### AddKeysEventData
 
@@ -61,7 +61,7 @@ packages/klayr-decentralized-identifier/dist/types/events/add_controllers_event.
 
 packages/klayr-decentralized-identifier/dist/types/events/add_keys_event.d.ts:2
 
----
+___
 
 ### AddServiceEndpointEventData
 
@@ -71,7 +71,7 @@ packages/klayr-decentralized-identifier/dist/types/events/add_keys_event.d.ts:2
 
 packages/klayr-decentralized-identifier/dist/types/events/add_service_endpoint_event.d.ts:2
 
----
+___
 
 ### AuthorizationResult
 
@@ -79,18 +79,18 @@ packages/klayr-decentralized-identifier/dist/types/events/add_service_endpoint_e
 
 #### Type declaration
 
-| Name           | Type                                                              |
-| :------------- | :---------------------------------------------------------------- |
-| `did`          | `string`                                                          |
-| `method`       | [`VerificationMethod`](../interfaces/did.VerificationMethod.md)[] |
-| `relationship` | [`VerificationRelationship`](did.md#verificationrelationship)[]   |
-| `type`         | `"subject"` \| `"controller"`                                     |
+| Name | Type |
+| :------ | :------ |
+| `did` | `string` |
+| `method` | [`VerificationMethod`](../interfaces/did.VerificationMethod.md)[] |
+| `relationship` | [`VerificationRelationship`](did.md#verificationrelationship)[] |
+| `type` | ``"subject"`` \| ``"controller"`` |
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:3
 
----
+___
 
 ### BaseLoader
 
@@ -102,8 +102,8 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:3
 
 ##### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `url` | `string` |
 
 ##### Returns
@@ -114,7 +114,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:3
 
 packages/klayr-decentralized-identifier/dist/types/resolver.d.ts:17
 
----
+___
 
 ### CommandPayload
 
@@ -124,7 +124,7 @@ packages/klayr-decentralized-identifier/dist/types/resolver.d.ts:17
 
 packages/klayr-decentralized-identifier/dist/types/client.d.ts:27
 
----
+___
 
 ### CreateEventData
 
@@ -134,7 +134,7 @@ packages/klayr-decentralized-identifier/dist/types/client.d.ts:27
 
 packages/klayr-decentralized-identifier/dist/types/events/create_event.d.ts:2
 
----
+___
 
 ### CreateResolverParam
 
@@ -142,30 +142,30 @@ packages/klayr-decentralized-identifier/dist/types/events/create_event.d.ts:2
 
 #### Type declaration
 
-| Name        | Type                                                                           |
-| :---------- | :----------------------------------------------------------------------------- |
-| `context?`  | `MethodContext`                                                                |
-| `ipc?`      | `string`                                                                       |
-| `loader?`   | [`BaseLoader`](did.md#baseloader) \| [`DocumentLoader`](did.md#documentloader) |
-| `method?`   | [`DidMethod`](../interfaces/did.DidMethod.md)                                  |
-| `resolver?` | [`BaseResolver`](../interfaces/did.BaseResolver.md)                            |
-| `ws?`       | `string`                                                                       |
+| Name | Type |
+| :------ | :------ |
+| `context?` | `MethodContext` |
+| `ipc?` | `string` |
+| `loader?` | [`BaseLoader`](did.md#baseloader) \| [`DocumentLoader`](did.md#documentloader) |
+| `method?` | [`DidMethod`](../interfaces/did.DidMethod.md) |
+| `resolver?` | [`BaseResolver`](../interfaces/did.BaseResolver.md) |
+| `ws?` | `string` |
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/resolver.d.ts:18
 
----
+___
 
 ### DIDCommands
 
-Ƭ **DIDCommands**: `"addControllers"` \| `"addKeys"` \| `"addServiceEndpoint"` \| `"create"` \| `"deactivate"` \| `"removeControllers"` \| `"removeKeys"` \| `"removeServiceEndpoint"`
+Ƭ **DIDCommands**: ``"addControllers"`` \| ``"addKeys"`` \| ``"addServiceEndpoint"`` \| ``"create"`` \| ``"deactivate"`` \| ``"removeControllers"`` \| ``"removeKeys"`` \| ``"removeServiceEndpoint"``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/client.d.ts:25
 
----
+___
 
 ### DIDTransactionParam
 
@@ -175,7 +175,7 @@ packages/klayr-decentralized-identifier/dist/types/client.d.ts:25
 
 packages/klayr-decentralized-identifier/dist/types/client.d.ts:23
 
----
+___
 
 ### DeactivateEventData
 
@@ -185,23 +185,23 @@ packages/klayr-decentralized-identifier/dist/types/client.d.ts:23
 
 packages/klayr-decentralized-identifier/dist/types/events/deactivate_event.d.ts:2
 
----
+___
 
 ### DecodedTransactionJSON
 
-Ƭ **DecodedTransactionJSON**<`T`\>: `Omit`<`TransactionJSON`, `"params"`\> & { `params`: `T` }
+Ƭ **DecodedTransactionJSON**<`T`\>: `Omit`<`TransactionJSON`, ``"params"``\> & { `params`: `T`  }
 
 #### Type parameters
 
-| Name | Type                           |
-| :--- | :----------------------------- |
-| `T`  | `Record`<`string`, `unknown`\> |
+| Name | Type |
+| :------ | :------ |
+| `T` | `Record`<`string`, `unknown`\> |
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/client.d.ts:38
 
----
+___
 
 ### DocumentLoader
 
@@ -213,8 +213,8 @@ packages/klayr-decentralized-identifier/dist/types/client.d.ts:38
 
 ##### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `url` | `string` |
 
 ##### Returns
@@ -225,7 +225,7 @@ packages/klayr-decentralized-identifier/dist/types/client.d.ts:38
 
 packages/klayr-decentralized-identifier/dist/types/resolver.d.ts:16
 
----
+___
 
 ### DocumentStoreData
 
@@ -235,17 +235,17 @@ packages/klayr-decentralized-identifier/dist/types/resolver.d.ts:16
 
 packages/klayr-decentralized-identifier/dist/types/stores/document.d.ts:2
 
----
+___
 
 ### KeyAgreement
 
-Ƭ **KeyAgreement**: [`VerificationMethod`](../interfaces/did.VerificationMethod.md) & { `privateKeyMultibase?`: `string` }
+Ƭ **KeyAgreement**: [`VerificationMethod`](../interfaces/did.VerificationMethod.md) & { `privateKeyMultibase?`: `string`  }
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:16
 
----
+___
 
 ### PayloadWithSignature
 
@@ -255,7 +255,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:16
 
 packages/klayr-decentralized-identifier/dist/types/client.d.ts:26
 
----
+___
 
 ### RemoveControllersEventData
 
@@ -265,7 +265,7 @@ packages/klayr-decentralized-identifier/dist/types/client.d.ts:26
 
 packages/klayr-decentralized-identifier/dist/types/events/remove_controllers_event.d.ts:2
 
----
+___
 
 ### RemoveKeysEventData
 
@@ -275,7 +275,7 @@ packages/klayr-decentralized-identifier/dist/types/events/remove_controllers_eve
 
 packages/klayr-decentralized-identifier/dist/types/events/remove_keys_event.d.ts:2
 
----
+___
 
 ### RemoveServiceEndpointEventData
 
@@ -285,17 +285,17 @@ packages/klayr-decentralized-identifier/dist/types/events/remove_keys_event.d.ts
 
 packages/klayr-decentralized-identifier/dist/types/events/remove_service_endpoint_event.d.ts:2
 
----
+___
 
 ### VerificationRelationship
 
-Ƭ **VerificationRelationship**: `"authentication"` \| `"assertionMethod"` \| `"capabilityInvocation"` \| `"keyAgreement"`
+Ƭ **VerificationRelationship**: ``"authentication"`` \| ``"assertionMethod"`` \| ``"capabilityInvocation"`` \| ``"keyAgreement"``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:9
 
----
+___
 
 ### WriteableSchema
 
@@ -313,15 +313,15 @@ packages/klayr-decentralized-identifier/dist/types/client.d.ts:24
 
 #### Type declaration
 
-| Name                         | Type                                                                                                                                                                                                                        |
-| :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `client`                     | typeof [`client`](did.client.md)                                                                                                                                                                                            |
-| `cryptography`               | typeof [`cryptography`](did.cryptography.md)                                                                                                                                                                                |
-| `resolver`                   | typeof [`resolver`](did.resolver.md)                                                                                                                                                                                        |
-| `utils`                      | typeof [`utils`](did.utils.md)                                                                                                                                                                                              |
-| `getAddressDIDFromPublicKey` | (`chainspace`: `string`, `publicKey`: `Buffer`) => `string`                                                                                                                                                                 |
-| `getDIDDocument`             | (`did`: `string`, `options`: [`CreateResolverParam`](did.md#createresolverparam)) => `Promise`<`undefined` \| [`DidDocument`](../interfaces/did.DidDocument.md)\>                                                           |
-| `parseDIDComponent`          | (`did`: `string`) => { `chainspace`: `any` ; `did`: `string` ; `fragment`: `any` ; `method`: `any` ; `namespace`: `string` ; `path`: `any` ; `query`: `any` ; `scheme`: `string` ; `uniqueId`: `string` ; `uri`: `string` } |
+| Name | Type |
+| :------ | :------ |
+| `client` | typeof [`client`](did.client.md) |
+| `cryptography` | typeof [`cryptography`](did.cryptography.md) |
+| `resolver` | typeof [`resolver`](did.resolver.md) |
+| `utils` | typeof [`utils`](did.utils.md) |
+| `getAddressDIDFromPublicKey` | (`chainspace`: `string`, `publicKey`: `Buffer`) => `string` |
+| `getDIDDocument` | (`did`: `string`, `options`: [`CreateResolverParam`](did.md#createresolverparam)) => `Promise`<`undefined` \| [`DidDocument`](../interfaces/did.DidDocument.md)\> |
+| `parseDIDComponent` | (`did`: `string`) => { `chainspace`: `any` ; `did`: `string` ; `fragment`: `any` ; `method`: `any` ; `namespace`: `string` ; `path`: `any` ; `query`: `any` ; `scheme`: `string` ; `uniqueId`: `string` ; `uri`: `string`  } |
 
 #### Defined in
 
@@ -335,10 +335,10 @@ packages/klayr-decentralized-identifier/dist/index.d.ts:12
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `chainspace` | `string` |
-| `publicKey`  | `Buffer` |
+| `publicKey` | `Buffer` |
 
 #### Returns
 
@@ -348,7 +348,7 @@ packages/klayr-decentralized-identifier/dist/index.d.ts:12
 
 packages/klayr-decentralized-identifier/dist/did.d.ts:16
 
----
+___
 
 ### getDIDDocument
 
@@ -356,9 +356,9 @@ packages/klayr-decentralized-identifier/dist/did.d.ts:16
 
 #### Parameters
 
-| Name      | Type                                                |
-| :-------- | :-------------------------------------------------- |
-| `did`     | `string`                                            |
+| Name | Type |
+| :------ | :------ |
+| `did` | `string` |
 | `options` | [`CreateResolverParam`](did.md#createresolverparam) |
 
 #### Returns
@@ -369,7 +369,7 @@ packages/klayr-decentralized-identifier/dist/did.d.ts:16
 
 packages/klayr-decentralized-identifier/dist/did.d.ts:17
 
----
+___
 
 ### parseDIDComponent
 
@@ -377,26 +377,26 @@ packages/klayr-decentralized-identifier/dist/did.d.ts:17
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `did` | `string` |
 
 #### Returns
 
 `Object`
 
-| Name         | Type     |
-| :----------- | :------- |
-| `chainspace` | `any`    |
-| `did`        | `string` |
-| `fragment`   | `any`    |
-| `method`     | `any`    |
-| `namespace`  | `string` |
-| `path`       | `any`    |
-| `query`      | `any`    |
-| `scheme`     | `string` |
-| `uniqueId`   | `string` |
-| `uri`        | `string` |
+| Name | Type |
+| :------ | :------ |
+| `chainspace` | `any` |
+| `did` | `string` |
+| `fragment` | `any` |
+| `method` | `any` |
+| `namespace` | `string` |
+| `path` | `any` |
+| `query` | `any` |
+| `scheme` | `string` |
+| `uniqueId` | `string` |
+| `uri` | `string` |
 
 #### Defined in
 

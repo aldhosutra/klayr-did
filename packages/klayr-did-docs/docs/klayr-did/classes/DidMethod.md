@@ -1,7 +1,7 @@
 ---
-id: 'DidMethod'
-title: 'Class: DidMethod'
-sidebar_label: 'DidMethod'
+id: "DidMethod"
+title: "Class: DidMethod"
+sidebar_label: "DidMethod"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -24,8 +24,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name     | Type            |
-| :------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `stores` | `NamedRegistry` |
 | `events` | `NamedRegistry` |
 
@@ -47,7 +47,7 @@ node_modules/klayr-framework/dist-node/modules/base_method.d.ts:5
 
 packages/klayr-did-module/dist/method.d.ts:5
 
----
+___
 
 ### events
 
@@ -61,7 +61,7 @@ BaseMethod.events
 
 node_modules/klayr-framework/dist-node/modules/base_method.d.ts:4
 
----
+___
 
 ### stores
 
@@ -83,14 +83,14 @@ node_modules/klayr-framework/dist-node/modules/base_method.d.ts:3
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `controllers`     | `string`[]      |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `controllers` | `string`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -104,7 +104,7 @@ node_modules/klayr-framework/dist-node/modules/base_method.d.ts:3
 
 packages/klayr-did-module/dist/method.d.ts:15
 
----
+___
 
 ### addKeys
 
@@ -112,14 +112,14 @@ packages/klayr-did-module/dist/method.d.ts:15
 
 #### Parameters
 
-| Name              | Type                                                |
-| :---------------- | :-------------------------------------------------- |
-| `methodContext`   | `MethodContext`                                     |
-| `senderPublicKey` | `Buffer`                                            |
-| `target`          | `string`                                            |
-| `keys`            | [`KeysCommand`](../interfaces/did.KeysCommand.md)[] |
-| `signer`          | `string`                                            |
-| `signature?`      | `Buffer`                                            |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `keys` | [`KeysCommand`](../interfaces/did.KeysCommand.md)[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -133,7 +133,7 @@ packages/klayr-did-module/dist/method.d.ts:15
 
 packages/klayr-did-module/dist/method.d.ts:13
 
----
+___
 
 ### addServiceEndpoint
 
@@ -141,17 +141,17 @@ packages/klayr-did-module/dist/method.d.ts:13
 
 #### Parameters
 
-| Name                       | Type            |
-| :------------------------- | :-------------- |
-| `methodContext`            | `MethodContext` |
-| `senderPublicKey`          | `Buffer`        |
-| `target`                   | `string`        |
-| `endpoint`                 | `Object`        |
-| `endpoint.id`              | `string`        |
-| `endpoint.serviceEndpoint` | `string`        |
-| `endpoint.type`            | `string`        |
-| `signer`                   | `string`        |
-| `signature?`               | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `endpoint` | `Object` |
+| `endpoint.id` | `string` |
+| `endpoint.serviceEndpoint` | `string` |
+| `endpoint.type` | `string` |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -165,7 +165,7 @@ packages/klayr-did-module/dist/method.d.ts:13
 
 packages/klayr-did-module/dist/method.d.ts:17
 
----
+___
 
 ### authorize
 
@@ -173,11 +173,11 @@ packages/klayr-did-module/dist/method.d.ts:17
 
 #### Parameters
 
-| Name            | Type                                                                |
-| :-------------- | :------------------------------------------------------------------ |
-| `methodContext` | `MethodContext`                                                     |
-| `did`           | `string`                                                            |
-| `factors`       | [`AuthorizationFactors`](../interfaces/did.AuthorizationFactors.md) |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `did` | `string` |
+| `factors` | [`AuthorizationFactors`](../interfaces/did.AuthorizationFactors.md) |
 
 #### Returns
 
@@ -191,7 +191,7 @@ packages/klayr-did-module/dist/method.d.ts:17
 
 packages/klayr-did-module/dist/method.d.ts:11
 
----
+___
 
 ### create
 
@@ -199,13 +199,13 @@ packages/klayr-did-module/dist/method.d.ts:11
 
 #### Parameters
 
-| Name              | Type                                                |
-| :---------------- | :-------------------------------------------------- |
-| `methodContext`   | `MethodContext`                                     |
-| `senderPublicKey` | `Buffer`                                            |
-| `did`             | `string`                                            |
-| `controllers`     | `string`[]                                          |
-| `keys`            | [`KeysCommand`](../interfaces/did.KeysCommand.md)[] |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `did` | `string` |
+| `controllers` | `string`[] |
+| `keys` | [`KeysCommand`](../interfaces/did.KeysCommand.md)[] |
 
 #### Returns
 
@@ -219,7 +219,7 @@ packages/klayr-did-module/dist/method.d.ts:11
 
 packages/klayr-did-module/dist/method.d.ts:12
 
----
+___
 
 ### deactivate
 
@@ -227,13 +227,13 @@ packages/klayr-did-module/dist/method.d.ts:12
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -247,7 +247,7 @@ packages/klayr-did-module/dist/method.d.ts:12
 
 packages/klayr-did-module/dist/method.d.ts:23
 
----
+___
 
 ### getConfig
 
@@ -265,22 +265,22 @@ packages/klayr-did-module/dist/method.d.ts:23
 
 packages/klayr-did-module/dist/method.d.ts:7
 
----
+___
 
 ### getNonce
 
-▸ **getNonce**(`methodContext`, `did`): `Promise`<{ `nonce`: `string` }\>
+▸ **getNonce**(`methodContext`, `did`): `Promise`<{ `nonce`: `string`  }\>
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `methodContext` | `MethodContext` |
-| `did`           | `string`        |
+| `did` | `string` |
 
 #### Returns
 
-`Promise`<{ `nonce`: `string` }\>
+`Promise`<{ `nonce`: `string`  }\>
 
 #### Implementation of
 
@@ -290,7 +290,7 @@ packages/klayr-did-module/dist/method.d.ts:7
 
 packages/klayr-did-module/dist/method.d.ts:9
 
----
+___
 
 ### incrementNonce
 
@@ -298,10 +298,10 @@ packages/klayr-did-module/dist/method.d.ts:9
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `methodContext` | `MethodContext` |
-| `did`           | `string`        |
+| `did` | `string` |
 
 #### Returns
 
@@ -315,7 +315,7 @@ packages/klayr-did-module/dist/method.d.ts:9
 
 packages/klayr-did-module/dist/method.d.ts:10
 
----
+___
 
 ### init
 
@@ -323,8 +323,8 @@ packages/klayr-did-module/dist/method.d.ts:10
 
 #### Parameters
 
-| Name     | Type                                                      |
-| :------- | :-------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `config` | [`DidModuleConfig`](../interfaces/did.DidModuleConfig.md) |
 
 #### Returns
@@ -339,7 +339,7 @@ packages/klayr-did-module/dist/method.d.ts:10
 
 packages/klayr-did-module/dist/method.d.ts:6
 
----
+___
 
 ### read
 
@@ -347,10 +347,10 @@ packages/klayr-did-module/dist/method.d.ts:6
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `methodContext` | `MethodContext` |
-| `did`           | `string`        |
+| `did` | `string` |
 
 #### Returns
 
@@ -364,7 +364,7 @@ packages/klayr-did-module/dist/method.d.ts:6
 
 packages/klayr-did-module/dist/method.d.ts:8
 
----
+___
 
 ### removeControllers
 
@@ -372,14 +372,14 @@ packages/klayr-did-module/dist/method.d.ts:8
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `controllers`     | `string`[]      |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `controllers` | `string`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -393,7 +393,7 @@ packages/klayr-did-module/dist/method.d.ts:8
 
 packages/klayr-did-module/dist/method.d.ts:16
 
----
+___
 
 ### removeKeys
 
@@ -401,14 +401,14 @@ packages/klayr-did-module/dist/method.d.ts:16
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `publicKeys`      | `Buffer`[]      |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `publicKeys` | `Buffer`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -422,7 +422,7 @@ packages/klayr-did-module/dist/method.d.ts:16
 
 packages/klayr-did-module/dist/method.d.ts:14
 
----
+___
 
 ### removeServiceEndpoint
 
@@ -430,14 +430,14 @@ packages/klayr-did-module/dist/method.d.ts:14
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `endpointId`      | `string`        |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `endpointId` | `string` |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 

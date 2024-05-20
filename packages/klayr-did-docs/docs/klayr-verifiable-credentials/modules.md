@@ -1,7 +1,7 @@
 ---
-id: 'modules'
-title: '@klayr-did/klayr-verifiable-credentials'
-sidebar_label: 'Exports'
+id: "modules"
+title: "@klayr-did/klayr-verifiable-credentials"
+sidebar_label: "Exports"
 sidebar_position: 0.5
 custom_edit_url: null
 ---
@@ -26,27 +26,27 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:13](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L13)
+[klayr-verifiable-credentials/src/types.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L13)
 
----
+___
 
 ### VerifiableCredential
 
-Ƭ **VerifiableCredential**: `Partial`<`VCDIVerifiableCredential`\> & { `@context`: `VCDIVerifiableCredential`[``"@context"``] ; `credentialSubject`: `VCDIVerifiableCredential`[``"credentialSubject"``] ; `type`: `VCDIVerifiableCredential`[``"type"``] }
+Ƭ **VerifiableCredential**: `Partial`<`VCDIVerifiableCredential`\> & { `@context`: `VCDIVerifiableCredential`[``"@context"``] ; `credentialSubject`: `VCDIVerifiableCredential`[``"credentialSubject"``] ; `type`: `VCDIVerifiableCredential`[``"type"``]  }
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:20](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L20)
+[klayr-verifiable-credentials/src/types.ts:20](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L20)
 
----
+___
 
 ### VerifiablePresentation
 
-Ƭ **VerifiablePresentation**: `TVerifiablePresentation` & { `verifiableCredential?`: [`VerifiableCredential`](modules.md#verifiablecredential) \| [`VerifiableCredential`](modules.md#verifiablecredential)[] }
+Ƭ **VerifiablePresentation**: `TVerifiablePresentation` & { `verifiableCredential?`: [`VerifiableCredential`](modules.md#verifiablecredential) \| [`VerifiableCredential`](modules.md#verifiablecredential)[]  }
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:26](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L26)
+[klayr-verifiable-credentials/src/types.ts:26](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L26)
 
 ## Functions
 
@@ -56,11 +56,11 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name         | Type                                                      |
-| :----------- | :-------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `credential` | [`VerifiableCredential`](modules.md#verifiablecredential) |
-| `privateKey` | `Buffer`                                                  |
-| `options`    | `ClientOptions`                                           |
+| `privateKey` | `Buffer` |
+| `options` | `ClientOptions` |
 
 #### Returns
 
@@ -68,9 +68,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/credentials/credentials.ts:8](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/credentials/credentials.ts#L8)
+[klayr-verifiable-credentials/src/credentials/credentials.ts:8](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/credentials/credentials.ts#L8)
 
----
+___
 
 ### issuePresentation
 
@@ -78,13 +78,13 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name                        | Type                                                        |
-| :-------------------------- | :---------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `verifiableCredentialsList` | [`VerifiableCredential`](modules.md#verifiablecredential)[] |
-| `holderDid`                 | `string`                                                    |
-| `privateKey`                | `Buffer`                                                    |
-| `challenge`                 | `string`                                                    |
-| `options`                   | `ClientOptions`                                             |
+| `holderDid` | `string` |
+| `privateKey` | `Buffer` |
+| `challenge` | `string` |
+| `options` | `ClientOptions` |
 
 #### Returns
 
@@ -92,9 +92,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/credentials/presentation.ts:8](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/credentials/presentation.ts#L8)
+[klayr-verifiable-credentials/src/credentials/presentation.ts:8](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/credentials/presentation.ts#L8)
 
----
+___
 
 ### verifyCredential
 
@@ -102,11 +102,11 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name         | Type                                                      |
-| :----------- | :-------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `credential` | [`VerifiableCredential`](modules.md#verifiablecredential) |
-| `publicKey`  | `Buffer`                                                  |
-| `options`    | `ClientOptions`                                           |
+| `publicKey` | `Buffer` |
+| `options` | `ClientOptions` |
 
 #### Returns
 
@@ -114,9 +114,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/credentials/credentials.ts:47](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/credentials/credentials.ts#L47)
+[klayr-verifiable-credentials/src/credentials/credentials.ts:47](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/credentials/credentials.ts#L47)
 
----
+___
 
 ### verifyPresentation
 
@@ -124,11 +124,11 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name           | Type                                                          |
-| :------------- | :------------------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `presentation` | [`VerifiablePresentation`](modules.md#verifiablepresentation) |
-| `publicKey`    | `Buffer`                                                      |
-| `options`      | `ClientOptions`                                               |
+| `publicKey` | `Buffer` |
+| `options` | `ClientOptions` |
 
 #### Returns
 
@@ -136,4 +136,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/credentials/presentation.ts:52](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/credentials/presentation.ts#L52)
+[klayr-verifiable-credentials/src/credentials/presentation.ts:52](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/credentials/presentation.ts#L52)

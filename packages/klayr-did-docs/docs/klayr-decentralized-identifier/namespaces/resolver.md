@@ -1,7 +1,7 @@
 ---
-id: 'resolver'
-title: 'Namespace: resolver'
-sidebar_label: 'resolver'
+id: "resolver"
+title: "Namespace: resolver"
+sidebar_label: "resolver"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -18,15 +18,15 @@ custom_edit_url: null
 
 #### Type declaration
 
-| Name                   | Type                                                                                                         |
-| :--------------------- | :----------------------------------------------------------------------------------------------------------- |
-| `createLocalDriver`    | (`chainspace`: `string`) => `KlayrLocalDidDriver`                                                            |
-| `createOffChainDriver` | (`param`: { `ipc?`: `string` ; `ws?`: `string` }) => `KlayrOffChainDidDriver`                                |
-| `createOnChainDriver`  | (`context`: `MethodContext`, `method`: [`DidMethod`](../interfaces/DidMethod.md)) => `KlayrOnChainDidDriver` |
+| Name | Type |
+| :------ | :------ |
+| `createLocalDriver` | (`chainspace`: `string`) => `KlayrLocalDidDriver` |
+| `createOffChainDriver` | (`param`: { `ipc?`: `string` ; `ws?`: `string`  }) => `KlayrOffChainDidDriver` |
+| `createOnChainDriver` | (`context`: `MethodContext`, `method`: [`DidMethod`](../interfaces/DidMethod.md)) => `KlayrOnChainDidDriver` |
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/index.ts:16](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/resolver/index.ts#L16)
+[packages/klayr-decentralized-identifier/src/resolver/index.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/index.ts#L16)
 
 ## Functions
 
@@ -36,10 +36,10 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name      | Type                                      |
-| :-------- | :---------------------------------------- |
-| `context` | `MethodContext`                           |
-| `method`  | [`DidMethod`](../interfaces/DidMethod.md) |
+| Name | Type |
+| :------ | :------ |
+| `context` | `MethodContext` |
+| `method` | [`DidMethod`](../interfaces/DidMethod.md) |
 
 #### Returns
 
@@ -47,9 +47,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:51](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L51)
+[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:51](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L51)
 
----
+___
 
 ### createIPCResolver
 
@@ -57,8 +57,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `ipc` | `string` |
 
 #### Returns
@@ -67,9 +67,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:43](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L43)
+[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:43](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L43)
 
----
+___
 
 ### createResolver
 
@@ -77,8 +77,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name      | Type                                                       |
-| :-------- | :--------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options` | [`CreateResolverParam`](../modules.md#createresolverparam) |
 
 #### Returns
@@ -87,9 +87,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:58](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L58)
+[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:58](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L58)
 
----
+___
 
 ### createWSResolver
 
@@ -97,8 +97,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `ws` | `string` |
 
 #### Returns
@@ -107,4 +107,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:47](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L47)
+[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:47](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L47)

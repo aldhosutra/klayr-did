@@ -1,7 +1,7 @@
 ---
-id: 'did.utils.constant'
-title: 'Namespace: constant'
-sidebar_label: 'did.utils.constant'
+id: "did.utils.constant"
+title: "Namespace: constant"
+sidebar_label: "did.utils.constant"
 custom_edit_url: null
 ---
 
@@ -9,159 +9,159 @@ custom_edit_url: null
 
 ## Variables
 
-### DID_CONTEXT_URL
+### DID\_CONTEXT\_URL
 
-• `Const` **DID_CONTEXT_URL**: `"https://www.w3.org/ns/did/v1"`
+• `Const` **DID\_CONTEXT\_URL**: ``"https://www.w3.org/ns/did/v1"``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/did.d.ts:10
 
----
+___
 
-### ED25519_VERIFICATION_KEY_2020_CONTEXT
+### ED25519\_VERIFICATION\_KEY\_2020\_CONTEXT
 
-• `Const` **ED25519_VERIFICATION_KEY_2020_CONTEXT**: `string`
+• `Const` **ED25519\_VERIFICATION\_KEY\_2020\_CONTEXT**: `string`
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/cryptography.d.ts:6
 
----
+___
 
-### ED25519_VERIFICATION_KEY_2020_TYPE
+### ED25519\_VERIFICATION\_KEY\_2020\_TYPE
 
-• `Const` **ED25519_VERIFICATION_KEY_2020_TYPE**: `"Ed25519VerificationKey2020"`
+• `Const` **ED25519\_VERIFICATION\_KEY\_2020\_TYPE**: ``"Ed25519VerificationKey2020"``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/cryptography.d.ts:4
 
----
+___
 
-### KLAYR_DID_METHOD_NAME
+### KLAYR\_DID\_METHOD\_NAME
 
-• `Const` **KLAYR_DID_METHOD_NAME**: `"klayr"`
+• `Const` **KLAYR\_DID\_METHOD\_NAME**: ``"klayr"``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/did.d.ts:8
 
----
+___
 
-### KLAYR_DID_PREFIX
+### KLAYR\_DID\_PREFIX
 
-• `Const` **KLAYR_DID_PREFIX**: `string`
+• `Const` **KLAYR\_DID\_PREFIX**: `string`
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/did.d.ts:9
 
----
+___
 
-### LISK_PRIVATE_KEY_LENGTH
+### KLAYR\_PRIVATE\_KEY\_LENGTH
 
-• `Const` **LISK_PRIVATE_KEY_LENGTH**: `64`
+• `Const` **KLAYR\_PRIVATE\_KEY\_LENGTH**: ``64``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/did.d.ts:3
 
----
+___
 
-### LISK_PUBLIC_KEY_LENGTH
+### KLAYR\_PUBLIC\_KEY\_LENGTH
 
-• `Const` **LISK_PUBLIC_KEY_LENGTH**: `32`
+• `Const` **KLAYR\_PUBLIC\_KEY\_LENGTH**: ``32``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/did.d.ts:1
 
----
+___
 
-### MULTIBASE_BASE58BTC_HEADER
+### MULTIBASE\_BASE58BTC\_HEADER
 
-• `Const` **MULTIBASE_BASE58BTC_HEADER**: `"z"`
+• `Const` **MULTIBASE\_BASE58BTC\_HEADER**: ``"z"``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/did.d.ts:7
 
----
+___
 
-### MULTIBASE_PRIVATE_KEY_LENGTH
+### MULTIBASE\_PRIVATE\_KEY\_LENGTH
 
-• `Const` **MULTIBASE_PRIVATE_KEY_LENGTH**: `91`
+• `Const` **MULTIBASE\_PRIVATE\_KEY\_LENGTH**: ``91``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/did.d.ts:4
 
----
+___
 
-### MULTIBASE_PUBLIC_KEY_LENGTH
+### MULTIBASE\_PUBLIC\_KEY\_LENGTH
 
-• `Const` **MULTIBASE_PUBLIC_KEY_LENGTH**: `48`
+• `Const` **MULTIBASE\_PUBLIC\_KEY\_LENGTH**: ``48``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/did.d.ts:2
 
----
+___
 
-### MULTICODEC_ED25519_PRIV_HEADER
+### MULTICODEC\_ED25519\_PRIV\_HEADER
 
-• `Const` **MULTICODEC_ED25519_PRIV_HEADER**: `Uint8Array`
+• `Const` **MULTICODEC\_ED25519\_PRIV\_HEADER**: `Uint8Array`
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/did.d.ts:6
 
----
+___
 
-### MULTICODEC_ED25519_PUB_HEADER
+### MULTICODEC\_ED25519\_PUB\_HEADER
 
-• `Const` **MULTICODEC_ED25519_PUB_HEADER**: `Uint8Array`
+• `Const` **MULTICODEC\_ED25519\_PUB\_HEADER**: `Uint8Array`
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/did.d.ts:5
 
----
+___
 
-### SIGNATURE_BYTES_LENGTH
+### SIGNATURE\_BYTES\_LENGTH
 
-• `Const` **SIGNATURE_BYTES_LENGTH**: `64`
+• `Const` **SIGNATURE\_BYTES\_LENGTH**: ``64``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/cryptography.d.ts:2
 
----
+___
 
-### SUPPORTED_RELATIONSHIP
+### SUPPORTED\_RELATIONSHIP
 
-• `Const` **SUPPORTED_RELATIONSHIP**: [`VerificationRelationship`](did.md#verificationrelationship)[]
+• `Const` **SUPPORTED\_RELATIONSHIP**: [`VerificationRelationship`](did.md#verificationrelationship)[]
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/cryptography.d.ts:7
 
----
+___
 
-### X25519_KEY_AGREEMENT_KEY_2020_CONTEXT
+### X25519\_KEY\_AGREEMENT\_KEY\_2020\_CONTEXT
 
-• `Const` **X25519_KEY_AGREEMENT_KEY_2020_CONTEXT**: `any`
+• `Const` **X25519\_KEY\_AGREEMENT\_KEY\_2020\_CONTEXT**: `any`
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/utils/constant/cryptography.d.ts:5
 
----
+___
 
-### X25519_KEY_AGREEMENT_KEY_2020_TYPE
+### X25519\_KEY\_AGREEMENT\_KEY\_2020\_TYPE
 
-• `Const` **X25519_KEY_AGREEMENT_KEY_2020_TYPE**: `"X25519KeyAgreementKey2020"`
+• `Const` **X25519\_KEY\_AGREEMENT\_KEY\_2020\_TYPE**: ``"X25519KeyAgreementKey2020"``
 
 #### Defined in
 

@@ -1,7 +1,7 @@
 ---
-id: 'did.DidMethod'
-title: 'Interface: DidMethod'
-sidebar_label: 'did.DidMethod'
+id: "did.DidMethod"
+title: "Interface: DidMethod"
+sidebar_label: "did.DidMethod"
 custom_edit_url: null
 ---
 
@@ -19,14 +19,14 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `controllers`     | `string`[]      |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `controllers` | `string`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -36,7 +36,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:21
 
----
+___
 
 ### addKeys
 
@@ -44,14 +44,14 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:21
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `keys`            | `Keys`[]        |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `keys` | `Keys`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -61,7 +61,7 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:21
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:19
 
----
+___
 
 ### addServiceEndpoint
 
@@ -69,17 +69,17 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:19
 
 #### Parameters
 
-| Name                       | Type            |
-| :------------------------- | :-------------- |
-| `methodContext`            | `MethodContext` |
-| `senderPublicKey`          | `Buffer`        |
-| `target`                   | `string`        |
-| `endpoint`                 | `Object`        |
-| `endpoint.id`              | `string`        |
-| `endpoint.serviceEndpoint` | `string`        |
-| `endpoint.type`            | `string`        |
-| `signer`                   | `string`        |
-| `signature?`               | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `endpoint` | `Object` |
+| `endpoint.id` | `string` |
+| `endpoint.serviceEndpoint` | `string` |
+| `endpoint.type` | `string` |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -89,7 +89,7 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:19
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:23
 
----
+___
 
 ### authorize
 
@@ -97,11 +97,11 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:23
 
 #### Parameters
 
-| Name            | Type                                                  |
-| :-------------- | :---------------------------------------------------- |
-| `methodContext` | `MethodContext`                                       |
-| `did`           | `string`                                              |
-| `factors`       | [`AuthorizationFactors`](did.AuthorizationFactors.md) |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `did` | `string` |
+| `factors` | [`AuthorizationFactors`](did.AuthorizationFactors.md) |
 
 #### Returns
 
@@ -111,7 +111,7 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:23
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:17
 
----
+___
 
 ### create
 
@@ -119,13 +119,13 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:17
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `did`             | `string`        |
-| `controllers`     | `string`[]      |
-| `keys`            | `Keys`[]        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `did` | `string` |
+| `controllers` | `string`[] |
+| `keys` | `Keys`[] |
 
 #### Returns
 
@@ -135,7 +135,7 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:17
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:18
 
----
+___
 
 ### deactivate
 
@@ -143,13 +143,13 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:18
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -159,7 +159,7 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:18
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:29
 
----
+___
 
 ### getConfig
 
@@ -173,28 +173,28 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:29
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:13
 
----
+___
 
 ### getNonce
 
-▸ **getNonce**(`methodContext`, `did`): `Promise`<{ `nonce`: `string` }\>
+▸ **getNonce**(`methodContext`, `did`): `Promise`<{ `nonce`: `string`  }\>
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `methodContext` | `MethodContext` |
-| `did`           | `string`        |
+| `did` | `string` |
 
 #### Returns
 
-`Promise`<{ `nonce`: `string` }\>
+`Promise`<{ `nonce`: `string`  }\>
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:15
 
----
+___
 
 ### incrementNonce
 
@@ -202,10 +202,10 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:15
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `methodContext` | `MethodContext` |
-| `did`           | `string`        |
+| `did` | `string` |
 
 #### Returns
 
@@ -215,7 +215,7 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:15
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:16
 
----
+___
 
 ### init
 
@@ -223,8 +223,8 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:16
 
 #### Parameters
 
-| Name     | Type                                        |
-| :------- | :------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `config` | [`DidModuleConfig`](did.DidModuleConfig.md) |
 
 #### Returns
@@ -235,7 +235,7 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:16
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:12
 
----
+___
 
 ### read
 
@@ -243,10 +243,10 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:12
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `methodContext` | `MethodContext` |
-| `did`           | `string`        |
+| `did` | `string` |
 
 #### Returns
 
@@ -256,7 +256,7 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:12
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:14
 
----
+___
 
 ### removeControllers
 
@@ -264,14 +264,14 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:14
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `controllers`     | `string`[]      |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `controllers` | `string`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -281,7 +281,7 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:14
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:22
 
----
+___
 
 ### removeKeys
 
@@ -289,14 +289,14 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:22
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `publicKeys`      | `Buffer`[]      |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `publicKeys` | `Buffer`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -306,7 +306,7 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:22
 
 packages/klayr-decentralized-identifier/dist/types/method.d.ts:20
 
----
+___
 
 ### removeServiceEndpoint
 
@@ -314,14 +314,14 @@ packages/klayr-decentralized-identifier/dist/types/method.d.ts:20
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `endpointId`      | `string`        |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `endpointId` | `string` |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 

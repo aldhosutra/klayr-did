@@ -1,7 +1,7 @@
 ---
-id: 'AddControllersCommand'
-title: 'Class: AddControllersCommand'
-sidebar_label: 'AddControllersCommand'
+id: "AddControllersCommand"
+title: "Class: AddControllersCommand"
+sidebar_label: "AddControllersCommand"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -20,8 +20,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name     | Type            |
-| :------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `stores` | `NamedRegistry` |
 | `events` | `NamedRegistry` |
 
@@ -41,9 +41,9 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:9
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/add_controllers_command.ts:13](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/commands/add_controllers_command.ts#L13)
+[packages/klayr-did-module/src/commands/add_controllers_command.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/add_controllers_command.ts#L13)
 
----
+___
 
 ### events
 
@@ -57,7 +57,7 @@ BaseCommand.events
 
 node_modules/klayr-framework/dist-node/modules/base_command.d.ts:6
 
----
+___
 
 ### schema
 
@@ -65,26 +65,26 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:6
 
 #### Type declaration
 
-| Name                                    | Type                                                                                                                                                                                                                                                                                                  |
-| :-------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$id`                                   | `string`                                                                                                                                                                                                                                                                                              |
-| `properties`                            | { `controllers`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } ; `signature`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `signer`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `target`: { `dataType`: `string` ; `fieldNumber`: `number` } } |
-| `properties.controllers`                | { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` }                                                                                                                                                                                                                    |
-| `properties.controllers.fieldNumber`    | `number`                                                                                                                                                                                                                                                                                              |
-| `properties.controllers.items`          | { `dataType`: `string` }                                                                                                                                                                                                                                                                              |
-| `properties.controllers.items.dataType` | `string`                                                                                                                                                                                                                                                                                              |
-| `properties.controllers.type`           | `string`                                                                                                                                                                                                                                                                                              |
-| `properties.signature`                  | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                    |
-| `properties.signature.dataType`         | `string`                                                                                                                                                                                                                                                                                              |
-| `properties.signature.fieldNumber`      | `number`                                                                                                                                                                                                                                                                                              |
-| `properties.signer`                     | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                    |
-| `properties.signer.dataType`            | `string`                                                                                                                                                                                                                                                                                              |
-| `properties.signer.fieldNumber`         | `number`                                                                                                                                                                                                                                                                                              |
-| `properties.target`                     | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                    |
-| `properties.target.dataType`            | `string`                                                                                                                                                                                                                                                                                              |
-| `properties.target.fieldNumber`         | `number`                                                                                                                                                                                                                                                                                              |
-| `required`                              | `string`[]                                                                                                                                                                                                                                                                                            |
-| `type`                                  | `string`                                                                                                                                                                                                                                                                                              |
+| Name | Type |
+| :------ | :------ |
+| `$id` | `string` |
+| `properties` | { `controllers`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  } ; `signature`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `signer`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `target`: { `dataType`: `string` ; `fieldNumber`: `number`  }  } |
+| `properties.controllers` | { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  } |
+| `properties.controllers.fieldNumber` | `number` |
+| `properties.controllers.items` | { `dataType`: `string`  } |
+| `properties.controllers.items.dataType` | `string` |
+| `properties.controllers.type` | `string` |
+| `properties.signature` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.signature.dataType` | `string` |
+| `properties.signature.fieldNumber` | `number` |
+| `properties.signer` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.signer.dataType` | `string` |
+| `properties.signer.fieldNumber` | `number` |
+| `properties.target` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.target.dataType` | `string` |
+| `properties.target.fieldNumber` | `number` |
+| `required` | `string`[] |
+| `type` | `string` |
 
 #### Overrides
 
@@ -92,9 +92,9 @@ BaseCommand.schema
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/add_controllers_command.ts:12](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/commands/add_controllers_command.ts#L12)
+[packages/klayr-did-module/src/commands/add_controllers_command.ts:12](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/add_controllers_command.ts#L12)
 
----
+___
 
 ### stores
 
@@ -134,8 +134,8 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:8
 
 #### Parameters
 
-| Name       | Type                                            |
-| :--------- | :---------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `CommandExecuteContext`<`AddControllersParam`\> |
 
 #### Returns
@@ -148,9 +148,9 @@ BaseCommand.execute
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/add_controllers_command.ts:26](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/commands/add_controllers_command.ts#L26)
+[packages/klayr-did-module/src/commands/add_controllers_command.ts:26](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/add_controllers_command.ts#L26)
 
----
+___
 
 ### init
 
@@ -158,8 +158,8 @@ BaseCommand.execute
 
 #### Parameters
 
-| Name            | Type              |
-| :-------------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `_moduleConfig` | `DidModuleConfig` |
 
 #### Returns
@@ -168,9 +168,9 @@ BaseCommand.execute
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/add_controllers_command.ts:16](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/commands/add_controllers_command.ts#L16)
+[packages/klayr-did-module/src/commands/add_controllers_command.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/add_controllers_command.ts#L16)
 
----
+___
 
 ### verify
 
@@ -178,8 +178,8 @@ BaseCommand.execute
 
 #### Parameters
 
-| Name       | Type                                           |
-| :--------- | :--------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `CommandVerifyContext`<`AddControllersParam`\> |
 
 #### Returns
@@ -192,4 +192,4 @@ BaseCommand.verify
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/add_controllers_command.ts:22](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/commands/add_controllers_command.ts#L22)
+[packages/klayr-did-module/src/commands/add_controllers_command.ts:22](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/add_controllers_command.ts#L22)

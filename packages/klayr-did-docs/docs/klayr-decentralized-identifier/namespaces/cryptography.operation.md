@@ -1,7 +1,7 @@
 ---
-id: 'cryptography.operation'
-title: 'Namespace: operation'
-sidebar_label: 'cryptography.operation'
+id: "cryptography.operation"
+title: "Namespace: operation"
+sidebar_label: "cryptography.operation"
 custom_edit_url: null
 ---
 
@@ -15,12 +15,12 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name             | Type                                                       |
-| :--------------- | :--------------------------------------------------------- |
-| `jwe`            | [`JWEDocument`](../interfaces/JWEDocument.md)              |
-| `recipientKeyId` | `string`                                                   |
-| `privateKey`     | `Buffer`                                                   |
-| `options`        | [`CreateResolverParam`](../modules.md#createresolverparam) |
+| Name | Type |
+| :------ | :------ |
+| `jwe` | [`JWEDocument`](../interfaces/JWEDocument.md) |
+| `recipientKeyId` | `string` |
+| `privateKey` | `Buffer` |
+| `options` | [`CreateResolverParam`](../modules.md#createresolverparam) |
 
 #### Returns
 
@@ -28,9 +28,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:26](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L26)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:26](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L26)
 
----
+___
 
 ### encrypt
 
@@ -38,11 +38,11 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name             | Type                                                       |
-| :--------------- | :--------------------------------------------------------- |
-| `data`           | `string`                                                   |
-| `recipientKeyId` | `string`[]                                                 |
-| `options`        | [`CreateResolverParam`](../modules.md#createresolverparam) |
+| Name | Type |
+| :------ | :------ |
+| `data` | `string` |
+| `recipientKeyId` | `string`[] |
+| `options` | [`CreateResolverParam`](../modules.md#createresolverparam) |
 
 #### Returns
 
@@ -50,9 +50,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:11](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L11)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:11](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L11)
 
----
+___
 
 ### sign
 
@@ -60,12 +60,12 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name         | Type                                                       |
-| :----------- | :--------------------------------------------------------- |
-| `data`       | `string`                                                   |
-| `did`        | `string`                                                   |
-| `privateKey` | `Buffer`                                                   |
-| `options`    | [`CreateResolverParam`](../modules.md#createresolverparam) |
+| Name | Type |
+| :------ | :------ |
+| `data` | `string` |
+| `did` | `string` |
+| `privateKey` | `Buffer` |
+| `options` | [`CreateResolverParam`](../modules.md#createresolverparam) |
 
 #### Returns
 
@@ -73,9 +73,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:45](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L45)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:45](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L45)
 
----
+___
 
 ### signLocal
 
@@ -83,9 +83,9 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
-| `data`       | `string` |
+| Name | Type |
+| :------ | :------ |
+| `data` | `string` |
 | `privateKey` | `Buffer` |
 
 #### Returns
@@ -94,9 +94,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:93](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L93)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:93](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L93)
 
----
+___
 
 ### verify
 
@@ -104,13 +104,13 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name        | Type                                                                                      |
-| :---------- | :---------------------------------------------------------------------------------------- |
-| `data`      | `string`                                                                                  |
-| `did`       | `string`                                                                                  |
-| `signature` | `Buffer`                                                                                  |
-| `publicKey` | `Buffer`                                                                                  |
-| `options`   | [`CreateResolverParam`](../modules.md#createresolverparam) & { `withDigest?`: `boolean` } |
+| Name | Type |
+| :------ | :------ |
+| `data` | `string` |
+| `did` | `string` |
+| `signature` | `Buffer` |
+| `publicKey` | `Buffer` |
+| `options` | [`CreateResolverParam`](../modules.md#createresolverparam) & { `withDigest?`: `boolean`  } |
 
 #### Returns
 
@@ -118,9 +118,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:63](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L63)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:63](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L63)
 
----
+___
 
 ### verifyLocal
 
@@ -128,12 +128,12 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name         | Type      | Default value |
-| :----------- | :-------- | :------------ |
-| `data`       | `string`  | `undefined`   |
-| `signature`  | `Buffer`  | `undefined`   |
-| `publicKey`  | `Buffer`  | `undefined`   |
-| `withDigest` | `boolean` | `false`       |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `data` | `string` | `undefined` |
+| `signature` | `Buffer` | `undefined` |
+| `publicKey` | `Buffer` | `undefined` |
+| `withDigest` | `boolean` | `false` |
 
 #### Returns
 
@@ -141,4 +141,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:99](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L99)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:99](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L99)

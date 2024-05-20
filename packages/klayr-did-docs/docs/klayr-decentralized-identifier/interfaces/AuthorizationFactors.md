@@ -1,7 +1,7 @@
 ---
-id: 'AuthorizationFactors'
-title: 'Interface: AuthorizationFactors'
-sidebar_label: 'AuthorizationFactors'
+id: "AuthorizationFactors"
+title: "Interface: AuthorizationFactors"
+sidebar_label: "AuthorizationFactors"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:89](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L89)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:89](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L89)
 
----
+___
 
 ### controller
 
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:91](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L91)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:91](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L91)
 
----
+___
 
 ### privateKey
 
@@ -34,9 +34,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:87](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L87)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:87](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L87)
 
----
+___
 
 ### privateKeyMultibase
 
@@ -44,9 +44,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:88](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L88)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:88](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L88)
 
----
+___
 
 ### publicKey
 
@@ -54,9 +54,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:85](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L85)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:85](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L85)
 
----
+___
 
 ### publicKeyMultibase
 
@@ -64,9 +64,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:86](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L86)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:86](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L86)
 
----
+___
 
 ### relationship
 
@@ -74,9 +74,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:92](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L92)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:92](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L92)
 
----
+___
 
 ### signature
 
@@ -84,4 +84,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:90](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L90)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:90](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L90)

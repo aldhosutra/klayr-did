@@ -1,7 +1,7 @@
 ---
-id: 'vc.Proof'
-title: 'Interface: Proof'
-sidebar_label: 'vc.Proof'
+id: "vc.Proof"
+title: "Interface: Proof"
+sidebar_label: "vc.Proof"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-verifiable-credentials/dist/types.d.ts:19
 
----
+___
 
 ### proofPurpose
 
@@ -27,7 +27,7 @@ packages/klayr-verifiable-credentials/dist/types.d.ts:19
 
 packages/klayr-verifiable-credentials/dist/types.d.ts:21
 
----
+___
 
 ### proofValue
 
@@ -37,7 +37,7 @@ packages/klayr-verifiable-credentials/dist/types.d.ts:21
 
 packages/klayr-verifiable-credentials/dist/types.d.ts:22
 
----
+___
 
 ### type
 
@@ -47,7 +47,7 @@ packages/klayr-verifiable-credentials/dist/types.d.ts:22
 
 packages/klayr-verifiable-credentials/dist/types.d.ts:18
 
----
+___
 
 ### verificationMethod
 

@@ -1,7 +1,7 @@
 ---
-id: 'did.DidDocument'
-title: 'Interface: DidDocument'
-sidebar_label: 'did.DidDocument'
+id: "did.DidDocument"
+title: "Interface: DidDocument"
+sidebar_label: "did.DidDocument"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/did.d.ts:3
 
----
+___
 
 ### assertionMethod
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/did.d.ts:3
 
 packages/klayr-decentralized-identifier/dist/types/did.d.ts:8
 
----
+___
 
 ### authentication
 
@@ -37,7 +37,7 @@ packages/klayr-decentralized-identifier/dist/types/did.d.ts:8
 
 packages/klayr-decentralized-identifier/dist/types/did.d.ts:7
 
----
+___
 
 ### capabilityInvocation
 
@@ -47,7 +47,7 @@ packages/klayr-decentralized-identifier/dist/types/did.d.ts:7
 
 packages/klayr-decentralized-identifier/dist/types/did.d.ts:9
 
----
+___
 
 ### controller
 
@@ -57,7 +57,7 @@ packages/klayr-decentralized-identifier/dist/types/did.d.ts:9
 
 packages/klayr-decentralized-identifier/dist/types/did.d.ts:5
 
----
+___
 
 ### id
 
@@ -67,7 +67,7 @@ packages/klayr-decentralized-identifier/dist/types/did.d.ts:5
 
 packages/klayr-decentralized-identifier/dist/types/did.d.ts:4
 
----
+___
 
 ### keyAgreement
 
@@ -77,7 +77,7 @@ packages/klayr-decentralized-identifier/dist/types/did.d.ts:4
 
 packages/klayr-decentralized-identifier/dist/types/did.d.ts:10
 
----
+___
 
 ### service
 
@@ -87,7 +87,7 @@ packages/klayr-decentralized-identifier/dist/types/did.d.ts:10
 
 packages/klayr-decentralized-identifier/dist/types/did.d.ts:11
 
----
+___
 
 ### verificationMethod
 

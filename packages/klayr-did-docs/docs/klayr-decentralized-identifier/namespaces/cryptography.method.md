@@ -1,7 +1,7 @@
 ---
-id: 'cryptography.method'
-title: 'Namespace: method'
-sidebar_label: 'cryptography.method'
+id: "cryptography.method"
+title: "Namespace: method"
+sidebar_label: "cryptography.method"
 custom_edit_url: null
 ---
 
@@ -15,10 +15,10 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name          | Type                                                            |
-| :------------ | :-------------------------------------------------------------- |
-| `didDocument` | [`DidDocument`](../interfaces/DidDocument.md)                   |
-| `options`     | [`AuthorizationFactors`](../interfaces/AuthorizationFactors.md) |
+| Name | Type |
+| :------ | :------ |
+| `didDocument` | [`DidDocument`](../interfaces/DidDocument.md) |
+| `options` | [`AuthorizationFactors`](../interfaces/AuthorizationFactors.md) |
 
 #### Returns
 
@@ -26,9 +26,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/method.ts:20](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/method.ts#L20)
+[packages/klayr-decentralized-identifier/src/cryptography/method.ts:20](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/method.ts#L20)
 
----
+___
 
 ### getVerificationRelationship
 
@@ -36,10 +36,10 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name          | Type                                                            |
-| :------------ | :-------------------------------------------------------------- |
-| `didDocument` | [`DidDocument`](../interfaces/DidDocument.md)                   |
-| `options`     | [`AuthorizationFactors`](../interfaces/AuthorizationFactors.md) |
+| Name | Type |
+| :------ | :------ |
+| `didDocument` | [`DidDocument`](../interfaces/DidDocument.md) |
+| `options` | [`AuthorizationFactors`](../interfaces/AuthorizationFactors.md) |
 
 #### Returns
 
@@ -47,4 +47,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/method.ts:120](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/method.ts#L120)
+[packages/klayr-decentralized-identifier/src/cryptography/method.ts:120](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/method.ts#L120)

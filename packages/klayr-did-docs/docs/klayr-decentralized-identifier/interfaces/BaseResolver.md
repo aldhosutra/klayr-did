@@ -1,7 +1,7 @@
 ---
-id: 'BaseResolver'
-title: 'Interface: BaseResolver'
-sidebar_label: 'BaseResolver'
+id: "BaseResolver"
+title: "Interface: BaseResolver"
+sidebar_label: "BaseResolver"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -10,7 +10,7 @@ custom_edit_url: null
 
 ### get
 
-• **get**: (`__namedParameters`: { `did?`: `string` ; `url?`: `string` }) => `Promise`<[`DidDocument`](DidDocument.md)\>
+• **get**: (`__namedParameters`: { `did?`: `string` ; `url?`: `string`  }) => `Promise`<[`DidDocument`](DidDocument.md)\>
 
 #### Type declaration
 
@@ -18,11 +18,11 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `«destructured»` | `Object` |
-| › `did?`         | `string` |
-| › `url?`         | `string` |
+| › `did?` | `string` |
+| › `url?` | `string` |
 
 ##### Returns
 
@@ -30,4 +30,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/resolver.ts:13](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/resolver.ts#L13)
+[packages/klayr-decentralized-identifier/src/types/resolver.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/resolver.ts#L13)

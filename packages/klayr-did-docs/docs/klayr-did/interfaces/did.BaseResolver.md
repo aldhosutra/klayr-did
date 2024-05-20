@@ -1,7 +1,7 @@
 ---
-id: 'did.BaseResolver'
-title: 'Interface: BaseResolver'
-sidebar_label: 'did.BaseResolver'
+id: "did.BaseResolver"
+title: "Interface: BaseResolver"
+sidebar_label: "did.BaseResolver"
 custom_edit_url: null
 ---
 
@@ -11,7 +11,7 @@ custom_edit_url: null
 
 ### get
 
-• **get**: (`__namedParameters`: { `did?`: `string` ; `url?`: `string` }) => `Promise`<[`DidDocument`](did.DidDocument.md)\>
+• **get**: (`__namedParameters`: { `did?`: `string` ; `url?`: `string`  }) => `Promise`<[`DidDocument`](did.DidDocument.md)\>
 
 #### Type declaration
 
@@ -19,11 +19,11 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `«destructured»` | `Object` |
-| › `did?`         | `string` |
-| › `url?`         | `string` |
+| › `did?` | `string` |
+| › `url?` | `string` |
 
 ##### Returns
 

@@ -1,7 +1,7 @@
 ---
-id: 'VerificationKey'
-title: 'Interface: VerificationKey'
-sidebar_label: 'VerificationKey'
+id: "VerificationKey"
+title: "Interface: VerificationKey"
+sidebar_label: "VerificationKey"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -26,7 +26,7 @@ VerificationMethod.controller
 
 klayr-decentralized-identifier/dist/types/cryptography.d.ts:13
 
----
+___
 
 ### id
 
@@ -40,7 +40,7 @@ VerificationMethod.id
 
 klayr-decentralized-identifier/dist/types/cryptography.d.ts:11
 
----
+___
 
 ### privateKeyMultibase
 
@@ -48,9 +48,9 @@ klayr-decentralized-identifier/dist/types/cryptography.d.ts:11
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:17](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L17)
+[klayr-verifiable-credentials/src/types.ts:17](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L17)
 
----
+___
 
 ### publicKeyMultibase
 
@@ -64,7 +64,7 @@ VerificationMethod.publicKeyMultibase
 
 klayr-decentralized-identifier/dist/types/cryptography.d.ts:14
 
----
+___
 
 ### revoked
 
@@ -72,9 +72,9 @@ klayr-decentralized-identifier/dist/types/cryptography.d.ts:14
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:16](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L16)
+[klayr-verifiable-credentials/src/types.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L16)
 
----
+___
 
 ### type
 

@@ -1,7 +1,7 @@
 ---
-id: 'did.TransactionPayloadWithoutSignature'
-title: 'Interface: TransactionPayloadWithoutSignature<T>'
-sidebar_label: 'did.TransactionPayloadWithoutSignature'
+id: "did.TransactionPayloadWithoutSignature"
+title: "Interface: TransactionPayloadWithoutSignature<T>"
+sidebar_label: "did.TransactionPayloadWithoutSignature"
 custom_edit_url: null
 ---
 
@@ -10,8 +10,8 @@ custom_edit_url: null
 ## Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 ## Properties
 
@@ -23,7 +23,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/client.d.ts:34
 
----
+___
 
 ### nonce
 
@@ -33,7 +33,7 @@ packages/klayr-decentralized-identifier/dist/types/client.d.ts:34
 
 packages/klayr-decentralized-identifier/dist/types/client.d.ts:35
 
----
+___
 
 ### params
 

@@ -1,7 +1,7 @@
 ---
-id: 'DidEndpoint'
-title: 'Class: DidEndpoint'
-sidebar_label: 'DidEndpoint'
+id: "DidEndpoint"
+title: "Class: DidEndpoint"
+sidebar_label: "DidEndpoint"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name             | Type            |
-| :--------------- | :-------------- |
-| `stores`         | `NamedRegistry` |
+| Name | Type |
+| :------ | :------ |
+| `stores` | `NamedRegistry` |
 | `offchainStores` | `NamedRegistry` |
 
 #### Inherited from
@@ -47,7 +47,7 @@ node_modules/klayr-framework/dist-node/modules/base_endpoint.d.ts:6
 
 packages/klayr-did-module/dist/endpoint.d.ts:5
 
----
+___
 
 ### chainspace
 
@@ -57,7 +57,7 @@ packages/klayr-did-module/dist/endpoint.d.ts:5
 
 packages/klayr-did-module/dist/endpoint.d.ts:4
 
----
+___
 
 ### offchainStores
 
@@ -71,7 +71,7 @@ BaseEndpoint.offchainStores
 
 node_modules/klayr-framework/dist-node/modules/base_endpoint.d.ts:4
 
----
+___
 
 ### stores
 
@@ -93,8 +93,8 @@ node_modules/klayr-framework/dist-node/modules/base_endpoint.d.ts:3
 
 #### Parameters
 
-| Name  | Type                    |
-| :---- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `ctx` | `ModuleEndpointContext` |
 
 #### Returns
@@ -109,7 +109,7 @@ node_modules/klayr-framework/dist-node/modules/base_endpoint.d.ts:3
 
 packages/klayr-did-module/dist/endpoint.d.ts:7
 
----
+___
 
 ### getConfig
 
@@ -117,8 +117,8 @@ packages/klayr-did-module/dist/endpoint.d.ts:7
 
 #### Parameters
 
-| Name   | Type                    |
-| :----- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_ctx` | `ModuleEndpointContext` |
 
 #### Returns
@@ -133,21 +133,21 @@ packages/klayr-did-module/dist/endpoint.d.ts:7
 
 packages/klayr-did-module/dist/endpoint.d.ts:10
 
----
+___
 
 ### getNonce
 
-▸ **getNonce**(`ctx`): `Promise`<{ `nonce`: `string` }\>
+▸ **getNonce**(`ctx`): `Promise`<{ `nonce`: `string`  }\>
 
 #### Parameters
 
-| Name  | Type                    |
-| :---- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `ctx` | `ModuleEndpointContext` |
 
 #### Returns
 
-`Promise`<{ `nonce`: `string` }\>
+`Promise`<{ `nonce`: `string`  }\>
 
 #### Implementation of
 
@@ -157,7 +157,7 @@ packages/klayr-did-module/dist/endpoint.d.ts:10
 
 packages/klayr-did-module/dist/endpoint.d.ts:9
 
----
+___
 
 ### init
 
@@ -165,8 +165,8 @@ packages/klayr-did-module/dist/endpoint.d.ts:9
 
 #### Parameters
 
-| Name     | Type                                                      |
-| :------- | :-------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `config` | [`DidModuleConfig`](../interfaces/did.DidModuleConfig.md) |
 
 #### Returns
@@ -181,7 +181,7 @@ packages/klayr-did-module/dist/endpoint.d.ts:9
 
 packages/klayr-did-module/dist/endpoint.d.ts:6
 
----
+___
 
 ### read
 
@@ -189,8 +189,8 @@ packages/klayr-did-module/dist/endpoint.d.ts:6
 
 #### Parameters
 
-| Name  | Type                    |
-| :---- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `ctx` | `ModuleEndpointContext` |
 
 #### Returns

@@ -1,7 +1,7 @@
 ---
-id: 'did.client'
-title: 'Namespace: client'
-sidebar_label: 'did.client'
+id: "did.client"
+title: "Namespace: client"
+sidebar_label: "did.client"
 custom_edit_url: null
 ---
 
@@ -19,8 +19,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `ipc` | `string` |
 
 #### Returns
@@ -31,7 +31,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/client/creator.d.ts:2
 
----
+___
 
 ### createWSClient
 
@@ -39,8 +39,8 @@ packages/klayr-decentralized-identifier/dist/client/creator.d.ts:2
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `ws` | `string` |
 
 #### Returns

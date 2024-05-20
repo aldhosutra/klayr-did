@@ -1,7 +1,7 @@
 ---
-id: 'did.RemoveControllersParam'
-title: 'Interface: RemoveControllersParam'
-sidebar_label: 'did.RemoveControllersParam'
+id: "did.RemoveControllersParam"
+title: "Interface: RemoveControllersParam"
+sidebar_label: "did.RemoveControllersParam"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/commands/remove_controllers_command.d.ts:4
 
----
+___
 
 ### signature
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/remove_controllers_c
 
 packages/klayr-decentralized-identifier/dist/types/commands/remove_controllers_command.d.ts:6
 
----
+___
 
 ### signer
 
@@ -37,7 +37,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/remove_controllers_c
 
 packages/klayr-decentralized-identifier/dist/types/commands/remove_controllers_command.d.ts:5
 
----
+___
 
 ### target
 

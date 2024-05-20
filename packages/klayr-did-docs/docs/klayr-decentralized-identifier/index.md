@@ -1,7 +1,7 @@
 ---
-id: 'index'
-title: '@klayr-did/klayr-decentralized-identifier'
-sidebar_label: 'Readme'
+id: "index"
+title: "@klayr-did/klayr-decentralized-identifier"
+sidebar_label: "Readme"
 sidebar_position: 0
 custom_edit_url: null
 ---

@@ -1,7 +1,7 @@
 ---
-id: 'did.cryptography.convert'
-title: 'Namespace: convert'
-sidebar_label: 'did.cryptography.convert'
+id: "did.cryptography.convert"
+title: "Namespace: convert"
+sidebar_label: "did.cryptography.convert"
 custom_edit_url: null
 ---
 
@@ -15,8 +15,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `privateKey` | `Buffer` |
 
 #### Returns
@@ -27,7 +27,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/cryptography/convert.d.ts:3
 
----
+___
 
 ### ed25519ToX25519PublicKeyMultibase
 
@@ -35,8 +35,8 @@ packages/klayr-decentralized-identifier/dist/cryptography/convert.d.ts:3
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `publicKey` | `Buffer` |
 
 #### Returns

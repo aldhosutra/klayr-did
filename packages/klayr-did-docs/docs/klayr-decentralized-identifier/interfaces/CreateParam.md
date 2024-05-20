@@ -1,7 +1,7 @@
 ---
-id: 'CreateParam'
-title: 'Interface: CreateParam'
-sidebar_label: 'CreateParam'
+id: "CreateParam"
+title: "Interface: CreateParam"
+sidebar_label: "CreateParam"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/commands/create_command.ts:6](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/commands/create_command.ts#L6)
+[packages/klayr-decentralized-identifier/src/types/commands/create_command.ts:6](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/commands/create_command.ts#L6)
 
----
+___
 
 ### did
 
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/commands/create_command.ts:4](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/commands/create_command.ts#L4)
+[packages/klayr-decentralized-identifier/src/types/commands/create_command.ts:4](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/commands/create_command.ts#L4)
 
----
+___
 
 ### keys
 
@@ -34,4 +34,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/commands/create_command.ts:5](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/commands/create_command.ts#L5)
+[packages/klayr-decentralized-identifier/src/types/commands/create_command.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/commands/create_command.ts#L5)

@@ -1,7 +1,7 @@
 ---
-id: 'Proof'
-title: 'Interface: Proof'
-sidebar_label: 'Proof'
+id: "Proof"
+title: "Interface: Proof"
+sidebar_label: "Proof"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:32](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L32)
+[klayr-verifiable-credentials/src/types.ts:32](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L32)
 
----
+___
 
 ### proofPurpose
 
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:34](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L34)
+[klayr-verifiable-credentials/src/types.ts:34](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L34)
 
----
+___
 
 ### proofValue
 
@@ -34,9 +34,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:35](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L35)
+[klayr-verifiable-credentials/src/types.ts:35](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L35)
 
----
+___
 
 ### type
 
@@ -44,9 +44,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:31](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L31)
+[klayr-verifiable-credentials/src/types.ts:31](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L31)
 
----
+___
 
 ### verificationMethod
 
@@ -54,4 +54,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:33](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L33)
+[klayr-verifiable-credentials/src/types.ts:33](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L33)

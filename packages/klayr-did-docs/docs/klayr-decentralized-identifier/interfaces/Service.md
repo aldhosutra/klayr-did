@@ -1,7 +1,7 @@
 ---
-id: 'Service'
-title: 'Interface: Service'
-sidebar_label: 'Service'
+id: "Service"
+title: "Interface: Service"
+sidebar_label: "Service"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/did.ts:16](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/did.ts#L16)
+[packages/klayr-decentralized-identifier/src/types/did.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/did.ts#L16)
 
----
+___
 
 ### serviceEndpoint
 
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/did.ts:18](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/did.ts#L18)
+[packages/klayr-decentralized-identifier/src/types/did.ts:18](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/did.ts#L18)
 
----
+___
 
 ### type
 
@@ -34,4 +34,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/did.ts:17](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/did.ts#L17)
+[packages/klayr-decentralized-identifier/src/types/did.ts:17](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/did.ts#L17)

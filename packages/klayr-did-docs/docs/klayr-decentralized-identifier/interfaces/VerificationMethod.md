@@ -1,7 +1,7 @@
 ---
-id: 'VerificationMethod'
-title: 'Interface: VerificationMethod'
-sidebar_label: 'VerificationMethod'
+id: "VerificationMethod"
+title: "Interface: VerificationMethod"
+sidebar_label: "VerificationMethod"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,9 +14,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:15](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L15)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:15](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L15)
 
----
+___
 
 ### id
 
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:13](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L13)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L13)
 
----
+___
 
 ### publicKeyMultibase
 
@@ -34,9 +34,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:16](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L16)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L16)
 
----
+___
 
 ### type
 
@@ -44,4 +44,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:14](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L14)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:14](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L14)

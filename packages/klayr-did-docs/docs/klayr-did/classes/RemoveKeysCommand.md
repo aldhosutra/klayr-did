@@ -1,7 +1,7 @@
 ---
-id: 'RemoveKeysCommand'
-title: 'Class: RemoveKeysCommand'
-sidebar_label: 'RemoveKeysCommand'
+id: "RemoveKeysCommand"
+title: "Class: RemoveKeysCommand"
+sidebar_label: "RemoveKeysCommand"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -20,8 +20,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name     | Type            |
-| :------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `stores` | `NamedRegistry` |
 | `events` | `NamedRegistry` |
 
@@ -43,7 +43,7 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:9
 
 packages/klayr-did-module/dist/commands/remove_keys_command.d.ts:30
 
----
+___
 
 ### events
 
@@ -57,7 +57,7 @@ BaseCommand.events
 
 node_modules/klayr-framework/dist-node/modules/base_command.d.ts:6
 
----
+___
 
 ### schema
 
@@ -65,26 +65,26 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:6
 
 #### Type declaration
 
-| Name                                   | Type                                                                                                                                                                                                                                                                                                 |
-| :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$id`                                  | `string`                                                                                                                                                                                                                                                                                             |
-| `properties`                           | { `publicKeys`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } ; `signature`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `signer`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `target`: { `dataType`: `string` ; `fieldNumber`: `number` } } |
-| `properties.publicKeys`                | { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` }                                                                                                                                                                                                                   |
-| `properties.publicKeys.fieldNumber`    | `number`                                                                                                                                                                                                                                                                                             |
-| `properties.publicKeys.items`          | { `dataType`: `string` }                                                                                                                                                                                                                                                                             |
-| `properties.publicKeys.items.dataType` | `string`                                                                                                                                                                                                                                                                                             |
-| `properties.publicKeys.type`           | `string`                                                                                                                                                                                                                                                                                             |
-| `properties.signature`                 | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                   |
-| `properties.signature.dataType`        | `string`                                                                                                                                                                                                                                                                                             |
-| `properties.signature.fieldNumber`     | `number`                                                                                                                                                                                                                                                                                             |
-| `properties.signer`                    | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                   |
-| `properties.signer.dataType`           | `string`                                                                                                                                                                                                                                                                                             |
-| `properties.signer.fieldNumber`        | `number`                                                                                                                                                                                                                                                                                             |
-| `properties.target`                    | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                   |
-| `properties.target.dataType`           | `string`                                                                                                                                                                                                                                                                                             |
-| `properties.target.fieldNumber`        | `number`                                                                                                                                                                                                                                                                                             |
-| `required`                             | `string`[]                                                                                                                                                                                                                                                                                           |
-| `type`                                 | `string`                                                                                                                                                                                                                                                                                             |
+| Name | Type |
+| :------ | :------ |
+| `$id` | `string` |
+| `properties` | { `publicKeys`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  } ; `signature`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `signer`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `target`: { `dataType`: `string` ; `fieldNumber`: `number`  }  } |
+| `properties.publicKeys` | { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  } |
+| `properties.publicKeys.fieldNumber` | `number` |
+| `properties.publicKeys.items` | { `dataType`: `string`  } |
+| `properties.publicKeys.items.dataType` | `string` |
+| `properties.publicKeys.type` | `string` |
+| `properties.signature` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.signature.dataType` | `string` |
+| `properties.signature.fieldNumber` | `number` |
+| `properties.signer` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.signer.dataType` | `string` |
+| `properties.signer.fieldNumber` | `number` |
+| `properties.target` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.target.dataType` | `string` |
+| `properties.target.fieldNumber` | `number` |
+| `required` | `string`[] |
+| `type` | `string` |
 
 #### Overrides
 
@@ -94,7 +94,7 @@ BaseCommand.schema
 
 packages/klayr-did-module/dist/commands/remove_keys_command.d.ts:4
 
----
+___
 
 ### stores
 
@@ -134,8 +134,8 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:8
 
 #### Parameters
 
-| Name       | Type                                                                                |
-| :--------- | :---------------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `CommandExecuteContext`<[`RemoveKeysParam`](../interfaces/did.RemoveKeysParam.md)\> |
 
 #### Returns
@@ -150,7 +150,7 @@ BaseCommand.execute
 
 packages/klayr-did-module/dist/commands/remove_keys_command.d.ts:33
 
----
+___
 
 ### init
 
@@ -158,8 +158,8 @@ packages/klayr-did-module/dist/commands/remove_keys_command.d.ts:33
 
 #### Parameters
 
-| Name            | Type                                                      |
-| :-------------- | :-------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_moduleConfig` | [`DidModuleConfig`](../interfaces/did.DidModuleConfig.md) |
 
 #### Returns
@@ -170,7 +170,7 @@ packages/klayr-did-module/dist/commands/remove_keys_command.d.ts:33
 
 packages/klayr-did-module/dist/commands/remove_keys_command.d.ts:31
 
----
+___
 
 ### verify
 
@@ -178,8 +178,8 @@ packages/klayr-did-module/dist/commands/remove_keys_command.d.ts:31
 
 #### Parameters
 
-| Name       | Type                                                                               |
-| :--------- | :--------------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `CommandVerifyContext`<[`RemoveKeysParam`](../interfaces/did.RemoveKeysParam.md)\> |
 
 #### Returns

@@ -1,7 +1,7 @@
 ---
-id: 'vc.VCVerificationResult'
-title: 'Interface: VCVerificationResult'
-sidebar_label: 'vc.VCVerificationResult'
+id: "vc.VCVerificationResult"
+title: "Interface: VCVerificationResult"
+sidebar_label: "vc.VCVerificationResult"
 custom_edit_url: null
 ---
 
@@ -11,13 +11,13 @@ custom_edit_url: null
 
 ### results
 
-• **results**: { `proof`: [`Proof`](vc.Proof.md) & { `@context`: `string`[] } ; `purposeResult`: { `valid`: `boolean` } ; `verificationMethod`: [`VerificationMethod`](did.VerificationMethod.md) ; `verified`: `boolean` }[]
+• **results**: { `proof`: [`Proof`](vc.Proof.md) & { `@context`: `string`[]  } ; `purposeResult`: { `valid`: `boolean`  } ; `verificationMethod`: [`VerificationMethod`](did.VerificationMethod.md) ; `verified`: `boolean`  }[]
 
 #### Defined in
 
 packages/klayr-verifiable-credentials/dist/types.d.ts:26
 
----
+___
 
 ### verified
 

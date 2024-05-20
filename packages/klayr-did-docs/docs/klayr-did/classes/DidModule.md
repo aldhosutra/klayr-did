@@ -1,7 +1,7 @@
 ---
-id: 'DidModule'
-title: 'Class: DidModule'
-sidebar_label: 'DidModule'
+id: "DidModule"
+title: "Class: DidModule"
+sidebar_label: "DidModule"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -36,7 +36,7 @@ packages/klayr-did-module/dist/module.d.ts:20
 
 packages/klayr-did-module/dist/module.d.ts:15
 
----
+___
 
 ### \_didMethod
 
@@ -46,7 +46,7 @@ packages/klayr-did-module/dist/module.d.ts:15
 
 packages/klayr-did-module/dist/module.d.ts:16
 
----
+___
 
 ### autoCreateAddressDID
 
@@ -56,7 +56,7 @@ packages/klayr-did-module/dist/module.d.ts:16
 
 packages/klayr-did-module/dist/module.d.ts:14
 
----
+___
 
 ### chainspace
 
@@ -66,7 +66,7 @@ packages/klayr-did-module/dist/module.d.ts:14
 
 packages/klayr-did-module/dist/module.d.ts:13
 
----
+___
 
 ### commands
 
@@ -80,7 +80,7 @@ BaseModule.commands
 
 packages/klayr-did-module/dist/module.d.ts:19
 
----
+___
 
 ### endpoint
 
@@ -94,7 +94,7 @@ BaseModule.endpoint
 
 packages/klayr-did-module/dist/module.d.ts:17
 
----
+___
 
 ### events
 
@@ -108,7 +108,7 @@ BaseModule.events
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:41
 
----
+___
 
 ### method
 
@@ -122,7 +122,7 @@ BaseModule.method
 
 packages/klayr-did-module/dist/module.d.ts:18
 
----
+___
 
 ### offchainStores
 
@@ -136,7 +136,7 @@ BaseModule.offchainStores
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:43
 
----
+___
 
 ### stores
 
@@ -176,8 +176,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:44
 
 #### Parameters
 
-| Name      | Type                        |
-| :-------- | :-------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `TransactionExecuteContext` |
 
 #### Returns
@@ -192,7 +192,7 @@ BaseModule.afterCommandExecute
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:52
 
----
+___
 
 ### afterTransactionsExecute
 
@@ -200,8 +200,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:52
 
 #### Parameters
 
-| Name      | Type                       |
-| :-------- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `BlockAfterExecuteContext` |
 
 #### Returns
@@ -216,7 +216,7 @@ BaseModule.afterTransactionsExecute
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:56
 
----
+___
 
 ### baseMetadata
 
@@ -226,13 +226,13 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:56
 
 `Object`
 
-| Name        | Type                                        |
-| :---------- | :------------------------------------------ |
-| `assets`    | `never`[]                                   |
-| `commands`  | { `name`: `string` ; `params`: `Schema` }[] |
-| `endpoints` | `never`[]                                   |
-| `events`    | { `data`: `Schema` ; `name`: `string` }[]   |
-| `stores`    | { `data`: `Schema` ; `key`: `string` }[]    |
+| Name | Type |
+| :------ | :------ |
+| `assets` | `never`[] |
+| `commands` | { `name`: `string` ; `params`: `Schema`  }[] |
+| `endpoints` | `never`[] |
+| `events` | { `data`: `Schema` ; `name`: `string`  }[] |
+| `stores` | { `data`: `Schema` ; `key`: `string`  }[] |
 
 #### Inherited from
 
@@ -242,7 +242,7 @@ BaseModule.baseMetadata
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:58
 
----
+___
 
 ### beforeCommandExecute
 
@@ -250,8 +250,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:58
 
 #### Parameters
 
-| Name       | Type                        |
-| :--------- | :-------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `TransactionExecuteContext` |
 
 #### Returns
@@ -266,7 +266,7 @@ BaseModule.beforeCommandExecute
 
 packages/klayr-did-module/dist/module.d.ts:23
 
----
+___
 
 ### beforeTransactionsExecute
 
@@ -274,8 +274,8 @@ packages/klayr-did-module/dist/module.d.ts:23
 
 #### Parameters
 
-| Name      | Type                  |
-| :-------- | :-------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `BlockExecuteContext` |
 
 #### Returns
@@ -290,7 +290,7 @@ BaseModule.beforeTransactionsExecute
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:55
 
----
+___
 
 ### finalizeGenesisState
 
@@ -298,8 +298,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:55
 
 #### Parameters
 
-| Name      | Type                         |
-| :-------- | :--------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `GenesisBlockExecuteContext` |
 
 #### Returns
@@ -314,7 +314,7 @@ BaseModule.finalizeGenesisState
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:54
 
----
+___
 
 ### init
 
@@ -322,8 +322,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:54
 
 #### Parameters
 
-| Name   | Type             |
-| :----- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `args` | `ModuleInitArgs` |
 
 #### Returns
@@ -338,7 +338,7 @@ BaseModule.init
 
 packages/klayr-did-module/dist/module.d.ts:22
 
----
+___
 
 ### initGenesisState
 
@@ -346,8 +346,8 @@ packages/klayr-did-module/dist/module.d.ts:22
 
 #### Parameters
 
-| Name      | Type                         |
-| :-------- | :--------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `GenesisBlockExecuteContext` |
 
 #### Returns
@@ -362,7 +362,7 @@ BaseModule.initGenesisState
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:53
 
----
+___
 
 ### insertAssets
 
@@ -370,8 +370,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:53
 
 #### Parameters
 
-| Name      | Type                 |
-| :-------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `InsertAssetContext` |
 
 #### Returns
@@ -386,7 +386,7 @@ BaseModule.insertAssets
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:48
 
----
+___
 
 ### metadata
 
@@ -404,7 +404,7 @@ BaseModule.metadata
 
 packages/klayr-did-module/dist/module.d.ts:21
 
----
+___
 
 ### verifyAssets
 
@@ -412,8 +412,8 @@ packages/klayr-did-module/dist/module.d.ts:21
 
 #### Parameters
 
-| Name      | Type                 |
-| :-------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `BlockVerifyContext` |
 
 #### Returns
@@ -428,7 +428,7 @@ BaseModule.verifyAssets
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:49
 
----
+___
 
 ### verifyTransaction
 
@@ -436,8 +436,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:49
 
 #### Parameters
 
-| Name      | Type                       |
-| :-------- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `TransactionVerifyContext` |
 
 #### Returns

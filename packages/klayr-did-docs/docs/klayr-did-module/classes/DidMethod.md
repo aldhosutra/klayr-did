@@ -1,7 +1,7 @@
 ---
-id: 'DidMethod'
-title: 'Class: DidMethod'
-sidebar_label: 'DidMethod'
+id: "DidMethod"
+title: "Class: DidMethod"
+sidebar_label: "DidMethod"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -24,8 +24,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name     | Type            |
-| :------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `stores` | `NamedRegistry` |
 | `events` | `NamedRegistry` |
 
@@ -45,9 +45,9 @@ node_modules/klayr-framework/dist-node/modules/base_method.d.ts:5
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:33](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L33)
+[packages/klayr-did-module/src/method.ts:33](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L33)
 
----
+___
 
 ### events
 
@@ -61,7 +61,7 @@ BaseMethod.events
 
 node_modules/klayr-framework/dist-node/modules/base_method.d.ts:4
 
----
+___
 
 ### stores
 
@@ -83,14 +83,14 @@ node_modules/klayr-framework/dist-node/modules/base_method.d.ts:3
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `controllers`     | `string`[]      |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `controllers` | `string`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -102,9 +102,9 @@ DidMethodInterface.addControllers
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:153](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L153)
+[packages/klayr-did-module/src/method.ts:153](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L153)
 
----
+___
 
 ### addKeys
 
@@ -112,14 +112,14 @@ DidMethodInterface.addControllers
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `keys`            | `KeysCommand`[] |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `keys` | `KeysCommand`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -131,9 +131,9 @@ DidMethodInterface.addKeys
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:87](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L87)
+[packages/klayr-did-module/src/method.ts:87](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L87)
 
----
+___
 
 ### addServiceEndpoint
 
@@ -141,17 +141,17 @@ DidMethodInterface.addKeys
 
 #### Parameters
 
-| Name                       | Type            |
-| :------------------------- | :-------------- |
-| `methodContext`            | `MethodContext` |
-| `senderPublicKey`          | `Buffer`        |
-| `target`                   | `string`        |
-| `endpoint`                 | `Object`        |
-| `endpoint.id`              | `string`        |
-| `endpoint.serviceEndpoint` | `string`        |
-| `endpoint.type`            | `string`        |
-| `signer`                   | `string`        |
-| `signature?`               | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `endpoint` | `Object` |
+| `endpoint.id` | `string` |
+| `endpoint.serviceEndpoint` | `string` |
+| `endpoint.type` | `string` |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -163,9 +163,9 @@ DidMethodInterface.addServiceEndpoint
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:219](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L219)
+[packages/klayr-did-module/src/method.ts:219](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L219)
 
----
+___
 
 ### authorize
 
@@ -173,11 +173,11 @@ DidMethodInterface.addServiceEndpoint
 
 #### Parameters
 
-| Name            | Type                   |
-| :-------------- | :--------------------- |
-| `methodContext` | `MethodContext`        |
-| `did`           | `string`               |
-| `factors`       | `AuthorizationFactors` |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `did` | `string` |
+| `factors` | `AuthorizationFactors` |
 
 #### Returns
 
@@ -189,9 +189,9 @@ DidMethodInterface.authorize
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:62](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L62)
+[packages/klayr-did-module/src/method.ts:62](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L62)
 
----
+___
 
 ### create
 
@@ -199,13 +199,13 @@ DidMethodInterface.authorize
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `did`             | `string`        |
-| `controllers`     | `string`[]      |
-| `keys`            | `KeysCommand`[] |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `did` | `string` |
+| `controllers` | `string`[] |
+| `keys` | `KeysCommand`[] |
 
 #### Returns
 
@@ -217,9 +217,9 @@ DidMethodInterface.create
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:71](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L71)
+[packages/klayr-did-module/src/method.ts:71](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L71)
 
----
+___
 
 ### deactivate
 
@@ -227,13 +227,13 @@ DidMethodInterface.create
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -245,9 +245,9 @@ DidMethodInterface.deactivate
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:285](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L285)
+[packages/klayr-did-module/src/method.ts:285](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L285)
 
----
+___
 
 ### getConfig
 
@@ -263,24 +263,24 @@ DidMethodInterface.getConfig
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:40](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L40)
+[packages/klayr-did-module/src/method.ts:40](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L40)
 
----
+___
 
 ### getNonce
 
-▸ **getNonce**(`methodContext`, `did`): `Promise`<{ `nonce`: `string` }\>
+▸ **getNonce**(`methodContext`, `did`): `Promise`<{ `nonce`: `string`  }\>
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `methodContext` | `MethodContext` |
-| `did`           | `string`        |
+| `did` | `string` |
 
 #### Returns
 
-`Promise`<{ `nonce`: `string` }\>
+`Promise`<{ `nonce`: `string`  }\>
 
 #### Implementation of
 
@@ -288,9 +288,9 @@ DidMethodInterface.getNonce
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:49](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L49)
+[packages/klayr-did-module/src/method.ts:49](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L49)
 
----
+___
 
 ### incrementNonce
 
@@ -298,10 +298,10 @@ DidMethodInterface.getNonce
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `methodContext` | `MethodContext` |
-| `did`           | `string`        |
+| `did` | `string` |
 
 #### Returns
 
@@ -313,9 +313,9 @@ DidMethodInterface.incrementNonce
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:55](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L55)
+[packages/klayr-did-module/src/method.ts:55](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L55)
 
----
+___
 
 ### init
 
@@ -323,8 +323,8 @@ DidMethodInterface.incrementNonce
 
 #### Parameters
 
-| Name     | Type              |
-| :------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `config` | `DidModuleConfig` |
 
 #### Returns
@@ -337,9 +337,9 @@ DidMethodInterface.init
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:35](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L35)
+[packages/klayr-did-module/src/method.ts:35](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L35)
 
----
+___
 
 ### read
 
@@ -347,10 +347,10 @@ DidMethodInterface.init
 
 #### Parameters
 
-| Name            | Type            |
-| :-------------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `methodContext` | `MethodContext` |
-| `did`           | `string`        |
+| `did` | `string` |
 
 #### Returns
 
@@ -362,9 +362,9 @@ DidMethodInterface.read
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:44](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L44)
+[packages/klayr-did-module/src/method.ts:44](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L44)
 
----
+___
 
 ### removeControllers
 
@@ -372,14 +372,14 @@ DidMethodInterface.read
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `controllers`     | `string`[]      |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `controllers` | `string`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -391,9 +391,9 @@ DidMethodInterface.removeControllers
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:186](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L186)
+[packages/klayr-did-module/src/method.ts:186](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L186)
 
----
+___
 
 ### removeKeys
 
@@ -401,14 +401,14 @@ DidMethodInterface.removeControllers
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `publicKeys`      | `Buffer`[]      |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `publicKeys` | `Buffer`[] |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -420,9 +420,9 @@ DidMethodInterface.removeKeys
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:120](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L120)
+[packages/klayr-did-module/src/method.ts:120](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L120)
 
----
+___
 
 ### removeServiceEndpoint
 
@@ -430,14 +430,14 @@ DidMethodInterface.removeKeys
 
 #### Parameters
 
-| Name              | Type            |
-| :---------------- | :-------------- |
-| `methodContext`   | `MethodContext` |
-| `senderPublicKey` | `Buffer`        |
-| `target`          | `string`        |
-| `endpointId`      | `string`        |
-| `signer`          | `string`        |
-| `signature?`      | `Buffer`        |
+| Name | Type |
+| :------ | :------ |
+| `methodContext` | `MethodContext` |
+| `senderPublicKey` | `Buffer` |
+| `target` | `string` |
+| `endpointId` | `string` |
+| `signer` | `string` |
+| `signature?` | `Buffer` |
 
 #### Returns
 
@@ -449,4 +449,4 @@ DidMethodInterface.removeServiceEndpoint
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:252](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/method.ts#L252)
+[packages/klayr-did-module/src/method.ts:252](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L252)

@@ -1,7 +1,7 @@
 ---
-id: 'did.NonceStoreData'
-title: 'Interface: NonceStoreData'
-sidebar_label: 'did.NonceStoreData'
+id: "did.NonceStoreData"
+title: "Interface: NonceStoreData"
+sidebar_label: "did.NonceStoreData"
 custom_edit_url: null
 ---
 

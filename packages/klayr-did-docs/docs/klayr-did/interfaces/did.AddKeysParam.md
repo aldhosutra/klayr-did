@@ -1,7 +1,7 @@
 ---
-id: 'did.AddKeysParam'
-title: 'Interface: AddKeysParam'
-sidebar_label: 'did.AddKeysParam'
+id: "did.AddKeysParam"
+title: "Interface: AddKeysParam"
+sidebar_label: "did.AddKeysParam"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/commands/add_keys_command.d.ts:5
 
----
+___
 
 ### signature
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/add_keys_command.d.t
 
 packages/klayr-decentralized-identifier/dist/types/commands/add_keys_command.d.ts:7
 
----
+___
 
 ### signer
 
@@ -37,7 +37,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/add_keys_command.d.t
 
 packages/klayr-decentralized-identifier/dist/types/commands/add_keys_command.d.ts:6
 
----
+___
 
 ### target
 

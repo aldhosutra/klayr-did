@@ -1,7 +1,7 @@
 ---
-id: 'cryptography.convert'
-title: 'Namespace: convert'
-sidebar_label: 'cryptography.convert'
+id: "cryptography.convert"
+title: "Namespace: convert"
+sidebar_label: "cryptography.convert"
 custom_edit_url: null
 ---
 
@@ -15,8 +15,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `privateKey` | `Buffer` |
 
 #### Returns
@@ -25,9 +25,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/convert.ts:13](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/convert.ts#L13)
+[packages/klayr-decentralized-identifier/src/cryptography/convert.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/convert.ts#L13)
 
----
+___
 
 ### ed25519ToX25519PublicKeyMultibase
 
@@ -35,8 +35,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `publicKey` | `Buffer` |
 
 #### Returns
@@ -45,4 +45,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/convert.ts:5](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/convert.ts#L5)
+[packages/klayr-decentralized-identifier/src/cryptography/convert.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/convert.ts#L5)

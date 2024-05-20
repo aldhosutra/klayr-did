@@ -1,7 +1,7 @@
 ---
-id: 'did.DocumentLoaderResult'
-title: 'Interface: DocumentLoaderResult'
-sidebar_label: 'did.DocumentLoaderResult'
+id: "did.DocumentLoaderResult"
+title: "Interface: DocumentLoaderResult"
+sidebar_label: "did.DocumentLoaderResult"
 custom_edit_url: null
 ---
 
@@ -11,13 +11,13 @@ custom_edit_url: null
 
 ### contextUrl
 
-• **contextUrl**: `null` \| `string`
+• **contextUrl**: ``null`` \| `string`
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/resolver.d.ts:5
 
----
+___
 
 ### document
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/resolver.d.ts:5
 
 packages/klayr-decentralized-identifier/dist/types/resolver.d.ts:6
 
----
+___
 
 ### documentUrl
 
@@ -37,7 +37,7 @@ packages/klayr-decentralized-identifier/dist/types/resolver.d.ts:6
 
 packages/klayr-decentralized-identifier/dist/types/resolver.d.ts:7
 
----
+___
 
 ### tag
 

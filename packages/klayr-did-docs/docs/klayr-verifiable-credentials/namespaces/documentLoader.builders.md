@@ -1,7 +1,7 @@
 ---
-id: 'documentLoader.builders'
-title: 'Namespace: builders'
-sidebar_label: 'documentLoader.builders'
+id: "documentLoader.builders"
+title: "Namespace: builders"
+sidebar_label: "documentLoader.builders"
 custom_edit_url: null
 ---
 
@@ -15,7 +15,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/documentLoader/builders/base.ts:59](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/documentLoader/builders/base.ts#L59)
+[klayr-verifiable-credentials/src/documentLoader/builders/base.ts:59](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/documentLoader/builders/base.ts#L59)
 
 ## Functions
 
@@ -25,8 +25,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name    | Type                  |
-| :------ | :-------------------- |
+| Name | Type |
+| :------ | :------ |
 | `param` | `DocumentLoaderParam` |
 
 #### Returns
@@ -35,4 +35,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/documentLoader/builders/base.ts:17](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/documentLoader/builders/base.ts#L17)
+[klayr-verifiable-credentials/src/documentLoader/builders/base.ts:17](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/documentLoader/builders/base.ts#L17)

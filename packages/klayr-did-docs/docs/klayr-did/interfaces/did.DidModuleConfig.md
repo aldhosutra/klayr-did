@@ -1,7 +1,7 @@
 ---
-id: 'did.DidModuleConfig'
-title: 'Interface: DidModuleConfig'
-sidebar_label: 'did.DidModuleConfig'
+id: "did.DidModuleConfig"
+title: "Interface: DidModuleConfig"
+sidebar_label: "did.DidModuleConfig"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/config.d.ts:3
 
----
+___
 
 ### chainspace
 

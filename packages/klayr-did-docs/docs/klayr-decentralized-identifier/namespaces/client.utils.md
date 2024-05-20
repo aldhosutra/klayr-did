@@ -1,7 +1,7 @@
 ---
-id: 'client.utils'
-title: 'Namespace: utils'
-sidebar_label: 'client.utils'
+id: "client.utils"
+title: "Namespace: utils"
+sidebar_label: "client.utils"
 custom_edit_url: null
 ---
 
@@ -15,8 +15,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name      | Type                                                         |
-| :-------- | :----------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `payload` | [`PayloadWithSignature`](../modules.md#payloadwithsignature) |
 
 #### Returns
@@ -25,9 +25,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/client/utils/index.ts:5](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L5)
+[packages/klayr-decentralized-identifier/src/client/utils/index.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L5)
 
----
+___
 
 ### createTransactionSignature
 
@@ -35,10 +35,10 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name         | Type                                                         |
-| :----------- | :----------------------------------------------------------- |
-| `payload`    | [`PayloadWithSignature`](../modules.md#payloadwithsignature) |
-| `privateKey` | `Buffer`                                                     |
+| Name | Type |
+| :------ | :------ |
+| `payload` | [`PayloadWithSignature`](../modules.md#payloadwithsignature) |
+| `privateKey` | `Buffer` |
 
 #### Returns
 
@@ -46,9 +46,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/client/utils/index.ts:10](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L10)
+[packages/klayr-decentralized-identifier/src/client/utils/index.ts:10](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L10)
 
----
+___
 
 ### validateParams
 
@@ -56,11 +56,11 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name         | Type                                                                |
-| :----------- | :------------------------------------------------------------------ |
-| `command`    | [`DIDCommands`](../modules.md#didcommands)                          |
-| `param`      | [`TransactionPayload`](../interfaces/TransactionPayload.md)<`any`\> |
-| `chainspace` | `string`                                                            |
+| Name | Type |
+| :------ | :------ |
+| `command` | [`DIDCommands`](../modules.md#didcommands) |
+| `param` | [`TransactionPayload`](../interfaces/TransactionPayload.md)<`any`\> |
+| `chainspace` | `string` |
 
 #### Returns
 
@@ -68,9 +68,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/client/utils/validator.ts:18](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/client/utils/validator.ts#L18)
+[packages/klayr-decentralized-identifier/src/client/utils/validator.ts:18](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/client/utils/validator.ts#L18)
 
----
+___
 
 ### verifyTransactionSignature
 
@@ -78,11 +78,11 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name        | Type                                                         |
-| :---------- | :----------------------------------------------------------- |
-| `payload`   | [`PayloadWithSignature`](../modules.md#payloadwithsignature) |
-| `signature` | `Buffer`                                                     |
-| `publicKey` | `Buffer`                                                     |
+| Name | Type |
+| :------ | :------ |
+| `payload` | [`PayloadWithSignature`](../modules.md#payloadwithsignature) |
+| `signature` | `Buffer` |
+| `publicKey` | `Buffer` |
 
 #### Returns
 
@@ -90,4 +90,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/client/utils/index.ts:15](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L15)
+[packages/klayr-decentralized-identifier/src/client/utils/index.ts:15](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L15)

@@ -1,7 +1,7 @@
 ---
-id: 'did.CreateParam'
-title: 'Interface: CreateParam'
-sidebar_label: 'did.CreateParam'
+id: "did.CreateParam"
+title: "Interface: CreateParam"
+sidebar_label: "did.CreateParam"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/commands/create_command.d.ts:5
 
----
+___
 
 ### did
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/create_command.d.ts:
 
 packages/klayr-decentralized-identifier/dist/types/commands/create_command.d.ts:3
 
----
+___
 
 ### keys
 

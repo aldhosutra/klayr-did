@@ -1,7 +1,7 @@
 ---
-id: 'did.RemoveKeysParam'
-title: 'Interface: RemoveKeysParam'
-sidebar_label: 'did.RemoveKeysParam'
+id: "did.RemoveKeysParam"
+title: "Interface: RemoveKeysParam"
+sidebar_label: "did.RemoveKeysParam"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/commands/remove_keys_command.d.ts:4
 
----
+___
 
 ### signature
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/remove_keys_command.
 
 packages/klayr-decentralized-identifier/dist/types/commands/remove_keys_command.d.ts:6
 
----
+___
 
 ### signer
 
@@ -37,7 +37,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/remove_keys_command.
 
 packages/klayr-decentralized-identifier/dist/types/commands/remove_keys_command.d.ts:5
 
----
+___
 
 ### target
 

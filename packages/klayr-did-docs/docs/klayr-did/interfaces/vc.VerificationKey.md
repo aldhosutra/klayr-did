@@ -1,7 +1,7 @@
 ---
-id: 'vc.VerificationKey'
-title: 'Interface: VerificationKey'
-sidebar_label: 'vc.VerificationKey'
+id: "vc.VerificationKey"
+title: "Interface: VerificationKey"
+sidebar_label: "vc.VerificationKey"
 custom_edit_url: null
 ---
 
@@ -27,7 +27,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:13
 
----
+___
 
 ### id
 
@@ -41,7 +41,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:13
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:11
 
----
+___
 
 ### privateKeyMultibase
 
@@ -51,7 +51,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:11
 
 packages/klayr-verifiable-credentials/dist/types.d.ts:7
 
----
+___
 
 ### publicKeyMultibase
 
@@ -65,7 +65,7 @@ packages/klayr-verifiable-credentials/dist/types.d.ts:7
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:14
 
----
+___
 
 ### revoked
 
@@ -75,7 +75,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:14
 
 packages/klayr-verifiable-credentials/dist/types.d.ts:6
 
----
+___
 
 ### type
 

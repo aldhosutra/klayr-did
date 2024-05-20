@@ -1,8 +1,8 @@
 import {
   MULTICODEC_ED25519_PUB_HEADER,
-  LISK_PUBLIC_KEY_LENGTH,
+  KLAYR_PUBLIC_KEY_LENGTH,
   MULTIBASE_PUBLIC_KEY_LENGTH,
-  LISK_PRIVATE_KEY_LENGTH,
+  KLAYR_PRIVATE_KEY_LENGTH,
   MULTIBASE_PRIVATE_KEY_LENGTH,
   MULTICODEC_ED25519_PRIV_HEADER,
   MULTIBASE_BASE58BTC_HEADER,
@@ -24,11 +24,11 @@ function decodeMbKey(header: Uint8Array, key: string): Buffer {
   return Buffer.from(base58btc.decode(k)).subarray(header.length);
 }
 
-export function encodePublicKey(liskPublicKey: Buffer): string {
-  if (liskPublicKey.length !== LISK_PUBLIC_KEY_LENGTH) {
+export function encodePublicKey(klayrPublicKey: Buffer): string {
+  if (klayrPublicKey.length !== KLAYR_PUBLIC_KEY_LENGTH) {
     throw Error('unexpected public key length');
   }
-  return encodeMbKey(MULTICODEC_ED25519_PUB_HEADER, liskPublicKey);
+  return encodeMbKey(MULTICODEC_ED25519_PUB_HEADER, klayrPublicKey);
 }
 
 export function decodePublicKey(multibasePublicKey: string): Buffer {
@@ -38,11 +38,11 @@ export function decodePublicKey(multibasePublicKey: string): Buffer {
   return decodeMbKey(MULTICODEC_ED25519_PUB_HEADER, multibasePublicKey);
 }
 
-export function encodePrivateKey(liskPrivateKey: Buffer): string {
-  if (liskPrivateKey.length !== LISK_PRIVATE_KEY_LENGTH) {
+export function encodePrivateKey(klayrPrivateKey: Buffer): string {
+  if (klayrPrivateKey.length !== KLAYR_PRIVATE_KEY_LENGTH) {
     throw Error('unexpected private key length');
   }
-  return encodeMbKey(MULTICODEC_ED25519_PRIV_HEADER, liskPrivateKey);
+  return encodeMbKey(MULTICODEC_ED25519_PRIV_HEADER, klayrPrivateKey);
 }
 
 export function decodePrivateKey(multibasePrivateKey: string): Buffer {

@@ -1,7 +1,7 @@
 ---
-id: 'vc.documentLoader'
-title: 'Namespace: documentLoader'
-sidebar_label: 'vc.documentLoader'
+id: "vc.documentLoader"
+title: "Namespace: documentLoader"
+sidebar_label: "vc.documentLoader"
 custom_edit_url: null
 ---
 
@@ -19,8 +19,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name       | Type            |
-| :--------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ClientOptions` |
 
 #### Returns
@@ -31,7 +31,7 @@ custom_edit_url: null
 
 packages/klayr-verifiable-credentials/dist/documentLoader/offChain.d.ts:3
 
----
+___
 
 ### buildOnChainDocumentLoader
 
@@ -39,8 +39,8 @@ packages/klayr-verifiable-credentials/dist/documentLoader/offChain.d.ts:3
 
 #### Parameters
 
-| Name       | Type            |
-| :--------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ClientOptions` |
 
 #### Returns

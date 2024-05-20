@@ -1,7 +1,7 @@
 ---
-id: 'AddKeysCommand'
-title: 'Class: AddKeysCommand'
-sidebar_label: 'AddKeysCommand'
+id: "AddKeysCommand"
+title: "Class: AddKeysCommand"
+sidebar_label: "AddKeysCommand"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -20,8 +20,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name     | Type            |
-| :------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `stores` | `NamedRegistry` |
 | `events` | `NamedRegistry` |
 
@@ -43,7 +43,7 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:9
 
 packages/klayr-did-module/dist/commands/add_keys_command.d.ts:44
 
----
+___
 
 ### events
 
@@ -57,7 +57,7 @@ BaseCommand.events
 
 node_modules/klayr-framework/dist-node/modules/base_command.d.ts:6
 
----
+___
 
 ### schema
 
@@ -65,36 +65,36 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:6
 
 #### Type declaration
 
-| Name                                                           | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$id`                                                          | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties`                                                   | { `keys`: { `fieldNumber`: `number` ; `items`: { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } } ; `required`: `string`[] ; `type`: `string` } ; `type`: `string` } ; `signature`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `signer`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `target`: { `dataType`: `string` ; `fieldNumber`: `number` } } |
-| `properties.keys`                                              | { `fieldNumber`: `number` ; `items`: { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } } ; `required`: `string`[] ; `type`: `string` } ; `type`: `string` }                                                                                                                                                                                                             |
-| `properties.keys.fieldNumber`                                  | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items`                                        | { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } } ; `required`: `string`[] ; `type`: `string` }                                                                                                                                                                                                                                                                       |
-| `properties.keys.items.properties`                             | { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } }                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.publicKey`                   | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `properties.keys.items.properties.publicKey.dataType`          | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.publicKey.fieldNumber`       | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.relationship`                | { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` }                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `properties.keys.items.properties.relationship.fieldNumber`    | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.relationship.items`          | { `dataType`: `string` }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.relationship.items.dataType` | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.relationship.type`           | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.required`                               | `string`[]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `properties.keys.items.type`                                   | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.type`                                         | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.signature`                                         | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `properties.signature.dataType`                                | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.signature.fieldNumber`                             | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.signer`                                            | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `properties.signer.dataType`                                   | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.signer.fieldNumber`                                | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.target`                                            | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `properties.target.dataType`                                   | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.target.fieldNumber`                                | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `required`                                                     | `string`[]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `type`                                                         | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Name | Type |
+| :------ | :------ |
+| `$id` | `string` |
+| `properties` | { `keys`: { `fieldNumber`: `number` ; `items`: { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  }  } ; `required`: `string`[] ; `type`: `string`  } ; `type`: `string`  } ; `signature`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `signer`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `target`: { `dataType`: `string` ; `fieldNumber`: `number`  }  } |
+| `properties.keys` | { `fieldNumber`: `number` ; `items`: { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  }  } ; `required`: `string`[] ; `type`: `string`  } ; `type`: `string`  } |
+| `properties.keys.fieldNumber` | `number` |
+| `properties.keys.items` | { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  }  } ; `required`: `string`[] ; `type`: `string`  } |
+| `properties.keys.items.properties` | { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  }  } |
+| `properties.keys.items.properties.publicKey` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.keys.items.properties.publicKey.dataType` | `string` |
+| `properties.keys.items.properties.publicKey.fieldNumber` | `number` |
+| `properties.keys.items.properties.relationship` | { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  } |
+| `properties.keys.items.properties.relationship.fieldNumber` | `number` |
+| `properties.keys.items.properties.relationship.items` | { `dataType`: `string`  } |
+| `properties.keys.items.properties.relationship.items.dataType` | `string` |
+| `properties.keys.items.properties.relationship.type` | `string` |
+| `properties.keys.items.required` | `string`[] |
+| `properties.keys.items.type` | `string` |
+| `properties.keys.type` | `string` |
+| `properties.signature` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.signature.dataType` | `string` |
+| `properties.signature.fieldNumber` | `number` |
+| `properties.signer` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.signer.dataType` | `string` |
+| `properties.signer.fieldNumber` | `number` |
+| `properties.target` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.target.dataType` | `string` |
+| `properties.target.fieldNumber` | `number` |
+| `required` | `string`[] |
+| `type` | `string` |
 
 #### Overrides
 
@@ -104,7 +104,7 @@ BaseCommand.schema
 
 packages/klayr-did-module/dist/commands/add_keys_command.d.ts:4
 
----
+___
 
 ### stores
 
@@ -144,8 +144,8 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:8
 
 #### Parameters
 
-| Name       | Type                                                                          |
-| :--------- | :---------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `CommandExecuteContext`<[`AddKeysParam`](../interfaces/did.AddKeysParam.md)\> |
 
 #### Returns
@@ -160,7 +160,7 @@ BaseCommand.execute
 
 packages/klayr-did-module/dist/commands/add_keys_command.d.ts:47
 
----
+___
 
 ### init
 
@@ -168,8 +168,8 @@ packages/klayr-did-module/dist/commands/add_keys_command.d.ts:47
 
 #### Parameters
 
-| Name            | Type                                                      |
-| :-------------- | :-------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_moduleConfig` | [`DidModuleConfig`](../interfaces/did.DidModuleConfig.md) |
 
 #### Returns
@@ -180,7 +180,7 @@ packages/klayr-did-module/dist/commands/add_keys_command.d.ts:47
 
 packages/klayr-did-module/dist/commands/add_keys_command.d.ts:45
 
----
+___
 
 ### verify
 
@@ -188,8 +188,8 @@ packages/klayr-did-module/dist/commands/add_keys_command.d.ts:45
 
 #### Parameters
 
-| Name       | Type                                                                         |
-| :--------- | :--------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `CommandVerifyContext`<[`AddKeysParam`](../interfaces/did.AddKeysParam.md)\> |
 
 #### Returns

@@ -1,7 +1,7 @@
 ---
-id: 'cryptography.codec'
-title: 'Namespace: codec'
-sidebar_label: 'cryptography.codec'
+id: "cryptography.codec"
+title: "Namespace: codec"
+sidebar_label: "cryptography.codec"
 custom_edit_url: null
 ---
 
@@ -15,8 +15,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `buf` | `Buffer` |
 
 #### Returns
@@ -25,9 +25,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:59](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L59)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:59](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L59)
 
----
+___
 
 ### decodePrivateKey
 
@@ -35,8 +35,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name                  | Type     |
-| :-------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `multibasePrivateKey` | `string` |
 
 #### Returns
@@ -45,9 +45,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:48](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L48)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:48](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L48)
 
----
+___
 
 ### decodePublicKey
 
@@ -55,8 +55,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name                 | Type     |
-| :------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `multibasePublicKey` | `string` |
 
 #### Returns
@@ -65,9 +65,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:34](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L34)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:34](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L34)
 
----
+___
 
 ### encodeJWEDocument
 
@@ -75,8 +75,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name  | Type                                          |
-| :---- | :-------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `jwe` | [`JWEDocument`](../interfaces/JWEDocument.md) |
 
 #### Returns
@@ -85,19 +85,19 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:55](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L55)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:55](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L55)
 
----
+___
 
 ### encodePrivateKey
 
-▸ **encodePrivateKey**(`liskPrivateKey`): `string`
+▸ **encodePrivateKey**(`klayrPrivateKey`): `string`
 
 #### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
-| `liskPrivateKey` | `Buffer` |
+| Name | Type |
+| :------ | :------ |
+| `klayrPrivateKey` | `Buffer` |
 
 #### Returns
 
@@ -105,19 +105,19 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:41](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L41)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:41](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L41)
 
----
+___
 
 ### encodePublicKey
 
-▸ **encodePublicKey**(`liskPublicKey`): `string`
+▸ **encodePublicKey**(`klayrPublicKey`): `string`
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
-| `liskPublicKey` | `Buffer` |
+| Name | Type |
+| :------ | :------ |
+| `klayrPublicKey` | `Buffer` |
 
 #### Returns
 
@@ -125,4 +125,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:27](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L27)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:27](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L27)

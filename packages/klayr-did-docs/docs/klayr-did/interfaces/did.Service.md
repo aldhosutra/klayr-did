@@ -1,7 +1,7 @@
 ---
-id: 'did.Service'
-title: 'Interface: Service'
-sidebar_label: 'did.Service'
+id: "did.Service"
+title: "Interface: Service"
+sidebar_label: "did.Service"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/did.d.ts:14
 
----
+___
 
 ### serviceEndpoint
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/did.d.ts:14
 
 packages/klayr-decentralized-identifier/dist/types/did.d.ts:16
 
----
+___
 
 ### type
 

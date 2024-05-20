@@ -1,7 +1,7 @@
 ---
-id: 'did.resolver'
-title: 'Namespace: resolver'
-sidebar_label: 'did.resolver'
+id: "did.resolver"
+title: "Namespace: resolver"
+sidebar_label: "did.resolver"
 custom_edit_url: null
 ---
 
@@ -19,11 +19,11 @@ custom_edit_url: null
 
 #### Type declaration
 
-| Name                   | Type                          |
-| :--------------------- | :---------------------------- |
-| `createLocalDriver`    | typeof `createLocalDriver`    |
+| Name | Type |
+| :------ | :------ |
+| `createLocalDriver` | typeof `createLocalDriver` |
 | `createOffChainDriver` | typeof `createOffChainDriver` |
-| `createOnChainDriver`  | typeof `createOnChainDriver`  |
+| `createOnChainDriver` | typeof `createOnChainDriver` |
 
 #### Defined in
 
@@ -37,10 +37,10 @@ packages/klayr-decentralized-identifier/dist/resolver/index.d.ts:11
 
 #### Parameters
 
-| Name      | Type                                          |
-| :-------- | :-------------------------------------------- |
-| `context` | `MethodContext`                               |
-| `method`  | [`DidMethod`](../interfaces/did.DidMethod.md) |
+| Name | Type |
+| :------ | :------ |
+| `context` | `MethodContext` |
+| `method` | [`DidMethod`](../interfaces/did.DidMethod.md) |
 
 #### Returns
 
@@ -50,7 +50,7 @@ packages/klayr-decentralized-identifier/dist/resolver/index.d.ts:11
 
 packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:16
 
----
+___
 
 ### createIPCResolver
 
@@ -58,8 +58,8 @@ packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:16
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `ipc` | `string` |
 
 #### Returns
@@ -70,7 +70,7 @@ packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:16
 
 packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:14
 
----
+___
 
 ### createResolver
 
@@ -78,8 +78,8 @@ packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:14
 
 #### Parameters
 
-| Name      | Type                                                |
-| :-------- | :-------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options` | [`CreateResolverParam`](did.md#createresolverparam) |
 
 #### Returns
@@ -90,7 +90,7 @@ packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:14
 
 packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:17
 
----
+___
 
 ### createWSResolver
 
@@ -98,8 +98,8 @@ packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:17
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `ws` | `string` |
 
 #### Returns

@@ -1,7 +1,7 @@
 ---
-id: 'did.cryptography'
-title: 'Namespace: cryptography'
-sidebar_label: 'did.cryptography'
+id: "did.cryptography"
+title: "Namespace: cryptography"
+sidebar_label: "did.cryptography"
 custom_edit_url: null
 ---
 

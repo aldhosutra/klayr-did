@@ -1,7 +1,7 @@
 ---
-id: 'did.Ed25519Signature2020'
-title: 'Interface: Ed25519Signature2020'
-sidebar_label: 'did.Ed25519Signature2020'
+id: "did.Ed25519Signature2020"
+title: "Interface: Ed25519Signature2020"
+sidebar_label: "did.Ed25519Signature2020"
 custom_edit_url: null
 ---
 
@@ -15,16 +15,16 @@ custom_edit_url: null
 
 #### Type declaration
 
-| Name            | Type                                                 |
-| :-------------- | :--------------------------------------------------- |
-| `SUITE_CONTEXT` | `"https://w3id.org/security/suites/ed25519-2020/v1"` |
-| `suite`         | `"Ed25519VerificationKey2020"`                       |
+| Name | Type |
+| :------ | :------ |
+| `SUITE_CONTEXT` | ``"https://w3id.org/security/suites/ed25519-2020/v1"`` |
+| `suite` | ``"Ed25519VerificationKey2020"`` |
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:26
 
----
+___
 
 ### \_hashCache
 
@@ -34,7 +34,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:26
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:49
 
----
+___
 
 ### canonizeOptions
 
@@ -44,17 +44,17 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:49
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:47
 
----
+___
 
 ### contextUrl
 
-• **contextUrl**: `"https://w3id.org/security/suites/ed25519-2020/v1"`
+• **contextUrl**: ``"https://w3id.org/security/suites/ed25519-2020/v1"``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:30
 
----
+___
 
 ### key
 
@@ -64,7 +64,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:30
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:33
 
----
+___
 
 ### proof
 
@@ -74,17 +74,17 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:33
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:31
 
----
+___
 
 ### requiredKeyType
 
-• **requiredKeyType**: `"Ed25519VerificationKey2020"`
+• **requiredKeyType**: ``"Ed25519VerificationKey2020"``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:25
 
----
+___
 
 ### signer
 
@@ -92,26 +92,26 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:25
 
 #### Type declaration
 
-| Name   | Type                                                                |
-| :----- | :------------------------------------------------------------------ |
-| `id`   | `string`                                                            |
-| `sign` | (`__namedParameters`: { `data`: `string` }) => `Promise`<`Buffer`\> |
+| Name | Type |
+| :------ | :------ |
+| `id` | `string` |
+| `sign` | (`__namedParameters`: { `data`: `string`  }) => `Promise`<`Buffer`\> |
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:34
 
----
+___
 
 ### type
 
-• **type**: `"Ed25519Signature2020"`
+• **type**: ``"Ed25519Signature2020"``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:24
 
----
+___
 
 ### useNativeCanonize
 
@@ -121,7 +121,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:24
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:48
 
----
+___
 
 ### verificationMethod
 
@@ -131,7 +131,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:48
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:32
 
----
+___
 
 ### verifier
 
@@ -139,10 +139,10 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:32
 
 #### Type declaration
 
-| Name     | Type                                                                                         |
-| :------- | :------------------------------------------------------------------------------------------- |
-| `id`     | `string`                                                                                     |
-| `verify` | (`__namedParameters`: { `data`: `string` ; `signature`: `Buffer` }) => `Promise`<`boolean`\> |
+| Name | Type |
+| :------ | :------ |
+| `id` | `string` |
+| `verify` | (`__namedParameters`: { `data`: `string` ; `signature`: `Buffer`  }) => `Promise`<`boolean`\> |
 
 #### Defined in
 

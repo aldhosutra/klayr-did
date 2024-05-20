@@ -1,7 +1,7 @@
 ---
-id: 'did.cryptography.method'
-title: 'Namespace: method'
-sidebar_label: 'did.cryptography.method'
+id: "did.cryptography.method"
+title: "Namespace: method"
+sidebar_label: "did.cryptography.method"
 custom_edit_url: null
 ---
 
@@ -15,10 +15,10 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name          | Type                                                                |
-| :------------ | :------------------------------------------------------------------ |
-| `didDocument` | [`DidDocument`](../interfaces/did.DidDocument.md)                   |
-| `options`     | [`AuthorizationFactors`](../interfaces/did.AuthorizationFactors.md) |
+| Name | Type |
+| :------ | :------ |
+| `didDocument` | [`DidDocument`](../interfaces/did.DidDocument.md) |
+| `options` | [`AuthorizationFactors`](../interfaces/did.AuthorizationFactors.md) |
 
 #### Returns
 
@@ -28,7 +28,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/cryptography/method.d.ts:3
 
----
+___
 
 ### getVerificationRelationship
 
@@ -36,10 +36,10 @@ packages/klayr-decentralized-identifier/dist/cryptography/method.d.ts:3
 
 #### Parameters
 
-| Name          | Type                                                                |
-| :------------ | :------------------------------------------------------------------ |
-| `didDocument` | [`DidDocument`](../interfaces/did.DidDocument.md)                   |
-| `options`     | [`AuthorizationFactors`](../interfaces/did.AuthorizationFactors.md) |
+| Name | Type |
+| :------ | :------ |
+| `didDocument` | [`DidDocument`](../interfaces/did.DidDocument.md) |
+| `options` | [`AuthorizationFactors`](../interfaces/did.AuthorizationFactors.md) |
 
 #### Returns
 

@@ -1,7 +1,7 @@
 ---
-id: 'CipherInterface'
-title: 'Interface: CipherInterface'
-sidebar_label: 'CipherInterface'
+id: "CipherInterface"
+title: "Interface: CipherInterface"
+sidebar_label: "CipherInterface"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -10,7 +10,7 @@ custom_edit_url: null
 
 ### decrypt
 
-• **decrypt**: (`__namedParameters`: { `jwe`: [`JWEDocument`](JWEDocument.md) ; `keyAgreementKey`: [`KeyAgreement`](../modules.md#keyagreement) }) => `Promise`<`string`\>
+• **decrypt**: (`__namedParameters`: { `jwe`: [`JWEDocument`](JWEDocument.md) ; `keyAgreementKey`: [`KeyAgreement`](../modules.md#keyagreement)  }) => `Promise`<`string`\>
 
 #### Type declaration
 
@@ -18,10 +18,10 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name                | Type                                         |
-| :------------------ | :------------------------------------------- |
-| `«destructured»`    | `Object`                                     |
-| › `jwe`             | [`JWEDocument`](JWEDocument.md)              |
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `Object` |
+| › `jwe` | [`JWEDocument`](JWEDocument.md) |
 | › `keyAgreementKey` | [`KeyAgreement`](../modules.md#keyagreement) |
 
 ##### Returns
@@ -30,13 +30,13 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:81](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L81)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:81](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L81)
 
----
+___
 
 ### encrypt
 
-• **encrypt**: (`__namedParameters`: { `data`: `string` ; `keyResolver`: (`url`: `string`) => `Promise`<`any`\> ; `recipients`: { `header`: { `alg`: `string` ; `kid`: `string` } }[] }) => `Promise`<[`JWEDocument`](JWEDocument.md)\>
+• **encrypt**: (`__namedParameters`: { `data`: `string` ; `keyResolver`: (`url`: `string`) => `Promise`<`any`\> ; `recipients`: { `header`: { `alg`: `string` ; `kid`: `string`  }  }[]  }) => `Promise`<[`JWEDocument`](JWEDocument.md)\>
 
 #### Type declaration
 
@@ -44,12 +44,12 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name             | Type                                                  |
-| :--------------- | :---------------------------------------------------- |
-| `«destructured»` | `Object`                                              |
-| › `data`         | `string`                                              |
-| › `keyResolver`  | (`url`: `string`) => `Promise`<`any`\>                |
-| › `recipients`   | { `header`: { `alg`: `string` ; `kid`: `string` } }[] |
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `Object` |
+| › `data` | `string` |
+| › `keyResolver` | (`url`: `string`) => `Promise`<`any`\> |
+| › `recipients` | { `header`: { `alg`: `string` ; `kid`: `string`  }  }[] |
 
 ##### Returns
 
@@ -57,4 +57,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:72](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L72)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:72](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L72)

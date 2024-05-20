@@ -1,7 +1,7 @@
 ---
-id: 'did.RemoveServiceEndpointParam'
-title: 'Interface: RemoveServiceEndpointParam'
-sidebar_label: 'did.RemoveServiceEndpointParam'
+id: "did.RemoveServiceEndpointParam"
+title: "Interface: RemoveServiceEndpointParam"
+sidebar_label: "did.RemoveServiceEndpointParam"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/commands/remove_service_endpoint_command.d.ts:4
 
----
+___
 
 ### signature
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/remove_service_endpo
 
 packages/klayr-decentralized-identifier/dist/types/commands/remove_service_endpoint_command.d.ts:6
 
----
+___
 
 ### signer
 
@@ -37,7 +37,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/remove_service_endpo
 
 packages/klayr-decentralized-identifier/dist/types/commands/remove_service_endpoint_command.d.ts:5
 
----
+___
 
 ### target
 

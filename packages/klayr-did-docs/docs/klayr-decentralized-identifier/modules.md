@@ -1,7 +1,7 @@
 ---
-id: 'modules'
-title: '@klayr-did/klayr-decentralized-identifier'
-sidebar_label: 'Exports'
+id: "modules"
+title: "@klayr-did/klayr-decentralized-identifier"
+sidebar_label: "Exports"
 sidebar_position: 0.5
 custom_edit_url: null
 ---
@@ -49,9 +49,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/events/add_controllers_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/events/add_controllers_event.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/events/add_controllers_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/events/add_controllers_event.ts#L3)
 
----
+___
 
 ### AddKeysEventData
 
@@ -59,9 +59,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/events/add_keys_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/events/add_keys_event.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/events/add_keys_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/events/add_keys_event.ts#L3)
 
----
+___
 
 ### AddServiceEndpointEventData
 
@@ -69,9 +69,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/events/add_service_endpoint_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/events/add_service_endpoint_event.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/events/add_service_endpoint_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/events/add_service_endpoint_event.ts#L3)
 
----
+___
 
 ### AuthorizationResult
 
@@ -79,18 +79,18 @@ custom_edit_url: null
 
 #### Type declaration
 
-| Name           | Type                                                                |
-| :------------- | :------------------------------------------------------------------ |
-| `did`          | `string`                                                            |
-| `method`       | [`VerificationMethod`](interfaces/VerificationMethod.md)[]          |
+| Name | Type |
+| :------ | :------ |
+| `did` | `string` |
+| `method` | [`VerificationMethod`](interfaces/VerificationMethod.md)[] |
 | `relationship` | [`VerificationRelationship`](modules.md#verificationrelationship)[] |
-| `type`         | `"subject"` \| `"controller"`                                       |
+| `type` | ``"subject"`` \| ``"controller"`` |
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:3](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L3)
 
----
+___
 
 ### BaseLoader
 
@@ -102,8 +102,8 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `url` | `string` |
 
 ##### Returns
@@ -112,9 +112,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/resolver.ts:18](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/resolver.ts#L18)
+[packages/klayr-decentralized-identifier/src/types/resolver.ts:18](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/resolver.ts#L18)
 
----
+___
 
 ### CommandPayload
 
@@ -122,9 +122,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:62](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/client.ts#L62)
+[packages/klayr-decentralized-identifier/src/types/client.ts:62](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L62)
 
----
+___
 
 ### CreateEventData
 
@@ -132,9 +132,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/events/create_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/events/create_event.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/events/create_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/events/create_event.ts#L3)
 
----
+___
 
 ### CreateResolverParam
 
@@ -142,30 +142,30 @@ custom_edit_url: null
 
 #### Type declaration
 
-| Name        | Type                                                                                   |
-| :---------- | :------------------------------------------------------------------------------------- |
-| `context?`  | `MethodContext`                                                                        |
-| `ipc?`      | `string`                                                                               |
-| `loader?`   | [`BaseLoader`](modules.md#baseloader) \| [`DocumentLoader`](modules.md#documentloader) |
-| `method?`   | [`DidMethod`](interfaces/DidMethod.md)                                                 |
-| `resolver?` | [`BaseResolver`](interfaces/BaseResolver.md)                                           |
-| `ws?`       | `string`                                                                               |
+| Name | Type |
+| :------ | :------ |
+| `context?` | `MethodContext` |
+| `ipc?` | `string` |
+| `loader?` | [`BaseLoader`](modules.md#baseloader) \| [`DocumentLoader`](modules.md#documentloader) |
+| `method?` | [`DidMethod`](interfaces/DidMethod.md) |
+| `resolver?` | [`BaseResolver`](interfaces/BaseResolver.md) |
+| `ws?` | `string` |
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/resolver.ts:20](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/resolver.ts#L20)
+[packages/klayr-decentralized-identifier/src/types/resolver.ts:20](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/resolver.ts#L20)
 
----
+___
 
 ### DIDCommands
 
-Ƭ **DIDCommands**: `"addControllers"` \| `"addKeys"` \| `"addServiceEndpoint"` \| `"create"` \| `"deactivate"` \| `"removeControllers"` \| `"removeKeys"` \| `"removeServiceEndpoint"`
+Ƭ **DIDCommands**: ``"addControllers"`` \| ``"addKeys"`` \| ``"addServiceEndpoint"`` \| ``"create"`` \| ``"deactivate"`` \| ``"removeControllers"`` \| ``"removeKeys"`` \| ``"removeServiceEndpoint"``
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:43](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/client.ts#L43)
+[packages/klayr-decentralized-identifier/src/types/client.ts:43](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L43)
 
----
+___
 
 ### DIDTransactionParam
 
@@ -173,9 +173,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:31](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/client.ts#L31)
+[packages/klayr-decentralized-identifier/src/types/client.ts:31](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L31)
 
----
+___
 
 ### DeactivateEventData
 
@@ -183,25 +183,25 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/events/deactivate_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/events/deactivate_event.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/events/deactivate_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/events/deactivate_event.ts#L3)
 
----
+___
 
 ### DecodedTransactionJSON
 
-Ƭ **DecodedTransactionJSON**<`T`\>: `Omit`<`TransactionJSON`, `"params"`\> & { `params`: `T` }
+Ƭ **DecodedTransactionJSON**<`T`\>: `Omit`<`TransactionJSON`, ``"params"``\> & { `params`: `T`  }
 
 #### Type parameters
 
-| Name | Type                           |
-| :--- | :----------------------------- |
-| `T`  | `Record`<`string`, `unknown`\> |
+| Name | Type |
+| :------ | :------ |
+| `T` | `Record`<`string`, `unknown`\> |
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:76](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/client.ts#L76)
+[packages/klayr-decentralized-identifier/src/types/client.ts:76](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L76)
 
----
+___
 
 ### DocumentLoader
 
@@ -213,8 +213,8 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `url` | `string` |
 
 ##### Returns
@@ -223,9 +223,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/resolver.ts:16](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/resolver.ts#L16)
+[packages/klayr-decentralized-identifier/src/types/resolver.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/resolver.ts#L16)
 
----
+___
 
 ### DocumentStoreData
 
@@ -233,19 +233,19 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/stores/document.ts:3](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/stores/document.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/stores/document.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/stores/document.ts#L3)
 
----
+___
 
 ### KeyAgreement
 
-Ƭ **KeyAgreement**: [`VerificationMethod`](interfaces/VerificationMethod.md) & { `privateKeyMultibase?`: `string` }
+Ƭ **KeyAgreement**: [`VerificationMethod`](interfaces/VerificationMethod.md) & { `privateKeyMultibase?`: `string`  }
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:19](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L19)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:19](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L19)
 
----
+___
 
 ### PayloadWithSignature
 
@@ -253,9 +253,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:53](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/client.ts#L53)
+[packages/klayr-decentralized-identifier/src/types/client.ts:53](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L53)
 
----
+___
 
 ### RemoveControllersEventData
 
@@ -263,9 +263,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/events/remove_controllers_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/events/remove_controllers_event.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/events/remove_controllers_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/events/remove_controllers_event.ts#L3)
 
----
+___
 
 ### RemoveKeysEventData
 
@@ -273,9 +273,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/events/remove_keys_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/events/remove_keys_event.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/events/remove_keys_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/events/remove_keys_event.ts#L3)
 
----
+___
 
 ### RemoveServiceEndpointEventData
 
@@ -283,19 +283,19 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/events/remove_service_endpoint_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/events/remove_service_endpoint_event.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/events/remove_service_endpoint_event.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/events/remove_service_endpoint_event.ts#L3)
 
----
+___
 
 ### VerificationRelationship
 
-Ƭ **VerificationRelationship**: `"authentication"` \| `"assertionMethod"` \| `"capabilityInvocation"` \| `"keyAgreement"`
+Ƭ **VerificationRelationship**: ``"authentication"`` \| ``"assertionMethod"`` \| ``"capabilityInvocation"`` \| ``"keyAgreement"``
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:10](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L10)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:10](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L10)
 
----
+___
 
 ### WriteableSchema
 
@@ -303,7 +303,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:41](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/client.ts#L41)
+[packages/klayr-decentralized-identifier/src/types/client.ts:41](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L41)
 
 ## Variables
 
@@ -313,19 +313,19 @@ custom_edit_url: null
 
 #### Type declaration
 
-| Name                         | Type                                                                                                                                                                                                                                                                                                      |
-| :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `client`                     | [`client`](namespaces/client.md)                                                                                                                                                                                                                                                                          |
-| `cryptography`               | [`cryptography`](namespaces/cryptography.md)                                                                                                                                                                                                                                                              |
-| `resolver`                   | [`resolver`](namespaces/resolver.md)                                                                                                                                                                                                                                                                      |
-| `utils`                      | [`utils`](namespaces/utils.md)                                                                                                                                                                                                                                                                            |
-| `getAddressDIDFromPublicKey` | (`chainspace`: `string`, `publicKey`: `Buffer`) => `string`                                                                                                                                                                                                                                               |
-| `getDIDDocument`             | (`did`: `string`, `options`: [`CreateResolverParam`](modules.md#createresolverparam)) => `Promise`<[`DidDocument`](interfaces/DidDocument.md) \| `undefined`\>                                                                                                                                            |
-| `parseDIDComponent`          | (`did`: `string`) => { `chainspace`: `any` ; `did`: `string` ; `fragment`: `any` = parsedDID.fragment; `method`: `any` = parsedDID.method; `namespace`: `string` ; `path`: `any` = parsedDID.path; `query`: `any` = parsedDID.query; `scheme`: `string` = 'did'; `uniqueId`: `string` ; `uri`: `string` } |
+| Name | Type |
+| :------ | :------ |
+| `client` | [`client`](namespaces/client.md) |
+| `cryptography` | [`cryptography`](namespaces/cryptography.md) |
+| `resolver` | [`resolver`](namespaces/resolver.md) |
+| `utils` | [`utils`](namespaces/utils.md) |
+| `getAddressDIDFromPublicKey` | (`chainspace`: `string`, `publicKey`: `Buffer`) => `string` |
+| `getDIDDocument` | (`did`: `string`, `options`: [`CreateResolverParam`](modules.md#createresolverparam)) => `Promise`<[`DidDocument`](interfaces/DidDocument.md) \| `undefined`\> |
+| `parseDIDComponent` | (`did`: `string`) => { `chainspace`: `any` ; `did`: `string` ; `fragment`: `any` = parsedDID.fragment; `method`: `any` = parsedDID.method; `namespace`: `string` ; `path`: `any` = parsedDID.path; `query`: `any` = parsedDID.query; `scheme`: `string` = 'did'; `uniqueId`: `string` ; `uri`: `string`  } |
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/index.ts:15](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/index.ts#L15)
+[packages/klayr-decentralized-identifier/src/index.ts:15](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/index.ts#L15)
 
 ## Functions
 
@@ -335,10 +335,10 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `chainspace` | `string` |
-| `publicKey`  | `Buffer` |
+| `publicKey` | `Buffer` |
 
 #### Returns
 
@@ -346,9 +346,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/did.ts:59](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/did.ts#L59)
+[packages/klayr-decentralized-identifier/src/did.ts:59](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/did.ts#L59)
 
----
+___
 
 ### getDIDDocument
 
@@ -356,9 +356,9 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name      | Type                                                    |
-| :-------- | :------------------------------------------------------ |
-| `did`     | `string`                                                |
+| Name | Type |
+| :------ | :------ |
+| `did` | `string` |
 | `options` | [`CreateResolverParam`](modules.md#createresolverparam) |
 
 #### Returns
@@ -367,9 +367,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/did.ts:67](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/did.ts#L67)
+[packages/klayr-decentralized-identifier/src/did.ts:67](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/did.ts#L67)
 
----
+___
 
 ### parseDIDComponent
 
@@ -377,27 +377,27 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `did` | `string` |
 
 #### Returns
 
 `Object`
 
-| Name         | Type     |
-| :----------- | :------- |
-| `chainspace` | `any`    |
-| `did`        | `string` |
-| `fragment`   | `any`    |
-| `method`     | `any`    |
-| `namespace`  | `string` |
-| `path`       | `any`    |
-| `query`      | `any`    |
-| `scheme`     | `string` |
-| `uniqueId`   | `string` |
-| `uri`        | `string` |
+| Name | Type |
+| :------ | :------ |
+| `chainspace` | `any` |
+| `did` | `string` |
+| `fragment` | `any` |
+| `method` | `any` |
+| `namespace` | `string` |
+| `path` | `any` |
+| `query` | `any` |
+| `scheme` | `string` |
+| `uniqueId` | `string` |
+| `uri` | `string` |
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/did.ts:9](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/did.ts#L9)
+[packages/klayr-decentralized-identifier/src/did.ts:9](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/did.ts#L9)

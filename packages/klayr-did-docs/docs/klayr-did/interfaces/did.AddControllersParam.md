@@ -1,7 +1,7 @@
 ---
-id: 'did.AddControllersParam'
-title: 'Interface: AddControllersParam'
-sidebar_label: 'did.AddControllersParam'
+id: "did.AddControllersParam"
+title: "Interface: AddControllersParam"
+sidebar_label: "did.AddControllersParam"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/commands/add_controllers_command.d.ts:4
 
----
+___
 
 ### signature
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/add_controllers_comm
 
 packages/klayr-decentralized-identifier/dist/types/commands/add_controllers_command.d.ts:6
 
----
+___
 
 ### signer
 
@@ -37,7 +37,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/add_controllers_comm
 
 packages/klayr-decentralized-identifier/dist/types/commands/add_controllers_command.d.ts:5
 
----
+___
 
 ### target
 

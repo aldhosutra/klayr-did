@@ -1,7 +1,7 @@
 ---
-id: 'utils.object'
-title: 'Namespace: object'
-sidebar_label: 'utils.object'
+id: "utils.object"
+title: "Namespace: object"
+sidebar_label: "utils.object"
 custom_edit_url: null
 ---
 
@@ -16,13 +16,13 @@ custom_edit_url: null
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name       | Type     |
-| :--------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `jsonByte` | `Buffer` |
 
 #### Returns
@@ -31,9 +31,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/object.ts:9](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/utils/object.ts#L9)
+[packages/klayr-decentralized-identifier/src/utils/object.ts:9](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/object.ts#L9)
 
----
+___
 
 ### encodeJSON
 
@@ -41,8 +41,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name   | Type                       |
-| :----- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `json` | `Record`<`string`, `any`\> |
 
 #### Returns
@@ -51,9 +51,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/object.ts:5](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/utils/object.ts#L5)
+[packages/klayr-decentralized-identifier/src/utils/object.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/object.ts#L5)
 
----
+___
 
 ### serializer
 
@@ -62,13 +62,13 @@ custom_edit_url: null
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name   | Type                    |
-| :----- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `data` | `Record`<`any`, `any`\> |
 
 #### Returns
@@ -77,4 +77,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/object.ts:13](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/utils/object.ts#L13)
+[packages/klayr-decentralized-identifier/src/utils/object.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/object.ts#L13)

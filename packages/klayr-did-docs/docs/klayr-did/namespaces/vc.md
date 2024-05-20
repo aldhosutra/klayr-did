@@ -1,7 +1,7 @@
 ---
-id: 'vc'
-title: 'Namespace: vc'
-sidebar_label: 'vc'
+id: "vc"
+title: "Namespace: vc"
+sidebar_label: "vc"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -28,21 +28,21 @@ custom_edit_url: null
 
 packages/klayr-verifiable-credentials/dist/types.d.ts:4
 
----
+___
 
 ### VerifiableCredential
 
-Ƭ **VerifiableCredential**: `Partial`<`VCDIVerifiableCredential`\> & { `@context`: `VCDIVerifiableCredential`[``"@context"``] ; `credentialSubject`: `VCDIVerifiableCredential`[``"credentialSubject"``] ; `type`: `VCDIVerifiableCredential`[``"type"``] }
+Ƭ **VerifiableCredential**: `Partial`<`VCDIVerifiableCredential`\> & { `@context`: `VCDIVerifiableCredential`[``"@context"``] ; `credentialSubject`: `VCDIVerifiableCredential`[``"credentialSubject"``] ; `type`: `VCDIVerifiableCredential`[``"type"``]  }
 
 #### Defined in
 
 packages/klayr-verifiable-credentials/dist/types.d.ts:9
 
----
+___
 
 ### VerifiablePresentation
 
-Ƭ **VerifiablePresentation**: `TVerifiablePresentation` & { `verifiableCredential?`: [`VerifiableCredential`](vc.md#verifiablecredential) \| [`VerifiableCredential`](vc.md#verifiablecredential)[] }
+Ƭ **VerifiablePresentation**: `TVerifiablePresentation` & { `verifiableCredential?`: [`VerifiableCredential`](vc.md#verifiablecredential) \| [`VerifiableCredential`](vc.md#verifiablecredential)[]  }
 
 #### Defined in
 
@@ -56,11 +56,11 @@ packages/klayr-verifiable-credentials/dist/types.d.ts:14
 
 #### Parameters
 
-| Name         | Type                                                 |
-| :----------- | :--------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `credential` | [`VerifiableCredential`](vc.md#verifiablecredential) |
-| `privateKey` | `Buffer`                                             |
-| `options`    | `ClientOptions`                                      |
+| `privateKey` | `Buffer` |
+| `options` | `ClientOptions` |
 
 #### Returns
 
@@ -70,7 +70,7 @@ packages/klayr-verifiable-credentials/dist/types.d.ts:14
 
 packages/klayr-verifiable-credentials/dist/credentials/credentials.d.ts:4
 
----
+___
 
 ### issuePresentation
 
@@ -78,13 +78,13 @@ packages/klayr-verifiable-credentials/dist/credentials/credentials.d.ts:4
 
 #### Parameters
 
-| Name                        | Type                                                   |
-| :-------------------------- | :----------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `verifiableCredentialsList` | [`VerifiableCredential`](vc.md#verifiablecredential)[] |
-| `holderDid`                 | `string`                                               |
-| `privateKey`                | `Buffer`                                               |
-| `challenge`                 | `string`                                               |
-| `options`                   | `ClientOptions`                                        |
+| `holderDid` | `string` |
+| `privateKey` | `Buffer` |
+| `challenge` | `string` |
+| `options` | `ClientOptions` |
 
 #### Returns
 
@@ -94,7 +94,7 @@ packages/klayr-verifiable-credentials/dist/credentials/credentials.d.ts:4
 
 packages/klayr-verifiable-credentials/dist/credentials/presentation.d.ts:4
 
----
+___
 
 ### verifyCredential
 
@@ -102,11 +102,11 @@ packages/klayr-verifiable-credentials/dist/credentials/presentation.d.ts:4
 
 #### Parameters
 
-| Name         | Type                                                 |
-| :----------- | :--------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `credential` | [`VerifiableCredential`](vc.md#verifiablecredential) |
-| `publicKey`  | `Buffer`                                             |
-| `options`    | `ClientOptions`                                      |
+| `publicKey` | `Buffer` |
+| `options` | `ClientOptions` |
 
 #### Returns
 
@@ -116,7 +116,7 @@ packages/klayr-verifiable-credentials/dist/credentials/presentation.d.ts:4
 
 packages/klayr-verifiable-credentials/dist/credentials/credentials.d.ts:5
 
----
+___
 
 ### verifyPresentation
 
@@ -124,11 +124,11 @@ packages/klayr-verifiable-credentials/dist/credentials/credentials.d.ts:5
 
 #### Parameters
 
-| Name           | Type                                                     |
-| :------------- | :------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `presentation` | [`VerifiablePresentation`](vc.md#verifiablepresentation) |
-| `publicKey`    | `Buffer`                                                 |
-| `options`      | `ClientOptions`                                          |
+| `publicKey` | `Buffer` |
+| `options` | `ClientOptions` |
 
 #### Returns
 

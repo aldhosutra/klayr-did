@@ -1,7 +1,7 @@
 ---
-id: 'did.DeactivateParam'
-title: 'Interface: DeactivateParam'
-sidebar_label: 'did.DeactivateParam'
+id: "did.DeactivateParam"
+title: "Interface: DeactivateParam"
+sidebar_label: "did.DeactivateParam"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/commands/deactivate_command.d.ts:5
 
----
+___
 
 ### signer
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/deactivate_command.d
 
 packages/klayr-decentralized-identifier/dist/types/commands/deactivate_command.d.ts:4
 
----
+___
 
 ### target
 

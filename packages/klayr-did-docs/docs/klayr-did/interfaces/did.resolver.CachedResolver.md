@@ -1,7 +1,7 @@
 ---
-id: 'did.resolver.CachedResolver'
-title: 'Interface: CachedResolver'
-sidebar_label: 'did.resolver.CachedResolver'
+id: "did.resolver.CachedResolver"
+title: "Interface: CachedResolver"
+sidebar_label: "did.resolver.CachedResolver"
 custom_edit_url: null
 ---
 
@@ -11,7 +11,7 @@ custom_edit_url: null
 
 ### get
 
-• **get**: (`__namedParameters`: { `did?`: `string` ; `url?`: `string` }) => `Promise`<`any`\>
+• **get**: (`__namedParameters`: { `did?`: `string` ; `url?`: `string`  }) => `Promise`<`any`\>
 
 #### Type declaration
 
@@ -19,11 +19,11 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `«destructured»` | `Object` |
-| › `did?`         | `string` |
-| › `url?`         | `string` |
+| › `did?` | `string` |
+| › `url?` | `string` |
 
 ##### Returns
 
@@ -33,17 +33,17 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:9
 
----
+___
 
 ### method
 
-• `Optional` **method**: `"klayr"`
+• `Optional` **method**: ``"klayr"``
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:7
 
----
+___
 
 ### use
 
@@ -55,8 +55,8 @@ packages/klayr-decentralized-identifier/dist/resolver/resolver.d.ts:7
 
 ##### Parameters
 
-| Name     | Type  |
-| :------- | :---- |
+| Name | Type |
+| :------ | :------ |
 | `driver` | `any` |
 
 ##### Returns

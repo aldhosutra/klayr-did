@@ -1,7 +1,7 @@
 ---
-id: 'did.utils'
-title: 'Namespace: utils'
-sidebar_label: 'did.utils'
+id: "did.utils"
+title: "Namespace: utils"
+sidebar_label: "did.utils"
 custom_edit_url: null
 ---
 
@@ -32,8 +32,8 @@ packages/klayr-decentralized-identifier/dist/utils/context.d.ts:1
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `chainspace` | `string` |
 | `publicKey?` | `Buffer` |
 
@@ -45,7 +45,7 @@ packages/klayr-decentralized-identifier/dist/utils/context.d.ts:1
 
 packages/klayr-decentralized-identifier/dist/utils/bootstrap.d.ts:4
 
----
+___
 
 ### bootstrapEmptyDidDocument
 
@@ -59,7 +59,7 @@ packages/klayr-decentralized-identifier/dist/utils/bootstrap.d.ts:4
 
 packages/klayr-decentralized-identifier/dist/utils/bootstrap.d.ts:3
 
----
+___
 
 ### validateDIDDocument
 
@@ -67,8 +67,8 @@ packages/klayr-decentralized-identifier/dist/utils/bootstrap.d.ts:3
 
 #### Parameters
 
-| Name  | Type                                              |
-| :---- | :------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `did` | [`DidDocument`](../interfaces/did.DidDocument.md) |
 
 #### Returns

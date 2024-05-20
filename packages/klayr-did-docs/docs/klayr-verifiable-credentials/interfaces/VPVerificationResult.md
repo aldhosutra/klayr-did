@@ -1,7 +1,7 @@
 ---
-id: 'VPVerificationResult'
-title: 'Interface: VPVerificationResult'
-sidebar_label: 'VPVerificationResult'
+id: "VPVerificationResult"
+title: "Interface: VPVerificationResult"
+sidebar_label: "VPVerificationResult"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -10,13 +10,13 @@ custom_edit_url: null
 
 ### credentialResults
 
-• **credentialResults**: { `credentialId`: `string` ; `results`: [`VCVerificationResult`](VCVerificationResult.md)[] ; `verified`: `boolean` }[]
+• **credentialResults**: { `credentialId`: `string` ; `results`: [`VCVerificationResult`](VCVerificationResult.md)[] ; `verified`: `boolean`  }[]
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:52](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L52)
+[klayr-verifiable-credentials/src/types.ts:52](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L52)
 
----
+___
 
 ### presentationResult
 
@@ -24,16 +24,16 @@ custom_edit_url: null
 
 #### Type declaration
 
-| Name       | Type                                                                                                                                                                                                                                                 |
-| :--------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `results`  | { `proof`: [`Proof`](Proof.md) & { `@context`: `string`[] } ; `purposeResult`: { `controller`: `Omit`<`DidDocument`, `"controller"` \| `"service"`\> ; `valid`: `boolean` } ; `verificationMethod`: `VerificationMethod` ; `verified`: `boolean` }[] |
-| `verified` | `boolean`                                                                                                                                                                                                                                            |
+| Name | Type |
+| :------ | :------ |
+| `results` | { `proof`: [`Proof`](Proof.md) & { `@context`: `string`[]  } ; `purposeResult`: { `controller`: `Omit`<`DidDocument`, ``"controller"`` \| ``"service"``\> ; `valid`: `boolean`  } ; `verificationMethod`: `VerificationMethod` ; `verified`: `boolean`  }[] |
+| `verified` | `boolean` |
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:57](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L57)
+[klayr-verifiable-credentials/src/types.ts:57](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L57)
 
----
+___
 
 ### verified
 
@@ -41,4 +41,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:51](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/types.ts#L51)
+[klayr-verifiable-credentials/src/types.ts:51](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L51)

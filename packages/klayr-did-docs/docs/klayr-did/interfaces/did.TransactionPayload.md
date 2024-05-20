@@ -1,7 +1,7 @@
 ---
-id: 'did.TransactionPayload'
-title: 'Interface: TransactionPayload<T>'
-sidebar_label: 'did.TransactionPayload'
+id: "did.TransactionPayload"
+title: "Interface: TransactionPayload<T>"
+sidebar_label: "did.TransactionPayload"
 custom_edit_url: null
 ---
 
@@ -10,8 +10,8 @@ custom_edit_url: null
 ## Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 ## Properties
 
@@ -23,7 +23,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/client.d.ts:29
 
----
+___
 
 ### nonce
 
@@ -33,7 +33,7 @@ packages/klayr-decentralized-identifier/dist/types/client.d.ts:29
 
 packages/klayr-decentralized-identifier/dist/types/client.d.ts:30
 
----
+___
 
 ### params
 

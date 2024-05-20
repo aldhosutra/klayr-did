@@ -1,7 +1,7 @@
 ---
-id: 'Ed25519KeyPair'
-title: 'Interface: Ed25519KeyPair'
-sidebar_label: 'Ed25519KeyPair'
+id: "Ed25519KeyPair"
+title: "Interface: Ed25519KeyPair"
+sidebar_label: "Ed25519KeyPair"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -24,9 +24,9 @@ Partial.controller
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:15](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L15)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:15](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L15)
 
----
+___
 
 ### fingerprint
 
@@ -42,9 +42,9 @@ Partial.controller
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:23](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L23)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:23](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L23)
 
----
+___
 
 ### id
 
@@ -56,9 +56,9 @@ Partial.id
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:13](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L13)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L13)
 
----
+___
 
 ### privateKeyMultibase
 
@@ -70,9 +70,9 @@ Partial.privateKeyMultibase
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:19](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L19)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:19](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L19)
 
----
+___
 
 ### publicKeyMultibase
 
@@ -84,13 +84,13 @@ Partial.publicKeyMultibase
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:16](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L16)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L16)
 
----
+___
 
 ### type
 
-• `Optional` **type**: `"Ed25519VerificationKey2020"`
+• `Optional` **type**: ``"Ed25519VerificationKey2020"``
 
 #### Overrides
 
@@ -98,4 +98,4 @@ Partial.type
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:22](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L22)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:22](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L22)

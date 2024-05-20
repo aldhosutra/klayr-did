@@ -78,7 +78,7 @@ describe('verify', () => {
     expect(ver).toBe(true);
   });
 
-  it('should verify message using lisk cryptography if digest is turned on', async () => {
+  it('should verify message using klayr cryptography if digest is turned on', async () => {
     const signatureKlayr = cryptography.ed.signMessageWithPrivateKey(signData, privateKey);
     const ver = await verify(signData, senderDID, signatureKlayr.signature, publicKey, { ipc, withDigest: true });
     expect(mockedCreateIPCClient).toHaveBeenCalled();
@@ -115,7 +115,7 @@ describe('verifyLocal', () => {
     expect(ver).toBe(true);
   });
 
-  it('should verify message using lisk cryptography if digest is turned on', async () => {
+  it('should verify message using klayr cryptography if digest is turned on', async () => {
     const signatureKlayr = cryptography.ed.signMessageWithPrivateKey(signData, privateKey);
     const ver = await verifyLocal(signData, signatureKlayr.signature, publicKey, true);
     expect(mockedCreateIPCClient).toHaveBeenCalledTimes(0);

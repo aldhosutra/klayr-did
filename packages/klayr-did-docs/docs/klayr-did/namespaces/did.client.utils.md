@@ -1,7 +1,7 @@
 ---
-id: 'did.client.utils'
-title: 'Namespace: utils'
-sidebar_label: 'did.client.utils'
+id: "did.client.utils"
+title: "Namespace: utils"
+sidebar_label: "did.client.utils"
 custom_edit_url: null
 ---
 
@@ -15,8 +15,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name      | Type                                                  |
-| :-------- | :---------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `payload` | [`PayloadWithSignature`](did.md#payloadwithsignature) |
 
 #### Returns
@@ -27,7 +27,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/client/utils/index.d.ts:3
 
----
+___
 
 ### createTransactionSignature
 
@@ -35,10 +35,10 @@ packages/klayr-decentralized-identifier/dist/client/utils/index.d.ts:3
 
 #### Parameters
 
-| Name         | Type                                                  |
-| :----------- | :---------------------------------------------------- |
-| `payload`    | [`PayloadWithSignature`](did.md#payloadwithsignature) |
-| `privateKey` | `Buffer`                                              |
+| Name | Type |
+| :------ | :------ |
+| `payload` | [`PayloadWithSignature`](did.md#payloadwithsignature) |
+| `privateKey` | `Buffer` |
 
 #### Returns
 
@@ -48,7 +48,7 @@ packages/klayr-decentralized-identifier/dist/client/utils/index.d.ts:3
 
 packages/klayr-decentralized-identifier/dist/client/utils/index.d.ts:4
 
----
+___
 
 ### validateParams
 
@@ -56,11 +56,11 @@ packages/klayr-decentralized-identifier/dist/client/utils/index.d.ts:4
 
 #### Parameters
 
-| Name         | Type                                                                    |
-| :----------- | :---------------------------------------------------------------------- |
-| `command`    | [`DIDCommands`](did.md#didcommands)                                     |
-| `param`      | [`TransactionPayload`](../interfaces/did.TransactionPayload.md)<`any`\> |
-| `chainspace` | `string`                                                                |
+| Name | Type |
+| :------ | :------ |
+| `command` | [`DIDCommands`](did.md#didcommands) |
+| `param` | [`TransactionPayload`](../interfaces/did.TransactionPayload.md)<`any`\> |
+| `chainspace` | `string` |
 
 #### Returns
 
@@ -70,7 +70,7 @@ packages/klayr-decentralized-identifier/dist/client/utils/index.d.ts:4
 
 packages/klayr-decentralized-identifier/dist/client/utils/validator.d.ts:2
 
----
+___
 
 ### verifyTransactionSignature
 
@@ -78,11 +78,11 @@ packages/klayr-decentralized-identifier/dist/client/utils/validator.d.ts:2
 
 #### Parameters
 
-| Name        | Type                                                  |
-| :---------- | :---------------------------------------------------- |
-| `payload`   | [`PayloadWithSignature`](did.md#payloadwithsignature) |
-| `signature` | `Buffer`                                              |
-| `publicKey` | `Buffer`                                              |
+| Name | Type |
+| :------ | :------ |
+| `payload` | [`PayloadWithSignature`](did.md#payloadwithsignature) |
+| `signature` | `Buffer` |
+| `publicKey` | `Buffer` |
 
 #### Returns
 

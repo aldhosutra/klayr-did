@@ -1,7 +1,7 @@
 ---
-id: 'resolver.CachedResolver'
-title: 'Interface: CachedResolver'
-sidebar_label: 'resolver.CachedResolver'
+id: "resolver.CachedResolver"
+title: "Interface: CachedResolver"
+sidebar_label: "resolver.CachedResolver"
 custom_edit_url: null
 ---
 
@@ -11,7 +11,7 @@ custom_edit_url: null
 
 ### get
 
-• **get**: (`__namedParameters`: { `did?`: `string` ; `url?`: `string` }) => `Promise`<`any`\>
+• **get**: (`__namedParameters`: { `did?`: `string` ; `url?`: `string`  }) => `Promise`<`any`\>
 
 #### Type declaration
 
@@ -19,11 +19,11 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `«destructured»` | `Object` |
-| › `did?`         | `string` |
-| › `url?`         | `string` |
+| › `did?` | `string` |
+| › `url?` | `string` |
 
 ##### Returns
 
@@ -31,19 +31,19 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:12](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L12)
+[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:12](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L12)
 
----
+___
 
 ### method
 
-• `Optional` **method**: `"klayr"`
+• `Optional` **method**: ``"klayr"``
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:10](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L10)
+[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:10](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L10)
 
----
+___
 
 ### use
 
@@ -55,8 +55,8 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name     | Type  |
-| :------- | :---- |
+| Name | Type |
+| :------ | :------ |
 | `driver` | `any` |
 
 ##### Returns
@@ -65,4 +65,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:11](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L11)
+[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:11](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L11)

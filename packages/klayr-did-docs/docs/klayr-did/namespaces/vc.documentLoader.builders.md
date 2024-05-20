@@ -1,7 +1,7 @@
 ---
-id: 'vc.documentLoader.builders'
-title: 'Namespace: builders'
-sidebar_label: 'vc.documentLoader.builders'
+id: "vc.documentLoader.builders"
+title: "Namespace: builders"
+sidebar_label: "vc.documentLoader.builders"
 custom_edit_url: null
 ---
 
@@ -25,8 +25,8 @@ packages/klayr-verifiable-credentials/dist/documentLoader/builders/base.d.ts:4
 
 #### Parameters
 
-| Name     | Type                  |
-| :------- | :-------------------- |
+| Name | Type |
+| :------ | :------ |
 | `param?` | `DocumentLoaderParam` |
 
 #### Returns

@@ -1,7 +1,7 @@
 ---
-id: 'did.utils.array'
-title: 'Namespace: array'
-sidebar_label: 'did.utils.array'
+id: "did.utils.array"
+title: "Namespace: array"
+sidebar_label: "did.utils.array"
 custom_edit_url: null
 ---
 
@@ -16,14 +16,14 @@ custom_edit_url: null
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name        | Type                                   |
-| :---------- | :------------------------------------- |
-| `arr`       | `T`[]                                  |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `T`[] |
 | `predicate` | (`data`: `T`) => `Promise`<`boolean`\> |
 
 #### Returns
@@ -34,7 +34,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/utils/array.d.ts:2
 
----
+___
 
 ### findIntersection
 
@@ -43,13 +43,13 @@ packages/klayr-decentralized-identifier/dist/utils/array.d.ts:2
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name  | Type    |
-| :---- | :------ |
+| Name | Type |
+| :------ | :------ |
 | `arr` | `T`[][] |
 
 #### Returns

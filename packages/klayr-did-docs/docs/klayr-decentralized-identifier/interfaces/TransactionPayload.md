@@ -1,7 +1,7 @@
 ---
-id: 'TransactionPayload'
-title: 'Interface: TransactionPayload<T>'
-sidebar_label: 'TransactionPayload'
+id: "TransactionPayload"
+title: "Interface: TransactionPayload<T>"
+sidebar_label: "TransactionPayload"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -9,8 +9,8 @@ custom_edit_url: null
 ## Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 ## Properties
 
@@ -20,9 +20,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:65](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/client.ts#L65)
+[packages/klayr-decentralized-identifier/src/types/client.ts:65](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L65)
 
----
+___
 
 ### nonce
 
@@ -30,9 +30,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:66](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/client.ts#L66)
+[packages/klayr-decentralized-identifier/src/types/client.ts:66](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L66)
 
----
+___
 
 ### params
 
@@ -40,4 +40,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:67](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/client.ts#L67)
+[packages/klayr-decentralized-identifier/src/types/client.ts:67](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L67)

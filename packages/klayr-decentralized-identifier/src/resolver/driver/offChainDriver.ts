@@ -51,7 +51,7 @@ export class KlayrOffChainDidDriver extends BaseDriver {
 
   private async _initClient() {
     if (!(this.ipc || this.ws)) {
-      throw new Error('driver needs to be configured with correct ipc or ws lisk sidechain node url');
+      throw new Error('driver needs to be configured with correct ipc or ws klayr sidechain node url');
     }
     if (this.ipc !== undefined) {
       this.apiClient = await apiClient.createIPCClient(this.ipc);

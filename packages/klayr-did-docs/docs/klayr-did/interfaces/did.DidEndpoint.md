@@ -1,7 +1,7 @@
 ---
-id: 'did.DidEndpoint'
-title: 'Interface: DidEndpoint'
-sidebar_label: 'did.DidEndpoint'
+id: "did.DidEndpoint"
+title: "Interface: DidEndpoint"
+sidebar_label: "did.DidEndpoint"
 custom_edit_url: null
 ---
 
@@ -19,8 +19,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name      | Type                    |
-| :-------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `ModuleEndpointContext` |
 
 #### Returns
@@ -31,7 +31,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/endpoint.d.ts:10
 
----
+___
 
 ### getConfig
 
@@ -39,8 +39,8 @@ packages/klayr-decentralized-identifier/dist/types/endpoint.d.ts:10
 
 #### Parameters
 
-| Name      | Type                    |
-| :-------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `ModuleEndpointContext` |
 
 #### Returns
@@ -51,27 +51,27 @@ packages/klayr-decentralized-identifier/dist/types/endpoint.d.ts:10
 
 packages/klayr-decentralized-identifier/dist/types/endpoint.d.ts:7
 
----
+___
 
 ### getNonce
 
-▸ **getNonce**(`context`): `Promise`<{ `nonce`: `string` }\>
+▸ **getNonce**(`context`): `Promise`<{ `nonce`: `string`  }\>
 
 #### Parameters
 
-| Name      | Type                    |
-| :-------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `ModuleEndpointContext` |
 
 #### Returns
 
-`Promise`<{ `nonce`: `string` }\>
+`Promise`<{ `nonce`: `string`  }\>
 
 #### Defined in
 
 packages/klayr-decentralized-identifier/dist/types/endpoint.d.ts:9
 
----
+___
 
 ### init
 
@@ -79,8 +79,8 @@ packages/klayr-decentralized-identifier/dist/types/endpoint.d.ts:9
 
 #### Parameters
 
-| Name     | Type                                        |
-| :------- | :------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `config` | [`DidModuleConfig`](did.DidModuleConfig.md) |
 
 #### Returns
@@ -91,7 +91,7 @@ packages/klayr-decentralized-identifier/dist/types/endpoint.d.ts:9
 
 packages/klayr-decentralized-identifier/dist/types/endpoint.d.ts:6
 
----
+___
 
 ### read
 
@@ -99,8 +99,8 @@ packages/klayr-decentralized-identifier/dist/types/endpoint.d.ts:6
 
 #### Parameters
 
-| Name      | Type                    |
-| :-------- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `ModuleEndpointContext` |
 
 #### Returns

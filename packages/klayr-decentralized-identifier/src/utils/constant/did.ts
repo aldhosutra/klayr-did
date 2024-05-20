@@ -1,6 +1,6 @@
-export const LISK_PUBLIC_KEY_LENGTH = 32;
+export const KLAYR_PUBLIC_KEY_LENGTH = 32;
 export const MULTIBASE_PUBLIC_KEY_LENGTH = 48;
-export const LISK_PRIVATE_KEY_LENGTH = 64;
+export const KLAYR_PRIVATE_KEY_LENGTH = 64;
 export const MULTIBASE_PRIVATE_KEY_LENGTH = 91;
 export const MULTICODEC_ED25519_PUB_HEADER = new Uint8Array([0xed, 0x01]);
 export const MULTICODEC_ED25519_PRIV_HEADER = new Uint8Array([0x80, 0x26]);

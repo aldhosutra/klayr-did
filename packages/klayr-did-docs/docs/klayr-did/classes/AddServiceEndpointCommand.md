@@ -1,7 +1,7 @@
 ---
-id: 'AddServiceEndpointCommand'
-title: 'Class: AddServiceEndpointCommand'
-sidebar_label: 'AddServiceEndpointCommand'
+id: "AddServiceEndpointCommand"
+title: "Class: AddServiceEndpointCommand"
+sidebar_label: "AddServiceEndpointCommand"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -20,8 +20,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name     | Type            |
-| :------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `stores` | `NamedRegistry` |
 | `events` | `NamedRegistry` |
 
@@ -43,7 +43,7 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:9
 
 packages/klayr-did-module/dist/commands/add_service_endpoints_command.d.ts:42
 
----
+___
 
 ### events
 
@@ -57,7 +57,7 @@ BaseCommand.events
 
 node_modules/klayr-framework/dist-node/modules/base_command.d.ts:6
 
----
+___
 
 ### schema
 
@@ -65,35 +65,35 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:6
 
 #### Type declaration
 
-| Name                                                         | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| :----------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$id`                                                        | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties`                                                 | { `endpoint`: { `fieldNumber`: `number` ; `properties`: { `id`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `serviceEndpoint`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `type`: { `dataType`: `string` ; `fieldNumber`: `number` } } ; `required`: `string`[] ; `type`: `string` } ; `signature`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `signer`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `target`: { `dataType`: `string` ; `fieldNumber`: `number` } } |
-| `properties.endpoint`                                        | { `fieldNumber`: `number` ; `properties`: { `id`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `serviceEndpoint`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `type`: { `dataType`: `string` ; `fieldNumber`: `number` } } ; `required`: `string`[] ; `type`: `string` }                                                                                                                                                                                                                 |
-| `properties.endpoint.fieldNumber`                            | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.endpoint.properties`                             | { `id`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `serviceEndpoint`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `type`: { `dataType`: `string` ; `fieldNumber`: `number` } }                                                                                                                                                                                                                                                                                                         |
-| `properties.endpoint.properties.id`                          | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `properties.endpoint.properties.id.dataType`                 | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.endpoint.properties.id.fieldNumber`              | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.endpoint.properties.serviceEndpoint`             | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `properties.endpoint.properties.serviceEndpoint.dataType`    | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.endpoint.properties.serviceEndpoint.fieldNumber` | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.endpoint.properties.type`                        | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `properties.endpoint.properties.type.dataType`               | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.endpoint.properties.type.fieldNumber`            | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.endpoint.required`                               | `string`[]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| `properties.endpoint.type`                                   | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.signature`                                       | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `properties.signature.dataType`                              | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.signature.fieldNumber`                           | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.signer`                                          | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `properties.signer.dataType`                                 | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.signer.fieldNumber`                              | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.target`                                          | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `properties.target.dataType`                                 | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `properties.target.fieldNumber`                              | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `required`                                                   | `string`[]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| `type`                                                       | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Name | Type |
+| :------ | :------ |
+| `$id` | `string` |
+| `properties` | { `endpoint`: { `fieldNumber`: `number` ; `properties`: { `id`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `serviceEndpoint`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `type`: { `dataType`: `string` ; `fieldNumber`: `number`  }  } ; `required`: `string`[] ; `type`: `string`  } ; `signature`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `signer`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `target`: { `dataType`: `string` ; `fieldNumber`: `number`  }  } |
+| `properties.endpoint` | { `fieldNumber`: `number` ; `properties`: { `id`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `serviceEndpoint`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `type`: { `dataType`: `string` ; `fieldNumber`: `number`  }  } ; `required`: `string`[] ; `type`: `string`  } |
+| `properties.endpoint.fieldNumber` | `number` |
+| `properties.endpoint.properties` | { `id`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `serviceEndpoint`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `type`: { `dataType`: `string` ; `fieldNumber`: `number`  }  } |
+| `properties.endpoint.properties.id` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.endpoint.properties.id.dataType` | `string` |
+| `properties.endpoint.properties.id.fieldNumber` | `number` |
+| `properties.endpoint.properties.serviceEndpoint` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.endpoint.properties.serviceEndpoint.dataType` | `string` |
+| `properties.endpoint.properties.serviceEndpoint.fieldNumber` | `number` |
+| `properties.endpoint.properties.type` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.endpoint.properties.type.dataType` | `string` |
+| `properties.endpoint.properties.type.fieldNumber` | `number` |
+| `properties.endpoint.required` | `string`[] |
+| `properties.endpoint.type` | `string` |
+| `properties.signature` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.signature.dataType` | `string` |
+| `properties.signature.fieldNumber` | `number` |
+| `properties.signer` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.signer.dataType` | `string` |
+| `properties.signer.fieldNumber` | `number` |
+| `properties.target` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.target.dataType` | `string` |
+| `properties.target.fieldNumber` | `number` |
+| `required` | `string`[] |
+| `type` | `string` |
 
 #### Overrides
 
@@ -103,7 +103,7 @@ BaseCommand.schema
 
 packages/klayr-did-module/dist/commands/add_service_endpoints_command.d.ts:4
 
----
+___
 
 ### stores
 
@@ -143,8 +143,8 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:8
 
 #### Parameters
 
-| Name       | Type                                                                                                |
-| :--------- | :-------------------------------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `CommandExecuteContext`<[`AddServiceEndpointParam`](../interfaces/did.AddServiceEndpointParam.md)\> |
 
 #### Returns
@@ -159,7 +159,7 @@ BaseCommand.execute
 
 packages/klayr-did-module/dist/commands/add_service_endpoints_command.d.ts:45
 
----
+___
 
 ### init
 
@@ -167,8 +167,8 @@ packages/klayr-did-module/dist/commands/add_service_endpoints_command.d.ts:45
 
 #### Parameters
 
-| Name            | Type                                                      |
-| :-------------- | :-------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_moduleConfig` | [`DidModuleConfig`](../interfaces/did.DidModuleConfig.md) |
 
 #### Returns
@@ -179,7 +179,7 @@ packages/klayr-did-module/dist/commands/add_service_endpoints_command.d.ts:45
 
 packages/klayr-did-module/dist/commands/add_service_endpoints_command.d.ts:43
 
----
+___
 
 ### verify
 
@@ -187,8 +187,8 @@ packages/klayr-did-module/dist/commands/add_service_endpoints_command.d.ts:43
 
 #### Parameters
 
-| Name       | Type                                                                                               |
-| :--------- | :------------------------------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `CommandVerifyContext`<[`AddServiceEndpointParam`](../interfaces/did.AddServiceEndpointParam.md)\> |
 
 #### Returns

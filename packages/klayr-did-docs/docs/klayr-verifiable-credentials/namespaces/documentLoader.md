@@ -1,7 +1,7 @@
 ---
-id: 'documentLoader'
-title: 'Namespace: documentLoader'
-sidebar_label: 'documentLoader'
+id: "documentLoader"
+title: "Namespace: documentLoader"
+sidebar_label: "documentLoader"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -18,8 +18,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name       | Type            |
-| :--------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ClientOptions` |
 
 #### Returns
@@ -28,9 +28,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/documentLoader/offChain.ts:5](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/documentLoader/offChain.ts#L5)
+[klayr-verifiable-credentials/src/documentLoader/offChain.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/documentLoader/offChain.ts#L5)
 
----
+___
 
 ### buildOnChainDocumentLoader
 
@@ -38,8 +38,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name       | Type            |
-| :--------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ClientOptions` |
 
 #### Returns
@@ -48,4 +48,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/documentLoader/onChain.ts:5](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/documentLoader/onChain.ts#L5)
+[klayr-verifiable-credentials/src/documentLoader/onChain.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/documentLoader/onChain.ts#L5)

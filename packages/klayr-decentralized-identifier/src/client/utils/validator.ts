@@ -1,5 +1,5 @@
 import * as isUri from 'is-uri';
-import { LISK_PUBLIC_KEY_LENGTH, SIGNATURE_BYTES_LENGTH } from '../../utils/constant';
+import { KLAYR_PUBLIC_KEY_LENGTH, SIGNATURE_BYTES_LENGTH } from '../../utils/constant';
 import { parseDIDComponent } from '../../did';
 import {
   AddControllersParam,
@@ -36,7 +36,7 @@ export async function validateParams(
     params = param.params as AddKeysParam | CreateParam;
     if (command === 'addKeys' && (params as AddKeysParam).keys.length < 1) throw new Error('at least one keys needed');
     for (const key of (params as AddKeysParam).keys) {
-      if (key.publicKey.length !== LISK_PUBLIC_KEY_LENGTH) throw new Error('invalid public key length');
+      if (key.publicKey.length !== KLAYR_PUBLIC_KEY_LENGTH) throw new Error('invalid public key length');
       if (key.relationship.length === 0) throw new Error('at least one relationship needed');
     }
   }
@@ -44,7 +44,7 @@ export async function validateParams(
     params = param.params as RemoveKeysParam;
     if ((params as RemoveKeysParam).publicKeys.length < 1) throw new Error('at least one public keys needed');
     for (const key of (params as RemoveKeysParam).publicKeys) {
-      if (key.length !== LISK_PUBLIC_KEY_LENGTH) throw new Error('invalid public key length');
+      if (key.length !== KLAYR_PUBLIC_KEY_LENGTH) throw new Error('invalid public key length');
     }
   }
   if (['addControllers', 'removeControllers'].includes(command)) {

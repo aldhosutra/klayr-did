@@ -1,7 +1,7 @@
 ---
-id: 'did.cryptography.operation'
-title: 'Namespace: operation'
-sidebar_label: 'did.cryptography.operation'
+id: "did.cryptography.operation"
+title: "Namespace: operation"
+sidebar_label: "did.cryptography.operation"
 custom_edit_url: null
 ---
 
@@ -15,12 +15,12 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name             | Type                                                |
-| :--------------- | :-------------------------------------------------- |
-| `jwe`            | [`JWEDocument`](../interfaces/did.JWEDocument.md)   |
-| `recipientKeyId` | `string`                                            |
-| `privateKey`     | `Buffer`                                            |
-| `options`        | [`CreateResolverParam`](did.md#createresolverparam) |
+| Name | Type |
+| :------ | :------ |
+| `jwe` | [`JWEDocument`](../interfaces/did.JWEDocument.md) |
+| `recipientKeyId` | `string` |
+| `privateKey` | `Buffer` |
+| `options` | [`CreateResolverParam`](did.md#createresolverparam) |
 
 #### Returns
 
@@ -30,7 +30,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:5
 
----
+___
 
 ### encrypt
 
@@ -38,11 +38,11 @@ packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:5
 
 #### Parameters
 
-| Name             | Type                                                |
-| :--------------- | :-------------------------------------------------- |
-| `data`           | `string`                                            |
-| `recipientKeyId` | `string`[]                                          |
-| `options`        | [`CreateResolverParam`](did.md#createresolverparam) |
+| Name | Type |
+| :------ | :------ |
+| `data` | `string` |
+| `recipientKeyId` | `string`[] |
+| `options` | [`CreateResolverParam`](did.md#createresolverparam) |
 
 #### Returns
 
@@ -52,7 +52,7 @@ packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:5
 
 packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:4
 
----
+___
 
 ### sign
 
@@ -60,12 +60,12 @@ packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:4
 
 #### Parameters
 
-| Name         | Type                                                |
-| :----------- | :-------------------------------------------------- |
-| `data`       | `string`                                            |
-| `did`        | `string`                                            |
-| `privateKey` | `Buffer`                                            |
-| `options`    | [`CreateResolverParam`](did.md#createresolverparam) |
+| Name | Type |
+| :------ | :------ |
+| `data` | `string` |
+| `did` | `string` |
+| `privateKey` | `Buffer` |
+| `options` | [`CreateResolverParam`](did.md#createresolverparam) |
 
 #### Returns
 
@@ -75,7 +75,7 @@ packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:4
 
 packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:6
 
----
+___
 
 ### signLocal
 
@@ -83,9 +83,9 @@ packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:6
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
-| `data`       | `string` |
+| Name | Type |
+| :------ | :------ |
+| `data` | `string` |
 | `privateKey` | `Buffer` |
 
 #### Returns
@@ -96,7 +96,7 @@ packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:6
 
 packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:10
 
----
+___
 
 ### verify
 
@@ -104,13 +104,13 @@ packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:10
 
 #### Parameters
 
-| Name        | Type                                                                               |
-| :---------- | :--------------------------------------------------------------------------------- |
-| `data`      | `string`                                                                           |
-| `did`       | `string`                                                                           |
-| `signature` | `Buffer`                                                                           |
-| `publicKey` | `Buffer`                                                                           |
-| `options`   | [`CreateResolverParam`](did.md#createresolverparam) & { `withDigest?`: `boolean` } |
+| Name | Type |
+| :------ | :------ |
+| `data` | `string` |
+| `did` | `string` |
+| `signature` | `Buffer` |
+| `publicKey` | `Buffer` |
+| `options` | [`CreateResolverParam`](did.md#createresolverparam) & { `withDigest?`: `boolean`  } |
 
 #### Returns
 
@@ -120,7 +120,7 @@ packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:10
 
 packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:7
 
----
+___
 
 ### verifyLocal
 
@@ -128,11 +128,11 @@ packages/klayr-decentralized-identifier/dist/cryptography/operation.d.ts:7
 
 #### Parameters
 
-| Name          | Type      |
-| :------------ | :-------- |
-| `data`        | `string`  |
-| `signature`   | `Buffer`  |
-| `publicKey`   | `Buffer`  |
+| Name | Type |
+| :------ | :------ |
+| `data` | `string` |
+| `signature` | `Buffer` |
+| `publicKey` | `Buffer` |
 | `withDigest?` | `boolean` |
 
 #### Returns

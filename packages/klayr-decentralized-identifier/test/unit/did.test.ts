@@ -47,9 +47,9 @@ describe('parseDIDComponent', () => {
     await expect(func()).rejects.toThrow();
   });
 
-  it('should throw an error if method is not lisk', async () => {
+  it('should throw an error if method is not klayr', async () => {
     const func = async () => {
-      const invalidDID = 'did:notlisk:';
+      const invalidDID = 'did:notklayr:';
       parseDIDComponent(invalidDID);
     };
     await expect(func()).rejects.toThrow();

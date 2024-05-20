@@ -1,7 +1,7 @@
 ---
-id: 'vc.codec'
-title: 'Namespace: codec'
-sidebar_label: 'vc.codec'
+id: "vc.codec"
+title: "Namespace: codec"
+sidebar_label: "vc.codec"
 custom_edit_url: null
 ---
 
@@ -15,8 +15,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name           | Type     |
-| :------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `serializedVC` | `Buffer` |
 
 #### Returns
@@ -27,7 +27,7 @@ custom_edit_url: null
 
 packages/klayr-verifiable-credentials/dist/codec/credentials.d.ts:4
 
----
+___
 
 ### decodePresentation
 
@@ -35,8 +35,8 @@ packages/klayr-verifiable-credentials/dist/codec/credentials.d.ts:4
 
 #### Parameters
 
-| Name           | Type     |
-| :------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `serializedVP` | `Buffer` |
 
 #### Returns
@@ -47,7 +47,7 @@ packages/klayr-verifiable-credentials/dist/codec/credentials.d.ts:4
 
 packages/klayr-verifiable-credentials/dist/codec/presentation.d.ts:4
 
----
+___
 
 ### decodeProof
 
@@ -55,8 +55,8 @@ packages/klayr-verifiable-credentials/dist/codec/presentation.d.ts:4
 
 #### Parameters
 
-| Name          | Type     |
-| :------------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `proofBuffer` | `Buffer` |
 
 #### Returns
@@ -67,7 +67,7 @@ packages/klayr-verifiable-credentials/dist/codec/presentation.d.ts:4
 
 packages/klayr-verifiable-credentials/dist/codec/proof.d.ts:4
 
----
+___
 
 ### encodeCredential
 
@@ -75,8 +75,8 @@ packages/klayr-verifiable-credentials/dist/codec/proof.d.ts:4
 
 #### Parameters
 
-| Name             | Type                                                 |
-| :--------------- | :--------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `unserializedVC` | [`VerifiableCredential`](vc.md#verifiablecredential) |
 
 #### Returns
@@ -87,7 +87,7 @@ packages/klayr-verifiable-credentials/dist/codec/proof.d.ts:4
 
 packages/klayr-verifiable-credentials/dist/codec/credentials.d.ts:3
 
----
+___
 
 ### encodePresentation
 
@@ -95,8 +95,8 @@ packages/klayr-verifiable-credentials/dist/codec/credentials.d.ts:3
 
 #### Parameters
 
-| Name             | Type                                                     |
-| :--------------- | :------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `unserializedVP` | [`VerifiablePresentation`](vc.md#verifiablepresentation) |
 
 #### Returns
@@ -107,7 +107,7 @@ packages/klayr-verifiable-credentials/dist/codec/credentials.d.ts:3
 
 packages/klayr-verifiable-credentials/dist/codec/presentation.d.ts:3
 
----
+___
 
 ### encodeProof
 
@@ -115,8 +115,8 @@ packages/klayr-verifiable-credentials/dist/codec/presentation.d.ts:3
 
 #### Parameters
 
-| Name    | Type                                 |
-| :------ | :----------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `proof` | [`Proof`](../interfaces/vc.Proof.md) |
 
 #### Returns

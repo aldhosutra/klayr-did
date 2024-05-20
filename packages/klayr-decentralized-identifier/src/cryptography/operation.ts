@@ -82,7 +82,7 @@ export async function verify(
 
   if (result) return result;
 
-  // lisk-cryptography implementation use digest to original message
+  // @klayr/cryptography implementation use digest to original message
   if (options.withDigest) {
     result = cryptography.ed.verifyMessageWithPublicKey({ message: data, publicKey, signature });
   }
@@ -108,7 +108,7 @@ export async function verifyLocal(
 
   if (result === true) return result;
 
-  // lisk-cryptography implementation use digest to original message
+  // @klayr/cryptography implementation use digest to original message
   if (withDigest) {
     result = cryptography.ed.verifyMessageWithPublicKey({ message: data, publicKey, signature });
   }

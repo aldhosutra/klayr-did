@@ -1,7 +1,7 @@
 ---
-id: 'did.Ed25519KeyPair'
-title: 'Interface: Ed25519KeyPair'
-sidebar_label: 'did.Ed25519KeyPair'
+id: "did.Ed25519KeyPair"
+title: "Interface: Ed25519KeyPair"
+sidebar_label: "did.Ed25519KeyPair"
 custom_edit_url: null
 ---
 
@@ -27,7 +27,7 @@ Partial.controller
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:13
 
----
+___
 
 ### fingerprint
 
@@ -45,7 +45,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:13
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:21
 
----
+___
 
 ### id
 
@@ -59,7 +59,7 @@ Partial.id
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:11
 
----
+___
 
 ### privateKeyMultibase
 
@@ -73,7 +73,7 @@ Partial.privateKeyMultibase
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:17
 
----
+___
 
 ### publicKeyMultibase
 
@@ -87,11 +87,11 @@ Partial.publicKeyMultibase
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:14
 
----
+___
 
 ### type
 
-• `Optional` **type**: `"Ed25519VerificationKey2020"`
+• `Optional` **type**: ``"Ed25519VerificationKey2020"``
 
 #### Overrides
 

@@ -1,7 +1,7 @@
 ---
-id: 'did.AddServiceEndpointParam'
-title: 'Interface: AddServiceEndpointParam'
-sidebar_label: 'did.AddServiceEndpointParam'
+id: "did.AddServiceEndpointParam"
+title: "Interface: AddServiceEndpointParam"
+sidebar_label: "did.AddServiceEndpointParam"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/commands/add_service_endpoint_command.d.ts:5
 
----
+___
 
 ### signature
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/add_service_endpoint
 
 packages/klayr-decentralized-identifier/dist/types/commands/add_service_endpoint_command.d.ts:7
 
----
+___
 
 ### signer
 
@@ -37,7 +37,7 @@ packages/klayr-decentralized-identifier/dist/types/commands/add_service_endpoint
 
 packages/klayr-decentralized-identifier/dist/types/commands/add_service_endpoint_command.d.ts:6
 
----
+___
 
 ### target
 

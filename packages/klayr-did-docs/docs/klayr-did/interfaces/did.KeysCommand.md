@@ -1,7 +1,7 @@
 ---
-id: 'did.KeysCommand'
-title: 'Interface: KeysCommand'
-sidebar_label: 'did.KeysCommand'
+id: "did.KeysCommand"
+title: "Interface: KeysCommand"
+sidebar_label: "did.KeysCommand"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/commands/keys.d.ts:4
 
----
+___
 
 ### relationship
 

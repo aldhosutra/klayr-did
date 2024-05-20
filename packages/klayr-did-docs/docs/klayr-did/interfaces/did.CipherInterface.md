@@ -1,7 +1,7 @@
 ---
-id: 'did.CipherInterface'
-title: 'Interface: CipherInterface'
-sidebar_label: 'did.CipherInterface'
+id: "did.CipherInterface"
+title: "Interface: CipherInterface"
+sidebar_label: "did.CipherInterface"
 custom_edit_url: null
 ---
 
@@ -11,7 +11,7 @@ custom_edit_url: null
 
 ### decrypt
 
-• **decrypt**: (`__namedParameters`: { `jwe`: [`JWEDocument`](did.JWEDocument.md) ; `keyAgreementKey`: [`KeyAgreement`](../namespaces/did.md#keyagreement) }) => `Promise`<`string`\>
+• **decrypt**: (`__namedParameters`: { `jwe`: [`JWEDocument`](did.JWEDocument.md) ; `keyAgreementKey`: [`KeyAgreement`](../namespaces/did.md#keyagreement)  }) => `Promise`<`string`\>
 
 #### Type declaration
 
@@ -19,10 +19,10 @@ custom_edit_url: null
 
 ##### Parameters
 
-| Name                | Type                                                |
-| :------------------ | :-------------------------------------------------- |
-| `«destructured»`    | `Object`                                            |
-| › `jwe`             | [`JWEDocument`](did.JWEDocument.md)                 |
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `Object` |
+| › `jwe` | [`JWEDocument`](did.JWEDocument.md) |
 | › `keyAgreementKey` | [`KeyAgreement`](../namespaces/did.md#keyagreement) |
 
 ##### Returns
@@ -33,11 +33,11 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:82
 
----
+___
 
 ### encrypt
 
-• **encrypt**: (`__namedParameters`: { `data`: `string` ; `keyResolver`: (`url`: `string`) => `Promise`<`any`\> ; `recipients`: { `header`: { `alg`: `string` ; `kid`: `string` } }[] }) => `Promise`<[`JWEDocument`](did.JWEDocument.md)\>
+• **encrypt**: (`__namedParameters`: { `data`: `string` ; `keyResolver`: (`url`: `string`) => `Promise`<`any`\> ; `recipients`: { `header`: { `alg`: `string` ; `kid`: `string`  }  }[]  }) => `Promise`<[`JWEDocument`](did.JWEDocument.md)\>
 
 #### Type declaration
 
@@ -45,12 +45,12 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:82
 
 ##### Parameters
 
-| Name             | Type                                                  |
-| :--------------- | :---------------------------------------------------- |
-| `«destructured»` | `Object`                                              |
-| › `data`         | `string`                                              |
-| › `keyResolver`  | (`url`: `string`) => `Promise`<`any`\>                |
-| › `recipients`   | { `header`: { `alg`: `string` ; `kid`: `string` } }[] |
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `Object` |
+| › `data` | `string` |
+| › `keyResolver` | (`url`: `string`) => `Promise`<`any`\> |
+| › `recipients` | { `header`: { `alg`: `string` ; `kid`: `string`  }  }[] |
 
 ##### Returns
 

@@ -1,7 +1,7 @@
 ---
-id: 'DidEndpoint'
-title: 'Class: DidEndpoint'
-sidebar_label: 'DidEndpoint'
+id: "DidEndpoint"
+title: "Class: DidEndpoint"
+sidebar_label: "DidEndpoint"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name             | Type            |
-| :--------------- | :-------------- |
-| `stores`         | `NamedRegistry` |
+| Name | Type |
+| :------ | :------ |
+| `stores` | `NamedRegistry` |
 | `offchainStores` | `NamedRegistry` |
 
 #### Inherited from
@@ -45,9 +45,9 @@ node_modules/klayr-framework/dist-node/modules/base_endpoint.d.ts:6
 
 #### Defined in
 
-[packages/klayr-did-module/src/endpoint.ts:17](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/endpoint.ts#L17)
+[packages/klayr-did-module/src/endpoint.ts:17](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/endpoint.ts#L17)
 
----
+___
 
 ### chainspace
 
@@ -55,9 +55,9 @@ node_modules/klayr-framework/dist-node/modules/base_endpoint.d.ts:6
 
 #### Defined in
 
-[packages/klayr-did-module/src/endpoint.ts:16](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/endpoint.ts#L16)
+[packages/klayr-did-module/src/endpoint.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/endpoint.ts#L16)
 
----
+___
 
 ### offchainStores
 
@@ -71,7 +71,7 @@ BaseEndpoint.offchainStores
 
 node_modules/klayr-framework/dist-node/modules/base_endpoint.d.ts:4
 
----
+___
 
 ### stores
 
@@ -93,8 +93,8 @@ node_modules/klayr-framework/dist-node/modules/base_endpoint.d.ts:3
 
 #### Parameters
 
-| Name  | Type                    |
-| :---- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `ctx` | `ModuleEndpointContext` |
 
 #### Returns
@@ -107,9 +107,9 @@ DidEndpointInterface.authorize
 
 #### Defined in
 
-[packages/klayr-did-module/src/endpoint.ts:24](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/endpoint.ts#L24)
+[packages/klayr-did-module/src/endpoint.ts:24](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/endpoint.ts#L24)
 
----
+___
 
 ### getConfig
 
@@ -117,8 +117,8 @@ DidEndpointInterface.authorize
 
 #### Parameters
 
-| Name   | Type                    |
-| :----- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_ctx` | `ModuleEndpointContext` |
 
 #### Returns
@@ -131,23 +131,23 @@ DidEndpointInterface.getConfig
 
 #### Defined in
 
-[packages/klayr-did-module/src/endpoint.ts:90](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/endpoint.ts#L90)
+[packages/klayr-did-module/src/endpoint.ts:90](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/endpoint.ts#L90)
 
----
+___
 
 ### getNonce
 
-▸ **getNonce**(`ctx`): `Promise`<{ `nonce`: `string` }\>
+▸ **getNonce**(`ctx`): `Promise`<{ `nonce`: `string`  }\>
 
 #### Parameters
 
-| Name  | Type                    |
-| :---- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `ctx` | `ModuleEndpointContext` |
 
 #### Returns
 
-`Promise`<{ `nonce`: `string` }\>
+`Promise`<{ `nonce`: `string`  }\>
 
 #### Implementation of
 
@@ -155,9 +155,9 @@ DidEndpointInterface.getNonce
 
 #### Defined in
 
-[packages/klayr-did-module/src/endpoint.ts:80](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/endpoint.ts#L80)
+[packages/klayr-did-module/src/endpoint.ts:80](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/endpoint.ts#L80)
 
----
+___
 
 ### init
 
@@ -165,8 +165,8 @@ DidEndpointInterface.getNonce
 
 #### Parameters
 
-| Name     | Type              |
-| :------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `config` | `DidModuleConfig` |
 
 #### Returns
@@ -179,9 +179,9 @@ DidEndpointInterface.init
 
 #### Defined in
 
-[packages/klayr-did-module/src/endpoint.ts:19](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/endpoint.ts#L19)
+[packages/klayr-did-module/src/endpoint.ts:19](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/endpoint.ts#L19)
 
----
+___
 
 ### read
 
@@ -189,8 +189,8 @@ DidEndpointInterface.init
 
 #### Parameters
 
-| Name  | Type                    |
-| :---- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `ctx` | `ModuleEndpointContext` |
 
 #### Returns
@@ -203,4 +203,4 @@ DidEndpointInterface.read
 
 #### Defined in
 
-[packages/klayr-did-module/src/endpoint.ts:71](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/endpoint.ts#L71)
+[packages/klayr-did-module/src/endpoint.ts:71](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/endpoint.ts#L71)

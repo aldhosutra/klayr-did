@@ -1,7 +1,7 @@
 ---
-id: 'DidModule'
-title: 'Class: DidModule'
-sidebar_label: 'DidModule'
+id: "DidModule"
+title: "Class: DidModule"
+sidebar_label: "DidModule"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -24,7 +24,7 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:49](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L49)
+[packages/klayr-did-module/src/module.ts:49](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L49)
 
 ## Properties
 
@@ -34,9 +34,9 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:32](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L32)
+[packages/klayr-did-module/src/module.ts:32](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L32)
 
----
+___
 
 ### \_didMethod
 
@@ -44,9 +44,9 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:33](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L33)
+[packages/klayr-did-module/src/module.ts:33](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L33)
 
----
+___
 
 ### autoCreateAddressDID
 
@@ -54,9 +54,9 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:30](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L30)
+[packages/klayr-did-module/src/module.ts:30](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L30)
 
----
+___
 
 ### chainspace
 
@@ -64,9 +64,9 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:29](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L29)
+[packages/klayr-did-module/src/module.ts:29](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L29)
 
----
+___
 
 ### commands
 
@@ -78,9 +78,9 @@ BaseModule.commands
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:38](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L38)
+[packages/klayr-did-module/src/module.ts:38](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L38)
 
----
+___
 
 ### endpoint
 
@@ -92,9 +92,9 @@ BaseModule.endpoint
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:35](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L35)
+[packages/klayr-did-module/src/module.ts:35](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L35)
 
----
+___
 
 ### events
 
@@ -108,7 +108,7 @@ BaseModule.events
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:41
 
----
+___
 
 ### method
 
@@ -120,9 +120,9 @@ BaseModule.method
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:36](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L36)
+[packages/klayr-did-module/src/module.ts:36](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L36)
 
----
+___
 
 ### offchainStores
 
@@ -136,7 +136,7 @@ BaseModule.offchainStores
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:43
 
----
+___
 
 ### stores
 
@@ -176,8 +176,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:44
 
 #### Parameters
 
-| Name      | Type                        |
-| :-------- | :-------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `TransactionExecuteContext` |
 
 #### Returns
@@ -192,7 +192,7 @@ BaseModule.afterCommandExecute
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:52
 
----
+___
 
 ### afterTransactionsExecute
 
@@ -200,8 +200,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:52
 
 #### Parameters
 
-| Name      | Type                       |
-| :-------- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `BlockAfterExecuteContext` |
 
 #### Returns
@@ -216,7 +216,7 @@ BaseModule.afterTransactionsExecute
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:56
 
----
+___
 
 ### baseMetadata
 
@@ -226,13 +226,13 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:56
 
 `Object`
 
-| Name        | Type                                        |
-| :---------- | :------------------------------------------ |
-| `assets`    | `never`[]                                   |
-| `commands`  | { `name`: `string` ; `params`: `Schema` }[] |
-| `endpoints` | `never`[]                                   |
-| `events`    | { `data`: `Schema` ; `name`: `string` }[]   |
-| `stores`    | { `data`: `Schema` ; `key`: `string` }[]    |
+| Name | Type |
+| :------ | :------ |
+| `assets` | `never`[] |
+| `commands` | { `name`: `string` ; `params`: `Schema`  }[] |
+| `endpoints` | `never`[] |
+| `events` | { `data`: `Schema` ; `name`: `string`  }[] |
+| `stores` | { `data`: `Schema` ; `key`: `string`  }[] |
 
 #### Inherited from
 
@@ -242,7 +242,7 @@ BaseModule.baseMetadata
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:58
 
----
+___
 
 ### beforeCommandExecute
 
@@ -250,8 +250,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:58
 
 #### Parameters
 
-| Name       | Type                        |
-| :--------- | :-------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `TransactionExecuteContext` |
 
 #### Returns
@@ -264,9 +264,9 @@ BaseModule.beforeCommandExecute
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:90](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L90)
+[packages/klayr-did-module/src/module.ts:90](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L90)
 
----
+___
 
 ### beforeTransactionsExecute
 
@@ -274,8 +274,8 @@ BaseModule.beforeCommandExecute
 
 #### Parameters
 
-| Name      | Type                  |
-| :-------- | :-------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `BlockExecuteContext` |
 
 #### Returns
@@ -290,7 +290,7 @@ BaseModule.beforeTransactionsExecute
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:55
 
----
+___
 
 ### finalizeGenesisState
 
@@ -298,8 +298,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:55
 
 #### Parameters
 
-| Name      | Type                         |
-| :-------- | :--------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `GenesisBlockExecuteContext` |
 
 #### Returns
@@ -314,7 +314,7 @@ BaseModule.finalizeGenesisState
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:54
 
----
+___
 
 ### init
 
@@ -322,8 +322,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:54
 
 #### Parameters
 
-| Name   | Type             |
-| :----- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `args` | `ModuleInitArgs` |
 
 #### Returns
@@ -336,9 +336,9 @@ BaseModule.init
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:75](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L75)
+[packages/klayr-did-module/src/module.ts:75](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L75)
 
----
+___
 
 ### initGenesisState
 
@@ -346,8 +346,8 @@ BaseModule.init
 
 #### Parameters
 
-| Name      | Type                         |
-| :-------- | :--------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `GenesisBlockExecuteContext` |
 
 #### Returns
@@ -362,7 +362,7 @@ BaseModule.initGenesisState
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:53
 
----
+___
 
 ### insertAssets
 
@@ -370,8 +370,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:53
 
 #### Parameters
 
-| Name      | Type                 |
-| :-------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `InsertAssetContext` |
 
 #### Returns
@@ -386,7 +386,7 @@ BaseModule.insertAssets
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:48
 
----
+___
 
 ### metadata
 
@@ -402,9 +402,9 @@ BaseModule.metadata
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:66](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/module.ts#L66)
+[packages/klayr-did-module/src/module.ts:66](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L66)
 
----
+___
 
 ### verifyAssets
 
@@ -412,8 +412,8 @@ BaseModule.metadata
 
 #### Parameters
 
-| Name      | Type                 |
-| :-------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `BlockVerifyContext` |
 
 #### Returns
@@ -428,7 +428,7 @@ BaseModule.verifyAssets
 
 node_modules/klayr-framework/dist-node/modules/base_module.d.ts:49
 
----
+___
 
 ### verifyTransaction
 
@@ -436,8 +436,8 @@ node_modules/klayr-framework/dist-node/modules/base_module.d.ts:49
 
 #### Parameters
 
-| Name      | Type                       |
-| :-------- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `TransactionVerifyContext` |
 
 #### Returns

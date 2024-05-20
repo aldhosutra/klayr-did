@@ -1,7 +1,7 @@
 ---
-id: 'did.cryptography.codec'
-title: 'Namespace: codec'
-sidebar_label: 'did.cryptography.codec'
+id: "did.cryptography.codec"
+title: "Namespace: codec"
+sidebar_label: "did.cryptography.codec"
 custom_edit_url: null
 ---
 
@@ -15,8 +15,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name  | Type     |
-| :---- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `buf` | `Buffer` |
 
 #### Returns
@@ -27,7 +27,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:8
 
----
+___
 
 ### decodePrivateKey
 
@@ -35,8 +35,8 @@ packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:8
 
 #### Parameters
 
-| Name                  | Type     |
-| :-------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `multibasePrivateKey` | `string` |
 
 #### Returns
@@ -47,7 +47,7 @@ packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:8
 
 packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:6
 
----
+___
 
 ### decodePublicKey
 
@@ -55,8 +55,8 @@ packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:6
 
 #### Parameters
 
-| Name                 | Type     |
-| :------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `multibasePublicKey` | `string` |
 
 #### Returns
@@ -67,7 +67,7 @@ packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:6
 
 packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:4
 
----
+___
 
 ### encodeJWEDocument
 
@@ -75,8 +75,8 @@ packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:4
 
 #### Parameters
 
-| Name  | Type                                              |
-| :---- | :------------------------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `jwe` | [`JWEDocument`](../interfaces/did.JWEDocument.md) |
 
 #### Returns
@@ -87,17 +87,17 @@ packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:4
 
 packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:7
 
----
+___
 
 ### encodePrivateKey
 
-▸ **encodePrivateKey**(`liskPrivateKey`): `string`
+▸ **encodePrivateKey**(`klayrPrivateKey`): `string`
 
 #### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
-| `liskPrivateKey` | `Buffer` |
+| Name | Type |
+| :------ | :------ |
+| `klayrPrivateKey` | `Buffer` |
 
 #### Returns
 
@@ -107,17 +107,17 @@ packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:7
 
 packages/klayr-decentralized-identifier/dist/cryptography/codec.d.ts:5
 
----
+___
 
 ### encodePublicKey
 
-▸ **encodePublicKey**(`liskPublicKey`): `string`
+▸ **encodePublicKey**(`klayrPublicKey`): `string`
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
-| `liskPublicKey` | `Buffer` |
+| Name | Type |
+| :------ | :------ |
+| `klayrPublicKey` | `Buffer` |
 
 #### Returns
 

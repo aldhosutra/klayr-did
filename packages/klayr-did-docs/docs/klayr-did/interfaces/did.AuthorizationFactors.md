@@ -1,7 +1,7 @@
 ---
-id: 'did.AuthorizationFactors'
-title: 'Interface: AuthorizationFactors'
-sidebar_label: 'did.AuthorizationFactors'
+id: "did.AuthorizationFactors"
+title: "Interface: AuthorizationFactors"
+sidebar_label: "did.AuthorizationFactors"
 custom_edit_url: null
 ---
 
@@ -17,7 +17,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:92
 
----
+___
 
 ### controller
 
@@ -27,7 +27,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:92
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:94
 
----
+___
 
 ### privateKey
 
@@ -37,7 +37,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:94
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:90
 
----
+___
 
 ### privateKeyMultibase
 
@@ -47,7 +47,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:90
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:91
 
----
+___
 
 ### publicKey
 
@@ -57,7 +57,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:91
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:88
 
----
+___
 
 ### publicKeyMultibase
 
@@ -67,7 +67,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:88
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:89
 
----
+___
 
 ### relationship
 
@@ -77,7 +77,7 @@ packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:89
 
 packages/klayr-decentralized-identifier/dist/types/cryptography.d.ts:95
 
----
+___
 
 ### signature
 

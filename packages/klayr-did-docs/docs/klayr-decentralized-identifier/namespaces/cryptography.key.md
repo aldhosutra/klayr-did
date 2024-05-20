@@ -1,7 +1,7 @@
 ---
-id: 'cryptography.key'
-title: 'Namespace: key'
-sidebar_label: 'cryptography.key'
+id: "cryptography.key"
+title: "Namespace: key"
+sidebar_label: "cryptography.key"
 custom_edit_url: null
 ---
 
@@ -17,8 +17,8 @@ Creates an Ed25519 Key Pair from an existing serialized key pair.
 
 #### Parameters
 
-| Name      | Type                | Description                         |
-| :-------- | :------------------ | :---------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `options` | `SerializedKeyPair` | Key pair options (see constructor). |
 
 #### Returns
@@ -42,7 +42,7 @@ privateKeyMultibase
 
 node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519VerificationKey2020.d.ts:52
 
----
+___
 
 ### createX25519KeyPair
 
@@ -50,8 +50,8 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 #### Parameters
 
-| Name      | Type                |
-| :-------- | :------------------ |
+| Name | Type |
+| :------ | :------ |
 | `keyPair` | `SerializedKeyPair` |
 
 #### Returns
@@ -60,9 +60,9 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/key.ts:22](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L22)
+[packages/klayr-decentralized-identifier/src/cryptography/key.ts:22](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L22)
 
----
+___
 
 ### generateEd25519KeyPair
 
@@ -72,8 +72,8 @@ Generates a KeyPair with an optional deterministic seed.
 
 #### Parameters
 
-| Name       | Type                     | Description      |
-| :--------- | :----------------------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `options?` | `GenerateKeyPairOptions` | Options hashmap. |
 
 #### Returns
@@ -81,13 +81,13 @@ Generates a KeyPair with an optional deterministic seed.
 `Promise`<`Ed25519VerificationKey2020`\>
 
 Resolves with generated
-public/private key pair.
+  public/private key pair.
 
 #### Defined in
 
 node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519VerificationKey2020.d.ts:91
 
----
+___
 
 ### generateX25519KeyPair
 
@@ -99,9 +99,9 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/key.ts:27](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L27)
+[packages/klayr-decentralized-identifier/src/cryptography/key.ts:27](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L27)
 
----
+___
 
 ### getEd25519SignatureSuite
 
@@ -109,8 +109,8 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 #### Parameters
 
-| Name    | Type            |
-| :------ | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `param` | `GetSuiteParam` |
 
 #### Returns
@@ -119,4 +119,4 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/key.ts:32](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L32)
+[packages/klayr-decentralized-identifier/src/cryptography/key.ts:32](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L32)

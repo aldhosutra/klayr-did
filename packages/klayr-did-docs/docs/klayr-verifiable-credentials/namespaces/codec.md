@@ -1,7 +1,7 @@
 ---
-id: 'codec'
-title: 'Namespace: codec'
-sidebar_label: 'codec'
+id: "codec"
+title: "Namespace: codec"
+sidebar_label: "codec"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,8 +14,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name           | Type     |
-| :------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `serializedVC` | `Buffer` |
 
 #### Returns
@@ -24,9 +24,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/credentials.ts:12](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/codec/credentials.ts#L12)
+[klayr-verifiable-credentials/src/codec/credentials.ts:12](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/credentials.ts#L12)
 
----
+___
 
 ### decodePresentation
 
@@ -34,8 +34,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name           | Type     |
-| :------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `serializedVP` | `Buffer` |
 
 #### Returns
@@ -44,9 +44,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/presentation.ts:12](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/codec/presentation.ts#L12)
+[klayr-verifiable-credentials/src/codec/presentation.ts:12](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/presentation.ts#L12)
 
----
+___
 
 ### decodeProof
 
@@ -54,8 +54,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name          | Type     |
-| :------------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `proofBuffer` | `Buffer` |
 
 #### Returns
@@ -64,9 +64,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/proof.ts:38](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/codec/proof.ts#L38)
+[klayr-verifiable-credentials/src/codec/proof.ts:38](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/proof.ts#L38)
 
----
+___
 
 ### encodeCredential
 
@@ -74,8 +74,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name             | Type                                                         |
-| :--------------- | :----------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `unserializedVC` | [`VerifiableCredential`](../modules.md#verifiablecredential) |
 
 #### Returns
@@ -84,9 +84,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/credentials.ts:6](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/codec/credentials.ts#L6)
+[klayr-verifiable-credentials/src/codec/credentials.ts:6](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/credentials.ts#L6)
 
----
+___
 
 ### encodePresentation
 
@@ -94,8 +94,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name             | Type                                                             |
-| :--------------- | :--------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `unserializedVP` | [`VerifiablePresentation`](../modules.md#verifiablepresentation) |
 
 #### Returns
@@ -104,9 +104,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/presentation.ts:6](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/codec/presentation.ts#L6)
+[klayr-verifiable-credentials/src/codec/presentation.ts:6](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/presentation.ts#L6)
 
----
+___
 
 ### encodeProof
 
@@ -114,8 +114,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name    | Type                              |
-| :------ | :-------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `proof` | [`Proof`](../interfaces/Proof.md) |
 
 #### Returns
@@ -124,4 +124,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/proof.ts:33](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-verifiable-credentials/src/codec/proof.ts#L33)
+[klayr-verifiable-credentials/src/codec/proof.ts:33](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/proof.ts#L33)

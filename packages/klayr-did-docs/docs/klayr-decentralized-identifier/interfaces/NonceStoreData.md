@@ -1,7 +1,7 @@
 ---
-id: 'NonceStoreData'
-title: 'Interface: NonceStoreData'
-sidebar_label: 'NonceStoreData'
+id: "NonceStoreData"
+title: "Interface: NonceStoreData"
+sidebar_label: "NonceStoreData"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -14,4 +14,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/stores/nonce.ts:2](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-decentralized-identifier/src/types/stores/nonce.ts#L2)
+[packages/klayr-decentralized-identifier/src/types/stores/nonce.ts:2](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/stores/nonce.ts#L2)

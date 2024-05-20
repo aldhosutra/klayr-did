@@ -1,7 +1,7 @@
 ---
-id: 'did.cryptography.key'
-title: 'Namespace: key'
-sidebar_label: 'did.cryptography.key'
+id: "did.cryptography.key"
+title: "Namespace: key"
+sidebar_label: "did.cryptography.key"
 custom_edit_url: null
 ---
 
@@ -17,8 +17,8 @@ Creates an Ed25519 Key Pair from an existing serialized key pair.
 
 #### Parameters
 
-| Name      | Type                | Description                         |
-| :-------- | :------------------ | :---------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `options` | `SerializedKeyPair` | Key pair options (see constructor). |
 
 #### Returns
@@ -42,7 +42,7 @@ privateKeyMultibase
 
 node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519VerificationKey2020.d.ts:52
 
----
+___
 
 ### createX25519KeyPair
 
@@ -50,8 +50,8 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 #### Parameters
 
-| Name      | Type                |
-| :-------- | :------------------ |
+| Name | Type |
+| :------ | :------ |
 | `keyPair` | `SerializedKeyPair` |
 
 #### Returns
@@ -62,7 +62,7 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 packages/klayr-decentralized-identifier/dist/cryptography/key.d.ts:14
 
----
+___
 
 ### generateEd25519KeyPair
 
@@ -72,8 +72,8 @@ Generates a KeyPair with an optional deterministic seed.
 
 #### Parameters
 
-| Name       | Type                     | Description      |
-| :--------- | :----------------------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `options?` | `GenerateKeyPairOptions` | Options hashmap. |
 
 #### Returns
@@ -81,13 +81,13 @@ Generates a KeyPair with an optional deterministic seed.
 `Promise`<`Ed25519VerificationKey2020`\>
 
 Resolves with generated
-public/private key pair.
+  public/private key pair.
 
 #### Defined in
 
 node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519VerificationKey2020.d.ts:91
 
----
+___
 
 ### generateX25519KeyPair
 
@@ -101,7 +101,7 @@ node_modules/@digitalcredentials/ed25519-verification-key-2020/dist/Ed25519Verif
 
 packages/klayr-decentralized-identifier/dist/cryptography/key.d.ts:16
 
----
+___
 
 ### getEd25519SignatureSuite
 
@@ -109,8 +109,8 @@ packages/klayr-decentralized-identifier/dist/cryptography/key.d.ts:16
 
 #### Parameters
 
-| Name    | Type            |
-| :------ | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `param` | `GetSuiteParam` |
 
 #### Returns

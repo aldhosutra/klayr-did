@@ -1,7 +1,7 @@
 ---
-id: 'CreateCommand'
-title: 'Class: CreateCommand'
-sidebar_label: 'CreateCommand'
+id: "CreateCommand"
+title: "Class: CreateCommand"
+sidebar_label: "CreateCommand"
 sidebar_position: 0
 custom_edit_url: null
 ---
@@ -20,8 +20,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name     | Type            |
-| :------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `stores` | `NamedRegistry` |
 | `events` | `NamedRegistry` |
 
@@ -41,9 +41,9 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:9
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/create_command.ts:17](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/commands/create_command.ts#L17)
+[packages/klayr-did-module/src/commands/create_command.ts:17](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/create_command.ts#L17)
 
----
+___
 
 ### events
 
@@ -57,7 +57,7 @@ BaseCommand.events
 
 node_modules/klayr-framework/dist-node/modules/base_command.d.ts:6
 
----
+___
 
 ### schema
 
@@ -65,35 +65,35 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:6
 
 #### Type declaration
 
-| Name                                                           | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| :------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$id`                                                          | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties`                                                   | { `controllers`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } ; `did`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `keys`: { `fieldNumber`: `number` ; `items`: { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } } ; `required`: `string`[] ; `type`: `string` } ; `type`: `string` } } |
-| `properties.controllers`                                       | { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` }                                                                                                                                                                                                                                                                                                                                                                                           |
-| `properties.controllers.fieldNumber`                           | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.controllers.items`                                 | { `dataType`: `string` }                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.controllers.items.dataType`                        | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.controllers.type`                                  | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.did`                                               | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `properties.did.dataType`                                      | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.did.fieldNumber`                                   | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys`                                              | { `fieldNumber`: `number` ; `items`: { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } } ; `required`: `string`[] ; `type`: `string` } ; `type`: `string` }                                                                                                                                                                             |
-| `properties.keys.fieldNumber`                                  | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items`                                        | { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } } ; `required`: `string`[] ; `type`: `string` }                                                                                                                                                                                                                                       |
-| `properties.keys.items.properties`                             | { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number` } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` } }                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.publicKey`                   | { `dataType`: `string` ; `fieldNumber`: `number` }                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `properties.keys.items.properties.publicKey.dataType`          | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.publicKey.fieldNumber`       | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.relationship`                | { `fieldNumber`: `number` ; `items`: { `dataType`: `string` } ; `type`: `string` }                                                                                                                                                                                                                                                                                                                                                                                           |
-| `properties.keys.items.properties.relationship.fieldNumber`    | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.relationship.items`          | { `dataType`: `string` }                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.relationship.items.dataType` | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.properties.relationship.type`           | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.items.required`                               | `string`[]                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `properties.keys.items.type`                                   | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `properties.keys.type`                                         | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `required`                                                     | `string`[]                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `type`                                                         | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Name | Type |
+| :------ | :------ |
+| `$id` | `string` |
+| `properties` | { `controllers`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  } ; `did`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `keys`: { `fieldNumber`: `number` ; `items`: { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  }  } ; `required`: `string`[] ; `type`: `string`  } ; `type`: `string`  }  } |
+| `properties.controllers` | { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  } |
+| `properties.controllers.fieldNumber` | `number` |
+| `properties.controllers.items` | { `dataType`: `string`  } |
+| `properties.controllers.items.dataType` | `string` |
+| `properties.controllers.type` | `string` |
+| `properties.did` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.did.dataType` | `string` |
+| `properties.did.fieldNumber` | `number` |
+| `properties.keys` | { `fieldNumber`: `number` ; `items`: { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  }  } ; `required`: `string`[] ; `type`: `string`  } ; `type`: `string`  } |
+| `properties.keys.fieldNumber` | `number` |
+| `properties.keys.items` | { `properties`: { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  }  } ; `required`: `string`[] ; `type`: `string`  } |
+| `properties.keys.items.properties` | { `publicKey`: { `dataType`: `string` ; `fieldNumber`: `number`  } ; `relationship`: { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  }  } |
+| `properties.keys.items.properties.publicKey` | { `dataType`: `string` ; `fieldNumber`: `number`  } |
+| `properties.keys.items.properties.publicKey.dataType` | `string` |
+| `properties.keys.items.properties.publicKey.fieldNumber` | `number` |
+| `properties.keys.items.properties.relationship` | { `fieldNumber`: `number` ; `items`: { `dataType`: `string`  } ; `type`: `string`  } |
+| `properties.keys.items.properties.relationship.fieldNumber` | `number` |
+| `properties.keys.items.properties.relationship.items` | { `dataType`: `string`  } |
+| `properties.keys.items.properties.relationship.items.dataType` | `string` |
+| `properties.keys.items.properties.relationship.type` | `string` |
+| `properties.keys.items.required` | `string`[] |
+| `properties.keys.items.type` | `string` |
+| `properties.keys.type` | `string` |
+| `required` | `string`[] |
+| `type` | `string` |
 
 #### Overrides
 
@@ -101,9 +101,9 @@ BaseCommand.schema
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/create_command.ts:16](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/commands/create_command.ts#L16)
+[packages/klayr-did-module/src/commands/create_command.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/create_command.ts#L16)
 
----
+___
 
 ### stores
 
@@ -143,8 +143,8 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:8
 
 #### Parameters
 
-| Name       | Type                                    |
-| :--------- | :-------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `CommandExecuteContext`<`CreateParam`\> |
 
 #### Returns
@@ -157,9 +157,9 @@ BaseCommand.execute
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/create_command.ts:38](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/commands/create_command.ts#L38)
+[packages/klayr-did-module/src/commands/create_command.ts:38](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/create_command.ts#L38)
 
----
+___
 
 ### init
 
@@ -167,8 +167,8 @@ BaseCommand.execute
 
 #### Parameters
 
-| Name            | Type              |
-| :-------------- | :---------------- |
+| Name | Type |
+| :------ | :------ |
 | `_moduleConfig` | `DidModuleConfig` |
 
 #### Returns
@@ -177,9 +177,9 @@ BaseCommand.execute
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/create_command.ts:20](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/commands/create_command.ts#L20)
+[packages/klayr-did-module/src/commands/create_command.ts:20](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/create_command.ts#L20)
 
----
+___
 
 ### verify
 
@@ -187,8 +187,8 @@ BaseCommand.execute
 
 #### Parameters
 
-| Name       | Type                                   |
-| :--------- | :------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_context` | `CommandVerifyContext`<`CreateParam`\> |
 
 #### Returns
@@ -201,4 +201,4 @@ BaseCommand.verify
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/create_command.ts:26](https://github.com/aldhosutra/klayr-did/blob/8db4b95/packages/klayr-did-module/src/commands/create_command.ts#L26)
+[packages/klayr-did-module/src/commands/create_command.ts:26](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/create_command.ts#L26)

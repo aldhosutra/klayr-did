@@ -1,7 +1,7 @@
 ---
-id: 'did.utils.object'
-title: 'Namespace: object'
-sidebar_label: 'did.utils.object'
+id: "did.utils.object"
+title: "Namespace: object"
+sidebar_label: "did.utils.object"
 custom_edit_url: null
 ---
 
@@ -16,13 +16,13 @@ custom_edit_url: null
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name       | Type     |
-| :--------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `jsonByte` | `Buffer` |
 
 #### Returns
@@ -33,7 +33,7 @@ custom_edit_url: null
 
 packages/klayr-decentralized-identifier/dist/utils/object.d.ts:4
 
----
+___
 
 ### encodeJSON
 
@@ -41,8 +41,8 @@ packages/klayr-decentralized-identifier/dist/utils/object.d.ts:4
 
 #### Parameters
 
-| Name   | Type                       |
-| :----- | :------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `json` | `Record`<`string`, `any`\> |
 
 #### Returns
@@ -53,7 +53,7 @@ packages/klayr-decentralized-identifier/dist/utils/object.d.ts:4
 
 packages/klayr-decentralized-identifier/dist/utils/object.d.ts:3
 
----
+___
 
 ### serializer
 
@@ -62,13 +62,13 @@ packages/klayr-decentralized-identifier/dist/utils/object.d.ts:3
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name   | Type                    |
-| :----- | :---------------------- |
+| Name | Type |
+| :------ | :------ |
 | `data` | `Record`<`any`, `any`\> |
 
 #### Returns
