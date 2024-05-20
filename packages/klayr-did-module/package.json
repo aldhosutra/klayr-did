@@ -1,6 +1,6 @@
 {
   "name": "@klayr-did/klayr-did-module",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Klayr module which implements on-chain logic for Klayr decentralized identifiers (DIDs)",
   "keywords": [
     "did",
@@ -67,7 +67,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@klayr-did/klayr-decentralized-identifier": "^0.2.5",
+    "@klayr-did/klayr-decentralized-identifier": "^0.2.6",
     "klayr-sdk": "^6.0.4"
   },
   "gitHead": "515766d8e5502c4fda3876e7f54fab163da453ec"
