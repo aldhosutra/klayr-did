@@ -28,7 +28,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:26](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L26)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:26](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L26)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:11](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L11)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:11](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L11)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:45](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L45)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:45](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L45)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:93](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L93)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:93](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L93)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:63](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L63)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:63](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L63)
 
 ___
 
@@ -141,4 +141,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:99](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L99)
+[packages/klayr-decentralized-identifier/src/cryptography/operation.ts:99](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/operation.ts#L99)

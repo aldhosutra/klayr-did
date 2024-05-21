@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:52](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L52)
+[klayr-verifiable-credentials/src/types.ts:52](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/types.ts#L52)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:57](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L57)
+[klayr-verifiable-credentials/src/types.ts:57](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/types.ts#L57)
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:51](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L51)
+[klayr-verifiable-credentials/src/types.ts:51](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/types.ts#L51)

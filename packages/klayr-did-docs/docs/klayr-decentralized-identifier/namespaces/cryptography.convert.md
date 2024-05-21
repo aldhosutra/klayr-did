@@ -25,7 +25,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/convert.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/convert.ts#L13)
+[packages/klayr-decentralized-identifier/src/cryptography/convert.ts:13](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/convert.ts#L13)
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/convert.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/convert.ts#L5)
+[packages/klayr-decentralized-identifier/src/cryptography/convert.ts:5](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/convert.ts#L5)

@@ -28,7 +28,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/documentLoader/offChain.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/documentLoader/offChain.ts#L5)
+[klayr-verifiable-credentials/src/documentLoader/offChain.ts:5](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/documentLoader/offChain.ts#L5)
 
 ___
 
@@ -48,4 +48,4 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/documentLoader/onChain.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/documentLoader/onChain.ts#L5)
+[klayr-verifiable-credentials/src/documentLoader/onChain.ts:5](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/documentLoader/onChain.ts#L5)

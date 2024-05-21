@@ -24,7 +24,7 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:49](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L49)
+[packages/klayr-did-module/src/module.ts:49](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L49)
 
 ## Properties
 
@@ -34,7 +34,7 @@ BaseModule.constructor
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:32](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L32)
+[packages/klayr-did-module/src/module.ts:32](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L32)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:33](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L33)
+[packages/klayr-did-module/src/module.ts:33](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L33)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:30](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L30)
+[packages/klayr-did-module/src/module.ts:30](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L30)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:29](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L29)
+[packages/klayr-did-module/src/module.ts:29](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L29)
 
 ___
 
@@ -78,7 +78,7 @@ BaseModule.commands
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:38](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L38)
+[packages/klayr-did-module/src/module.ts:38](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L38)
 
 ___
 
@@ -92,7 +92,7 @@ BaseModule.endpoint
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:35](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L35)
+[packages/klayr-did-module/src/module.ts:35](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L35)
 
 ___
 
@@ -120,7 +120,7 @@ BaseModule.method
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:36](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L36)
+[packages/klayr-did-module/src/module.ts:36](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L36)
 
 ___
 
@@ -264,7 +264,7 @@ BaseModule.beforeCommandExecute
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:90](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L90)
+[packages/klayr-did-module/src/module.ts:90](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L90)
 
 ___
 
@@ -336,7 +336,7 @@ BaseModule.init
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:75](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L75)
+[packages/klayr-did-module/src/module.ts:75](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L75)
 
 ___
 
@@ -402,7 +402,7 @@ BaseModule.metadata
 
 #### Defined in
 
-[packages/klayr-did-module/src/module.ts:66](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/module.ts#L66)
+[packages/klayr-did-module/src/module.ts:66](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/module.ts#L66)
 
 ___
 

@@ -110,14 +110,6 @@ const config = {
                 label: 'Klayr Twitter / X',
                 href: 'https://twitter.com/KlayrHQ',
               },
-              {
-                label: 'Klayr Telegram',
-                href: 'https://t.me/Klayr_HQ',
-              },
-              {
-                label: 'Klayr Reddit',
-                href: 'https://www.reddit.com/r/Klayr',
-              },
             ],
           },
           {

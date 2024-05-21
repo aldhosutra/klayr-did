@@ -26,7 +26,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L13)
+[klayr-verifiable-credentials/src/types.ts:13](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/types.ts#L13)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:20](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L20)
+[klayr-verifiable-credentials/src/types.ts:20](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/types.ts#L20)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:26](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L26)
+[klayr-verifiable-credentials/src/types.ts:26](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/types.ts#L26)
 
 ## Functions
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/credentials/credentials.ts:8](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/credentials/credentials.ts#L8)
+[klayr-verifiable-credentials/src/credentials/credentials.ts:8](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/credentials/credentials.ts#L8)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/credentials/presentation.ts:8](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/credentials/presentation.ts#L8)
+[klayr-verifiable-credentials/src/credentials/presentation.ts:8](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/credentials/presentation.ts#L8)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/credentials/credentials.ts:47](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/credentials/credentials.ts#L47)
+[klayr-verifiable-credentials/src/credentials/credentials.ts:47](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/credentials/credentials.ts#L47)
 
 ___
 
@@ -136,4 +136,4 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/credentials/presentation.ts:52](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/credentials/presentation.ts#L52)
+[klayr-verifiable-credentials/src/credentials/presentation.ts:52](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/credentials/presentation.ts#L52)

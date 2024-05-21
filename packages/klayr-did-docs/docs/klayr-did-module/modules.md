@@ -44,4 +44,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-did-module/src/index.ts:25](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/index.ts#L25)
+[packages/klayr-did-module/src/index.ts:25](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/index.ts#L25)

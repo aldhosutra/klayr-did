@@ -25,7 +25,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:59](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L59)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:59](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L59)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:48](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L48)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:48](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L48)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:34](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L34)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:34](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L34)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:55](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L55)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:55](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L55)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:41](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L41)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:41](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L41)
 
 ___
 
@@ -125,4 +125,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:27](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L27)
+[packages/klayr-decentralized-identifier/src/cryptography/codec.ts:27](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/codec.ts#L27)

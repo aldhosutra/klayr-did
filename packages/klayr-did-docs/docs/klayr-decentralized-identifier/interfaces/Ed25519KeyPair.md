@@ -24,7 +24,7 @@ Partial.controller
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:15](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L15)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:15](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L15)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:23](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L23)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:23](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L23)
 
 ___
 
@@ -56,7 +56,7 @@ Partial.id
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L13)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:13](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L13)
 
 ___
 
@@ -70,7 +70,7 @@ Partial.privateKeyMultibase
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:19](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L19)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:19](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L19)
 
 ___
 
@@ -84,7 +84,7 @@ Partial.publicKeyMultibase
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L16)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:16](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L16)
 
 ___
 
@@ -98,4 +98,4 @@ Partial.type
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/cryptography.ts:22](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L22)
+[packages/klayr-decentralized-identifier/src/types/cryptography.ts:22](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/cryptography.ts#L22)

@@ -41,7 +41,7 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:9
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/remove_controllers_command.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/remove_controllers_command.ts#L13)
+[packages/klayr-did-module/src/commands/remove_controllers_command.ts:13](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/commands/remove_controllers_command.ts#L13)
 
 ___
 
@@ -92,7 +92,7 @@ BaseCommand.schema
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/remove_controllers_command.ts:12](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/remove_controllers_command.ts#L12)
+[packages/klayr-did-module/src/commands/remove_controllers_command.ts:12](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/commands/remove_controllers_command.ts#L12)
 
 ___
 
@@ -148,7 +148,7 @@ BaseCommand.execute
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/remove_controllers_command.ts:26](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/remove_controllers_command.ts#L26)
+[packages/klayr-did-module/src/commands/remove_controllers_command.ts:26](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/commands/remove_controllers_command.ts#L26)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/remove_controllers_command.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/remove_controllers_command.ts#L16)
+[packages/klayr-did-module/src/commands/remove_controllers_command.ts:16](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/commands/remove_controllers_command.ts#L16)
 
 ___
 
@@ -192,4 +192,4 @@ BaseCommand.verify
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/remove_controllers_command.ts:22](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/remove_controllers_command.ts#L22)
+[packages/klayr-did-module/src/commands/remove_controllers_command.ts:22](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/commands/remove_controllers_command.ts#L22)

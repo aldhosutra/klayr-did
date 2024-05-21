@@ -45,7 +45,7 @@ node_modules/klayr-framework/dist-node/modules/base_method.d.ts:5
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:33](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L33)
+[packages/klayr-did-module/src/method.ts:33](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L33)
 
 ___
 
@@ -102,7 +102,7 @@ DidMethodInterface.addControllers
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:153](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L153)
+[packages/klayr-did-module/src/method.ts:153](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L153)
 
 ___
 
@@ -131,7 +131,7 @@ DidMethodInterface.addKeys
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:87](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L87)
+[packages/klayr-did-module/src/method.ts:87](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L87)
 
 ___
 
@@ -163,7 +163,7 @@ DidMethodInterface.addServiceEndpoint
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:219](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L219)
+[packages/klayr-did-module/src/method.ts:219](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L219)
 
 ___
 
@@ -189,7 +189,7 @@ DidMethodInterface.authorize
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:62](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L62)
+[packages/klayr-did-module/src/method.ts:62](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L62)
 
 ___
 
@@ -217,7 +217,7 @@ DidMethodInterface.create
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:71](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L71)
+[packages/klayr-did-module/src/method.ts:71](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L71)
 
 ___
 
@@ -245,7 +245,7 @@ DidMethodInterface.deactivate
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:285](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L285)
+[packages/klayr-did-module/src/method.ts:285](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L285)
 
 ___
 
@@ -263,7 +263,7 @@ DidMethodInterface.getConfig
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:40](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L40)
+[packages/klayr-did-module/src/method.ts:40](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L40)
 
 ___
 
@@ -288,7 +288,7 @@ DidMethodInterface.getNonce
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:49](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L49)
+[packages/klayr-did-module/src/method.ts:49](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L49)
 
 ___
 
@@ -313,7 +313,7 @@ DidMethodInterface.incrementNonce
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:55](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L55)
+[packages/klayr-did-module/src/method.ts:55](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L55)
 
 ___
 
@@ -337,7 +337,7 @@ DidMethodInterface.init
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:35](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L35)
+[packages/klayr-did-module/src/method.ts:35](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L35)
 
 ___
 
@@ -362,7 +362,7 @@ DidMethodInterface.read
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:44](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L44)
+[packages/klayr-did-module/src/method.ts:44](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L44)
 
 ___
 
@@ -391,7 +391,7 @@ DidMethodInterface.removeControllers
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:186](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L186)
+[packages/klayr-did-module/src/method.ts:186](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L186)
 
 ___
 
@@ -420,7 +420,7 @@ DidMethodInterface.removeKeys
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:120](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L120)
+[packages/klayr-did-module/src/method.ts:120](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L120)
 
 ___
 
@@ -449,4 +449,4 @@ DidMethodInterface.removeServiceEndpoint
 
 #### Defined in
 
-[packages/klayr-did-module/src/method.ts:252](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/method.ts#L252)
+[packages/klayr-did-module/src/method.ts:252](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/method.ts#L252)

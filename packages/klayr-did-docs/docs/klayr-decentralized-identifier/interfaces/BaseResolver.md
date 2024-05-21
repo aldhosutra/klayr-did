@@ -30,4 +30,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/resolver.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/resolver.ts#L13)
+[packages/klayr-decentralized-identifier/src/types/resolver.ts:13](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/resolver.ts#L13)

@@ -29,7 +29,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:39](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L39)
+[packages/klayr-decentralized-identifier/src/types/method.ts:39](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L39)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:23](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L23)
+[packages/klayr-decentralized-identifier/src/types/method.ts:23](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L23)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:55](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L55)
+[packages/klayr-decentralized-identifier/src/types/method.ts:55](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L55)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:15](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L15)
+[packages/klayr-decentralized-identifier/src/types/method.ts:15](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L15)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L16)
+[packages/klayr-decentralized-identifier/src/types/method.ts:16](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L16)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:75](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L75)
+[packages/klayr-decentralized-identifier/src/types/method.ts:75](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L75)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:11](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L11)
+[packages/klayr-decentralized-identifier/src/types/method.ts:11](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L11)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L13)
+[packages/klayr-decentralized-identifier/src/types/method.ts:13](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L13)
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:14](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L14)
+[packages/klayr-decentralized-identifier/src/types/method.ts:14](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L14)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:10](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L10)
+[packages/klayr-decentralized-identifier/src/types/method.ts:10](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L10)
 
 ___
 
@@ -249,7 +249,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:12](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L12)
+[packages/klayr-decentralized-identifier/src/types/method.ts:12](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L12)
 
 ___
 
@@ -274,7 +274,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:47](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L47)
+[packages/klayr-decentralized-identifier/src/types/method.ts:47](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L47)
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:31](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L31)
+[packages/klayr-decentralized-identifier/src/types/method.ts:31](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L31)
 
 ___
 
@@ -324,4 +324,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/method.ts:67](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/method.ts#L67)
+[packages/klayr-decentralized-identifier/src/types/method.ts:67](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/method.ts#L67)

@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/endpoint.ts:11](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/endpoint.ts#L11)
+[packages/klayr-decentralized-identifier/src/types/endpoint.ts:11](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/endpoint.ts#L11)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/endpoint.ts:8](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/endpoint.ts#L8)
+[packages/klayr-decentralized-identifier/src/types/endpoint.ts:8](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/endpoint.ts#L8)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/endpoint.ts:10](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/endpoint.ts#L10)
+[packages/klayr-decentralized-identifier/src/types/endpoint.ts:10](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/endpoint.ts#L10)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/endpoint.ts:7](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/endpoint.ts#L7)
+[packages/klayr-decentralized-identifier/src/types/endpoint.ts:7](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/endpoint.ts#L7)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/endpoint.ts:9](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/endpoint.ts#L9)
+[packages/klayr-decentralized-identifier/src/types/endpoint.ts:9](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/endpoint.ts#L9)

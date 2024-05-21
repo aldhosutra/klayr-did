@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/credentials.ts:12](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/credentials.ts#L12)
+[klayr-verifiable-credentials/src/codec/credentials.ts:12](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/codec/credentials.ts#L12)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/presentation.ts:12](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/presentation.ts#L12)
+[klayr-verifiable-credentials/src/codec/presentation.ts:12](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/codec/presentation.ts#L12)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/proof.ts:38](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/proof.ts#L38)
+[klayr-verifiable-credentials/src/codec/proof.ts:38](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/codec/proof.ts#L38)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/credentials.ts:6](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/credentials.ts#L6)
+[klayr-verifiable-credentials/src/codec/credentials.ts:6](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/codec/credentials.ts#L6)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/presentation.ts:6](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/presentation.ts#L6)
+[klayr-verifiable-credentials/src/codec/presentation.ts:6](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/codec/presentation.ts#L6)
 
 ___
 
@@ -124,4 +124,4 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/codec/proof.ts:33](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/codec/proof.ts#L33)
+[klayr-verifiable-credentials/src/codec/proof.ts:33](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/codec/proof.ts#L33)

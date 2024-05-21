@@ -14,4 +14,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/stores/nonce.ts:2](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/stores/nonce.ts#L2)
+[packages/klayr-decentralized-identifier/src/types/stores/nonce.ts:2](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/stores/nonce.ts#L2)

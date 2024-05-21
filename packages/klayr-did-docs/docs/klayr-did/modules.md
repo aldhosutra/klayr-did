@@ -58,4 +58,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-did/src/index.ts:9](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did/src/index.ts#L9)
+[packages/klayr-did/src/index.ts:9](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did/src/index.ts#L9)

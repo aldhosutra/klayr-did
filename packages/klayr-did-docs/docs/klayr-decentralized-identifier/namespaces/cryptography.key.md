@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/key.ts:22](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L22)
+[packages/klayr-decentralized-identifier/src/cryptography/key.ts:22](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L22)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/key.ts:27](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L27)
+[packages/klayr-decentralized-identifier/src/cryptography/key.ts:27](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L27)
 
 ___
 
@@ -119,4 +119,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/cryptography/key.ts:32](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L32)
+[packages/klayr-decentralized-identifier/src/cryptography/key.ts:32](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/cryptography/key.ts#L32)

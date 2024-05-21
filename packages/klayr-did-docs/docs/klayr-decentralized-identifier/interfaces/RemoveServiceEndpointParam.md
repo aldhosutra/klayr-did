@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts#L3)
+[packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts:3](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts#L3)
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts#L5)
+[packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts:5](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts#L5)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts:4](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts#L4)
+[packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts:4](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts#L4)
 
 ___
 
@@ -44,4 +44,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts:2](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts#L2)
+[packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts:2](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/commands/remove_service_endpoint_command.ts#L2)

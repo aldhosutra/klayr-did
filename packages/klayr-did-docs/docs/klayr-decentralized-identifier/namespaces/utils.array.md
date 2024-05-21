@@ -32,7 +32,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/array.ts:6](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/array.ts#L6)
+[packages/klayr-decentralized-identifier/src/utils/array.ts:6](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/array.ts#L6)
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/array.ts:1](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/array.ts#L1)
+[packages/klayr-decentralized-identifier/src/utils/array.ts:1](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/array.ts#L1)

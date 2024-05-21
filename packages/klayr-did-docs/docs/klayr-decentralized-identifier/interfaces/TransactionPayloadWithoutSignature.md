@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:71](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L71)
+[packages/klayr-decentralized-identifier/src/types/client.ts:71](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/client.ts#L71)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:72](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L72)
+[packages/klayr-decentralized-identifier/src/types/client.ts:72](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/client.ts#L72)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/types/client.ts:73](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/types/client.ts#L73)
+[packages/klayr-decentralized-identifier/src/types/client.ts:73](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/types/client.ts#L73)

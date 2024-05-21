@@ -15,7 +15,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/documentLoader/builders/base.ts:59](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/documentLoader/builders/base.ts#L59)
+[klayr-verifiable-credentials/src/documentLoader/builders/base.ts:59](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/documentLoader/builders/base.ts#L59)
 
 ## Functions
 
@@ -35,4 +35,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/documentLoader/builders/base.ts:17](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/documentLoader/builders/base.ts#L17)
+[klayr-verifiable-credentials/src/documentLoader/builders/base.ts:17](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/documentLoader/builders/base.ts#L17)

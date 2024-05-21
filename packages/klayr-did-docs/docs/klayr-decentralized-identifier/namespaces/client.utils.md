@@ -25,7 +25,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/client/utils/index.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L5)
+[packages/klayr-decentralized-identifier/src/client/utils/index.ts:5](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L5)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/client/utils/index.ts:10](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L10)
+[packages/klayr-decentralized-identifier/src/client/utils/index.ts:10](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L10)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/client/utils/validator.ts:18](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/client/utils/validator.ts#L18)
+[packages/klayr-decentralized-identifier/src/client/utils/validator.ts:18](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/client/utils/validator.ts#L18)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/client/utils/index.ts:15](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L15)
+[packages/klayr-decentralized-identifier/src/client/utils/index.ts:15](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/client/utils/index.ts#L15)

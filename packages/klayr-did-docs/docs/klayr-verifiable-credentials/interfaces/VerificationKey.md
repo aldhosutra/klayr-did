@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:17](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L17)
+[klayr-verifiable-credentials/src/types.ts:17](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/types.ts#L17)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[klayr-verifiable-credentials/src/types.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-verifiable-credentials/src/types.ts#L16)
+[klayr-verifiable-credentials/src/types.ts:16](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-verifiable-credentials/src/types.ts#L16)
 
 ___
 

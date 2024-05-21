@@ -15,7 +15,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:10](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L10)
+[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:10](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L10)
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:11](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L11)
+[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:11](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L11)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:8](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L8)
+[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:8](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L8)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:8](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L8)
+[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:8](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L8)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:9](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L9)
+[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:9](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L9)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:3](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L3)
+[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:3](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L3)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:1](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L1)
+[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:1](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L1)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:7](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L7)
+[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:7](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L7)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:4](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L4)
+[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:4](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L4)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:2](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L2)
+[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:2](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L2)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:6](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L6)
+[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:6](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L6)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L5)
+[packages/klayr-decentralized-identifier/src/utils/constant/did.ts:5](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/did.ts#L5)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:5](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L5)
+[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:5](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L5)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:13](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L13)
+[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:13](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L13)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:10](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L10)
+[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:10](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L10)
 
 ___
 
@@ -165,4 +165,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:7](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L7)
+[packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts:7](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/utils/constant/cryptography.ts#L7)

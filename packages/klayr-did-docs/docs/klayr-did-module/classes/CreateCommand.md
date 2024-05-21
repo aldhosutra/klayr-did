@@ -41,7 +41,7 @@ node_modules/klayr-framework/dist-node/modules/base_command.d.ts:9
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/create_command.ts:17](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/create_command.ts#L17)
+[packages/klayr-did-module/src/commands/create_command.ts:17](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/commands/create_command.ts#L17)
 
 ___
 
@@ -101,7 +101,7 @@ BaseCommand.schema
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/create_command.ts:16](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/create_command.ts#L16)
+[packages/klayr-did-module/src/commands/create_command.ts:16](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/commands/create_command.ts#L16)
 
 ___
 
@@ -157,7 +157,7 @@ BaseCommand.execute
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/create_command.ts:38](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/create_command.ts#L38)
+[packages/klayr-did-module/src/commands/create_command.ts:38](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/commands/create_command.ts#L38)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/create_command.ts:20](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/create_command.ts#L20)
+[packages/klayr-did-module/src/commands/create_command.ts:20](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/commands/create_command.ts#L20)
 
 ___
 
@@ -201,4 +201,4 @@ BaseCommand.verify
 
 #### Defined in
 
-[packages/klayr-did-module/src/commands/create_command.ts:26](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-did-module/src/commands/create_command.ts#L26)
+[packages/klayr-did-module/src/commands/create_command.ts:26](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-did-module/src/commands/create_command.ts#L26)

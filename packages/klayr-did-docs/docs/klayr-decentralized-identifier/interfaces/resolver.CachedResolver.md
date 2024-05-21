@@ -31,7 +31,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:12](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L12)
+[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:12](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L12)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:10](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L10)
+[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:10](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L10)
 
 ___
 
@@ -65,4 +65,4 @@ ___
 
 #### Defined in
 
-[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:11](https://github.com/aldhosutra/klayr-did/blob/515766d/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L11)
+[packages/klayr-decentralized-identifier/src/resolver/resolver.ts:11](https://github.com/aldhosutra/klayr-did/blob/4de9da3/packages/klayr-decentralized-identifier/src/resolver/resolver.ts#L11)
