@@ -11,7 +11,7 @@ Version History:
 - 2023.08.19: Initial release.
 - 2024.05.21: Changed to did:klayr
 
-Last Modified: August 29, 2023
+Last Modified: May 21, 2024
 ```
 
 This document defines the syntax, data model, and operations for the `did:klayr` Decentralized Identifier (DID) method, specifically for the Klayr Sidechain.
