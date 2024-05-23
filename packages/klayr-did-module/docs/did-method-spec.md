@@ -3,7 +3,7 @@
 ```
 Title: did:klayr Method Specification
 Author: Aldo Suhartono Putra <aldhosutra@gmail.com>
-Version: 2023.08.29
+Version: 2024.05.21
 
 Version History:
 - 2024.05.21: Changed to did:klayr
