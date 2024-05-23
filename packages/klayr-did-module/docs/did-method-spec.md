@@ -6,10 +6,10 @@ Author: Aldo Suhartono Putra <aldhosutra@gmail.com>
 Version: 2023.08.29
 
 Version History:
+- 2024.05.21: Changed to did:klayr
 - 2023.08.29: Add incrementNonce
 - 2023.08.27: Add Authorization Factors
 - 2023.08.19: Initial release.
-- 2024.05.21: Changed to did:klayr
 
 Last Modified: May 21, 2024
 ```
